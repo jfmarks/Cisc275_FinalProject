@@ -1,1 +1,3 @@
 # Cisc275_FinalProject
+By Quentin Bettin, Ana Donato, Kareena Keswani, Logan Levine, Jacob Marks, and Alex Peluso.
+Our final project is a restaurant rating website...

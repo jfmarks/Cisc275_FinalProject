@@ -8,4 +8,8 @@ User 1 (John) - Age: 30. Marital Status: Married. Education Level: High School G
                 3. Be able to highlight a favorite dish at each restaurant on list
                 
 User 2 (Diane) - Age: 44. Marital Status: Single. Education Level: Culinary School Grad. Work Experience: Restaurant Owner. Comfort with technology: Average
-        Diane
+        Diane is a restaurant owner and wants to use our website to gauge interest in her restaurant
+                User Goals/Needs:
+                1. View Users' favorites lists/See who has favorited her restaurant
+                2. View menus of similar restaurants for inspiration
+                3. See what menu items at her restaurant people like the most

@@ -1,7 +1,7 @@
 import { Admin } from "./Admin";
-import { restaurant } from "./Restaurant";
+import { Restaurant } from "./Restaurant";
 
 export interface Super extends Admin {
-  restaurantsToAdd: restaurant[];
-  restaurantsToDelete: restaurant[];
+  restaurantsToAdd: Restaurant[];
+  restaurantsToDelete: Restaurant[];
 }

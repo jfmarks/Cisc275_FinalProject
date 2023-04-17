@@ -1,3 +1,3 @@
 export interface DiningExperience {
-    type: 'Fast Food' | 'Casual' | 'Luxury';
+    type: "Fast Food" | "Casual" | "Luxury";
 }

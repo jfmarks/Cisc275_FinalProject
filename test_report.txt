@@ -1,0 +1,112 @@
+
+> react-typescript-starter@0.1.0 test
+> react-scripts test --coverage
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+FAIL src/App.test.tsx
+  ✕ renders the course name somewhere (50 ms)
+
+  ● renders the course name somewhere
+
+    TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-header"[39m
+          [36m>[39m
+            [0mGroup 6 Final Project[0m
+          [36m</header>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"text-align: left;"[39m
+          [36m>[39m
+            [36m<h1>[39m
+              [0mGroup Members[0m
+            [36m</h1>[39m
+            [36m<ul>[39m
+              [36m<li>[39m
+                [0mQuinten Bettin[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mAnastasia Donato[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mKareena Keswani[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mLogan Levine[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mJacob Marks[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mAlex Peluso[0m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div>[39m
+          [36m<p>[39m
+            [0mEdit [0m
+            [36m<code>[39m
+              [0msrc/App.tsx[0m
+            [36m</code>[39m
+            [0m and save to reload.[0m
+          [36m</p>[39m
+          [36m<a[39m
+            [33mclass[39m=[32m"App-link"[39m
+            [33mhref[39m=[32m"https://reactjs.org"[39m
+            [33mrel[39m=[32m"noopener noreferrer"[39m
+            [33mtarget[39m=[32m"_blank"[39m
+          [36m>[39m
+            [0mLearn React[0m
+          [36m</a>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+       5 | test("renders the course name somewhere", () => {
+       6 |     render(<App />);
+    >  7 |     const linkElement = screen.getByText(/CISC275/i);
+         |                                ^
+       8 |     expect(linkElement).toBeInTheDocument();
+       9 | });
+      10 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/App.test.tsx:7:32)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+----------------------|---------|----------|---------|---------|-------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------|---------|----------|---------|---------|-------------------
+All files             |     100 |      100 |     100 |     100 |                   
+ src                  |     100 |      100 |     100 |     100 |                   
+  App.tsx             |     100 |      100 |     100 |     100 |                   
+ src/Components       |       0 |        0 |       0 |       0 |                   
+  UserList.tsx        |       0 |        0 |       0 |       0 |                   
+ src/Interfaces       |       0 |        0 |       0 |       0 |                   
+  Admin.ts            |       0 |        0 |       0 |       0 |                   
+  DiningExperience.ts |       0 |        0 |       0 |       0 |                   
+  MenuItem.ts         |       0 |        0 |       0 |       0 |                   
+  PriceRange.ts       |       0 |        0 |       0 |       0 |                   
+  Rating.ts           |       0 |        0 |       0 |       0 |                   
+  Restaurant.ts       |       0 |        0 |       0 |       0 |                   
+  Super.ts            |       0 |        0 |       0 |       0 |                   
+  User.ts             |       0 |        0 |       0 |       0 |                   
+----------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        1.694 s
+Ran all test suites.

@@ -11,8 +11,7 @@ export function Restaurant(): JSX.Element {
         <div>
         <Button style = {{width: "50%", height: "10%", backgroundColor: "orange"}} onClick={() => console.log("Back")}>
         Back
-      </Button> 
-    {"Website Name"}
+      </Button> {"Website Name"}
     </div>
     );
 }

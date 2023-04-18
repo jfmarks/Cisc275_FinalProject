@@ -21,7 +21,9 @@ function App() {
                     <li>Alex Peluso</li>
                 </ul>
             </div>
-            <p></p>
+            <p>
+                <HomePage></HomePage>
+            </p>
             <a
                 className="App-link"
                 href="https://reactjs.org"

@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { HomePage } from "./Components/HomePage";
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
                     textAlign: "left"
                 }}
             >
-                <h1>Group Members</h1>
+                <h1>Group Members:</h1>
                 <ul>
                     <li>Quinten Bettin</li>
                     <li>Anastasia Donato</li>
@@ -21,7 +22,7 @@ function App() {
                 </ul>
             </div>
             <p>
-                Edit <code>src/App.tsx</code> and save to reload.
+                <HomePage></HomePage>
             </p>
             <a
                 className="App-link"

@@ -1,10 +1,13 @@
-import React, { useState } from "react";
 import { Button, Row, Col } from "react-bootstrap";
+import React from "react";
+{
+    /*
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider, useDrag } from "react-dnd";
 import { monitorEventLoopDelay } from "perf_hooks";
 import { isDecorator } from "typescript";
-{
+import React, { useState } from "react";
+*/
     /*
 export const ItemTypes = {
     FOOD: "food"
@@ -33,6 +36,7 @@ function Food() {
 }
 */
 }
+
 export function HomePage(): JSX.Element {
     return (
         <div>

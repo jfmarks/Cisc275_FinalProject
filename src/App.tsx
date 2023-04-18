@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { HomePage } from "./Components/HomePage";
 
 function App() {
     return (
@@ -20,9 +21,7 @@ function App() {
                     <li>Alex Peluso</li>
                 </ul>
             </div>
-            <p>
-                Edit <code>src/App.tsx</code> and save to reload.
-            </p>
+            <p></p>
             <a
                 className="App-link"
                 href="https://reactjs.org"

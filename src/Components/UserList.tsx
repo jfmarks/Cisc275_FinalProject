@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { User } from "../Interfaces/User";
+import { log } from "console";
 
 export function UserList(user: User): JSX.Element {
     const id = user.id;
@@ -10,9 +11,10 @@ export function UserList(user: User): JSX.Element {
             /*switches baack to main screens*/
         }
     }
+    /*
     function filterButton(): void {
         {
-            /*filter users by rank, alphabetically or most recently joined*/
+            /*filter users by rank, alphabetically or most recently joined*/ /*
         }
         const [filter, setFilter] = useState<string>("rank");
         function updateFilter(event: React.ChangeEvent<HTMLSelectElement>) {
@@ -36,7 +38,7 @@ export function UserList(user: User): JSX.Element {
                     <option value="Most Recent">Most Recent</option>
                 </Form.Select>
             </Form.Group>
-            {/* {filter === "Rank" ? <div><Button> {id === "Manager"} </Button><Button> {id === "Critic"} </Button><Button> {id === "Foodie"} </Button></div> :  } */}
+            {/* {filter === "Rank" ? <div><Button> {id === "Manager"} </Button><Button> {id === "Critic"} </Button><Button> {id === "Foodie"} </Button></div> :  } */ /*}
             <div>
                 <button type="button" onClick={() => requestSort("Rank")}>
                     Rank
@@ -50,6 +52,7 @@ export function UserList(user: User): JSX.Element {
             </div>
         </div>;
     }
+    */
     function editButton(): void {
         {
             /*remove or change user*/
@@ -91,7 +94,7 @@ export function UserList(user: User): JSX.Element {
                 <header>
                     User List
                     <Button onClick={backButton}> Back</Button>
-                    <Button onClick={filterButton}> Filter </Button>
+                    {/* <Button onClick={filterButton}> Filter </Button> */}
                     <Button onClick={editButton} disabled={id === "Foodie"}>
                         {" "}
                         Edit{" "}
@@ -102,9 +105,10 @@ export function UserList(user: User): JSX.Element {
                     </Button>
                 </header>
             </div>
-            <Button onClick={userButtons}> User 1</Button>
+            {/*}
+            <Button onClick={log("hello")}> User 1</Button>
             <Button onClick={userButtons}> User 2</Button>
-            <Button onClick={userButtons}> User 3</Button>
+            <Button onClick={userButtons}> User 3</Button> */}
             {/*elimiate options as they are picked*/}
         </div>
     );

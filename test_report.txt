@@ -5,8 +5,26 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+  console.error
+    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at HomePage
+        at p
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (44 ms)
+  ✕ renders the course name somewhere (101 ms)
 
   ● renders the course name somewhere
 
@@ -51,11 +69,54 @@ FAIL src/App.test.tsx
             [36m</ul>[39m
           [36m</div>[39m
           [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save to reload.[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"row"[39m
+                [33mstyle[39m=[32m"height: 100px; align-content: center; justify-content: center; background-color: grey; margin: 20px; font-size: 30px;"[39m
+              [36m>[39m
+                [0mWEBSITE NAME[0m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"row"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"col"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                    [33mstyle[39m=[32m"width: 120px; height: 100px; vertical-align: center; background-color: grey; margin: 20px; font-size: 30px;"[39m
+                  [36m>[39m
+                    [0mList of Users[0m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                    [33mstyle[39m=[32m"width: 120px; height: 100px; vertical-align: center; margin: 20px; font-size: 30px;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mstyle[39m=[32m"vertical-align: bottom; background-color: grey; margin-top: 5px;"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mCritic[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mstyle[39m=[32m"vertical-align: bottom; background-color: grey; margin-top: 5px;"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mManager[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mstyle[39m=[32m"vertical-align: bottom; background-color: grey; margin-top: 5px;"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mFoodie[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
           [36m</p>[39m
           [36m<a[39m
             [33mclass[39m=[32m"App-link"[39m
@@ -93,7 +154,8 @@ File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line 
 All files             |     100 |      100 |     100 |     100 |                   
  src                  |     100 |      100 |     100 |     100 |                   
   App.tsx             |     100 |      100 |     100 |     100 |                   
- src/Components       |       0 |        0 |       0 |       0 |                   
+ src/Components       |     100 |      100 |     100 |     100 |                   
+  HomePage.tsx        |     100 |      100 |     100 |     100 |                   
   UserList.tsx        |       0 |        0 |       0 |       0 |                   
  src/Interfaces       |       0 |        0 |       0 |       0 |                   
   Admin.ts            |       0 |        0 |       0 |       0 |                   
@@ -108,5 +170,5 @@ All files             |     100 |      100 |     100 |     100 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.651 s
+Time:        2.017 s
 Ran all test suites.

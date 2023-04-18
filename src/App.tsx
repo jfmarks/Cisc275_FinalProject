@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
     return (
         <div className="App">
-            <header className="App-header">Group 6 Final Project</header>
+            <header className="App-header">Team 6 Final Project</header>
             <div
                 style={{
                     textAlign: "left"

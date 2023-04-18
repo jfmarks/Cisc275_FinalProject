@@ -10,7 +10,7 @@ function App() {
                     textAlign: "left"
                 }}
             >
-                <h1>Group Members</h1>
+                <h1>Group Members: </h1>
                 <ul>
                     <li>Quinten Bettin</li>
                     <li>Anastasia Donato</li>

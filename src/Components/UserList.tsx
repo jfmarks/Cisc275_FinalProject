@@ -1,5 +1,5 @@
 export {};
-/* import React, { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { User } from "../Interfaces/User";
@@ -9,17 +9,18 @@ export function UserList(user: User): JSX.Element {
     const id = user.id;
     function backButton(): void {
         {
-            /*switches baack to main screens
+            /*switches baack to main screens*/
         }
     }
     function filterButton(): void {
         {
-            /*filter users by rank, alphabetically or most recently joined
+            /*filter users by rank, alphabetically or most recently joined*/
         }
         const [filter, setFilter] = useState<string>("rank");
         function updateFilter(event: React.ChangeEvent<HTMLSelectElement>) {
             setFilter(event.target.value);
         }
+        const [sortConfig, setSortConfig] = useState<>
         const requestSort = (key: string) => {
             let direction = "ascending";
             if (
@@ -31,15 +32,15 @@ export function UserList(user: User): JSX.Element {
             setSortConfig({ key, direction });
         };
         <div>
-            <Form.Group controlId="userEmotions">
+            <Form.Group controlId="rankingUsers">
                 <Form.Select value={filter} onChange={updateFilter}>
                     <option value="Rank">Rank</option>
                     <option value="A-Z">A-Z</option>
-                    <option value="Most Recent">Most Recent</option>
+                    <option value="Recent">Most Recent</option>
                 </Form.Select>
             </Form.Group>
-            {/* {filter === "Rank" ? <div><Button> {id === "Manager"} </Button><Button> {id === "Critic"} </Button><Button> {id === "Foodie"} </Button></div> :  } }
-            <div>
+            {/* {filter === "Rank" ? <div><Button> {id === "Manager"} </Button><Button> {id === "Critic"} </Button><Button> {id === "Foodie"} </Button></div> :  } */}
+            {/* <div>
                 <button type="button" onClick={() => requestSort("Rank")}>
                     Rank
                 </button>
@@ -49,17 +50,17 @@ export function UserList(user: User): JSX.Element {
                 <button type="button" onClick={() => requestSort("Recent")}>
                     Most Recent
                 </button>
-            </div>
+            </div> */}
         </div>;
     }
     function editButton(): void {
         {
-            /*remove or change user
+            /*remove or change user*/
         }
     }
     function addButton(): void {
         {
-            /* add if user , ?max 3 users? 
+            /* add if user , ?max 3 users? */
         }
     }
     function userButtons({ options }: { options: string[] }): JSX.Element {
@@ -72,7 +73,7 @@ export function UserList(user: User): JSX.Element {
             <div>
                 {/* buttons drop down list
         3 drop downs, ?ranks disabled as they are picked?
-        ??input user names before picking rank??}
+        ??input user names before picking rank??*/}
 
                 <Form.Group>
                     <Form.Label>Pick a rank:</Form.Label>
@@ -88,7 +89,7 @@ export function UserList(user: User): JSX.Element {
 
     return (
         <div>
-            {/* Header}
+            {/* Header*/}
             <div>
                 <header>
                     User List
@@ -107,8 +108,8 @@ export function UserList(user: User): JSX.Element {
             <Button onClick={log("hello")}> User 1</Button>
             <Button onClick={userButtons}> User 2</Button>
             <Button onClick={userButtons}> User 3</Button>
-            {/*elimiate options as they are picked}
+            {/*elimiate options as they are picked*/}
         </div>
     );
 }
-*/
+

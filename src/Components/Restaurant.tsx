@@ -22,7 +22,9 @@ export function Restaurant(): JSX.Element {
                         style={{
                             width: "120px",
                             height: "100px",
+                            alignContent: "center",
                             verticalAlign: "center",
+                            justifyContent: "center",
                             backgroundColor: "grey",
                             margin: "20px",
                             fontSize: 30
@@ -34,7 +36,10 @@ export function Restaurant(): JSX.Element {
                         style={{
                             width: "120px",
                             height: "100px",
+                            alignContent: "center",
                             verticalAlign: "center",
+                            justifyContent: "center",
+                            backgroundColor: "grey",
                             margin: "20px",
                             fontSize: 30
                         }}
@@ -45,12 +50,62 @@ export function Restaurant(): JSX.Element {
                         style={{
                             width: "120px",
                             height: "100px",
+                            alignContent: "center",
                             verticalAlign: "center",
+                            justifyContent: "center",
+                            backgroundColor: "grey",
+                            margin: "20px",
+                            fontSize: 23
+                        }}
+                    >
+                        Dining Experience
+                    </Row>
+                </Col>
+                <Col>
+                    <Row
+                        style={{
+                            width: "200px",
+                            height: "200px",
+                            alignContent: "center",
+                            verticalAlign: "center",
+                            justifyContent: "center",
+                            backgroundColor: "grey",
                             margin: "20px",
                             fontSize: 30
                         }}
                     >
-                        Dining Experience
+                        {" "}
+                        Image{" "}
+                    </Row>
+                    <Row
+                        style={{
+                            width: "100px",
+                            height: "200px",
+                            alignContent: "center",
+                            verticalAlign: "center",
+                            justifyContent: "center",
+                            backgroundColor: "grey",
+                            margin: "20px",
+                            fontSize: 30
+                        }}
+                    >
+                        Description{" "}
+                    </Row>
+                </Col>
+                <Col>
+                    <Row
+                        style={{
+                            width: "500px",
+                            height: "200px",
+                            alignContent: "center",
+                            verticalAlign: "center",
+                            justifyContent: "center",
+                            backgroundColor: "grey",
+                            margin: "20px",
+                            fontSize: 30
+                        }}
+                    >
+                        Description
                     </Row>
                 </Col>
             </Row>

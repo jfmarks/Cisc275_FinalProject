@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { HomePage } from "./Components/HomePage";
+import { Restaurant } from "./Components/Restaurant";
 
 function App() {
     return (
@@ -23,6 +24,9 @@ function App() {
             </div>
             <p>
                 <HomePage></HomePage>
+            </p>
+            <p>
+                <Restaurant></Restaurant>
             </p>
             <a
                 className="App-link"

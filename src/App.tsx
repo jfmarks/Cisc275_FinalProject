@@ -5,13 +5,13 @@ import { HomePage } from "./Components/HomePage";
 function App() {
     return (
         <div className="App">
-            <header className="App-header">Group 6 Final Project</header>
+            <header className="App-header">Team 6 Final</header>
             <div
                 style={{
                     textAlign: "left"
                 }}
             >
-                <h1>Group Members: </h1>
+                <h1>Group Members</h1>
                 <ul>
                     <li>Quinten Bettin</li>
                     <li>Anastasia Donato</li>

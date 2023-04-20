@@ -1,41 +1,9 @@
 import { Button, Row, Col } from "react-bootstrap";
-import React from "react";
-{
-    /*
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider, useDrag } from "react-dnd";
 import { monitorEventLoopDelay } from "perf_hooks";
 import { isDecorator } from "typescript";
 import React, { useState } from "react";
-*/
-    /*
-export const ItemTypes = {
-    FOOD: "food"
-};
-
-function Food() {
-    const [{ isDragging }, drag] = useDrag(() => ({
-        type: ItemTypes.FOOD,
-        collect: (monitor) => ({
-            isDragging: !!monitor.isDragging()
-        })
-    }));
-    return (
-        <div
-            ref={drag}
-            style={{
-                opacity: isDragging ? 0.5 : 1,
-                fontSize: 25,
-                fontWeight: "bold",
-                cursor: "move"
-            }}
-        >
-            bunger
-        </div>
-    );
-}
-*/
-}
 
 export function HomePage(): JSX.Element {
     return (
@@ -50,7 +18,7 @@ export function HomePage(): JSX.Element {
                     fontSize: 30
                 }}
             >
-                WEBSITE NAME
+                Rate-a-Restaurant
             </Row>
             <Row>
                 <Col>
@@ -104,7 +72,6 @@ export function HomePage(): JSX.Element {
                         </Button>
                     </Row>
                 </Col>
-                {/*<Col>{Food()}</Col>*/}
             </Row>
         </div>
     );

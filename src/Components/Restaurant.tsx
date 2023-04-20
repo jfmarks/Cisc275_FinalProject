@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Row, Col } from "react-bootstrap";
 
 export function Restaurant(): JSX.Element {
@@ -28,7 +28,7 @@ export function Restaurant(): JSX.Element {
                             fontSize: 30
                         }}
                     >
-                        List of Users
+                        Price
                     </Row>
                     <Row
                         style={{
@@ -39,33 +39,18 @@ export function Restaurant(): JSX.Element {
                             fontSize: 30
                         }}
                     >
-                        <Button
-                            style={{
-                                verticalAlign: "bottom",
-                                backgroundColor: "grey",
-                                marginTop: "5px"
-                            }}
-                        >
-                            Critic
-                        </Button>
-                        <Button
-                            style={{
-                                verticalAlign: "bottom",
-                                backgroundColor: "grey",
-                                marginTop: "5px"
-                            }}
-                        >
-                            Manager
-                        </Button>
-                        <Button
-                            style={{
-                                verticalAlign: "bottom",
-                                backgroundColor: "grey",
-                                marginTop: "5px"
-                            }}
-                        >
-                            Foodie
-                        </Button>
+                        Rating
+                    </Row>
+                    <Row
+                        style={{
+                            width: "120px",
+                            height: "100px",
+                            verticalAlign: "center",
+                            margin: "20px",
+                            fontSize: 30
+                        }}
+                    >
+                        Dining Experience
                     </Row>
                 </Col>
             </Row>

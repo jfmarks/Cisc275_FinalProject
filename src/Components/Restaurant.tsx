@@ -64,7 +64,7 @@ export function Restaurant(): JSX.Element {
                 <Col>
                     <Row
                         style={{
-                            width: "200px",
+                            width: "600px",
                             height: "200px",
                             alignContent: "center",
                             verticalAlign: "center",
@@ -79,7 +79,7 @@ export function Restaurant(): JSX.Element {
                     </Row>
                     <Row
                         style={{
-                            width: "100px",
+                            width: "600px",
                             height: "200px",
                             alignContent: "center",
                             verticalAlign: "center",
@@ -89,7 +89,7 @@ export function Restaurant(): JSX.Element {
                             fontSize: 30
                         }}
                     >
-                        Description{" "}
+                        Menu{" "}
                     </Row>
                 </Col>
                 <Col>

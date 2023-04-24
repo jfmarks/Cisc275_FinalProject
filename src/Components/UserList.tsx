@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { User } from "../Interfaces/User";
-import { log } from "console";
+//import { log } from "console";
 
 export function UserList(user: User): JSX.Element {
     const id = user.id;
@@ -33,7 +33,7 @@ export function UserList(user: User): JSX.Element {
 
     return (
         <div>
-            <Button onClick={log("hello")}> User 1</Button>
+            <Button onClick={userButtons}> User 1</Button>
             <Button onClick={userButtons}> User 2</Button>
             <Button onClick={userButtons}> User 3</Button>
             {/*elimiate options as they are picked*/}

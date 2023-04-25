@@ -33,7 +33,7 @@ export interface Restaurant {
     image: string;
     menu: MenuItem[];
     averageRating: number;
-    priceRange: PriceRange;
+    //priceRange: PriceRange;
     diningExperience: string;
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { HomePage } from "./Components/HomePage";
 import { Restaurant } from "./Components/Restaurant";
+import { RestaurantList } from "./Components/RestaurantList";
 
 function App() {
     return (
@@ -27,6 +28,9 @@ function App() {
             </p>
             <p>
                 <Restaurant></Restaurant>
+            </p>
+            <p>
+                <RestaurantList></RestaurantList>
             </p>
         </div>
     );

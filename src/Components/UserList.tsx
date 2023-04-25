@@ -1,12 +1,12 @@
 export {};
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 //import { Interface } from "../Interfaces";
 import { User } from "../Interfaces/User";
 //import { log } from "console";
 
-const RANKS = ["User", "Super", "Admin"];
+const RANK = ["User", "Super", "Admin"];
 
 export function UserList(user: User): JSX.Element {
     const id = user.id;
@@ -20,7 +20,7 @@ export function UserList(user: User): JSX.Element {
         }
         <div>
             <header> User List </header>
-            <Col>
+            {/* <Col>
                 {RANKS.map((option: string) => (
                     <div key={option} style={{ marginBottom: "4px" }}>
                         Add{" "}
@@ -34,7 +34,14 @@ export function UserList(user: User): JSX.Element {
                         </Button>
                     </div>
                 ))}
-            </Col>
+            </Col> */}
+            <Form.Group>
+                <Form.Select value={RANK} onChange={chooseRank}>
+                    {RANK.map((rank: string) => (
+                        <option key={rank}>{rank}</option>
+                    ))}
+                </Form.Select>
+            </Form.Group>
         </div>;
     }
 

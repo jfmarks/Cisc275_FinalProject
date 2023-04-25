@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 export function Restaurant(): JSX.Element {
     return (

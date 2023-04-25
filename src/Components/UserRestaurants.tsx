@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { Restaurant } from "../Interfaces";
-//import { PriceRange } from "../Interfaces";
+import { PriceRange } from "../Interfaces";
 //import { MenuItem } from "../Interfaces";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-export function RestaurantList(): JSX.Element {
+export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     const [menuVisible, setMenuVisible] = useState<string | null>(null); // state to keep track of visible menu
     const [editMode, setEditMode] = useState(false); // Initial state for editMode is false
     // Dummy data for restaurants (replace with actual fetch call)
+    const priceRange: PriceRange = { minPrice: 0, maxPrice: 10 };
     const fetchRestaurants = (): void => {
         const data: Restaurant[] = [
             {
@@ -33,6 +34,7 @@ export function RestaurantList(): JSX.Element {
                         price: 8.99
                     }
                 ],
+                priceRange: priceRange,
                 averageRating: 3,
                 diningExperience: "Fast Food"
             },
@@ -58,6 +60,7 @@ export function RestaurantList(): JSX.Element {
                         price: 8.99
                     }
                 ],
+                priceRange: priceRange,
                 averageRating: 2,
                 diningExperience: "Junk Food"
             },
@@ -83,6 +86,7 @@ export function RestaurantList(): JSX.Element {
                         price: 8.99
                     }
                 ],
+                priceRange: priceRange,
                 averageRating: 3,
                 diningExperience: "Fast Food"
             },
@@ -108,6 +112,7 @@ export function RestaurantList(): JSX.Element {
                         price: 8.99
                     }
                 ],
+                priceRange: priceRange,
                 averageRating: 2,
                 diningExperience: "Junk Food"
             },
@@ -133,6 +138,7 @@ export function RestaurantList(): JSX.Element {
                         price: 8.99
                     }
                 ],
+                priceRange: priceRange,
                 averageRating: 3,
                 diningExperience: "Fast Food"
             },
@@ -158,6 +164,7 @@ export function RestaurantList(): JSX.Element {
                         price: 8.99
                     }
                 ],
+                priceRange: priceRange,
                 averageRating: 2,
                 diningExperience: "Junk Food"
             }

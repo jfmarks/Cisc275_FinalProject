@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { HomePage } from "./Components/HomePage";
 import { Restaurant } from "./Components/Restaurant";
-import { RestaurantList } from "./Components/RestaurantList";
+import { UserRestaurants } from "./Components/UserRestaurants";
 
 function App() {
     return (
@@ -30,7 +30,7 @@ function App() {
                 <Restaurant></Restaurant>
             </p>
             <p>
-                <RestaurantList></RestaurantList>
+                <UserRestaurants></UserRestaurants>
             </p>
         </div>
     );

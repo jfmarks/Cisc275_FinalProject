@@ -59,13 +59,7 @@ function App() {
                 <Restaurant></Restaurant>
             </p>
             <p>
-                <UserList
-                    id={""}
-                    username={""}
-                    favoriteRestaurants={[]}
-                    leastFavoriteRestaurants={[]}
-                    ratings={[]}
-                ></UserList>
+                <UserList></UserList>
             </p>
             <a
                 className="App-link"

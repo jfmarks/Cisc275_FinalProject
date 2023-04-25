@@ -431,7 +431,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (248 ms)
+  ✕ renders the course name somewhere (274 ms)
 
   ● renders the course name somewhere
 
@@ -514,7 +514,7 @@ FAIL src/App.test.tsx
                     [33mclass[39m=[32m"container"[39m
                     [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 10px; padding: 10px;"[39m
                   [36m>[39m
-                    [36m<h2[39m
+                    [36m<h3[39m
                       [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 10px; padding: 10px; background-color: lightblue;"[39m
                     [36m>[39m
                       [36m<div[39m
@@ -534,7 +534,7 @@ FAIL src/App.test.tsx
                           [36m</button>[39m
                         [36m</div>[39m
                       [36m</div>[39m
-                    [36m</h2>[39m
+                    [36m</h3>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"row"[39m
                     [36m>[39m
@@ -557,52 +557,48 @@ FAIL src/App.test.tsx
                               [36m>[39m
                                 [0mBungerKing[0m
                               [36m</div>[39m
-                              [36m<p[39m
-                                [33mclass[39m=[32m"card-text"[39m
-                              [36m/>[39m
-                              [36m<div[39m
-                                [33mstyle[39m=[32m"display: none;"[39m
-                              [36m>[39m
-                                [36m<h3>[39m
-                                  [0mMenu[0m
-                                [36m</h3>[39m
-                                [36m<ul>[39m
-                                  [36m<li>[39m
-                                    [36m<strong />[39m
-                                    [0m [0m
-                                    [0m[0m
-                                    [0m [0m
-                                    [0m- [0m
-                                    [0m0[0m
-                                  [36m</li>[39m
-                                [36m</ul>[39m
+                              [36m<div>[39m
+                                [36m<div[39m
+                                  [33mstyle[39m=[32m"display: none;"[39m
+                                [36m>[39m
+                                  [36m<strong[39m
+                                    [33mstyle[39m=[32m"background-color: royalblue; flex-direction: row;"[39m
+                                  [36m>[39m
+                                    [0mMenu[0m
+                                  [36m</strong>[39m
+                                  [36m<ul>[39m
+                                    [36m<li>[39m
+                                      [36m<strong />[39m
+                                      [0m [0m
+                                      [0m[0m
+                                      [0m [0m
+                                      [0m-[0m
+                                      [0m [0m
+                                      [0m0[0m
+                                    [36m</li>[39m
+                                  [36m</ul>[39m
+                                [36m</div>[39m
+                                [36m<div[39m
+                                  [33mstyle[39m=[32m"display: none;"[39m
+                                [36m>[39m
+                                  [36m<p[39m
+                                    [33mclass[39m=[32m"card-text"[39m
+                                  [36m/>[39m
+                                [36m</div>[39m
                               [36m</div>[39m
-                              [36m<button>[39m
-                                [0mShow Menu[0m
-                              [36m</button>[39m
-                            [36m</div>[39m
-                          [36m</div>[39m
-                        [36m</div>[39m
-                      [36m</div>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"col-lg-3 col-md-4 col-sm-6"[39m
-                      [36m>[39m
-                        [36m<div[39m
-                          [33mclass[39m=[32m"card"[39m
-                        [36m>[39m
-                          [36m<img[39m
-                            [33mclass[39m=[32m"card-img-top"[39m
-                            [33msrc[39m=[32m""[39m
-                          [36m/>[39m
-                          [36m<div[39m
-                            [33mclass[39m=[32m"card-body"[39m
-                          [36m>[39m
-                            [36m<div>[39m
-                              [36m<div[39m
-                                [33mclass[39m=[32m"card-title h5"[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mtype[39m=[32m"button"[39m
                               [36m>[39m
-                                [0mchimken-filet[0m
-                              [36m<...
+                                [0mMenu[0m
+                              [36m</button>[39m
+                              [36m<button[39m
+                                [33mclass[39m=[32m"btn btn-primary"[39m
+                                [33mtype[39m=[32m"button"[39m
+                              [36m>[39m
+                                [0mHide[0m
+                              [36m</button>[39m
+     ...
 
        5 | test("renders the course name somewhere", () => {
        6 |     render(<App />);
@@ -625,19 +621,20 @@ FAIL src/App.test.tsx
 ----------------------|---------|----------|---------|---------|-----------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                   
 ----------------------|---------|----------|---------|---------|-----------------------------------------------------
-All files             |   62.29 |    28.57 |   27.27 |   62.29 |                                                     
- src                  |     100 |      100 |     100 |     100 |                                                     
+All files             |    59.7 |       30 |      24 |    59.7 |                                                     
+ src                  |      50 |      100 |     100 |      50 |                                                     
   App.tsx             |     100 |      100 |     100 |     100 |                                                     
+  CurrentUser.tsx     |       0 |      100 |     100 |       0 | 3                                                   
   Interfaces.ts       |       0 |        0 |       0 |       0 |                                                     
- src/Components       |   61.66 |    28.57 |    23.8 |   61.66 |                                                     
+ src/Components       |      60 |       30 |   20.83 |      60 |                                                     
   HomePage.tsx        |       0 |      100 |       0 |       0 | 15                                                  
   Restaurant.tsx      |       0 |      100 |       0 |       0 | 5                                                   
   RestaurantList.ts   |     100 |      100 |     100 |     100 |                                                     
   UserList.tsx        |       0 |        0 |       0 |       0 |                                                     
-  UserRestaurants.tsx |   43.24 |    28.57 |   26.31 |   43.24 | 183-184,191-197,203-209,212-215,218,241,259-278,323 
+  UserRestaurants.tsx |   42.85 |       30 |   22.72 |   42.85 | 25-26,31-32,39-45,51-57,60-63,66,89,107-126,198-207 
 ----------------------|---------|----------|---------|---------|-----------------------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.474 s
+Time:        2.648 s
 Ran all test suites.

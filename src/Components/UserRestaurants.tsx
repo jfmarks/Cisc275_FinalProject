@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
-import { PriceRange } from "../Interfaces";
+//import { PriceRange } from "../Interfaces";
 //import { MenuItem } from "../Interfaces";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     const [menuVisible, setMenuVisible] = useState<string | null>(null); // state to keep track of visible menu
@@ -233,11 +233,17 @@ export function UserRestaurants(): JSX.Element {
                     backgroundColor: "lightblue"
                 }}
             >
-                Restaurant List
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <div style={{ flex: 1, textAlign: "center" }}>
+                        Restaurant List
+                    </div>
+                    <div>
+                        <Button onClick={() => handleEditRestaurant()}>
+                            {editMode ? "Save" : "Edit"}
+                        </Button>
+                    </div>
+                </div>
             </h2>
-            <button onClick={() => handleEditRestaurant()}>
-                {editMode ? "Save" : "Edit"}
-            </button>
             <Row>
                 {restaurants.map((restaurant) => (
                     <Col key={restaurant.id} sm={6} md={4} lg={3}>

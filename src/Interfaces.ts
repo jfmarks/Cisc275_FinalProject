@@ -43,7 +43,8 @@ export interface User {
     userList: Restaurant[];
     ratings: Rating[];
 }
-export interface currUser {
+
+export interface CurrUser {
     type: string;
     id: string;
     username: string;

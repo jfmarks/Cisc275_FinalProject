@@ -4,6 +4,8 @@ import { DndProvider, useDrag } from "react-dnd";
 import { monitorEventLoopDelay } from "perf_hooks";
 import { isDecorator } from "typescript";
 import React, { useState } from "react";
+import RestaurantList from "./RestaurantList";
+import { Restaurant } from "../Interfaces";
 
 export function HomePage(): JSX.Element {
     return (

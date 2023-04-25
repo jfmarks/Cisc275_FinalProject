@@ -3,174 +3,176 @@ import { Restaurant } from "../Interfaces";
 import { PriceRange } from "../Interfaces";
 //import { MenuItem } from "../Interfaces";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import RestaurantList from "./RestaurantList";
 
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     const [menuVisible, setMenuVisible] = useState<string | null>(null); // state to keep track of visible menu
     const [editMode, setEditMode] = useState(false); // Initial state for editMode is false
     // Dummy data for restaurants (replace with actual fetch call)
-    const priceRange: PriceRange = { minPrice: 0, maxPrice: 10 };
+    //const priceRange: PriceRange = { minPrice: 0, maxPrice: 10 };
     const fetchRestaurants = (): void => {
-        const data: Restaurant[] = [
-            {
-                id: "1",
-                name: "McDonalds",
-                description: "Borgersss",
-                image: "noimage.jpg",
-                menu: [
-                    {
-                        name: "burger",
-                        description: "freshly grilled horse meat",
-                        price: 2.99
-                    },
-                    {
-                        name: "mcflurry",
-                        description: "cow product be like",
-                        price: 3.99
-                    },
-                    {
-                        name: "Krusty pizza",
-                        description: "this is mcdonalds sir",
-                        price: 8.99
-                    }
-                ],
-                priceRange: priceRange,
-                averageRating: 3,
-                diningExperience: "Fast Food"
-            },
-            {
-                id: "2",
-                name: "fdsafdsa",
-                description: "fdsafds",
-                image: "noimage.jpg",
-                menu: [
-                    {
-                        name: "fddsfds",
-                        description: "freshly grilled horse meat",
-                        price: 2.99
-                    },
-                    {
-                        name: "fdsfds",
-                        description: "cow product be like",
-                        price: 3.99
-                    },
-                    {
-                        name: "fdsfds pizza",
-                        description: "this is mcdonalds sir",
-                        price: 8.99
-                    }
-                ],
-                priceRange: priceRange,
-                averageRating: 2,
-                diningExperience: "Junk Food"
-            },
-            {
-                id: "3",
-                name: "test",
-                description: "Borgersss",
-                image: "noimage.jpg",
-                menu: [
-                    {
-                        name: "burger",
-                        description: "freshly grilled horse meat",
-                        price: 2.99
-                    },
-                    {
-                        name: "mcflurry",
-                        description: "cow product be like",
-                        price: 3.99
-                    },
-                    {
-                        name: "Krusty pizza",
-                        description: "this is mcdonalds sir",
-                        price: 8.99
-                    }
-                ],
-                priceRange: priceRange,
-                averageRating: 3,
-                diningExperience: "Fast Food"
-            },
-            {
-                id: "4",
-                name: "yummmyy",
-                description: "fdsafds",
-                image: "noimage.jpg",
-                menu: [
-                    {
-                        name: "fddsfds",
-                        description: "freshly grilled horse meat",
-                        price: 2.99
-                    },
-                    {
-                        name: "fdsfds",
-                        description: "cow product be like",
-                        price: 3.99
-                    },
-                    {
-                        name: "fdsfds pizza",
-                        description: "this is mcdonalds sir",
-                        price: 8.99
-                    }
-                ],
-                priceRange: priceRange,
-                averageRating: 2,
-                diningExperience: "Junk Food"
-            },
-            {
-                id: "5",
-                name: "pov food",
-                description: "Borgersss",
-                image: "noimage.jpg",
-                menu: [
-                    {
-                        name: "burger",
-                        description: "freshly grilled horse meat",
-                        price: 2.99
-                    },
-                    {
-                        name: "mcflurry",
-                        description: "cow product be like",
-                        price: 3.99
-                    },
-                    {
-                        name: "Krusty pizza",
-                        description: "this is mcdonalds sir",
-                        price: 8.99
-                    }
-                ],
-                priceRange: priceRange,
-                averageRating: 3,
-                diningExperience: "Fast Food"
-            },
-            {
-                id: "6",
-                name: "goldenapple",
-                description: "fdsafds",
-                image: "noimage.jpg",
-                menu: [
-                    {
-                        name: "fddsfds",
-                        description: "freshly grilled horse meat",
-                        price: 2.99
-                    },
-                    {
-                        name: "fdsfds",
-                        description: "cow product be like",
-                        price: 3.99
-                    },
-                    {
-                        name: "fdsfds pizza",
-                        description: "this is mcdonalds sir",
-                        price: 8.99
-                    }
-                ],
-                priceRange: priceRange,
-                averageRating: 2,
-                diningExperience: "Junk Food"
-            }
+        // const data: Restaurant[] = [
+        //     {
+        //         id: "1",
+        //         name: "McDonalds",
+        //         description: "Borgersss",
+        //         image: "noimage.jpg",
+        //         menu: [
+        //             {
+        //                 name: "burger",
+        //                 description: "freshly grilled horse meat",
+        //                 price: 2.99
+        //             },
+        //             {
+        //                 name: "mcflurry",
+        //                 description: "cow product be like",
+        //                 price: 3.99
+        //             },
+        //             {
+        //                 name: "Krusty pizza",
+        //                 description: "this is mcdonalds sir",
+        //                 price: 8.99
+        //             }
+        //         ],
+        //         priceRange: priceRange,
+        //         averageRating: 3,
+        //         diningExperience: "Fast Food"
+        //     },
+        //     {
+        //         id: "2",
+        //         name: "fdsafdsa",
+        //         description: "fdsafds",
+        //         image: "noimage.jpg",
+        //         menu: [
+        //             {
+        //                 name: "fddsfds",
+        //                 description: "freshly grilled horse meat",
+        //                 price: 2.99
+        //             },
+        //             {
+        //                 name: "fdsfds",
+        //                 description: "cow product be like",
+        //                 price: 3.99
+        //             },
+        //             {
+        //                 name: "fdsfds pizza",
+        //                 description: "this is mcdonalds sir",
+        //                 price: 8.99
+        //             }
+        //         ],
+        //         priceRange: priceRange,
+        //         averageRating: 2,
+        //         diningExperience: "Junk Food"
+        //     },
+        //     {
+        //         id: "3",
+        //         name: "test",
+        //         description: "Borgersss",
+        //         image: "noimage.jpg",
+        //         menu: [
+        //             {
+        //                 name: "burger",
+        //                 description: "freshly grilled horse meat",
+        //                 price: 2.99
+        //             },
+        //             {
+        //                 name: "mcflurry",
+        //                 description: "cow product be like",
+        //                 price: 3.99
+        //             },
+        //             {
+        //                 name: "Krusty pizza",
+        //                 description: "this is mcdonalds sir",
+        //                 price: 8.99
+        //             }
+        //         ],
+        //         priceRange: priceRange,
+        //         averageRating: 3,
+        //         diningExperience: "Fast Food"
+        //     },
+        //     {
+        //         id: "4",
+        //         name: "yummmyy",
+        //         description: "fdsafds",
+        //         image: "noimage.jpg",
+        //         menu: [
+        //             {
+        //                 name: "fddsfds",
+        //                 description: "freshly grilled horse meat",
+        //                 price: 2.99
+        //             },
+        //             {
+        //                 name: "fdsfds",
+        //                 description: "cow product be like",
+        //                 price: 3.99
+        //             },
+        //             {
+        //                 name: "fdsfds pizza",
+        //                 description: "this is mcdonalds sir",
+        //                 price: 8.99
+        //             }
+        //         ],
+        //         priceRange: priceRange,
+        //         averageRating: 2,
+        //         diningExperience: "Junk Food"
+        //     },
+        //     {
+        //         id: "5",
+        //         name: "pov food",
+        //         description: "Borgersss",
+        //         image: "noimage.jpg",
+        //         menu: [
+        //             {
+        //                 name: "burger",
+        //                 description: "freshly grilled horse meat",
+        //                 price: 2.99
+        //             },
+        //             {
+        //                 name: "mcflurry",
+        //                 description: "cow product be like",
+        //                 price: 3.99
+        //             },
+        //             {
+        //                 name: "Krusty pizza",
+        //                 description: "this is mcdonalds sir",
+        //                 price: 8.99
+        //             }
+        //         ],
+        //         priceRange: priceRange,
+        //         averageRating: 3,
+        //         diningExperience: "Fast Food"
+        //     },
+        //     {
+        //         id: "6",
+        //         name: "goldenapple",
+        //         description: "fdsafds",
+        //         image: "noimage.jpg",
+        //         menu: [
+        //             {
+        //                 name: "fddsfds",
+        //                 description: "freshly grilled horse meat",
+        //                 price: 2.99
+        //             },
+        //             {
+        //                 name: "fdsfds",
+        //                 description: "cow product be like",
+        //                 price: 3.99
+        //             },
+        //             {
+        //                 name: "fdsfds pizza",
+        //                 description: "this is mcdonalds sir",
+        //                 price: 8.99
+        //             }
+        //         ],
+        //         priceRange: priceRange,
+        //         averageRating: 2,
+        //         diningExperience: "Junk Food"
+        //     }
 
-            // Add more restaurants as needed
-        ];
+        //     // Add more restaurants as needed
+        // ];
+        const data = RestaurantList;
         setRestaurants(data);
     };
 

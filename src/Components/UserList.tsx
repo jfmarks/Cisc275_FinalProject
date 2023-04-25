@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 //import { Interface } from "../Interfaces";
-import { User } from "../Interfaces/User";
+import { User } from "../Interfaces";
 //import { log } from "console";
 
 const RANK = ["User", "Super", "Admin"];

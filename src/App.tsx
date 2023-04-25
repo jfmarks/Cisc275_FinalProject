@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { HomePage } from "./Components/HomePage";
 import { Restaurant } from "./Components/Restaurant";
+import { UserList } from "./Components/UserList";
 
 function App() {
     return (
@@ -27,6 +28,15 @@ function App() {
             </p>
             <p>
                 <Restaurant></Restaurant>
+            </p>
+            <p>
+                <UserList
+                    id={""}
+                    username={""}
+                    favoriteRestaurants={[]}
+                    leastFavoriteRestaurants={[]}
+                    ratings={[]}
+                ></UserList>
             </p>
             <a
                 className="App-link"

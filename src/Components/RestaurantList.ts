@@ -1,12 +1,14 @@
 import { PriceRange, Restaurant, MenuItem } from "../Interfaces";
+import ABLogo from "../Images/ABLogo.png";
 
 const menuItem1: MenuItem = { name: "", description: "", price: 0 };
 const priceRange1: PriceRange = { minPrice: 0, maxPrice: 10 };
 const restaurant1: Restaurant = {
     id: "1",
-    name: "BungerKing",
-    description: "",
-    image: "",
+    name: "Applebee's Grill and Bar",
+    description:
+        "Good food, good people. The Applebee's concept focuses on casual dining, with mainstream American dishes such as salads, chicken, pasta, burgers, and riblets (Applebee's signature dish). Fun Fact: The founders picked the name out of a phone book Founders Bill and T.J. Palmer looked for inspiration in a phone book and fell in love with the name Appleby. After finding there was already a copyright on the name, they changed it to Applebee's.",
+    image: ABLogo,
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",

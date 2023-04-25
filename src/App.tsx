@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
-//import { Restaurant } from "./Components/Restaurant";
+import { HomePage } from "./Components/HomePage";
+import { Restaurant } from "./Components/Restaurant";
+import { UserList } from "./Components/UserList";
 import { UserRestaurants } from "./Components/UserRestaurants";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 
 function App() {
     return (
@@ -50,7 +52,29 @@ function App() {
                     </Row>
                 </Container>
             </div>
-            {/*<Restaurant></Restaurant>*/}
+            <p>
+                <HomePage></HomePage>
+            </p>
+            <p>
+                <Restaurant></Restaurant>
+            </p>
+            <p>
+                <UserList
+                    id={""}
+                    username={""}
+                    favoriteRestaurants={[]}
+                    leastFavoriteRestaurants={[]}
+                    ratings={[]}
+                ></UserList>
+            </p>
+            <a
+                className="App-link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Learn React
+            </a>
         </div>
     );
 }

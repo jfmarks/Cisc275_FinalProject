@@ -40,7 +40,12 @@ export interface Restaurant {
 export interface User {
     id: string;
     username: string;
-    favoriteRestaurants: Restaurant[];
-    leastFavoriteRestaurants: Restaurant[];
+    userList: Restaurant[];
     ratings: Rating[];
+}
+
+export interface CurrUser {
+    type: string;
+    id: string;
+    username: string;
 }

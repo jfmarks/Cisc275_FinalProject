@@ -6,171 +6,13 @@ import { Restaurant } from "../Interfaces";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
-    const [menuVisible, setMenuVisible] = useState<string | null>(null); // state to keep track of visible menu
+    const [menuVisible, setMenuVisible] = useState<string | null>(null);
+    const [attributesVisible, setAttributesVisible] = useState<string | null>(
+        null
+    ); // state to keep track of visible menu
     const [editMode, setEditMode] = useState(false); // Initial state for editMode is false
     // Dummy data for restaurants (replace with actual fetch call)
-    //const priceRange: PriceRange = { minPrice: 0, maxPrice: 10 };
     const fetchRestaurants = (): void => {
-        // const data: Restaurant[] = [
-        //     {
-        //         id: "1",
-        //         name: "McDonalds",
-        //         description: "Borgersss",
-        //         image: "noimage.jpg",
-        //         menu: [
-        //             {
-        //                 name: "burger",
-        //                 description: "freshly grilled horse meat",
-        //                 price: 2.99
-        //             },
-        //             {
-        //                 name: "mcflurry",
-        //                 description: "cow product be like",
-        //                 price: 3.99
-        //             },
-        //             {
-        //                 name: "Krusty pizza",
-        //                 description: "this is mcdonalds sir",
-        //                 price: 8.99
-        //             }
-        //         ],
-        //         priceRange: priceRange,
-        //         averageRating: 3,
-        //         diningExperience: "Fast Food"
-        //     },
-        //     {
-        //         id: "2",
-        //         name: "fdsafdsa",
-        //         description: "fdsafds",
-        //         image: "noimage.jpg",
-        //         menu: [
-        //             {
-        //                 name: "fddsfds",
-        //                 description: "freshly grilled horse meat",
-        //                 price: 2.99
-        //             },
-        //             {
-        //                 name: "fdsfds",
-        //                 description: "cow product be like",
-        //                 price: 3.99
-        //             },
-        //             {
-        //                 name: "fdsfds pizza",
-        //                 description: "this is mcdonalds sir",
-        //                 price: 8.99
-        //             }
-        //         ],
-        //         priceRange: priceRange,
-        //         averageRating: 2,
-        //         diningExperience: "Junk Food"
-        //     },
-        //     {
-        //         id: "3",
-        //         name: "test",
-        //         description: "Borgersss",
-        //         image: "noimage.jpg",
-        //         menu: [
-        //             {
-        //                 name: "burger",
-        //                 description: "freshly grilled horse meat",
-        //                 price: 2.99
-        //             },
-        //             {
-        //                 name: "mcflurry",
-        //                 description: "cow product be like",
-        //                 price: 3.99
-        //             },
-        //             {
-        //                 name: "Krusty pizza",
-        //                 description: "this is mcdonalds sir",
-        //                 price: 8.99
-        //             }
-        //         ],
-        //         priceRange: priceRange,
-        //         averageRating: 3,
-        //         diningExperience: "Fast Food"
-        //     },
-        //     {
-        //         id: "4",
-        //         name: "yummmyy",
-        //         description: "fdsafds",
-        //         image: "noimage.jpg",
-        //         menu: [
-        //             {
-        //                 name: "fddsfds",
-        //                 description: "freshly grilled horse meat",
-        //                 price: 2.99
-        //             },
-        //             {
-        //                 name: "fdsfds",
-        //                 description: "cow product be like",
-        //                 price: 3.99
-        //             },
-        //             {
-        //                 name: "fdsfds pizza",
-        //                 description: "this is mcdonalds sir",
-        //                 price: 8.99
-        //             }
-        //         ],
-        //         priceRange: priceRange,
-        //         averageRating: 2,
-        //         diningExperience: "Junk Food"
-        //     },
-        //     {
-        //         id: "5",
-        //         name: "pov food",
-        //         description: "Borgersss",
-        //         image: "noimage.jpg",
-        //         menu: [
-        //             {
-        //                 name: "burger",
-        //                 description: "freshly grilled horse meat",
-        //                 price: 2.99
-        //             },
-        //             {
-        //                 name: "mcflurry",
-        //                 description: "cow product be like",
-        //                 price: 3.99
-        //             },
-        //             {
-        //                 name: "Krusty pizza",
-        //                 description: "this is mcdonalds sir",
-        //                 price: 8.99
-        //             }
-        //         ],
-        //         priceRange: priceRange,
-        //         averageRating: 3,
-        //         diningExperience: "Fast Food"
-        //     },
-        //     {
-        //         id: "6",
-        //         name: "goldenapple",
-        //         description: "fdsafds",
-        //         image: "noimage.jpg",
-        //         menu: [
-        //             {
-        //                 name: "fddsfds",
-        //                 description: "freshly grilled horse meat",
-        //                 price: 2.99
-        //             },
-        //             {
-        //                 name: "fdsfds",
-        //                 description: "cow product be like",
-        //                 price: 3.99
-        //             },
-        //             {
-        //                 name: "fdsfds pizza",
-        //                 description: "this is mcdonalds sir",
-        //                 price: 8.99
-        //             }
-        //         ],
-        //         priceRange: priceRange,
-        //         averageRating: 2,
-        //         diningExperience: "Junk Food"
-        //     }
-
-        //     // Add more restaurants as needed
-        // ];
         const data = RestaurantList;
         setRestaurants(data);
     };
@@ -181,6 +23,12 @@ export function UserRestaurants(): JSX.Element {
     const handleShowMenu = (restaurantId: string): void => {
         // Toggle menu visibility for the selected restaurant
         setMenuVisible((prevId) =>
+            prevId === restaurantId ? null : restaurantId
+        );
+    };
+    const handleShowAttributes = (restaurantId: string): void => {
+        // Toggle menu visibility for the selected restaurant
+        setAttributesVisible((prevId) =>
             prevId === restaurantId ? null : restaurantId
         );
     };
@@ -225,7 +73,7 @@ export function UserRestaurants(): JSX.Element {
                 padding: "10px" // Padding around the container
             }}
         >
-            <h2
+            <h3
                 style={{
                     border: "1px solid #ccc", // Border color
                     borderRadius: "10px", // Border radius
@@ -243,7 +91,7 @@ export function UserRestaurants(): JSX.Element {
                         </Button>
                     </div>
                 </div>
-            </h2>
+            </h3>
             <Row>
                 {restaurants.map((restaurant) => (
                     <Col key={restaurant.id} sm={6} md={4} lg={3}>
@@ -273,7 +121,7 @@ export function UserRestaurants(): JSX.Element {
                                             }
                                         />
                                         {/* Render other editable fields as needed */}
-                                        <button
+                                        <Button
                                             onClick={() =>
                                                 handleDeleteRestaurant(
                                                     restaurant.id
@@ -281,52 +129,90 @@ export function UserRestaurants(): JSX.Element {
                                             }
                                         >
                                             Delete
-                                        </button>
+                                        </Button>
                                     </div>
                                 ) : (
                                     <div>
                                         <Card.Title>
                                             {restaurant.name}
                                         </Card.Title>
-                                        <Card.Text>
-                                            {restaurant.description}
-                                        </Card.Text>
                                         {/* Render other attributes as needed */}
-                                        <div
-                                            style={{
-                                                display:
-                                                    menuVisible ===
-                                                    restaurant.id
-                                                        ? "block"
-                                                        : "none"
-                                            }}
-                                        >
-                                            <h3>Menu</h3>
-                                            <ul>
-                                                {restaurant.menu.map(
-                                                    (menuItem) => (
-                                                        <li key={menuItem.name}>
-                                                            <strong>
-                                                                {menuItem.name}
-                                                            </strong>{" "}
-                                                            {
-                                                                menuItem.description
-                                                            }{" "}
-                                                            - {menuItem.price}
-                                                        </li>
-                                                    )
-                                                )}
-                                            </ul>
+                                        <div>
+                                            <div
+                                                style={{
+                                                    display:
+                                                        menuVisible ===
+                                                        restaurant.id
+                                                            ? "block"
+                                                            : "none"
+                                                }}
+                                            >
+                                                <strong
+                                                    style={{
+                                                        backgroundColor:
+                                                            "royalblue",
+                                                        flexDirection: "row"
+                                                    }}
+                                                >
+                                                    Menu
+                                                </strong>
+                                                <ul>
+                                                    {restaurant.menu.map(
+                                                        (menuItem) => (
+                                                            <li
+                                                                key={
+                                                                    menuItem.name
+                                                                }
+                                                            >
+                                                                <strong>
+                                                                    {
+                                                                        menuItem.name
+                                                                    }
+                                                                </strong>{" "}
+                                                                {
+                                                                    menuItem.description
+                                                                }{" "}
+                                                                -{" "}
+                                                                {menuItem.price}
+                                                            </li>
+                                                        )
+                                                    )}
+                                                </ul>
+                                            </div>
+                                            <div
+                                                style={{
+                                                    display:
+                                                        attributesVisible ===
+                                                        restaurant.id
+                                                            ? "block"
+                                                            : "none"
+                                                }}
+                                            >
+                                                <Card.Text>
+                                                    {restaurant.description}
+                                                </Card.Text>
+                                            </div>
                                         </div>
-                                        <button
+                                        <Button
                                             onClick={() =>
                                                 handleShowMenu(restaurant.id)
                                             }
                                         >
                                             {menuVisible === restaurant.id
-                                                ? "Hide Menu"
-                                                : "Show Menu"}
-                                        </button>
+                                                ? "Hide"
+                                                : "Menu"}
+                                        </Button>
+                                        <Button
+                                            onClick={() =>
+                                                handleShowAttributes(
+                                                    restaurant.id
+                                                )
+                                            }
+                                        >
+                                            {attributesVisible === restaurant.id
+                                                ? "Details"
+                                                : "Hide"}
+                                        </Button>
                                     </div>
                                 )}
                             </Card.Body>

@@ -1,4 +1,7 @@
 import { Button, Row, Col } from "react-bootstrap";
+import React from "react";
+{
+    /*
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider, useDrag } from "react-dnd";
 import { monitorEventLoopDelay } from "perf_hooks";
@@ -6,7 +9,8 @@ import { isDecorator } from "typescript";
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
-
+*/
+}
 export function HomePage(): JSX.Element {
     return (
         <div>
@@ -27,29 +31,33 @@ export function HomePage(): JSX.Element {
                     <Row
                         style={{
                             width: "120px",
-                            height: "100px",
-                            verticalAlign: "center",
-                            backgroundColor: "grey",
-                            margin: "20px",
-                            fontSize: 30
-                        }}
-                    >
-                        List of Users
-                    </Row>
-                    <Row
-                        style={{
-                            width: "120px",
-                            height: "100px",
-                            verticalAlign: "center",
+                            height: "300px",
+                            verticalAlign: "top",
+                            backgroundColor: "blue",
                             margin: "20px",
                             fontSize: 30
                         }}
                     >
                         <Button
                             style={{
+                                width: "110px",
+                                height: "100px",
+                                verticalAlign: "center",
+                                backgroundColor: "grey",
+                                margin: "5px",
+                                fontSize: 30
+                            }}
+                        >
+                            List of Users
+                        </Button>
+                        <Button
+                            style={{
                                 verticalAlign: "bottom",
                                 backgroundColor: "grey",
-                                marginTop: "5px"
+                                margin: "5px",
+                                marginLeft: "5px",
+                                width: "110px",
+                                height: "45px"
                             }}
                         >
                             Critic
@@ -58,7 +66,10 @@ export function HomePage(): JSX.Element {
                             style={{
                                 verticalAlign: "bottom",
                                 backgroundColor: "grey",
-                                marginTop: "5px"
+                                margin: "5px",
+                                marginLeft: "5px",
+                                width: "110px",
+                                height: "45px"
                             }}
                         >
                             Manager
@@ -67,7 +78,10 @@ export function HomePage(): JSX.Element {
                             style={{
                                 verticalAlign: "bottom",
                                 backgroundColor: "grey",
-                                marginTop: "5px"
+                                margin: "5px",
+                                marginLeft: "5px",
+                                width: "110px",
+                                height: "45px"
                             }}
                         >
                             Foodie

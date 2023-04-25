@@ -6,25 +6,432 @@ Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
   console.error
-    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
         at div
         at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
         at div
-        at HomePage
-        at p
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
         at div
         at App
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
+
+  console.error
+    Warning: Encountered two children with the same key, `1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:8:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:13620:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:13651:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:14125:14)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:16990:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (101 ms)
+  ✕ renders the course name somewhere (248 ms)
 
   ● renders the course name somewhere
 
@@ -36,99 +443,166 @@ FAIL src/App.test.tsx
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
         [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
+          [36m<h1[39m
+            [33mstyle[39m=[32m"font-size: 16px;"[39m
           [36m>[39m
-            [0mGroup 6 Final Project[0m
-          [36m</header>[39m
+            [0mBy Quinten Bettin, Anastasia Donato, Kareena Keswani, Logan Levine, Jacob Marks, and Alex Peluso[0m
+          [36m</h1>[39m
           [36m<div[39m
-            [33mstyle[39m=[32m"text-align: left;"[39m
+            [33mclass[39m=[32m"App"[39m
           [36m>[39m
-            [36m<h1>[39m
-              [0mGroup Members: [0m
-            [36m</h1>[39m
-            [36m<ul>[39m
-              [36m<li>[39m
-                [0mQuinten Bettin[0m
-              [36m</li>[39m
-              [36m<li>[39m
-                [0mAnastasia Donato[0m
-              [36m</li>[39m
-              [36m<li>[39m
-                [0mKareena Keswani[0m
-              [36m</li>[39m
-              [36m<li>[39m
-                [0mLogan Levine[0m
-              [36m</li>[39m
-              [36m<li>[39m
-                [0mJacob Marks[0m
-              [36m</li>[39m
-              [36m<li>[39m
-                [0mAlex Peluso[0m
-              [36m</li>[39m
-            [36m</ul>[39m
-          [36m</div>[39m
-          [36m<p>[39m
-            [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"container"[39m
+            [36m>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"row"[39m
-                [33mstyle[39m=[32m"height: 100px; align-content: center; justify-content: center; background-color: grey; margin: 20px; font-size: 30px;"[39m
+                [33mclass[39m=[32m"App-title row"[39m
               [36m>[39m
-                [0mWEBSITE NAME[0m
+                [0mRate-a-Restaurant[0m
               [36m</div>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"row"[39m
               [36m>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"col"[39m
+                  [33mclass[39m=[32m"App-left-col col-sm-auto"[39m
                 [36m>[39m
                   [36m<div[39m
-                    [33mclass[39m=[32m"row"[39m
-                    [33mstyle[39m=[32m"width: 120px; height: 100px; vertical-align: center; background-color: grey; margin: 20px; font-size: 30px;"[39m
-                  [36m>[39m
-                    [0mList of Users[0m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"row"[39m
-                    [33mstyle[39m=[32m"width: 120px; height: 100px; vertical-align: center; margin: 20px; font-size: 30px;"[39m
+                    [33mclass[39m=[32m"App-main-button-rows row"[39m
                   [36m>[39m
                     [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mstyle[39m=[32m"vertical-align: bottom; background-color: grey; margin-top: 5px;"[39m
+                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
+                      [33mstyle[39m=[32m"height: 100px; font-size: 30px; margin-top: -5px;"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mList of Users[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"App-main-button-rows row"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
                       [33mtype[39m=[32m"button"[39m
                     [36m>[39m
                       [0mCritic[0m
                     [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"App-main-button-rows row"[39m
+                  [36m>[39m
                     [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mstyle[39m=[32m"vertical-align: bottom; background-color: grey; margin-top: 5px;"[39m
+                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
                       [33mtype[39m=[32m"button"[39m
                     [36m>[39m
                       [0mManager[0m
                     [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"App-main-button-rows row"[39m
+                  [36m>[39m
                     [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mstyle[39m=[32m"vertical-align: bottom; background-color: grey; margin-top: 5px;"[39m
+                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
                       [33mtype[39m=[32m"button"[39m
                     [36m>[39m
                       [0mFoodie[0m
                     [36m</button>[39m
                   [36m</div>[39m
                 [36m</div>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</p>[39m
-          [36m<a[39m
-            [33mclass[39m=[32m"App-link"[39m
-            [33mhref[39m=[32m"https://reactjs.org"[39m
-            [33mrel[39m=[32m"noopener noreferrer"[39m
-            [33mtarget[39m=[32m"_blank"[39m
-          [36m>[39m
-            [0mLearn React[0m
-          [36m</a>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"col"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 10px; padding: 10px;"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 10px; padding: 10px; background-color: lightblue;"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mstyle[39m=[32m"display: flex; justify-content: center;"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mstyle[39m=[32m"flex: 1; text-align: center;"[39m
+                        [36m>[39m
+                          [0mRestaurant List[0m
+                        [36m</div>[39m
+                        [36m<div>[39m
+                          [36m<button[39m
+                            [33mclass[39m=[32m"btn btn-primary"[39m
+                            [33mtype[39m=[32m"button"[39m
+                          [36m>[39m
+                            [0mEdit[0m
+                          [36m</button>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</h2>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col-lg-3 col-md-4 col-sm-6"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"card"[39m
+                        [36m>[39m
+                          [36m<img[39m
+                            [33mclass[39m=[32m"card-img-top"[39m
+                            [33msrc[39m=[32m""[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"card-body"[39m
+                          [36m>[39m
+                            [36m<div>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"card-title h5"[39m
+                              [36m>[39m
+                                [0mBungerKing[0m
+                              [36m</div>[39m
+                              [36m<p[39m
+                                [33mclass[39m=[32m"card-text"[39m
+                              [36m/>[39m
+                              [36m<div[39m
+                                [33mstyle[39m=[32m"display: none;"[39m
+                              [36m>[39m
+                                [36m<h3>[39m
+                                  [0mMenu[0m
+                                [36m</h3>[39m
+                                [36m<ul>[39m
+                                  [36m<li>[39m
+                                    [36m<strong />[39m
+                                    [0m [0m
+                                    [0m[0m
+                                    [0m [0m
+                                    [0m- [0m
+                                    [0m0[0m
+                                  [36m</li>[39m
+                                [36m</ul>[39m
+                              [36m</div>[39m
+                              [36m<button>[39m
+                                [0mShow Menu[0m
+                              [36m</button>[39m
+                            [36m</div>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col-lg-3 col-md-4 col-sm-6"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"card"[39m
+                        [36m>[39m
+                          [36m<img[39m
+                            [33mclass[39m=[32m"card-img-top"[39m
+                            [33msrc[39m=[32m""[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"card-body"[39m
+                          [36m>[39m
+                            [36m<div>[39m
+                              [36m<div[39m
+                                [33mclass[39m=[32m"card-title h5"[39m
+                              [36m>[39m
+                                [0mchimken-filet[0m
+                              [36m<...
 
        5 | test("renders the course name somewhere", () => {
        6 |     render(<App />);
@@ -148,27 +622,22 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------------------|---------|----------|---------|---------|-------------------
-File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------------|---------|----------|---------|---------|-------------------
-All files             |     100 |      100 |     100 |     100 |                   
- src                  |     100 |      100 |     100 |     100 |                   
-  App.tsx             |     100 |      100 |     100 |     100 |                   
- src/Components       |     100 |      100 |     100 |     100 |                   
-  HomePage.tsx        |     100 |      100 |     100 |     100 |                   
-  UserList.tsx        |       0 |        0 |       0 |       0 |                   
- src/Interfaces       |       0 |        0 |       0 |       0 |                   
-  Admin.ts            |       0 |        0 |       0 |       0 |                   
-  DiningExperience.ts |       0 |        0 |       0 |       0 |                   
-  MenuItem.ts         |       0 |        0 |       0 |       0 |                   
-  PriceRange.ts       |       0 |        0 |       0 |       0 |                   
-  Rating.ts           |       0 |        0 |       0 |       0 |                   
-  Restaurant.ts       |       0 |        0 |       0 |       0 |                   
-  Super.ts            |       0 |        0 |       0 |       0 |                   
-  User.ts             |       0 |        0 |       0 |       0 |                   
-----------------------|---------|----------|---------|---------|-------------------
+----------------------|---------|----------|---------|---------|-----------------------------------------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                   
+----------------------|---------|----------|---------|---------|-----------------------------------------------------
+All files             |   62.29 |    28.57 |   27.27 |   62.29 |                                                     
+ src                  |     100 |      100 |     100 |     100 |                                                     
+  App.tsx             |     100 |      100 |     100 |     100 |                                                     
+  Interfaces.ts       |       0 |        0 |       0 |       0 |                                                     
+ src/Components       |   61.66 |    28.57 |    23.8 |   61.66 |                                                     
+  HomePage.tsx        |       0 |      100 |       0 |       0 | 15                                                  
+  Restaurant.tsx      |       0 |      100 |       0 |       0 | 5                                                   
+  RestaurantList.ts   |     100 |      100 |     100 |     100 |                                                     
+  UserList.tsx        |       0 |        0 |       0 |       0 |                                                     
+  UserRestaurants.tsx |   43.24 |    28.57 |   26.31 |   43.24 | 183-184,191-197,203-209,212-215,218,241,259-278,323 
+----------------------|---------|----------|---------|---------|-----------------------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.017 s
+Time:        2.474 s
 Ran all test suites.

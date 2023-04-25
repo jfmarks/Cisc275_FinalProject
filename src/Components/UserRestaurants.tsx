@@ -1,10 +1,9 @@
 import React, { useState } from "react";
+import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import { PriceRange } from "../Interfaces";
 //import { MenuItem } from "../Interfaces";
 import { Card, Col, Container, Row } from "react-bootstrap";
-import RestaurantList from "./RestaurantList";
-
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     const [menuVisible, setMenuVisible] = useState<string | null>(null); // state to keep track of visible menu

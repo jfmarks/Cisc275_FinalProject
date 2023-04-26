@@ -431,7 +431,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (274 ms)
+  ✕ renders the course name somewhere (330 ms)
 
   ● renders the course name somewhere
 
@@ -546,7 +546,7 @@ FAIL src/App.test.tsx
                         [36m>[39m
                           [36m<img[39m
                             [33mclass[39m=[32m"card-img-top"[39m
-                            [33msrc[39m=[32m""[39m
+                            [33msrc[39m=[32m"ABLogo.png"[39m
                           [36m/>[39m
                           [36m<div[39m
                             [33mclass[39m=[32m"card-body"[39m
@@ -555,7 +555,7 @@ FAIL src/App.test.tsx
                               [36m<div[39m
                                 [33mclass[39m=[32m"card-title h5"[39m
                               [36m>[39m
-                                [0mBungerKing[0m
+                                [0mApplebee's Grill and Bar[0m
                               [36m</div>[39m
                               [36m<div>[39m
                                 [36m<div[39m
@@ -568,37 +568,25 @@ FAIL src/App.test.tsx
                                   [36m</strong>[39m
                                   [36m<ul>[39m
                                     [36m<li>[39m
-                                      [36m<strong />[39m
+                                      [36m<strong>[39m
+                                        [0mOriental Chicken Salad[0m
+                                      [36m</strong>[39m
                                       [0m [0m
-                                      [0m[0m
+                                      [0mA long-running favorite, crispy breaded chicken tenders top a bed of Asian greens, rice noodles and almonds with our Oriental vinaigrette on the side. Served with a golden brown signature breadstick brushed with a buttery blend of garlic and parsley.[0m
                                       [0m [0m
                                       [0m-[0m
                                       [0m [0m
-                                      [0m0[0m
+                                      [0m10.49[0m
                                     [36m</li>[39m
-                                  [36m</ul>[39m
-                                [36m</div>[39m
-                                [36m<div[39m
-                                  [33mstyle[39m=[32m"display: none;"[39m
-                                [36m>[39m
-                                  [36m<p[39m
-                                    [33mclass[39m=[32m"card-text"[39m
-                                  [36m/>[39m
-                                [36m</div>[39m
-                              [36m</div>[39m
-                              [36m<button[39m
-                                [33mclass[39m=[32m"btn btn-primary"[39m
-                                [33mtype[39m=[32m"button"[39m
-                              [36m>[39m
-                                [0mMenu[0m
-                              [36m</button>[39m
-                              [36m<button[39m
-                                [33mclass[39m=[32m"btn btn-primary"[39m
-                                [33mtype[39m=[32m"button"[39m
-                              [36m>[39m
-                                [0mHide[0m
-                              [36m</button>[39m
-     ...
+                                    [36m<li>[39m
+                                      [36m<strong>[39m
+                                        [0mFiesta Lime Chicken[0m
+                                      [36m</strong>[39m
+                                      [0m [0m
+                                      [0mA celebration of flavor, this dish delivers on every level. Grilled chicken glazed with zesty lime sauce and drizzled with tangy Mexi-ranch is smothered with a rich blend of Cheddar cheeses on a bed of crispy tortilla strips. Served with Spanish rice and house-made pico de gallo.[0m
+                                      [0m [0m
+                                      [0m-[0m
+                                ...
 
        5 | test("renders the course name somewhere", () => {
        6 |     render(<App />);
@@ -621,7 +609,7 @@ FAIL src/App.test.tsx
 ----------------------|---------|----------|---------|---------|-----------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                   
 ----------------------|---------|----------|---------|---------|-----------------------------------------------------
-All files             |    59.7 |       30 |      24 |    59.7 |                                                     
+All files             |   63.01 |       30 |      24 |   63.01 |                                                     
  src                  |      50 |      100 |     100 |      50 |                                                     
   App.tsx             |     100 |      100 |     100 |     100 |                                                     
   CurrentUser.tsx     |       0 |      100 |     100 |       0 | 3                                                   
@@ -632,9 +620,11 @@ All files             |    59.7 |       30 |      24 |    59.7 |
   RestaurantList.ts   |     100 |      100 |     100 |     100 |                                                     
   UserList.tsx        |       0 |        0 |       0 |       0 |                                                     
   UserRestaurants.tsx |   42.85 |       30 |   22.72 |   42.85 | 25-26,31-32,39-45,51-57,60-63,66,89,107-126,198-207 
+ src/Menus            |     100 |      100 |     100 |     100 |                                                     
+  Menus.tsx           |     100 |      100 |     100 |     100 |                                                     
 ----------------------|---------|----------|---------|---------|-----------------------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.648 s
+Time:        3.44 s
 Ran all test suites.

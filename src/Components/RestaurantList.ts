@@ -1,8 +1,9 @@
 import { PriceRange, Restaurant, MenuItem } from "../Interfaces";
 import ABLogo from "../Images/ABLogo.png";
-import ABMenu from "../Menus/Menus";
+import chipotlelogo from "../Images/chipotlelogo.png";
+import { ABMenu, ChipotleMenu } from "../Menus/Menus";
 
-const menuItem1: MenuItem = { name: "", description: "", price: 0 };
+const menuItem1: MenuItem = { name: "", description: "", price: "0" };
 const priceRange1: PriceRange = { minPrice: 0, maxPrice: 10 };
 const AppleBees: Restaurant = {
     id: "1",
@@ -16,14 +17,15 @@ const AppleBees: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant2: Restaurant = {
-    id: "1",
-    name: "chimken-filet",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Chipotle: Restaurant = {
+    id: "2",
+    name: "Chipotle",
+    description:
+        "Chipotle was born of the radical belief that there is a connection between how food is raised and prepared, and how it tastes. Real is better. Better for You, Better for People, Better for Our Planet. It may be the hard way to do things, but it's the right way.",
+    image: chipotlelogo,
+    menu: ChipotleMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Fast",
     priceRange: priceRange1
 };
 
@@ -204,7 +206,7 @@ const restaurant18: Restaurant = {
 };
 const RestaurantList: Restaurant[] = [
     AppleBees,
-    restaurant2,
+    Chipotle,
     restaurant3,
     restaurant4,
     restaurant5,

@@ -190,3 +190,39 @@ const E5: MenuItem = {
 };
 
 export const ChilisMenu: MenuItem[] = [E1, E2, E3, E4, E5];
+
+const F1: MenuItem = {
+    name: "Chicken Parmigiana",
+    description:
+        "Two lightly fried parmesan-breaded chicken breasts with our homemade marinara and melted Italian cheeses. Served with a side of spaghetti.",
+    price: "$19.49"
+};
+
+const F2: MenuItem = {
+    name: "Seafood Alfredo",
+    description:
+        "Creamy, alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, tossed with fettuccine, sautéed shrimp and scallops.",
+    price: "$21.29"
+};
+
+const F3: MenuItem = {
+    name: "Lasagna Classico",
+    description:
+        "Prepared fresh daily with layers of pasta, parmesan, mozzarella, pecorino romano and our homemade meat sauce.",
+    price: "$17.79"
+};
+
+const F4: MenuItem = {
+    name: "Breadsticks (V)",
+    description: "Enjoy a freshly-baked, Olive Garden Favorite.",
+    price: "$4.49"
+};
+
+const F5: MenuItem = {
+    name: "Warm Italian Doughnuts (V)",
+    description:
+        "Fried doughnuts tossed in vanilla sugar. Served with raspberry or chocolate sauce.",
+    price: "$8.29"
+};
+
+export const OGMenu: MenuItem[] = [F1, F2, F3, F4, F5];

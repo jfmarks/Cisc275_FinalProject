@@ -4,12 +4,14 @@ import chipotlelogo from "../Images/chipotlelogo.png";
 import TRLogo from "../Images/TRLogo.png";
 import TastyWok from "../Images/TastyWok.png";
 import chilis from "../Images/chilis.png";
+import olivegarden from "../Images/olivegarden.png";
 import {
     ABMenu,
     ChipotleMenu,
     TRMenu,
     TWMenu,
-    ChilisMenu
+    ChilisMenu,
+    OGMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -73,14 +75,15 @@ const Chilis: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant6: Restaurant = {
-    id: "1",
-    name: "BearExpress",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const OliveGarden: Restaurant = {
+    id: "6",
+    name: "Olive Garden",
+    description:
+        "Italian generosity is always on the table. At Olive Garden, we know that life is better together and everyone is happiest when they're with family.",
+    image: olivegarden,
+    menu: OGMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
@@ -221,7 +224,7 @@ const RestaurantList: Restaurant[] = [
     Texas_Roadhouse,
     Tasty_Wok,
     Chilis,
-    restaurant6,
+    OliveGarden,
     restaurant7,
     restaurant8,
     restaurant9,

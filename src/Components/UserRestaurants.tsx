@@ -173,7 +173,11 @@ export function UserRestaurants(): JSX.Element {
                                                                     menuItem.description
                                                                 }{" "}
                                                                 -{" "}
-                                                                {menuItem.price}
+                                                                <strong>
+                                                                    {
+                                                                        menuItem.price
+                                                                    }
+                                                                </strong>
                                                             </li>
                                                         )
                                                     )}
@@ -210,8 +214,8 @@ export function UserRestaurants(): JSX.Element {
                                             }
                                         >
                                             {attributesVisible === restaurant.id
-                                                ? "Details"
-                                                : "Hide"}
+                                                ? "Hide"
+                                                : "Details"}
                                         </Button>
                                     </div>
                                 )}

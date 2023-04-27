@@ -29,7 +29,9 @@ const AppleBees: Restaurant = {
     menu: ABMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const Chipotle: Restaurant = {
@@ -41,7 +43,9 @@ const Chipotle: Restaurant = {
     menu: ChipotleMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const Texas_Roadhouse: Restaurant = {
@@ -53,7 +57,9 @@ const Texas_Roadhouse: Restaurant = {
     menu: TRMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const Tasty_Wok: Restaurant = {
@@ -64,7 +70,9 @@ const Tasty_Wok: Restaurant = {
     menu: TWMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const Chilis: Restaurant = {
@@ -76,7 +84,9 @@ const Chilis: Restaurant = {
     menu: ChilisMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const OliveGarden: Restaurant = {
@@ -88,7 +98,9 @@ const OliveGarden: Restaurant = {
     menu: OGMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const Raising_Canes: Restaurant = {
@@ -100,7 +112,9 @@ const Raising_Canes: Restaurant = {
     menu: RCMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const Red_Lobster: Restaurant = {
@@ -112,7 +126,9 @@ const Red_Lobster: Restaurant = {
     menu: RLMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant9: Restaurant = {
@@ -123,7 +139,9 @@ const restaurant9: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant10: Restaurant = {
@@ -134,7 +152,9 @@ const restaurant10: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant11: Restaurant = {
@@ -145,7 +165,9 @@ const restaurant11: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant12: Restaurant = {
@@ -156,7 +178,9 @@ const restaurant12: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant13: Restaurant = {
@@ -167,7 +191,9 @@ const restaurant13: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant14: Restaurant = {
@@ -178,7 +204,9 @@ const restaurant14: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant15: Restaurant = {
@@ -189,7 +217,9 @@ const restaurant15: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant16: Restaurant = {
@@ -200,7 +230,9 @@ const restaurant16: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant17: Restaurant = {
@@ -211,7 +243,9 @@ const restaurant17: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 
 const restaurant18: Restaurant = {
@@ -222,7 +256,9 @@ const restaurant18: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: priceRange1,
+    displayMenu: false,
+    displayDetails: false
 };
 const RestaurantList: Restaurant[] = [
     AppleBees,

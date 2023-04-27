@@ -1,7 +1,8 @@
 import { PriceRange, Restaurant, MenuItem } from "../Interfaces";
 import ABLogo from "../Images/ABLogo.png";
 import chipotlelogo from "../Images/chipotlelogo.png";
-import { ABMenu, ChipotleMenu } from "../Menus/Menus";
+import TRLogo from "../Images/TRLogo.png";
+import { ABMenu, ChipotleMenu, TRMenu } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
 const priceRange1: PriceRange = { minPrice: 0, maxPrice: 10 };
@@ -29,14 +30,15 @@ const Chipotle: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant3: Restaurant = {
-    id: "1",
-    name: "Whendeez",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Texas_Roadhouse: Restaurant = {
+    id: "3",
+    name: "Texas Roadhouse",
+    description:
+        "Welcome To Legendary. Legendary means Hand-Cut Steaks, Fall-Off-The-Bone Ribs, Made-From-Scratch Sides, Ice-Cold Beer, and of course, our irresistible Fresh-Baked Bread.",
+    image: TRLogo,
+    menu: TRMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
@@ -207,7 +209,7 @@ const restaurant18: Restaurant = {
 const RestaurantList: Restaurant[] = [
     AppleBees,
     Chipotle,
-    restaurant3,
+    Texas_Roadhouse,
     restaurant4,
     restaurant5,
     restaurant6,

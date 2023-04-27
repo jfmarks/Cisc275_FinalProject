@@ -1,6 +1,6 @@
 import { MenuItem } from "../Interfaces";
 
-// const MI5: MenuItem = {
+// const : MenuItem = {
 //     name: "" ,
 //     description: "",
 //     price:
@@ -79,3 +79,40 @@ const B5: MenuItem = {
 };
 
 export const ChipotleMenu: MenuItem[] = [B1, B2, B3, B4, B5];
+
+const C1: MenuItem = {
+    name: "New York Strip",
+    description:
+        "This generous 12 oz. cut is aged longer for extra tenderness and flavor. Served with your choice of two sides. Also available in 8 oz. Thick Cut.",
+    price: "$18.99"
+};
+
+const C2: MenuItem = {
+    name: "Country Fried Chicken",
+    description:
+        "Tender, marinated chicken breast, hand-battered, golden-fried and topped with made-from-scratch cream gravy. Served with your choice of two sides.",
+    price: "$21.99"
+};
+
+const C3: MenuItem = {
+    name: "Pulled Pork Dinner",
+    description:
+        "Tender, slow-cooked BBQ pork served with toasted fresh-baked bread",
+    price: "$9.99"
+};
+
+const C4: MenuItem = {
+    name: "All-American Cheese Burger",
+    description:
+        "Our classic with American cheese, lettuce, tomato and onion served on a Texas-sized bun with steak fries and a pickle spear",
+    price: "$8.99"
+};
+
+const C5: MenuItem = {
+    name: "Big Ol' Brownie",
+    description:
+        "Chocolate brownie topped with vanilla ice cream and hot chocolate sauce",
+    price: "$5.99"
+};
+
+export const TRMenu: MenuItem[] = [C1, C2, C3, C4, C5];

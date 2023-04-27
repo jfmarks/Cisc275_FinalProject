@@ -5,13 +5,15 @@ import TRLogo from "../Images/TRLogo.png";
 import TastyWok from "../Images/TastyWok.png";
 import chilis from "../Images/chilis.png";
 import olivegarden from "../Images/olivegarden.png";
+import RCLogo from "../Images/RCLogo.png";
 import {
     ABMenu,
     ChipotleMenu,
     TRMenu,
     TWMenu,
     ChilisMenu,
-    OGMenu
+    OGMenu,
+    RCMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -87,14 +89,15 @@ const OliveGarden: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant7: Restaurant = {
-    id: "1",
-    name: "MickyD's",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Raising_Canes: Restaurant = {
+    id: "7",
+    name: "Raising Cane's",
+    description:
+        "Raising Cane's Chicken Fingers is an American fast-food chain specializing in chicken fingers founded in 1996 in Baton Rouge, Louisiana by Todd Graves and Craig Silvey. The company is named after Graves's dog, a yellow Labrador.",
+    image: RCLogo,
+    menu: RCMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Fast",
     priceRange: priceRange1
 };
 
@@ -225,7 +228,7 @@ const RestaurantList: Restaurant[] = [
     Tasty_Wok,
     Chilis,
     OliveGarden,
-    restaurant7,
+    Raising_Canes,
     restaurant8,
     restaurant9,
     restaurant10,

@@ -226,3 +226,40 @@ const F5: MenuItem = {
 };
 
 export const OGMenu: MenuItem[] = [F1, F2, F3, F4, F5];
+
+const G1: MenuItem = {
+    name: "The Box Combo",
+    description:
+        "4 Chicken Fingers, Crinkle-Cut Fries, 1 Cane's Sauce, Texas Toast, Coleslaw, Regular Fountain Drink/Tea",
+    price: "$11.39"
+};
+
+const G2: MenuItem = {
+    name: "The 3 Finger Combo",
+    description:
+        "3 Chicken Fingers, Crinkle-Cut Fries, One Cane's Sauce, Texas Toast, Regular Fountain Drink/Tea",
+    price: "$9.79"
+};
+
+const G3: MenuItem = {
+    name: "The Caniac Combo",
+    description:
+        "6 Chicken Fingers, Crinkle-Cut Fries, Two Cane's Sauces, Texas Toast, Coleslaw, Large Fountain Drink/Tea",
+    price: "$16.35"
+};
+
+const G4: MenuItem = {
+    name: "The Sandwich Combo",
+    description:
+        "3 Chicken Fingers, Cane's Sauce, Lettuce, Toasted Bun, Crinkle-Cut Fries, Regular Fountain Drink/Tea",
+    price: "$9.99"
+};
+
+const G5: MenuItem = {
+    name: "The Kids Combo",
+    description:
+        "2 Chicken Fingers, Crinkle-Cut Fries, One Cane's Sauce, Kid's Size Drink",
+    price: "$6.49"
+};
+
+export const RCMenu: MenuItem[] = [G1, G2, G3, G4, G5];

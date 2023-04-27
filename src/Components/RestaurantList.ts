@@ -116,7 +116,7 @@ const Red_Lobster: Restaurant = {
 };
 
 const restaurant9: Restaurant = {
-    id: "1",
+    id: "9",
     name: "KelpShakeShack",
     description: "",
     image: "",
@@ -127,7 +127,7 @@ const restaurant9: Restaurant = {
 };
 
 const restaurant10: Restaurant = {
-    id: "1",
+    id: "10",
     name: "PizzaCabin",
     description: "",
     image: "",
@@ -138,7 +138,7 @@ const restaurant10: Restaurant = {
 };
 
 const restaurant11: Restaurant = {
-    id: "1",
+    id: "11",
     name: "FatherJohn's",
     description: "",
     image: "",
@@ -149,7 +149,7 @@ const restaurant11: Restaurant = {
 };
 
 const restaurant12: Restaurant = {
-    id: "1",
+    id: "12",
     name: "Raisin Canes",
     description: "",
     image: "",
@@ -160,7 +160,7 @@ const restaurant12: Restaurant = {
 };
 
 const restaurant13: Restaurant = {
-    id: "1",
+    id: "13",
     name: "Sakura Japanese Steakhouse",
     description: "",
     image: "",
@@ -171,7 +171,7 @@ const restaurant13: Restaurant = {
 };
 
 const restaurant14: Restaurant = {
-    id: "1",
+    id: "14",
     name: "Claymont Steak Shop",
     description: "",
     image: "",
@@ -182,7 +182,7 @@ const restaurant14: Restaurant = {
 };
 
 const restaurant15: Restaurant = {
-    id: "1",
+    id: "15",
     name: "Buffalo Wild Wings",
     description: "",
     image: "",
@@ -193,7 +193,7 @@ const restaurant15: Restaurant = {
 };
 
 const restaurant16: Restaurant = {
-    id: "1",
+    id: "16",
     name: "Suki Hana",
     description: "",
     image: "",
@@ -204,7 +204,7 @@ const restaurant16: Restaurant = {
 };
 
 const restaurant17: Restaurant = {
-    id: "1",
+    id: "17",
     name: "Playa Bowls",
     description: "",
     image: "",
@@ -215,7 +215,7 @@ const restaurant17: Restaurant = {
 };
 
 const restaurant18: Restaurant = {
-    id: "1",
+    id: "18",
     name: "Indian Sizzler",
     description: "",
     image: "",

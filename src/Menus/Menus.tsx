@@ -263,3 +263,37 @@ const G5: MenuItem = {
 };
 
 export const RCMenu: MenuItem[] = [G1, G2, G3, G4, G5];
+
+const H1: MenuItem = {
+    name: "Surf & Turf Walt's Favorite Shrimp & 6 oz. Filet Mignon",
+    description:
+        "Hand-breaded, butterflied and lightly fried shrimp paired with a tender 6 oz filet mignon. Served with cocktail sauce and your choice of two sides.",
+    price: "$36.28"
+};
+
+const H2: MenuItem = {
+    name: "Lobster Bisque - Bowl",
+    description: "Creamy, savory lobster bisque served with crackers.",
+    price: "$9.49"
+};
+
+const H3: MenuItem = {
+    name: "Mozzarella Cheesesticks",
+    description: "Served with marinara.",
+    price: "$9.99"
+};
+
+const H4: MenuItem = {
+    name: "Classic Maine Lobster Tail",
+    description: "Served with lemon and melted butter.",
+    price: "$18.99"
+};
+
+const H5: MenuItem = {
+    name: "Brownie Overboard",
+    description:
+        "Warm brownie wedges served with a scoop of vanilla ice cream. Topped with caramel, fudge and whipped cream.",
+    price: "$9.49"
+};
+
+export const RLMenu: MenuItem[] = [H1, H2, H3, H4, H5];

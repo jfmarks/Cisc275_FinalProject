@@ -6,6 +6,7 @@ import TastyWok from "../Images/TastyWok.png";
 import chilis from "../Images/chilis.png";
 import olivegarden from "../Images/olivegarden.png";
 import RCLogo from "../Images/RCLogo.png";
+import redlobster from "../Images/redlobster.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -13,7 +14,8 @@ import {
     TWMenu,
     ChilisMenu,
     OGMenu,
-    RCMenu
+    RCMenu,
+    RLMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -101,14 +103,15 @@ const Raising_Canes: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant8: Restaurant = {
-    id: "1",
-    name: "ChippedPot",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Red_Lobster: Restaurant = {
+    id: "8",
+    name: "Red Lobster",
+    description:
+        "At Red Lobster, our passion for seafood drives how we create every dish, and comes through in how we source our seafood, and give back to our communities.",
+    image: redlobster,
+    menu: RLMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
@@ -229,7 +232,7 @@ const RestaurantList: Restaurant[] = [
     Chilis,
     OliveGarden,
     Raising_Canes,
-    restaurant8,
+    Red_Lobster,
     restaurant9,
     restaurant10,
     restaurant11,

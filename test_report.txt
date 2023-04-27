@@ -256,7 +256,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:17632:3)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (285 ms)
+  ✕ renders the course name somewhere (273 ms)
 
   ● renders the course name somewhere
 
@@ -401,7 +401,9 @@ FAIL src/App.test.tsx
                                       [0m [0m
                                       [0m-[0m
                                       [0m [0m
-                                      [0m$10.49[0m
+                                      [36m<strong>[39m
+                                        [0m$10.49[0m
+                                      [36m</strong>[39m
                                     [36m</li>[39m
                                     [36m<li>[39m
                                       [36m<strong>[39m
@@ -409,9 +411,7 @@ FAIL src/App.test.tsx
                                       [36m</strong>[39m
                                       [0m [0m
                                       [0mA celebration of flavor, this dish delivers on every level. Grilled chicken glazed with zesty lime sauce and drizzled with tangy Mexi-ranch is smothered with a rich blend of Cheddar cheeses on a bed of crispy tortilla strips. Served with Spanish rice and house-made pico de gallo.[0m
-                                      [0m [0m
-                                      [0m-[0m
-                               ...
+          ...
 
        5 | test("renders the course name somewhere", () => {
        6 |     render(<App />);
@@ -444,12 +444,12 @@ All files             |   76.52 |       30 |      24 |   76.52 |
   Restaurant.tsx      |       0 |      100 |       0 |       0 | 5                                                   
   RestaurantList.ts   |     100 |      100 |     100 |     100 |                                                     
   UserList.tsx        |       0 |        0 |       0 |       0 |                                                     
-  UserRestaurants.tsx |   42.85 |       30 |   22.72 |   42.85 | 25-26,31-32,39-45,51-57,60-63,66,89,107-126,198-207 
+  UserRestaurants.tsx |   42.85 |       30 |   22.72 |   42.85 | 25-26,31-32,39-45,51-57,60-63,66,89,107-126,202-211 
  src/Menus            |     100 |      100 |     100 |     100 |                                                     
   Menus.tsx           |     100 |      100 |     100 |     100 |                                                     
 ----------------------|---------|----------|---------|---------|-----------------------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.745 s
+Time:        2.719 s
 Ran all test suites.

@@ -3,8 +3,8 @@ import { MenuItem } from "../Interfaces";
 // const : MenuItem = {
 //     name: "" ,
 //     description: "",
-//     price:
-// }
+//     price: ""
+// };
 
 const A1: MenuItem = {
     name: "Oriental Chicken Salad",
@@ -153,3 +153,40 @@ const D5: MenuItem = {
 };
 
 export const TWMenu: MenuItem[] = [D1, D2, D3, D4, D5];
+
+const E1: MenuItem = {
+    name: "Crispy Chicken Crispers",
+    description:
+        "Served with fries, corn on the cob and choice of honey-mustard, BBQ sauce or house-made ranch.",
+    price: "$11.29"
+};
+
+const E2: MenuItem = {
+    name: "Boneless Wings",
+    description:
+        "Hand-tossed in choice of sauce: House BBQ, Buffalo OR Honey-Chipotle. Served with dipping sauce.",
+    price: "$10.69"
+};
+
+const E3: MenuItem = {
+    name: "Spicy Shrimp Tacos",
+    description:
+        "Three spicy chile-lime shrimp tacos in flour tortillas with pico, avocado, cilantro, coleslaw, queso fresco. Served with Mexican rice & black beans.",
+    price: "$10.99"
+};
+
+const E4: MenuItem = {
+    name: "Big Mouth Crispy Chicken Sandwich",
+    description:
+        "Hand-breaded crispy chicken, lettuce, tomato, and our secret sauce on a brioche bun.",
+    price: "$9.99"
+};
+
+const E5: MenuItem = {
+    name: "Molten Chocolate Cake",
+    description:
+        "Chocolate cake with a molten chocolate center, topped with vanilla ice cream in a chocolate shell.",
+    price: "$7.29"
+};
+
+export const ChilisMenu: MenuItem[] = [E1, E2, E3, E4, E5];

@@ -3,7 +3,14 @@ import ABLogo from "../Images/ABLogo.png";
 import chipotlelogo from "../Images/chipotlelogo.png";
 import TRLogo from "../Images/TRLogo.png";
 import TastyWok from "../Images/TastyWok.png";
-import { ABMenu, ChipotleMenu, TRMenu, TWMenu } from "../Menus/Menus";
+import chilis from "../Images/chilis.png";
+import {
+    ABMenu,
+    ChipotleMenu,
+    TRMenu,
+    TWMenu,
+    ChilisMenu
+} from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
 const priceRange1: PriceRange = { minPrice: 0, maxPrice: 10 };
@@ -54,14 +61,15 @@ const Tasty_Wok: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant5: Restaurant = {
-    id: "1",
-    name: "AppleBees",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Chilis: Restaurant = {
+    id: "5",
+    name: "Chili's",
+    description:
+        "Like no place else. Fun. Fresh. Flavorful. Chili's serves American food, Tex-Mex cuisine and dishes influenced by Mexican cuisine, such as spicy shrimp tacos, quesadillas, fajitas. In addition to their regular menu, the company offers a nutritional menu, allergen menu, and vegetarian menu.",
+    image: chilis,
+    menu: ChilisMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
@@ -212,7 +220,7 @@ const RestaurantList: Restaurant[] = [
     Chipotle,
     Texas_Roadhouse,
     Tasty_Wok,
-    restaurant5,
+    Chilis,
     restaurant6,
     restaurant7,
     restaurant8,

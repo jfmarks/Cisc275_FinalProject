@@ -95,8 +95,28 @@ export function UserRestaurants(): JSX.Element {
             <Row>
                 {restaurants.map((restaurant) => (
                     <Col key={restaurant.id} sm={6} md={4} lg={3}>
-                        <Card>
-                            <Card.Img variant="top" src={restaurant.image} />
+                        <Card
+                            style={{
+                                height:
+                                    menuVisible === restaurant.id ||
+                                    attributesVisible === restaurant.id
+                                        ? "auto"
+                                        : "250px",
+                                width: "250px",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center"
+                            }}
+                        >
+                            <Card.Img
+                                variant="top"
+                                src={restaurant.image}
+                                style={{
+                                    height: "150px",
+                                    width: "200px",
+                                    objectFit: "scale-down"
+                                }}
+                            />
                             <Card.Body>
                                 {editMode ? (
                                     <div>

@@ -116,3 +116,40 @@ const C5: MenuItem = {
 };
 
 export const TRMenu: MenuItem[] = [C1, C2, C3, C4, C5];
+
+const D1: MenuItem = {
+    name: "Spring Roll",
+    description:
+        "A blend of fresh cabbage, carrots, and onions with a hint of seasoning, wrapped in a deliciously flaky and crispy spring wrap.",
+    price: "$2.60"
+};
+
+const D2: MenuItem = {
+    name: "Shrimp Fried Rice",
+    description:
+        "Classic shrimp fried rice with fresh shrimp, rice, green onions, peas, carrots, and sesame oil.",
+    price: "$11.75"
+};
+
+const D3: MenuItem = {
+    name: "Chicken Lo Mein",
+    description:
+        "Steamed white meat chicken, noodles, bean sprouts, carrots, red bell peppers, shitake mushrooms, scallions, and garlic. Tossed in a savory soy sauce.",
+    price: "$10.75"
+};
+
+const D4: MenuItem = {
+    name: "Egg Drop Soup",
+    description:
+        "A chicken broth based Chinese soup often thickened with cornstarch and seasoned with soy sauce, ginger, and green onions. A beaten egg is stirred in the hot soup and makes the soup thick.",
+    price: "$2.50 (s) or $4.50 (l)"
+};
+
+const D5: MenuItem = {
+    name: "Beef w/ Broccoli",
+    description:
+        "You'll enjoy marinated beef and crisp broccoli drizzled with savory garlic soy sauce.",
+    price: "$15.75"
+};
+
+export const TWMenu: MenuItem[] = [D1, D2, D3, D4, D5];

@@ -2,7 +2,8 @@ import { PriceRange, Restaurant, MenuItem } from "../Interfaces";
 import ABLogo from "../Images/ABLogo.png";
 import chipotlelogo from "../Images/chipotlelogo.png";
 import TRLogo from "../Images/TRLogo.png";
-import { ABMenu, ChipotleMenu, TRMenu } from "../Menus/Menus";
+import TastyWok from "../Images/TastyWok.png";
+import { ABMenu, ChipotleMenu, TRMenu, TWMenu } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
 const priceRange1: PriceRange = { minPrice: 0, maxPrice: 10 };
@@ -42,14 +43,14 @@ const Texas_Roadhouse: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant4: Restaurant = {
-    id: "1",
-    name: "TacoCell",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Tasty_Wok: Restaurant = {
+    id: "4",
+    name: "Tasty Wok",
+    description: "Brings nostalgia of the good old college life in China.",
+    image: TastyWok,
+    menu: TWMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
@@ -210,7 +211,7 @@ const RestaurantList: Restaurant[] = [
     AppleBees,
     Chipotle,
     Texas_Roadhouse,
-    restaurant4,
+    Tasty_Wok,
     restaurant5,
     restaurant6,
     restaurant7,

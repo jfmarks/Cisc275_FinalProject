@@ -4,12 +4,18 @@ import chipotlelogo from "../Images/chipotlelogo.png";
 import TRLogo from "../Images/TRLogo.png";
 import TastyWok from "../Images/TastyWok.png";
 import chilis from "../Images/chilis.png";
+import olivegarden from "../Images/olivegarden.png";
+import RCLogo from "../Images/RCLogo.png";
+import redlobster from "../Images/redlobster.png";
 import {
     ABMenu,
     ChipotleMenu,
     TRMenu,
     TWMenu,
-    ChilisMenu
+    ChilisMenu,
+    OGMenu,
+    RCMenu,
+    RLMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -73,36 +79,39 @@ const Chilis: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant6: Restaurant = {
-    id: "1",
-    name: "BearExpress",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const OliveGarden: Restaurant = {
+    id: "6",
+    name: "Olive Garden",
+    description:
+        "Italian generosity is always on the table. At Olive Garden, we know that life is better together and everyone is happiest when they're with family.",
+    image: olivegarden,
+    menu: OGMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
-const restaurant7: Restaurant = {
-    id: "1",
-    name: "MickyD's",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Raising_Canes: Restaurant = {
+    id: "7",
+    name: "Raising Cane's",
+    description:
+        "Raising Cane's Chicken Fingers is an American fast-food chain specializing in chicken fingers founded in 1996 in Baton Rouge, Louisiana by Todd Graves and Craig Silvey. The company is named after Graves's dog, a yellow Labrador.",
+    image: RCLogo,
+    menu: RCMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Fast",
     priceRange: priceRange1
 };
 
-const restaurant8: Restaurant = {
-    id: "1",
-    name: "ChippedPot",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Red_Lobster: Restaurant = {
+    id: "8",
+    name: "Red Lobster",
+    description:
+        "At Red Lobster, our passion for seafood drives how we create every dish, and comes through in how we source our seafood, and give back to our communities.",
+    image: redlobster,
+    menu: RLMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
@@ -221,9 +230,9 @@ const RestaurantList: Restaurant[] = [
     Texas_Roadhouse,
     Tasty_Wok,
     Chilis,
-    restaurant6,
-    restaurant7,
-    restaurant8,
+    OliveGarden,
+    Raising_Canes,
+    Red_Lobster,
     restaurant9,
     restaurant10,
     restaurant11,

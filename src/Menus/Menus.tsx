@@ -190,3 +190,110 @@ const E5: MenuItem = {
 };
 
 export const ChilisMenu: MenuItem[] = [E1, E2, E3, E4, E5];
+
+const F1: MenuItem = {
+    name: "Chicken Parmigiana",
+    description:
+        "Two lightly fried parmesan-breaded chicken breasts with our homemade marinara and melted Italian cheeses. Served with a side of spaghetti.",
+    price: "$19.49"
+};
+
+const F2: MenuItem = {
+    name: "Seafood Alfredo",
+    description:
+        "Creamy, alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, tossed with fettuccine, sautéed shrimp and scallops.",
+    price: "$21.29"
+};
+
+const F3: MenuItem = {
+    name: "Lasagna Classico",
+    description:
+        "Prepared fresh daily with layers of pasta, parmesan, mozzarella, pecorino romano and our homemade meat sauce.",
+    price: "$17.79"
+};
+
+const F4: MenuItem = {
+    name: "Breadsticks (V)",
+    description: "Enjoy a freshly-baked, Olive Garden Favorite.",
+    price: "$4.49"
+};
+
+const F5: MenuItem = {
+    name: "Warm Italian Doughnuts (V)",
+    description:
+        "Fried doughnuts tossed in vanilla sugar. Served with raspberry or chocolate sauce.",
+    price: "$8.29"
+};
+
+export const OGMenu: MenuItem[] = [F1, F2, F3, F4, F5];
+
+const G1: MenuItem = {
+    name: "The Box Combo",
+    description:
+        "4 Chicken Fingers, Crinkle-Cut Fries, 1 Cane's Sauce, Texas Toast, Coleslaw, Regular Fountain Drink/Tea",
+    price: "$11.39"
+};
+
+const G2: MenuItem = {
+    name: "The 3 Finger Combo",
+    description:
+        "3 Chicken Fingers, Crinkle-Cut Fries, One Cane's Sauce, Texas Toast, Regular Fountain Drink/Tea",
+    price: "$9.79"
+};
+
+const G3: MenuItem = {
+    name: "The Caniac Combo",
+    description:
+        "6 Chicken Fingers, Crinkle-Cut Fries, Two Cane's Sauces, Texas Toast, Coleslaw, Large Fountain Drink/Tea",
+    price: "$16.35"
+};
+
+const G4: MenuItem = {
+    name: "The Sandwich Combo",
+    description:
+        "3 Chicken Fingers, Cane's Sauce, Lettuce, Toasted Bun, Crinkle-Cut Fries, Regular Fountain Drink/Tea",
+    price: "$9.99"
+};
+
+const G5: MenuItem = {
+    name: "The Kids Combo",
+    description:
+        "2 Chicken Fingers, Crinkle-Cut Fries, One Cane's Sauce, Kid's Size Drink",
+    price: "$6.49"
+};
+
+export const RCMenu: MenuItem[] = [G1, G2, G3, G4, G5];
+
+const H1: MenuItem = {
+    name: "Surf & Turf Walt's Favorite Shrimp & 6 oz. Filet Mignon",
+    description:
+        "Hand-breaded, butterflied and lightly fried shrimp paired with a tender 6 oz filet mignon. Served with cocktail sauce and your choice of two sides.",
+    price: "$36.28"
+};
+
+const H2: MenuItem = {
+    name: "Lobster Bisque - Bowl",
+    description: "Creamy, savory lobster bisque served with crackers.",
+    price: "$9.49"
+};
+
+const H3: MenuItem = {
+    name: "Mozzarella Cheesesticks",
+    description: "Served with marinara.",
+    price: "$9.99"
+};
+
+const H4: MenuItem = {
+    name: "Classic Maine Lobster Tail",
+    description: "Served with lemon and melted butter.",
+    price: "$18.99"
+};
+
+const H5: MenuItem = {
+    name: "Brownie Overboard",
+    description:
+        "Warm brownie wedges served with a scoop of vanilla ice cream. Topped with caramel, fudge and whipped cream.",
+    price: "$9.49"
+};
+
+export const RLMenu: MenuItem[] = [H1, H2, H3, H4, H5];

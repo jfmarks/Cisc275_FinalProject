@@ -7,6 +7,7 @@ import chilis from "../Images/chilis.png";
 import olivegarden from "../Images/olivegarden.png";
 import RCLogo from "../Images/RCLogo.png";
 import redlobster from "../Images/redlobster.png";
+import grain from "../Images/grain.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -15,7 +16,8 @@ import {
     ChilisMenu,
     OGMenu,
     RCMenu,
-    RLMenu
+    RLMenu,
+    GrainMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -115,14 +117,15 @@ const Red_Lobster: Restaurant = {
     priceRange: priceRange1
 };
 
-const restaurant9: Restaurant = {
-    id: "1",
-    name: "KelpShakeShack",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Grain: Restaurant = {
+    id: "9",
+    name: "Grain Craft Bar + Kitchen",
+    description:
+        "Rustic-chic gastropub with USB chargers at the bar offering craft beer, upscale bar eats & music.",
+    image: grain,
+    menu: GrainMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
+    diningExperience: "Casual",
     priceRange: priceRange1
 };
 
@@ -233,7 +236,7 @@ const RestaurantList: Restaurant[] = [
     OliveGarden,
     Raising_Canes,
     Red_Lobster,
-    restaurant9,
+    Grain,
     restaurant10,
     restaurant11,
     restaurant12,

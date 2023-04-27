@@ -12,7 +12,7 @@ export interface Super extends Admin {
 export interface MenuItem {
     name: string;
     description: string;
-    price: number;
+    price: string;
 }
 
 export interface PriceRange {

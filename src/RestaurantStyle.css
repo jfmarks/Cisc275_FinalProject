@@ -1,0 +1,28 @@
+.card-image {
+    height: 50%;
+    width: 50%;
+    object-fit: scale-down;
+}
+.editmode {
+    justify-content: center;
+}
+.inputedit {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.inputedit:focus {
+    outline: none;
+    border-color: #1e90ff;
+}
+.card-gradient {
+    background: linear-gradient(180deg, #ffffff 0%, #eaeaea 100%);
+    color: #000000;
+}
+.card-gradient:hover,
+.card-gradient:focus {
+    outline: 2px solid rgb(159, 187, 234);
+}

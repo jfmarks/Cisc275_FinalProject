@@ -1,8 +1,10 @@
+/* eslint-disable indent */
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
-//import { PriceRange } from "../Interfaces";
-//import { MenuItem } from "../Interfaces";
+import CurrentUser from "../CurrentUser";
+import "../RestaurantStyle.css";
+
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
@@ -86,7 +88,15 @@ export function UserRestaurants(): JSX.Element {
                         Restaurant List
                     </div>
                     <div>
-                        <Button onClick={() => handleEditRestaurant()}>
+                        <Button
+                            onClick={() =>
+                                CurrentUser.type == "Super" ||
+                                CurrentUser.type == "Admin"
+                                    ? handleEditRestaurant()
+                                    : null
+                            }
+                            disabled={CurrentUser.type === "User"}
+                        >
                             {editMode ? "Save" : "Edit"}
                         </Button>
                     </div>
@@ -94,33 +104,43 @@ export function UserRestaurants(): JSX.Element {
             </h3>
             <Row>
                 {restaurants.map((restaurant) => (
-                    <Col key={restaurant.id} sm={6} md={4} lg={3}>
+                    <Col
+                        key={restaurant.id}
+                        sm={3}
+                        md={6}
+                        lg={6}
+                        style={{
+                            display: "flex",
+                            justifyContent: "center"
+                        }}
+                    >
                         <Card
+                            className="card-gradient"
                             style={{
                                 height:
                                     menuVisible === restaurant.id ||
-                                    attributesVisible === restaurant.id
-                                        ? "auto"
-                                        : "250px",
-                                width: "250px",
+                                    attributesVisible === restaurant.id ||
+                                    editMode
+                                        ? "fit-content"
+                                        : "350px",
+                                width: "600px",
                                 display: "flex",
                                 justifyContent: "center",
-                                alignItems: "center"
+                                alignItems: "center",
+                                marginBottom: "10px"
                             }}
                         >
+                            <br></br>
                             <Card.Img
                                 variant="top"
                                 src={restaurant.image}
-                                style={{
-                                    height: "150px",
-                                    width: "200px",
-                                    objectFit: "scale-down"
-                                }}
+                                className="card-image"
                             />
                             <Card.Body>
                                 {editMode ? (
-                                    <div>
+                                    <div className="editmode">
                                         <input
+                                            className="inputedit"
                                             type="text"
                                             value={restaurant.name}
                                             onChange={(e) =>
@@ -131,6 +151,7 @@ export function UserRestaurants(): JSX.Element {
                                             }
                                         />
                                         <input
+                                            className="inputedit"
                                             type="text"
                                             value={restaurant.description}
                                             onChange={(e) =>
@@ -142,10 +163,16 @@ export function UserRestaurants(): JSX.Element {
                                         />
                                         {/* Render other editable fields as needed */}
                                         <Button
+                                            variant="danger"
                                             onClick={() =>
-                                                handleDeleteRestaurant(
-                                                    restaurant.id
-                                                )
+                                                CurrentUser.type == "Super"
+                                                    ? handleDeleteRestaurant(
+                                                          restaurant.id
+                                                      )
+                                                    : null
+                                            }
+                                            disabled={
+                                                CurrentUser.type === "Admin"
                                             }
                                         >
                                             Delete
@@ -158,6 +185,62 @@ export function UserRestaurants(): JSX.Element {
                                         </Card.Title>
                                         {/* Render other attributes as needed */}
                                         <div>
+                                            <Button
+                                                variant="info"
+                                                onClick={() =>
+                                                    handleShowMenu(
+                                                        restaurant.id
+                                                    )
+                                                }
+                                            >
+                                                {menuVisible === restaurant.id
+                                                    ? "Hide Menu"
+                                                    : "Menu"}
+                                            </Button>
+                                            <Button
+                                                variant="info"
+                                                onClick={() =>
+                                                    handleShowAttributes(
+                                                        restaurant.id
+                                                    )
+                                                }
+                                            >
+                                                {attributesVisible ===
+                                                restaurant.id
+                                                    ? "Hide Details"
+                                                    : "Details"}
+                                            </Button>
+                                            <div
+                                                style={{
+                                                    display:
+                                                        attributesVisible ===
+                                                        restaurant.id
+                                                            ? "block"
+                                                            : "none"
+                                                }}
+                                            >
+                                                <Card.Text>
+                                                    <div
+                                                        style={{
+                                                            height: "150px",
+                                                            overflowY: "scroll"
+                                                        }}
+                                                    >
+                                                        <p
+                                                            style={{
+                                                                fontSize:
+                                                                    "12px",
+                                                                fontStyle:
+                                                                    "oblique"
+                                                            }}
+                                                        >
+                                                            {
+                                                                restaurant.description
+                                                            }
+                                                        </p>
+                                                    </div>
+                                                </Card.Text>
+                                            </div>
                                             <div
                                                 style={{
                                                     display:
@@ -169,74 +252,57 @@ export function UserRestaurants(): JSX.Element {
                                             >
                                                 <strong
                                                     style={{
-                                                        backgroundColor:
-                                                            "royalblue",
-                                                        flexDirection: "row"
+                                                        flexDirection: "row",
+                                                        fontSize: "30px",
+                                                        fontStyle: "italic",
+                                                        fontFamily:
+                                                            "sans-serif",
+                                                        textTransform:
+                                                            "uppercase"
                                                     }}
                                                 >
                                                     Menu
                                                 </strong>
-                                                <ul>
-                                                    {restaurant.menu.map(
-                                                        (menuItem) => (
-                                                            <li
-                                                                key={
-                                                                    menuItem.name
-                                                                }
-                                                            >
-                                                                <strong>
-                                                                    {
+                                                <div
+                                                    style={{
+                                                        height: "200px",
+                                                        overflowY: "scroll"
+                                                    }}
+                                                >
+                                                    <ul>
+                                                        {restaurant.menu.map(
+                                                            (menuItem) => (
+                                                                <li
+                                                                    key={
                                                                         menuItem.name
                                                                     }
-                                                                </strong>{" "}
-                                                                {
-                                                                    menuItem.description
-                                                                }{" "}
-                                                                -{" "}
-                                                                <strong>
-                                                                    {
-                                                                        menuItem.price
-                                                                    }
-                                                                </strong>
-                                                            </li>
-                                                        )
-                                                    )}
-                                                </ul>
-                                            </div>
-                                            <div
-                                                style={{
-                                                    display:
-                                                        attributesVisible ===
-                                                        restaurant.id
-                                                            ? "block"
-                                                            : "none"
-                                                }}
-                                            >
-                                                <Card.Text>
-                                                    {restaurant.description}
-                                                </Card.Text>
+                                                                >
+                                                                    <strong>
+                                                                        {
+                                                                            menuItem.name
+                                                                        }
+                                                                        -{" "}
+                                                                        {
+                                                                            menuItem.price
+                                                                        }
+                                                                    </strong>{" "}
+                                                                    <p
+                                                                        style={{
+                                                                            fontSize:
+                                                                                "10px"
+                                                                        }}
+                                                                    >
+                                                                        {
+                                                                            menuItem.description
+                                                                        }
+                                                                    </p>{" "}
+                                                                </li>
+                                                            )
+                                                        )}
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                        <Button
-                                            onClick={() =>
-                                                handleShowMenu(restaurant.id)
-                                            }
-                                        >
-                                            {menuVisible === restaurant.id
-                                                ? "Hide"
-                                                : "Menu"}
-                                        </Button>
-                                        <Button
-                                            onClick={() =>
-                                                handleShowAttributes(
-                                                    restaurant.id
-                                                )
-                                            }
-                                        >
-                                            {attributesVisible === restaurant.id
-                                                ? "Hide"
-                                                : "Details"}
-                                        </Button>
                                     </div>
                                 )}
                             </Card.Body>

@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
-import { HomePage } from "./Components/HomePage";
-import { Restaurant } from "./Components/Restaurant";
-import { UserList } from "./Components/UserList";
+import "./RestaurantStyle.css";
+//import { Restaurant } from "./Components/Restaurant";
 import { UserRestaurants } from "./Components/UserRestaurants";
 import { Col, Container, Row, Button } from "react-bootstrap";
 

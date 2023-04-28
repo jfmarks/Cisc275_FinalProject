@@ -1,7 +1,9 @@
+/* eslint-disable indent */
 import React, { useState } from "react";
 import { Restaurant } from "../Interfaces";
-import { PriceRange } from "../Interfaces";
-//import { MenuItem } from "../Interfaces";
+import CurrentUser from "../CurrentUser";
+import "../RestaurantStyle.css";
+
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import RestaurantList from "./RestaurantList";
 
@@ -120,8 +122,9 @@ export function UserRestaurants(): JSX.Element {
                             />
                             <Card.Body>
                                 {editMode ? (
-                                    <div>
+                                    <div className="editmode">
                                         <input
+                                            className="inputedit"
                                             type="text"
                                             value={restaurant.name}
                                             onChange={(e) =>
@@ -132,6 +135,7 @@ export function UserRestaurants(): JSX.Element {
                                             }
                                         />
                                         <input
+                                            className="inputedit"
                                             type="text"
                                             value={restaurant.description}
                                             onChange={(e) =>
@@ -144,9 +148,14 @@ export function UserRestaurants(): JSX.Element {
                                         {/* Render other editable fields as needed */}
                                         <Button
                                             onClick={() =>
-                                                handleDeleteRestaurant(
-                                                    restaurant.id
-                                                )
+                                                CurrentUser.type == "Super"
+                                                    ? handleDeleteRestaurant(
+                                                          restaurant.id
+                                                      )
+                                                    : null
+                                            }
+                                            disabled={
+                                                CurrentUser.type === "Admin"
                                             }
                                         >
                                             Delete

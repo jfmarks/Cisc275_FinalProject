@@ -222,14 +222,13 @@ export function UserRestaurants(): JSX.Element {
                                                 <Card.Text>
                                                     <div
                                                         style={{
-                                                            height: "150px",
-                                                            overflowY: "scroll"
+                                                            height: "auto"
                                                         }}
                                                     >
                                                         <p
                                                             style={{
                                                                 fontSize:
-                                                                    "12px",
+                                                                    "15px",
                                                                 fontStyle:
                                                                     "oblique"
                                                             }}
@@ -250,23 +249,14 @@ export function UserRestaurants(): JSX.Element {
                                                             : "none"
                                                 }}
                                             >
-                                                <strong
-                                                    style={{
-                                                        flexDirection: "row",
-                                                        fontSize: "30px",
-                                                        fontStyle: "italic",
-                                                        fontFamily:
-                                                            "sans-serif",
-                                                        textTransform:
-                                                            "uppercase"
-                                                    }}
-                                                >
+                                                <p className="menu-text">
                                                     Menu
-                                                </strong>
+                                                </p>
                                                 <div
                                                     style={{
                                                         height: "200px",
-                                                        overflowY: "scroll"
+                                                        overflowY: "scroll",
+                                                        overflowX: "hidden"
                                                     }}
                                                 >
                                                     <ul>
@@ -277,25 +267,22 @@ export function UserRestaurants(): JSX.Element {
                                                                         menuItem.name
                                                                     }
                                                                 >
-                                                                    <strong>
+                                                                    <p className="menu-name">
                                                                         {
                                                                             menuItem.name
-                                                                        }
+                                                                        }{" "}
                                                                         -{" "}
-                                                                        {
-                                                                            menuItem.price
-                                                                        }
-                                                                    </strong>{" "}
-                                                                    <p
-                                                                        style={{
-                                                                            fontSize:
-                                                                                "10px"
-                                                                        }}
-                                                                    >
+                                                                        <span className="menu-price">
+                                                                            {
+                                                                                menuItem.price
+                                                                            }
+                                                                        </span>
+                                                                    </p>
+                                                                    <p className="menu-description">
                                                                         {
                                                                             menuItem.description
                                                                         }
-                                                                    </p>{" "}
+                                                                    </p>
                                                                 </li>
                                                             )
                                                         )}

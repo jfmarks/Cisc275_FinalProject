@@ -1,9 +1,11 @@
 import React from "react";
 import "./App.css";
 import "./RestaurantStyle.css";
-//import { Restaurant } from "./Components/Restaurant";
+import { Restaurant } from "./Components/Restaurant";
 import { UserRestaurants } from "./Components/UserRestaurants";
 import { Col, Container, Row, Button } from "react-bootstrap";
+import { UserList } from "./Components/UserList";
+import { HomePage } from "./Components/HomePage";
 
 function App() {
     return (
@@ -27,6 +29,14 @@ function App() {
                                     }}
                                 >
                                     List of Users
+                                </Button>
+                            </Row>
+                            <Row className="App-main-button-rows">
+                                <Button
+                                    className="App-main-buttons"
+                                    onClick={UserList}
+                                >
+                                    Users
                                 </Button>
                             </Row>
                             <Row className="App-main-button-rows">
@@ -56,9 +66,6 @@ function App() {
             </p>
             <p>
                 <Restaurant></Restaurant>
-            </p>
-            <p>
-                <UserList></UserList>
             </p>
             <a
                 className="App-link"

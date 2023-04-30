@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./RestaurantStyle.css";
 //import { Restaurant } from "./Components/Restaurant";
 import { UserRestaurants } from "./Components/UserRestaurants";
 import { Button, Col, Container, Row } from "react-bootstrap";

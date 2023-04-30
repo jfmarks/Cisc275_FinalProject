@@ -15,11 +15,6 @@ export interface MenuItem {
     price: string;
 }
 
-export interface PriceRange {
-    minPrice: number;
-    maxPrice: number;
-}
-
 export interface Rating {
     restaurantId: string;
     rating: number;
@@ -33,7 +28,7 @@ export interface Restaurant {
     image: string;
     menu: MenuItem[];
     averageRating: number;
-    priceRange: PriceRange;
+    priceRange: string;
     diningExperience: string;
 }
 

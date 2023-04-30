@@ -1,4 +1,4 @@
-import { PriceRange, Restaurant, MenuItem } from "../Interfaces";
+import { Restaurant, MenuItem } from "../Interfaces";
 import ABLogo from "../Images/ABLogo.png";
 import chipotlelogo from "../Images/chipotlelogo.png";
 import TRLogo from "../Images/TRLogo.png";
@@ -21,7 +21,6 @@ import {
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
-const priceRange1: PriceRange = { minPrice: 0, maxPrice: 10 };
 const AppleBees: Restaurant = {
     id: "1",
     name: "Applebee's Grill and Bar",
@@ -31,7 +30,7 @@ const AppleBees: Restaurant = {
     menu: ABMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const Chipotle: Restaurant = {
@@ -43,7 +42,7 @@ const Chipotle: Restaurant = {
     menu: ChipotleMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const Texas_Roadhouse: Restaurant = {
@@ -55,7 +54,7 @@ const Texas_Roadhouse: Restaurant = {
     menu: TRMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const Tasty_Wok: Restaurant = {
@@ -66,7 +65,7 @@ const Tasty_Wok: Restaurant = {
     menu: TWMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const Chilis: Restaurant = {
@@ -78,7 +77,7 @@ const Chilis: Restaurant = {
     menu: ChilisMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const OliveGarden: Restaurant = {
@@ -90,7 +89,7 @@ const OliveGarden: Restaurant = {
     menu: OGMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const Raising_Canes: Restaurant = {
@@ -102,7 +101,7 @@ const Raising_Canes: Restaurant = {
     menu: RCMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const Red_Lobster: Restaurant = {
@@ -114,7 +113,7 @@ const Red_Lobster: Restaurant = {
     menu: RLMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const Grain: Restaurant = {
@@ -126,7 +125,7 @@ const Grain: Restaurant = {
     menu: GrainMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: priceRange1
+    priceRange: "$$"
 };
 
 const restaurant10: Restaurant = {
@@ -137,7 +136,7 @@ const restaurant10: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant11: Restaurant = {
@@ -148,7 +147,7 @@ const restaurant11: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant12: Restaurant = {
@@ -159,7 +158,7 @@ const restaurant12: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant13: Restaurant = {
@@ -170,7 +169,7 @@ const restaurant13: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant14: Restaurant = {
@@ -181,7 +180,7 @@ const restaurant14: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant15: Restaurant = {
@@ -192,7 +191,7 @@ const restaurant15: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant16: Restaurant = {
@@ -203,7 +202,7 @@ const restaurant16: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant17: Restaurant = {
@@ -214,7 +213,7 @@ const restaurant17: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 
 const restaurant18: Restaurant = {
@@ -225,7 +224,7 @@ const restaurant18: Restaurant = {
     menu: [menuItem1],
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: priceRange1
+    priceRange: ""
 };
 const RestaurantList: Restaurant[] = [
     AppleBees,

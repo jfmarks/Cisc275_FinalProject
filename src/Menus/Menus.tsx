@@ -297,3 +297,39 @@ const H5: MenuItem = {
 };
 
 export const RLMenu: MenuItem[] = [H1, H2, H3, H4, H5];
+
+const I1: MenuItem = {
+    name: "OMG Crabby Pretzel",
+    description:
+        "A warm Bavarian style pretzel as big as your head, topped with crab dip, cheese, Old Bay and baked till yummy.",
+    price: "$17.50"
+};
+
+const I2: MenuItem = {
+    name: "Grain Burger",
+    description:
+        "Beef, BBQ sauce, UDairy Gold cheese, applewood-smoked bacon, lettuce, tomato, red onion.",
+    price: "$15.00"
+};
+
+const I3: MenuItem = {
+    name: "Chicken Caesar",
+    description:
+        "Grilled chicken, chopped romaine, house-made Caesar dressing, shaved parm and croutons.",
+    price: "$15.25"
+};
+
+const I4: MenuItem = {
+    name: "Asian Street Noodles",
+    description: "Sautéed shrimp and asian vegetables, noodles and spicy oil.",
+    price: "$18.00"
+};
+
+const I5: MenuItem = {
+    name: "Salmon BLT",
+    description:
+        "Grilled fresh salmon, applewood-smoked bacon, lettuce, tomato and cilantro aioli on toasted multi-GRAIN bread.",
+    price: "$17.50"
+};
+
+export const GrainMenu: MenuItem[] = [I1, I2, I3, I4, I5];

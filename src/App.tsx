@@ -6,6 +6,7 @@ import { UserRestaurants } from "./Components/UserRestaurants";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import { UserList } from "./Components/UserList";
 import { HomePage } from "./Components/HomePage";
+import { option, options } from "yargs";
 
 function App() {
     return (
@@ -33,11 +34,17 @@ function App() {
                             </Row>
                             <Row className="App-main-button-rows">
                                 <Button
-                                    className="App-main-buttons"
                                     onClick={UserList}
+                                    // options={["Admin", "Super", "User"]}
+                                >
+                                    User
+                                </Button>
+                                {/* <Button
+                                    onClick={() => UserList(options)}
+                                    options={["Admin", "Super", "User"]}
                                 >
                                     Users
-                                </Button>
+                                </Button> */}
                             </Row>
                             <Row className="App-main-button-rows">
                                 <Button className="App-main-buttons">

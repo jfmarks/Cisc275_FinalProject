@@ -333,3 +333,39 @@ const I5: MenuItem = {
 };
 
 export const GrainMenu: MenuItem[] = [I1, I2, I3, I4, I5];
+
+const J1: MenuItem = {
+    name: "Bavarian Pretzel Sticks",
+    description:
+        "Homestead Farmhouse Ale cheese sauce, Philly Phavorite IPA mustard",
+    price: "$6.50"
+};
+
+const J2: MenuItem = {
+    name: "Seasame Chicken Salad",
+    description:
+        "Romaine, red cabbage, grilled peppers, mandarian oranges, carrots, almonds, scallion, crispy wonton strips, seasame soy vinaigrette",
+    price: "$16.50"
+};
+
+const J3: MenuItem = {
+    name: "Asian Salmon Burger",
+    description:
+        "Fried nori, pickled vegetables, cucumber, pickled ginger, wasabi soy mayonnaise, potato roll",
+    price: "$15.95"
+};
+
+const J4: MenuItem = {
+    name: "Margherita Pizza",
+    description: "Tomato sauce, fresh mazzorella, pecorino romano, basil",
+    price: "$15.75"
+};
+
+const J5: MenuItem = {
+    name: "Baja-Style Fish Tacos",
+    description:
+        "Iron Hill beer-battered cod, red cabbage slaw, pickled onion, pico de gallo, chipotle aioli, cilantro",
+    price: "$15.95"
+};
+
+export const IHMenu: MenuItem[] = [J1, J2, J3, J4, J5];

@@ -8,6 +8,7 @@ import olivegarden from "../Images/olivegarden.png";
 import RCLogo from "../Images/RCLogo.png";
 import redlobster from "../Images/redlobster.png";
 import grain from "../Images/grain.png";
+import ironhill from "../Images/ironhill.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -17,7 +18,8 @@ import {
     OGMenu,
     RCMenu,
     RLMenu,
-    GrainMenu
+    GrainMenu,
+    IHMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -42,7 +44,7 @@ const Chipotle: Restaurant = {
     menu: ChipotleMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$$"
+    priceRange: "$"
 };
 
 const Texas_Roadhouse: Restaurant = {
@@ -101,7 +103,7 @@ const Raising_Canes: Restaurant = {
     menu: RCMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$$"
+    priceRange: "$"
 };
 
 const Red_Lobster: Restaurant = {
@@ -128,15 +130,16 @@ const Grain: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant10: Restaurant = {
+const IronHill: Restaurant = {
     id: "10",
-    name: "PizzaCabin",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Iron Hill Brewery & Restaurant",
+    description:
+        "Regional brewpub chain dispensing housemade beers & elevated comfort food staples.",
+    image: ironhill,
+    menu: IHMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$$"
 };
 
 const restaurant11: Restaurant = {
@@ -236,7 +239,7 @@ const RestaurantList: Restaurant[] = [
     Raising_Canes,
     Red_Lobster,
     Grain,
-    restaurant10,
+    IronHill,
     restaurant11,
     restaurant12,
     restaurant13,

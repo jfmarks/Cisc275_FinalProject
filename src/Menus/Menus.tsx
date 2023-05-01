@@ -333,3 +333,150 @@ const I5: MenuItem = {
 };
 
 export const GrainMenu: MenuItem[] = [I1, I2, I3, I4, I5];
+
+const J1: MenuItem = {
+    name: "Bavarian Pretzel Sticks",
+    description:
+        "Homestead Farmhouse Ale cheese sauce, Philly Phavorite IPA mustard",
+    price: "$6.50"
+};
+
+const J2: MenuItem = {
+    name: "Seasame Chicken Salad",
+    description:
+        "Romaine, red cabbage, grilled peppers, mandarian oranges, carrots, almonds, scallion, crispy wonton strips, seasame soy vinaigrette",
+    price: "$16.50"
+};
+
+const J3: MenuItem = {
+    name: "Asian Salmon Burger",
+    description:
+        "Fried nori, pickled vegetables, cucumber, pickled ginger, wasabi soy mayonnaise, potato roll",
+    price: "$15.95"
+};
+
+const J4: MenuItem = {
+    name: "Margherita Pizza",
+    description: "Tomato sauce, fresh mazzorella, pecorino romano, basil",
+    price: "$15.75"
+};
+
+const J5: MenuItem = {
+    name: "Baja-Style Fish Tacos",
+    description:
+        "Iron Hill beer-battered cod, red cabbage slaw, pickled onion, pico de gallo, chipotle aioli, cilantro",
+    price: "$15.95"
+};
+
+export const IHMenu: MenuItem[] = [J1, J2, J3, J4, J5];
+
+const K1: MenuItem = {
+    name: "House Salad",
+    description:
+        "A classic house salad featuring crisp lettuce, tomatoes, croutons, cheese, and cucumbers.",
+    price: "$11.00"
+};
+
+const K2: MenuItem = {
+    name: "Adobo Grilled Chicken Burrito",
+    description:
+        "Abodo grilled chicken, avocado ranch sauce, lettuce, tomatoes, and real shredded cheddar cheese wrapped inside a warm flour tortilla.",
+    price: "$11.50"
+};
+
+const K3: MenuItem = {
+    name: "Cheese Quesadillas",
+    description:
+        "A simple flour tortilla, a hefty portion of melted three-cheese blend, and creamy jalapeño sauce",
+    price: "$11.00"
+};
+
+const K4: MenuItem = {
+    name: "Chips & Queso",
+    description:
+        "Our crispy tortilla chips are freshly fried and paired with melty queso, crafted from the perfect blend of peppers and cheese.",
+    price: "$4.00"
+};
+
+const K5: MenuItem = {
+    name: "Coco Rojo Brownie",
+    description:
+        "A light and fluffy dessert that is a cross between a brownie and a cookie.",
+    price: "$2.50"
+};
+
+export const EDMenu: MenuItem[] = [K1, K2, K3, K4, K5];
+
+const L1: MenuItem = {
+    name: "Nashville Hot Chicken Tots",
+    description:
+        "Garlic chicken, Nashville hot sauce, spicy pickles, malt vinegar aioli",
+    price: "$12.00"
+};
+
+const L2: MenuItem = {
+    name: "Short Rib Cheesestake",
+    description:
+        "Brown ale braised short rib with caramelized onions, dijonnaise, and beer cheese fondue",
+    price: "$21.00"
+};
+
+const L3: MenuItem = {
+    name: "High 5 Burger",
+    description:
+        "A tower of two angus beef patties, garlic chicken breast, short rib, smokehouse bacon, fried onions, fried cheese curds, lettuce, tomato, and sweet & spicy pickles. Comes with a free t-shirt... but only if you fnish everything on your plate!",
+    price: "$32.00"
+};
+
+const L4: MenuItem = {
+    name: "Buffalo Shrimp Taco",
+    description:
+        "Yuengling beer battered shrimp, bufalo sauce, crumbled bleu cheese, and buttermilk dressing over heritage greens",
+    price: "$16.00"
+};
+
+const L5: MenuItem = {
+    name: "Sambal Chicken Fingers",
+    description:
+        "Sambal chicken tenders, sesame, Stone Balloon boom sauce, served with fries",
+    price: "$12.00"
+};
+
+export const SBMenu: MenuItem[] = [L1, L2, L3, L4, L5];
+
+const M1: MenuItem = {
+    name: "Tex Mex Chili",
+    description:
+        "Crowd favorite topped with monterey jack cheddar cheese & scallions",
+    price: "$6.00"
+};
+
+const M2: MenuItem = {
+    name: "The Whole Shebang",
+    description:
+        "Cheesesteak egg rolls, bavarian pretzels, mozzarella sticks & chicken quesadillas Great for Sharing!",
+    price: "$20.00"
+};
+
+const M3: MenuItem = {
+    name: "Sweet and Spicy Wrap",
+    description:
+        "Crispy fried chicken tossed with sweet and spicy sauce, along with avocado, cucumber, carrots, mixed greens and almond slices, in a flour tortilla",
+    price: "$15.00"
+};
+
+const M4: MenuItem = {
+    name: "Main Street Burger",
+    description:
+        "½ lb burger topped with crispy bacon and cheddar cheese, on a burger bun",
+    price: "$14.00"
+};
+
+const M5: MenuItem = {
+    name: "Chocolate Torte",
+    description:
+        "Rich and delicious flourless chocolate torte made with dark cocoa",
+    price: "$6.00"
+};
+
+export const KatesMenu: MenuItem[] = [M1, M2, M3, M4, M5];

@@ -8,6 +8,10 @@ import olivegarden from "../Images/olivegarden.png";
 import RCLogo from "../Images/RCLogo.png";
 import redlobster from "../Images/redlobster.png";
 import grain from "../Images/grain.png";
+import ironhill from "../Images/ironhill.png";
+import eldiablo from "../Images/eldiablo.png";
+import stoneballoon from "../Images/stoneballoon.png";
+import kates from "../Images/kates.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -17,7 +21,11 @@ import {
     OGMenu,
     RCMenu,
     RLMenu,
-    GrainMenu
+    GrainMenu,
+    IHMenu,
+    EDMenu,
+    SBMenu,
+    KatesMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -42,7 +50,7 @@ const Chipotle: Restaurant = {
     menu: ChipotleMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$$"
+    priceRange: "$"
 };
 
 const Texas_Roadhouse: Restaurant = {
@@ -101,7 +109,7 @@ const Raising_Canes: Restaurant = {
     menu: RCMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$$"
+    priceRange: "$"
 };
 
 const Red_Lobster: Restaurant = {
@@ -128,48 +136,52 @@ const Grain: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant10: Restaurant = {
+const IronHill: Restaurant = {
     id: "10",
-    name: "PizzaCabin",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Iron Hill Brewery & Restaurant",
+    description:
+        "Regional brewpub chain dispensing housemade beers & elevated comfort food staples.",
+    image: ironhill,
+    menu: IHMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$$"
 };
 
-const restaurant11: Restaurant = {
+const ElDiablo: Restaurant = {
     id: "11",
-    name: "FatherJohn's",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "El Diablo Burritos",
+    description:
+        "Contemporary counter-serve offering a build-your-own burrito option, plus tacos & quesadillas",
+    image: eldiablo,
+    menu: EDMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant12: Restaurant = {
+const StoneBalloon: Restaurant = {
     id: "12",
-    name: "Raisin Canes",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Stone Balloon Ale House",
+    description:
+        "Local brews, classic cocktails & creative New American eats in a former historic music venue",
+    image: stoneballoon,
+    menu: SBMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant13: Restaurant = {
+const Kates: Restaurant = {
     id: "13",
-    name: "Sakura Japanese Steakhouse",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Klondike Kate's Restaurant & Saloon",
+    description:
+        "Classic American fare & drinks in a circa-1880 building featuring vintage railroad station decor",
+    image: kates,
+    menu: KatesMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant14: Restaurant = {
@@ -236,10 +248,10 @@ const RestaurantList: Restaurant[] = [
     Raising_Canes,
     Red_Lobster,
     Grain,
-    restaurant10,
-    restaurant11,
-    restaurant12,
-    restaurant13,
+    IronHill,
+    ElDiablo,
+    StoneBalloon,
+    Kates,
     restaurant14,
     restaurant15,
     restaurant16,

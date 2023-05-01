@@ -1,5 +1,6 @@
 /* eslint-disable indent */
 import React, { useState } from "react";
+import { Rating } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
@@ -9,6 +10,7 @@ import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     const [menuVisible, setMenuVisible] = useState<string | null>(null);
+    const [ratingVisible, setRatingVisible] = useState<number | null>(null);
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
     ); // state to keep track of visible menu
@@ -29,8 +31,13 @@ export function UserRestaurants(): JSX.Element {
         );
     };
     const handleShowAttributes = (restaurantId: string): void => {
-        // Toggle menu visibility for the selected restaurant
+        // Toggle info visibility for the selected restaurant
         setAttributesVisible((prevId) =>
+            prevId === restaurantId ? null : restaurantId
+        );
+    };
+    const handleShowRating = (restaurantId: number): void => {
+        setRatingVisible((prevId) =>
             prevId === restaurantId ? null : restaurantId
         );
     };

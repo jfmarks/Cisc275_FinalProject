@@ -589,32 +589,37 @@ const P5: MenuItem = {
 export const McMenu: MenuItem[] = [P1, P2, P3, P4, P5];
 
 const Q1: MenuItem = {
-    name: "",
-    description: "",
-    price: "$"
+    name: "Baconator",
+    description:
+        "A half-pound of fresh beef, American cheese, 6 pieces of crispy Applewood smoked bacon, ketchup, and mayo. Carnivores rejoice!",
+    price: "$6.09"
 };
 
 const Q2: MenuItem = {
-    name: "",
-    description: "",
-    price: "$"
+    name: "10 Piece Chicken Nuggets",
+    description:
+        "100% white-meat chicken breaded to crispy perfection and served with your choice of 6 dipping sauces including Buttermilk Ranch, BBQ, Sweet & Sour, Honey Mustard, or Ghost Pepper Ranch. They're trending in our restaurants and Twitter feed alike.",
+    price: "$5.99"
 };
 
 const Q3: MenuItem = {
-    name: "",
-    description: "",
-    price: "$"
+    name: "Chili Cheese Fries",
+    description:
+        "Our natural-cut, skin-on, sea-salted fries topped with our hearty chili and rich, creamy cheese sauce. Easy to love. Hard to beat.",
+    price: "$4.87"
 };
 
 const Q4: MenuItem = {
-    name: "",
-    description: "",
-    price: "$"
+    name: "Honey Butter Biscuit",
+    description:
+        "Fluffy buttermilk biscuit spread with maple honey butter. The kind of down-home breakfast that melts in your mouth and makes you reminisce about the farm, even if you're from the city.",
+    price: "$1.20"
 };
 
 const Q5: MenuItem = {
-    name: "",
-    description: "",
-    price: "$"
+    name: "Classic Chocolate Frosty",
+    description:
+        "The Chocolate Frosty was born out of Dave's desire for a signature dessert to go with his vision of the perfect meal. Thick enough to use a spoon, smooth enough to use a straw, and perfect when enjoyed on the end of a fry.",
+    price: "$1.99"
 };
 export const WendysMenu: MenuItem[] = [Q1, Q2, Q3, Q4, Q5];

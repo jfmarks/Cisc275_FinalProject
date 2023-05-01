@@ -443,3 +443,40 @@ const L5: MenuItem = {
 };
 
 export const SBMenu: MenuItem[] = [L1, L2, L3, L4, L5];
+
+const M1: MenuItem = {
+    name: "Tex Mex Chili",
+    description:
+        "Crowd favorite topped with monterey jack cheddar cheese & scallions",
+    price: "$6.00"
+};
+
+const M2: MenuItem = {
+    name: "The Whole Shebang",
+    description:
+        "Cheesesteak egg rolls, bavarian pretzels, mozzarella sticks & chicken quesadillas Great for Sharing!",
+    price: "$20.00"
+};
+
+const M3: MenuItem = {
+    name: "Sweet and Spicy Wrap",
+    description:
+        "Crispy fried chicken tossed with sweet and spicy sauce, along with avocado, cucumber, carrots, mixed greens and almond slices, in a flour tortilla",
+    price: "$15.00"
+};
+
+const M4: MenuItem = {
+    name: "Main Street Burger",
+    description:
+        "½ lb burger topped with crispy bacon and cheddar cheese, on a burger bun",
+    price: "$14.00"
+};
+
+const M5: MenuItem = {
+    name: "Chocolate Torte",
+    description:
+        "Rich and delicious flourless chocolate torte made with dark cocoa",
+    price: "$6.00"
+};
+
+export const KatesMenu: MenuItem[] = [M1, M2, M3, M4, M5];

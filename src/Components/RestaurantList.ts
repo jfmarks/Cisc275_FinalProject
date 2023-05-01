@@ -11,6 +11,7 @@ import grain from "../Images/grain.png";
 import ironhill from "../Images/ironhill.png";
 import eldiablo from "../Images/eldiablo.png";
 import stoneballoon from "../Images/stoneballoon.png";
+import kates from "../Images/kates.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -23,7 +24,8 @@ import {
     GrainMenu,
     IHMenu,
     EDMenu,
-    SBMenu
+    SBMenu,
+    KatesMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -170,15 +172,16 @@ const StoneBalloon: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant13: Restaurant = {
+const Kates: Restaurant = {
     id: "13",
-    name: "Sakura Japanese Steakhouse",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Klondike Kate's Restaurant & Saloon",
+    description:
+        "Classic American fare & drinks in a circa-1880 building featuring vintage railroad station decor",
+    image: kates,
+    menu: KatesMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant14: Restaurant = {
@@ -248,7 +251,7 @@ const RestaurantList: Restaurant[] = [
     IronHill,
     ElDiablo,
     StoneBalloon,
-    restaurant13,
+    Kates,
     restaurant14,
     restaurant15,
     restaurant16,

@@ -10,6 +10,7 @@ import redlobster from "../Images/redlobster.png";
 import grain from "../Images/grain.png";
 import ironhill from "../Images/ironhill.png";
 import eldiablo from "../Images/eldiablo.png";
+import stoneballoon from "../Images/stoneballoon.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -21,7 +22,8 @@ import {
     RLMenu,
     GrainMenu,
     IHMenu,
-    EDMenu
+    EDMenu,
+    SBMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -156,15 +158,16 @@ const ElDiablo: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant12: Restaurant = {
+const StoneBalloon: Restaurant = {
     id: "12",
-    name: "Raisin Canes",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Stone Balloon Ale House",
+    description:
+        "Local brews, classic cocktails & creative New American eats in a former historic music venue",
+    image: stoneballoon,
+    menu: SBMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant13: Restaurant = {
@@ -244,7 +247,7 @@ const RestaurantList: Restaurant[] = [
     Grain,
     IronHill,
     ElDiablo,
-    restaurant12,
+    StoneBalloon,
     restaurant13,
     restaurant14,
     restaurant15,

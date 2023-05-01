@@ -406,3 +406,40 @@ const K5: MenuItem = {
 };
 
 export const EDMenu: MenuItem[] = [K1, K2, K3, K4, K5];
+
+const L1: MenuItem = {
+    name: "Nashville Hot Chicken Tots",
+    description:
+        "Garlic chicken, Nashville hot sauce, spicy pickles, malt vinegar aioli",
+    price: "$12.00"
+};
+
+const L2: MenuItem = {
+    name: "Short Rib Cheesestake",
+    description:
+        "Brown ale braised short rib with caramelized onions, dijonnaise, and beer cheese fondue",
+    price: "$21.00"
+};
+
+const L3: MenuItem = {
+    name: "High 5 Burger",
+    description:
+        "A tower of two angus beef patties, garlic chicken breast, short rib, smokehouse bacon, fried onions, fried cheese curds, lettuce, tomato, and sweet & spicy pickles. Comes with a free t-shirt... but only if you fnish everything on your plate!",
+    price: "$32.00"
+};
+
+const L4: MenuItem = {
+    name: "Buffalo Shrimp Taco",
+    description:
+        "Yuengling beer battered shrimp, bufalo sauce, crumbled bleu cheese, and buttermilk dressing over heritage greens",
+    price: "$16.00"
+};
+
+const L5: MenuItem = {
+    name: "Sambal Chicken Fingers",
+    description:
+        "Sambal chicken tenders, sesame, Stone Balloon boom sauce, served with fries",
+    price: "$12.00"
+};
+
+export const SBMenu: MenuItem[] = [L1, L2, L3, L4, L5];

@@ -9,6 +9,7 @@ import RCLogo from "../Images/RCLogo.png";
 import redlobster from "../Images/redlobster.png";
 import grain from "../Images/grain.png";
 import ironhill from "../Images/ironhill.png";
+import eldiablo from "../Images/eldiablo.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -19,7 +20,8 @@ import {
     RCMenu,
     RLMenu,
     GrainMenu,
-    IHMenu
+    IHMenu,
+    EDMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -142,15 +144,16 @@ const IronHill: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant11: Restaurant = {
+const ElDiablo: Restaurant = {
     id: "11",
-    name: "FatherJohn's",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "El Diablo Burritos",
+    description:
+        "Contemporary counter-serve offering a build-your-own burrito option, plus tacos & quesadillas",
+    image: eldiablo,
+    menu: EDMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant12: Restaurant = {
@@ -240,7 +243,7 @@ const RestaurantList: Restaurant[] = [
     Red_Lobster,
     Grain,
     IronHill,
-    restaurant11,
+    ElDiablo,
     restaurant12,
     restaurant13,
     restaurant14,

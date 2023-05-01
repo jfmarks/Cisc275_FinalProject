@@ -369,3 +369,40 @@ const J5: MenuItem = {
 };
 
 export const IHMenu: MenuItem[] = [J1, J2, J3, J4, J5];
+
+const K1: MenuItem = {
+    name: "House Salad",
+    description:
+        "A classic house salad featuring crisp lettuce, tomatoes, croutons, cheese, and cucumbers.",
+    price: "$11.00"
+};
+
+const K2: MenuItem = {
+    name: "Adobo Grilled Chicken Burrito",
+    description:
+        "Abodo grilled chicken, avocado ranch sauce, lettuce, tomatoes, and real shredded cheddar cheese wrapped inside a warm flour tortilla.",
+    price: "$11.50"
+};
+
+const K3: MenuItem = {
+    name: "Cheese Quesadillas",
+    description:
+        "A simple flour tortilla, a hefty portion of melted three-cheese blend, and creamy jalapeño sauce",
+    price: "$11.00"
+};
+
+const K4: MenuItem = {
+    name: "Chips & Queso",
+    description:
+        "Our crispy tortilla chips are freshly fried and paired with melty queso, crafted from the perfect blend of peppers and cheese.",
+    price: "$4.00"
+};
+
+const K5: MenuItem = {
+    name: "Coco Rojo Brownie",
+    description:
+        "A light and fluffy dessert that is a cross between a brownie and a cookie.",
+    price: "$2.50"
+};
+
+export const EDMenu: MenuItem[] = [K1, K2, K3, K4, K5];

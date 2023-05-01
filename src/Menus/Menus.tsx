@@ -480,3 +480,73 @@ const M5: MenuItem = {
 };
 
 export const KatesMenu: MenuItem[] = [M1, M2, M3, M4, M5];
+
+const N1: MenuItem = {
+    name: "Hummus Platter",
+    description:
+        "Creamy garlic, lemon hummus served with grilled pita bread, feta cheese, Kalamata olives and capers.",
+    price: "$11.99"
+};
+
+const N2: MenuItem = {
+    name: "Meat Lovers Pizza",
+    description: "House sauce, mozzarella cheese, pepperoni, bacon & sausage",
+    price: "$16.49"
+};
+
+const N3: MenuItem = {
+    name: "Apple Walnut Salad",
+    description:
+        "Greens, Cabot cheddar, sliced apples, candied walnuts, apple cider vinaigrette",
+    price: "$11.99"
+};
+
+const N4: MenuItem = {
+    name: "Jambalaya",
+    description:
+        "Chicken, shrimp, Andouille sausage, peppers, onions over dirty rice with cornbread",
+    price: "$21.99"
+};
+
+const N5: MenuItem = {
+    name: "Hot Fudge Brownie Sundae",
+    description: "Made with Woodside Farm ice cream.",
+    price: "$6.99"
+};
+
+export const DPMenu: MenuItem[] = [N1, N2, N3, N4, N5];
+
+const O1: MenuItem = {
+    name: "Bruschetta",
+    description:
+        "Fresh marinated tomatoes, basil, garlic, onions and extra virgin olive oil, served with homemade garlic parmesan flatbread",
+    price: "$11.99"
+};
+
+const O2: MenuItem = {
+    name: "The Mama Grotto",
+    description:
+        "Our old family style recipe - layered with a hearty tomato sauce, topped with cheese and freshly chopped basil",
+    price: "$18.99"
+};
+
+const O3: MenuItem = {
+    name: "Cheesesteak Boli",
+    description: "Thinly sliced ribeye steak chopped philly style and cheese",
+    price: "$12.99"
+};
+
+const O4: MenuItem = {
+    name: "Chicken Parmesan and Pasta",
+    description: "Tender chicken breast topped with a blend of cheeses",
+    price: "$18.99"
+};
+
+const O5: MenuItem = {
+    name: "Cheesy Chicken Cheesesteak",
+    description:
+        "Philly style chopped all-white chicken with provolone, cheddar and american",
+    price: "$10.49"
+};
+
+export const GrottosMenu: MenuItem[] = [O1, O2, O3, O4, O5];

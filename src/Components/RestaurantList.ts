@@ -12,6 +12,8 @@ import ironhill from "../Images/ironhill.png";
 import eldiablo from "../Images/eldiablo.png";
 import stoneballoon from "../Images/stoneballoon.png";
 import kates from "../Images/kates.png";
+import deerpark from "../Images/deerpark.png";
+import grottos from "../Images/grottos.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -25,7 +27,9 @@ import {
     IHMenu,
     EDMenu,
     SBMenu,
-    KatesMenu
+    KatesMenu,
+    DPMenu,
+    GrottosMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -33,7 +37,7 @@ const AppleBees: Restaurant = {
     id: "1",
     name: "Applebee's Grill and Bar",
     description:
-        "Good food, good people. The Applebee's concept focuses on casual dining, with mainstream American dishes such as salads, chicken, pasta, burgers, and riblets (Applebee's signature dish). Fun Fact: The founders picked the name out of a phone book Founders Bill and T.J. Palmer looked for inspiration in a phone book and fell in love with the name Appleby. After finding there was already a copyright on the name, they changed it to Applebee's.",
+        "Full-service chain bar & grill providing hearty American eats in an informal setting.",
     image: ABLogo,
     menu: ABMenu,
     averageRating: 0,
@@ -45,7 +49,7 @@ const Chipotle: Restaurant = {
     id: "2",
     name: "Chipotle",
     description:
-        "Chipotle was born of the radical belief that there is a connection between how food is raised and prepared, and how it tastes. Real is better. Better for You, Better for People, Better for Our Planet. It may be the hard way to do things, but it's the right way.",
+        "Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.",
     image: chipotlelogo,
     menu: ChipotleMenu,
     averageRating: 0,
@@ -57,7 +61,7 @@ const Texas_Roadhouse: Restaurant = {
     id: "3",
     name: "Texas Roadhouse",
     description:
-        "Welcome To Legendary. Legendary means Hand-Cut Steaks, Fall-Off-The-Bone Ribs, Made-From-Scratch Sides, Ice-Cold Beer, and of course, our irresistible Fresh-Baked Bread.",
+        "Lively chain steakhouse serving American fare with a Southwestern spin amid Texas-themed decor.",
     image: TRLogo,
     menu: TRMenu,
     averageRating: 0,
@@ -92,7 +96,7 @@ const OliveGarden: Restaurant = {
     id: "6",
     name: "Olive Garden",
     description:
-        "Italian generosity is always on the table. At Olive Garden, we know that life is better together and everyone is happiest when they're with family.",
+        "Lively, family-friendly chain featuring Italian standards such as pastas & salads.",
     image: olivegarden,
     menu: OGMenu,
     averageRating: 0,
@@ -116,7 +120,7 @@ const Red_Lobster: Restaurant = {
     id: "8",
     name: "Red Lobster",
     description:
-        "At Red Lobster, our passion for seafood drives how we create every dish, and comes through in how we source our seafood, and give back to our communities.",
+        "Lively chain restaurant serving American seafood standards amid New England-themed decor.",
     image: redlobster,
     menu: RLMenu,
     averageRating: 0,
@@ -184,26 +188,28 @@ const Kates: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant14: Restaurant = {
+const DeerPark: Restaurant = {
     id: "14",
-    name: "Claymont Steak Shop",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Deer Park Tavern",
+    description:
+        "Landmark spot on site with Revolutionary War roots features a bar, American fare & trivia nights.",
+    image: deerpark,
+    menu: DPMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant15: Restaurant = {
+const Grottos: Restaurant = {
     id: "15",
-    name: "Buffalo Wild Wings",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Grotto Pizza",
+    description:
+        "Family-friendly pizzeria & sports-bar chain offering a broad menu of Italian mainstays.",
+    image: grottos,
+    menu: GrottosMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant16: Restaurant = {
@@ -252,8 +258,8 @@ const RestaurantList: Restaurant[] = [
     ElDiablo,
     StoneBalloon,
     Kates,
-    restaurant14,
-    restaurant15,
+    DeerPark,
+    Grottos,
     restaurant16,
     restaurant17,
     restaurant18

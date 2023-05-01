@@ -6,43 +6,42 @@ import { Button, Form } from "react-bootstrap";
 //import { User } from "../Interfaces";
 //import { log } from "console";
 
-const RANK = ["User", "Super", "Admin"];
+//const RANK = ["User", "Super", "Admin"];
 
 export function UserList(): JSX.Element {
     //const id = user.id;
-    function userButtons(): void {
-        /* function updateRank(event: React.ChangeEvent<HTMLSelectElement>) {
-            setRank(event?.target.value);
-        } */
-        function chooseRank() {
-            const [rank, setRank] = useState<string>("");
-            setRank(rank);
+    function userButtons(): JSX.Element {
+        const [rank, setRank] = useState<string>("User");
+        function updateRank(event: React.ChangeEvent<HTMLSelectElement>) {
+            setRank(event.target.value);
         }
-        <div>
-            <header> User List </header>
-            {/* <Col>
-                {RANKS.map((option: string) => (
-                    <div key={option} style={{ marginBottom: "4px" }}>
-                        Add{" "}
-                        <Button
-                            onClick={() => {
-                                chooseRank;
-                            }}
-                            size="sm"
-                        >
-                            {option}
-                        </Button>
-                    </div>
-                ))}
-            </Col> */}
-            <Form.Group>
-                <Form.Select value={RANK} onChange={chooseRank}>
-                    {RANK.map((rank: string) => (
-                        <option key={rank}>{rank}</option>
-                    ))}
-                </Form.Select>
-            </Form.Group>
-        </div>;
+        /* function chooseRank() {
+            const [rank, setRank] = useState<string[]>([
+                "User",
+                "Super",
+                "Admin"
+            ]);
+            setRank(rank);
+        } */
+        return (
+            <div>
+                <div>
+                    <header> Choose a Rank: </header>
+                </div>
+                {/* drop down / select a rank */}
+                <div>
+                    <Form.Group controlId="userRank">
+                        <Form.Label>Choose a rank: </Form.Label>
+                        <Form.Select value={rank} onChange={updateRank}>
+                            <option value="user">User</option>
+                            <option value="Super">Super</option>
+                            <option value="admin">Admin</option>
+                        </Form.Select>
+                    </Form.Group>
+                    The user is a rank of {rank}
+                </div>
+            </div>
+        );
     }
 
     return (

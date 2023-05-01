@@ -14,6 +14,8 @@ import stoneballoon from "../Images/stoneballoon.png";
 import kates from "../Images/kates.png";
 import deerpark from "../Images/deerpark.png";
 import grottos from "../Images/grottos.png";
+import mcdonalds from "../Images/mcdonalds.png";
+import wendys from "../Images/wendys.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -29,7 +31,9 @@ import {
     SBMenu,
     KatesMenu,
     DPMenu,
-    GrottosMenu
+    GrottosMenu,
+    McMenu,
+    WendysMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -84,7 +88,7 @@ const Chilis: Restaurant = {
     id: "5",
     name: "Chili's",
     description:
-        "Like no place else. Fun. Fresh. Flavorful. Chili's serves American food, Tex-Mex cuisine and dishes influenced by Mexican cuisine, such as spicy shrimp tacos, quesadillas, fajitas. In addition to their regular menu, the company offers a nutritional menu, allergen menu, and vegetarian menu.",
+        "Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style setting.",
     image: chilis,
     menu: ChilisMenu,
     averageRating: 0,
@@ -212,26 +216,28 @@ const Grottos: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant16: Restaurant = {
+const McDonalds: Restaurant = {
     id: "16",
-    name: "Suki Hana",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "McDonald's",
+    description:
+        "Classic, long-running fast-food chain known for its burgers & fries.",
+    image: mcdonalds,
+    menu: McMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant17: Restaurant = {
+const Wendys: Restaurant = {
     id: "17",
-    name: "Playa Bowls",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Wendy's",
+    description:
+        "Fast-food burger chain serving sides such as chili & baked potatoes.",
+    image: wendys,
+    menu: WendysMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant18: Restaurant = {
@@ -260,8 +266,8 @@ const RestaurantList: Restaurant[] = [
     Kates,
     DeerPark,
     Grottos,
-    restaurant16,
-    restaurant17,
+    McDonalds,
+    Wendys,
     restaurant18
 ];
 

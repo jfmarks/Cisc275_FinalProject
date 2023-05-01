@@ -550,3 +550,71 @@ const O5: MenuItem = {
 };
 
 export const GrottosMenu: MenuItem[] = [O1, O2, O3, O4, O5];
+
+const P1: MenuItem = {
+    name: "Egg McMuffin",
+    description:
+        "McDonald's Egg McMuffin® recipe features a freshly cracked Grade A egg placed on a toasted English Muffin topped with real butter, lean Canadian bacon, and melty American cheese.",
+    price: "$2.79"
+};
+
+const P2: MenuItem = {
+    name: "Big Mac",
+    description:
+        "The mouthwatering perfection starts with two 100% pure all beef patties and Big Mac® sauce sandwiched between a sesame seed bun. It's topped off with pickles, crisp shredded lettuce, finely chopped onion, and a slice of American cheese.",
+    price: "$3.99"
+};
+
+const P3: MenuItem = {
+    name: "10 Piece Chicken McNuggets",
+    description:
+        "Our tender, juicy Chicken McNuggets® are made with all white meat chicken and no artificial colors, flavors or preservatives.",
+    price: "$4.49"
+};
+
+const P4: MenuItem = {
+    name: "World Famous Fries",
+    description:
+        "McDonald's World Famous Fries® are made with premium potatoes such as the Russet Burbank and the Shepody. With 0g of trans fat per labeled serving, these epic fries are crispy and golden on the outside and fluffy on the inside.",
+    price: "$1.79"
+};
+
+const P5: MenuItem = {
+    name: "McFlurry with Oreo Cookies",
+    description:
+        "The McDonald's McFlurry with OREO Cookies is a popular combination of creamy vanilla soft serve with crunchy pieces of OREO cookies!",
+    price: "$3.39"
+};
+
+export const McMenu: MenuItem[] = [P1, P2, P3, P4, P5];
+
+const Q1: MenuItem = {
+    name: "",
+    description: "",
+    price: "$"
+};
+
+const Q2: MenuItem = {
+    name: "",
+    description: "",
+    price: "$"
+};
+
+const Q3: MenuItem = {
+    name: "",
+    description: "",
+    price: "$"
+};
+
+const Q4: MenuItem = {
+    name: "",
+    description: "",
+    price: "$"
+};
+
+const Q5: MenuItem = {
+    name: "",
+    description: "",
+    price: "$"
+};
+export const WendysMenu: MenuItem[] = [Q1, Q2, Q3, Q4, Q5];

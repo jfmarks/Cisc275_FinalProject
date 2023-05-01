@@ -480,3 +480,146 @@ const M5: MenuItem = {
 };
 
 export const KatesMenu: MenuItem[] = [M1, M2, M3, M4, M5];
+
+const N1: MenuItem = {
+    name: "Hummus Platter",
+    description:
+        "Creamy garlic, lemon hummus served with grilled pita bread, feta cheese, Kalamata olives and capers.",
+    price: "$11.99"
+};
+
+const N2: MenuItem = {
+    name: "Meat Lovers Pizza",
+    description: "House sauce, mozzarella cheese, pepperoni, bacon & sausage",
+    price: "$16.49"
+};
+
+const N3: MenuItem = {
+    name: "Apple Walnut Salad",
+    description:
+        "Greens, Cabot cheddar, sliced apples, candied walnuts, apple cider vinaigrette",
+    price: "$11.99"
+};
+
+const N4: MenuItem = {
+    name: "Jambalaya",
+    description:
+        "Chicken, shrimp, Andouille sausage, peppers, onions over dirty rice with cornbread",
+    price: "$21.99"
+};
+
+const N5: MenuItem = {
+    name: "Hot Fudge Brownie Sundae",
+    description: "Made with Woodside Farm ice cream.",
+    price: "$6.99"
+};
+
+export const DPMenu: MenuItem[] = [N1, N2, N3, N4, N5];
+
+const O1: MenuItem = {
+    name: "Bruschetta",
+    description:
+        "Fresh marinated tomatoes, basil, garlic, onions and extra virgin olive oil, served with homemade garlic parmesan flatbread",
+    price: "$11.99"
+};
+
+const O2: MenuItem = {
+    name: "The Mama Grotto",
+    description:
+        "Our old family style recipe - layered with a hearty tomato sauce, topped with cheese and freshly chopped basil",
+    price: "$18.99"
+};
+
+const O3: MenuItem = {
+    name: "Cheesesteak Boli",
+    description: "Thinly sliced ribeye steak chopped philly style and cheese",
+    price: "$12.99"
+};
+
+const O4: MenuItem = {
+    name: "Chicken Parmesan and Pasta",
+    description: "Tender chicken breast topped with a blend of cheeses",
+    price: "$18.99"
+};
+
+const O5: MenuItem = {
+    name: "Cheesy Chicken Cheesesteak",
+    description:
+        "Philly style chopped all-white chicken with provolone, cheddar and american",
+    price: "$10.49"
+};
+
+export const GrottosMenu: MenuItem[] = [O1, O2, O3, O4, O5];
+
+const P1: MenuItem = {
+    name: "Egg McMuffin",
+    description:
+        "McDonald's Egg McMuffin® recipe features a freshly cracked Grade A egg placed on a toasted English Muffin topped with real butter, lean Canadian bacon, and melty American cheese.",
+    price: "$2.79"
+};
+
+const P2: MenuItem = {
+    name: "Big Mac",
+    description:
+        "The mouthwatering perfection starts with two 100% pure all beef patties and Big Mac® sauce sandwiched between a sesame seed bun. It's topped off with pickles, crisp shredded lettuce, finely chopped onion, and a slice of American cheese.",
+    price: "$3.99"
+};
+
+const P3: MenuItem = {
+    name: "10 Piece Chicken McNuggets",
+    description:
+        "Our tender, juicy Chicken McNuggets® are made with all white meat chicken and no artificial colors, flavors or preservatives.",
+    price: "$4.49"
+};
+
+const P4: MenuItem = {
+    name: "World Famous Fries",
+    description:
+        "McDonald's World Famous Fries® are made with premium potatoes such as the Russet Burbank and the Shepody. With 0g of trans fat per labeled serving, these epic fries are crispy and golden on the outside and fluffy on the inside.",
+    price: "$1.79"
+};
+
+const P5: MenuItem = {
+    name: "McFlurry with Oreo Cookies",
+    description:
+        "The McDonald's McFlurry with OREO Cookies is a popular combination of creamy vanilla soft serve with crunchy pieces of OREO cookies!",
+    price: "$3.39"
+};
+
+export const McMenu: MenuItem[] = [P1, P2, P3, P4, P5];
+
+const Q1: MenuItem = {
+    name: "Baconator",
+    description:
+        "A half-pound of fresh beef, American cheese, 6 pieces of crispy Applewood smoked bacon, ketchup, and mayo. Carnivores rejoice!",
+    price: "$6.09"
+};
+
+const Q2: MenuItem = {
+    name: "10 Piece Chicken Nuggets",
+    description:
+        "100% white-meat chicken breaded to crispy perfection and served with your choice of 6 dipping sauces including Buttermilk Ranch, BBQ, Sweet & Sour, Honey Mustard, or Ghost Pepper Ranch. They're trending in our restaurants and Twitter feed alike.",
+    price: "$5.99"
+};
+
+const Q3: MenuItem = {
+    name: "Chili Cheese Fries",
+    description:
+        "Our natural-cut, skin-on, sea-salted fries topped with our hearty chili and rich, creamy cheese sauce. Easy to love. Hard to beat.",
+    price: "$4.87"
+};
+
+const Q4: MenuItem = {
+    name: "Honey Butter Biscuit",
+    description:
+        "Fluffy buttermilk biscuit spread with maple honey butter. The kind of down-home breakfast that melts in your mouth and makes you reminisce about the farm, even if you're from the city.",
+    price: "$1.20"
+};
+
+const Q5: MenuItem = {
+    name: "Classic Chocolate Frosty",
+    description:
+        "The Chocolate Frosty was born out of Dave's desire for a signature dessert to go with his vision of the perfect meal. Thick enough to use a spoon, smooth enough to use a straw, and perfect when enjoyed on the end of a fry.",
+    price: "$1.99"
+};
+export const WendysMenu: MenuItem[] = [Q1, Q2, Q3, Q4, Q5];

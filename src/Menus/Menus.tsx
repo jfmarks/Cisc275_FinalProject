@@ -480,3 +480,221 @@ const M5: MenuItem = {
 };
 
 export const KatesMenu: MenuItem[] = [M1, M2, M3, M4, M5];
+
+const N1: MenuItem = {
+    name: "Hummus Platter",
+    description:
+        "Creamy garlic, lemon hummus served with grilled pita bread, feta cheese, Kalamata olives and capers.",
+    price: "$11.99"
+};
+
+const N2: MenuItem = {
+    name: "Meat Lovers Pizza",
+    description: "House sauce, mozzarella cheese, pepperoni, bacon & sausage",
+    price: "$16.49"
+};
+
+const N3: MenuItem = {
+    name: "Apple Walnut Salad",
+    description:
+        "Greens, Cabot cheddar, sliced apples, candied walnuts, apple cider vinaigrette",
+    price: "$11.99"
+};
+
+const N4: MenuItem = {
+    name: "Jambalaya",
+    description:
+        "Chicken, shrimp, Andouille sausage, peppers, onions over dirty rice with cornbread",
+    price: "$21.99"
+};
+
+const N5: MenuItem = {
+    name: "Hot Fudge Brownie Sundae",
+    description: "Made with Woodside Farm ice cream.",
+    price: "$6.99"
+};
+
+export const DPMenu: MenuItem[] = [N1, N2, N3, N4, N5];
+
+const O1: MenuItem = {
+    name: "Bruschetta",
+    description:
+        "Fresh marinated tomatoes, basil, garlic, onions and extra virgin olive oil, served with homemade garlic parmesan flatbread",
+    price: "$11.99"
+};
+
+const O2: MenuItem = {
+    name: "The Mama Grotto",
+    description:
+        "Our old family style recipe - layered with a hearty tomato sauce, topped with cheese and freshly chopped basil",
+    price: "$18.99"
+};
+
+const O3: MenuItem = {
+    name: "Cheesesteak Boli",
+    description: "Thinly sliced ribeye steak chopped philly style and cheese",
+    price: "$12.99"
+};
+
+const O4: MenuItem = {
+    name: "Chicken Parmesan and Pasta",
+    description: "Tender chicken breast topped with a blend of cheeses",
+    price: "$18.99"
+};
+
+const O5: MenuItem = {
+    name: "Cheesy Chicken Cheesesteak",
+    description:
+        "Philly style chopped all-white chicken with provolone, cheddar and american",
+    price: "$10.49"
+};
+
+export const GrottosMenu: MenuItem[] = [O1, O2, O3, O4, O5];
+
+const P1: MenuItem = {
+    name: "Egg McMuffin",
+    description:
+        "McDonald's Egg McMuffin® recipe features a freshly cracked Grade A egg placed on a toasted English Muffin topped with real butter, lean Canadian bacon, and melty American cheese.",
+    price: "$2.79"
+};
+
+const P2: MenuItem = {
+    name: "Big Mac",
+    description:
+        "The mouthwatering perfection starts with two 100% pure all beef patties and Big Mac® sauce sandwiched between a sesame seed bun. It's topped off with pickles, crisp shredded lettuce, finely chopped onion, and a slice of American cheese.",
+    price: "$3.99"
+};
+
+const P3: MenuItem = {
+    name: "10 Piece Chicken McNuggets",
+    description:
+        "Our tender, juicy Chicken McNuggets® are made with all white meat chicken and no artificial colors, flavors or preservatives.",
+    price: "$4.49"
+};
+
+const P4: MenuItem = {
+    name: "World Famous Fries",
+    description:
+        "McDonald's World Famous Fries® are made with premium potatoes such as the Russet Burbank and the Shepody. With 0g of trans fat per labeled serving, these epic fries are crispy and golden on the outside and fluffy on the inside.",
+    price: "$1.79"
+};
+
+const P5: MenuItem = {
+    name: "McFlurry with Oreo Cookies",
+    description:
+        "The McDonald's McFlurry with OREO Cookies is a popular combination of creamy vanilla soft serve with crunchy pieces of OREO cookies!",
+    price: "$3.39"
+};
+
+export const McMenu: MenuItem[] = [P1, P2, P3, P4, P5];
+
+const Q1: MenuItem = {
+    name: "Baconator",
+    description:
+        "A half-pound of fresh beef, American cheese, 6 pieces of crispy Applewood smoked bacon, ketchup, and mayo. Carnivores rejoice!",
+    price: "$6.09"
+};
+
+const Q2: MenuItem = {
+    name: "10 Piece Chicken Nuggets",
+    description:
+        "100% white-meat chicken breaded to crispy perfection and served with your choice of 6 dipping sauces including Buttermilk Ranch, BBQ, Sweet & Sour, Honey Mustard, or Ghost Pepper Ranch. They're trending in our restaurants and Twitter feed alike.",
+    price: "$5.99"
+};
+
+const Q3: MenuItem = {
+    name: "Chili Cheese Fries",
+    description:
+        "Our natural-cut, skin-on, sea-salted fries topped with our hearty chili and rich, creamy cheese sauce. Easy to love. Hard to beat.",
+    price: "$4.87"
+};
+
+const Q4: MenuItem = {
+    name: "Honey Butter Biscuit",
+    description:
+        "Fluffy buttermilk biscuit spread with maple honey butter. The kind of down-home breakfast that melts in your mouth and makes you reminisce about the farm, even if you're from the city.",
+    price: "$1.20"
+};
+
+const Q5: MenuItem = {
+    name: "Classic Chocolate Frosty",
+    description:
+        "The Chocolate Frosty was born out of Dave's desire for a signature dessert to go with his vision of the perfect meal. Thick enough to use a spoon, smooth enough to use a straw, and perfect when enjoyed on the end of a fry.",
+    price: "$1.99"
+};
+
+export const WendysMenu: MenuItem[] = [Q1, Q2, Q3, Q4, Q5];
+
+const R1: MenuItem = {
+    name: "Hash Brown Scramble Burrito w/ Nuggets",
+    description:
+        "A hearty morning meal of sliced Chick-fil-A Nuggets, crispy Hash Browns, scrambled eggs and a blend of Monterey Jack and Cheddar cheeses. Made fresh each morning. Rolled in a warm flour tortilla. Served with Jalapeño Salsa.",
+    price: "$8.39"
+};
+
+const R2: MenuItem = {
+    name: "Chick-fil-A Chicken Sandwich",
+    description:
+        "A boneless breast of chicken seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips. Also available on a multigrain bun.",
+    price: "$8.79"
+};
+
+const R3: MenuItem = {
+    name: "Mac & Cheese",
+    description:
+        "A classic macaroni and cheese recipe featuring a special blend of cheeses including Parmesan, Cheddar, and Romano. Baked in-restaurant to form a crispy top layer of baked cheese.",
+    price: "$6.79"
+};
+
+const R4: MenuItem = {
+    name: "Spicy Southwest Salad",
+    description:
+        "Slices of grilled spicy chicken breast served on a fresh bed of mixed greens, topped with grape tomatoes, a blend of Monterey Jack and Cheddar cheeses, and a zesty combination of roasted corn, black beans, poblano chiles, and red bell peppers. Prepared fresh daily. Served with Seasoned Tortilla Strips and Chili Lime Pepitas. Pairs well with Creamy Salsa dressing.",
+    price: "$14.39"
+};
+
+const R5: MenuItem = {
+    name: "Chocolate Chunk Cookie",
+    description:
+        "Cookies have both semi-sweet dark and milk chocolate chunks, along with wholesome oats.",
+    price: "$2.79"
+};
+
+export const CFAMenu: MenuItem[] = [R1, R2, R3, R4, R5];
+
+const S1: MenuItem = {
+    name: "Breakfast Crunchwrap Sausage",
+    description:
+        "A crispy hash brown, fluffy eggs, sausage patty, cheddar cheese, and creamy jalapeño sauce wrapped inside a warm flour tortilla and grilled to go.",
+    price: "$3.59"
+};
+
+const S2: MenuItem = {
+    name: "Chalupa Supreme",
+    description:
+        "The Chalupa Supreme sure weaves some beautiful witchcraft. Take a traditional flatbread, something already awesome in its own right, and fry it. Suddenly you have a shell that mysteriously marries chewy and crispy; pure sorcery. Add seasoned beef, a three-cheese blend, lettuce, tomatoes, and reduced fat sour cream, and you get a Dante-esque culinary anomaly. The only greater fried magic trick known to man is turning arbitrary dough splashes, into funnel cake. Now that is nothing short of a miracle.",
+    price: "$3.99"
+};
+
+const S3: MenuItem = {
+    name: "Beefy 5-Layer Burrito",
+    description:
+        "Sorry, lettuce, RSVP is closed. No, I get it, your friend Seasoned Beef is DJing tonight. But unless you're on the list, you can't get in. Oh, you're a personal friend of the promoters Beans and Cheese? Well, how about you give them a call, let them know you're out here in line, and maybe I can let you in. Oh, you don't have their number? I see, so now your dad owns the club, huh? Well, the owner Reduced Fat Sour Cream is coming down now, so I'm sure he'll take you, his child, straight to the VIP lounge where you belong huh? Sir? Oh, you don't know this guy? That's what I thought. Hey Nacho Cheese Sauce! Get this lettuce character out of my sight; I don't want him anywhere near the door to this burrito.",
+    price: "$3.39"
+};
+
+const S4: MenuItem = {
+    name: "Nacho Fries",
+    description:
+        "Golden, crisp Nacho Fries seasoned with bold Mexican spices and nacho cheese sauce for dipping.",
+    price: "$1.99"
+};
+
+const S5: MenuItem = {
+    name: "Cinnabon Delights 12 Pack ",
+    description:
+        "Sorry to tell you, buddy, but you've been had. Cinnabon Delights® are a thing. And they can play some serious mind games. You thought you were eating breakfast, but then you put this thing in your mouth and WOAH, cinnamon spheres filled with icing is obviously dessert, not breakfast.",
+    price: "$6.39"
+};
+
+export const TBMenu: MenuItem[] = [S1, S2, S3, S4, S5];

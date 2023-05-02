@@ -804,3 +804,39 @@ const V5: MenuItem = {
 };
 
 export const ClaymontMenu: MenuItem[] = [V1, V2, V3, V4, V5];
+
+const W1: MenuItem = {
+    name: "Whopper",
+    description:
+        "A ¼ lb of flame-grilled beef patty topped with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun.",
+    price: "$6.59"
+};
+
+const W2: MenuItem = {
+    name: "BK Royal Crispy Chicken",
+    description:
+        "Crispy white meat breast fillet topped with royal sauce, lettuce and juicy tomatoes on a toasted potato bun.",
+    price: "$5.99"
+};
+
+const W3: MenuItem = {
+    name: "8 Piece Chicken Nuggets",
+    description:
+        "Bite-sized white meat chicken coated in crispy homestyle seasoned breading.",
+    price: "$2.49"
+};
+
+const W4: MenuItem = {
+    name: "4 Piece Mozzarella Sticks",
+    description: "Perfectly matched with a marinara dipping sauce.",
+    price: "$1.99"
+};
+
+const W5: MenuItem = {
+    name: "Hershey's Sundae Pie",
+    description:
+        "A crunchy chocolate crust filled with chocolate crème filling and garnished with real Hershey's Chocolate Chips.",
+    price: "$2.29"
+};
+
+export const BKMenu: MenuItem[] = [W1, W2, W3, W4, W5];

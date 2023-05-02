@@ -21,6 +21,7 @@ import tacobell from "../Images/tacobell.png";
 import BWW from "../Images/BWW.png";
 import twostones from "../Images/twostones.png";
 import claymont from "../Images/claymont.png";
+import burgerking from "../Images/burgerking.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -43,7 +44,8 @@ import {
     TBMenu,
     BWWMenu,
     TSMenu,
-    ClaymontMenu
+    ClaymontMenu,
+    BKMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -310,15 +312,16 @@ const Claymont: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant23: Restaurant = {
+const BurgerKing: Restaurant = {
     id: "23",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Burger King",
+    description:
+        "Well-known fast-food chain serving grilled burgers, fries & shakes, plus breakfast.",
+    image: burgerking,
+    menu: BKMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant24: Restaurant = {
@@ -641,7 +644,7 @@ const RestaurantList: Restaurant[] = [
     BuffaloWildWings,
     TwoStones,
     Claymont,
-    restaurant23,
+    BurgerKing,
     restaurant24,
     restaurant25,
     restaurant26,

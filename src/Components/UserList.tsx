@@ -38,7 +38,9 @@ export function UserList(/* { options }: { options: string[] } */): JSX.Element 
                 </Form.Select>
             </Form.Group>
             {/* <div>
-                {{rank === "Super": id == {CurrentUser}: id === {rank}}}{" "}
+                {rank === "Super"
+                    ? (User.id = { CurrentUser })
+                    : (CurrentUser.type = { rank })}
             </div> */}
         </div>
     );

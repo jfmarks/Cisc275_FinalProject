@@ -6,7 +6,7 @@ import { UserRestaurants } from "./Components/UserRestaurants";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import { UserList } from "./Components/UserList";
 import { HomePage } from "./Components/HomePage";
-import { option, options } from "yargs";
+//import { option, options } from "yargs";
 
 function App() {
     return (
@@ -32,20 +32,7 @@ function App() {
                                     List of Users
                                 </Button>
                             </Row>
-                            <Row className="App-main-button-rows">
-                                <Button
-                                    onClick={UserList}
-                                    // options={["Admin", "Super", "User"]}
-                                >
-                                    User
-                                </Button>
-                                {/* <Button
-                                    onClick={() => UserList(options)}
-                                    options={["Admin", "Super", "User"]}
-                                >
-                                    Users
-                                </Button> */}
-                            </Row>
+
                             <Row className="App-main-button-rows">
                                 <Button className="App-main-buttons">
                                     Critic
@@ -73,6 +60,17 @@ function App() {
             </p>
             <p>
                 <Restaurant></Restaurant>
+            </p>
+            <p>
+                <Col>
+                    <Button onClick={UserList}> User 1</Button>
+                </Col>
+                <Col>
+                    <Button onClick={UserList}> User 2</Button>
+                </Col>
+                <Col>
+                    <Button onClick={UserList}> User 3</Button>
+                </Col>
             </p>
             <a
                 className="App-link"

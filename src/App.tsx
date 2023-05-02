@@ -63,13 +63,16 @@ function App() {
             </p>
             <p>
                 <Col>
-                    <Button onClick={UserList}> User 1</Button>
-                </Col>
-                <Col>
-                    <Button onClick={UserList}> User 2</Button>
-                </Col>
-                <Col>
-                    <Button onClick={UserList}> User 3</Button>
+                    <header> List of Users </header>
+                    <Row>
+                        <Button onClick={UserList}> User 1</Button>
+                    </Row>
+                    <Row>
+                        <Button onClick={UserList}> User 2</Button>
+                    </Row>
+                    <Row>
+                        <Button onClick={UserList}> User 3</Button>
+                    </Row>
                 </Col>
             </p>
             <a

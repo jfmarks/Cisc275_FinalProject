@@ -6,6 +6,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import RestaurantBucket from "./Components/RestaurantBucket";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import CurrentUser from "./CurrentUser";
 
 function App() {
     return (
@@ -33,17 +34,32 @@ function App() {
                                     </Button>
                                 </Row>
                                 <Row className="App-main-button-rows">
-                                    <Button className="App-main-buttons">
+                                    <Button
+                                        className="App-main-buttons"
+                                        onClick={() =>
+                                            (CurrentUser.type = "Critic")
+                                        }
+                                    >
                                         Critic
                                     </Button>
                                 </Row>
                                 <Row className="App-main-button-rows">
-                                    <Button className="App-main-buttons">
+                                    <Button
+                                        className="App-main-buttons"
+                                        onClick={() =>
+                                            (CurrentUser.type = "Manager")
+                                        }
+                                    >
                                         Manager
                                     </Button>
                                 </Row>
                                 <Row className="App-main-button-rows">
-                                    <Button className="App-main-buttons">
+                                    <Button
+                                        className="App-main-buttons"
+                                        onClick={() =>
+                                            (CurrentUser.type = "Foodie")
+                                        }
+                                    >
                                         Foodie
                                     </Button>
                                 </Row>

@@ -18,6 +18,10 @@ import mcdonalds from "../Images/mcdonalds.png";
 import wendys from "../Images/wendys.png";
 import chickfila from "../Images/chickfila.png";
 import tacobell from "../Images/tacobell.png";
+import BWW from "../Images/BWW.png";
+import twostones from "../Images/twostones.png";
+import claymont from "../Images/claymont.png";
+import burgerking from "../Images/burgerking.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -37,7 +41,11 @@ import {
     McMenu,
     WendysMenu,
     CFAMenu,
-    TBMenu
+    TBMenu,
+    BWWMenu,
+    TSMenu,
+    ClaymontMenu,
+    BKMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -257,7 +265,7 @@ const ChickFilA: Restaurant = {
 };
 
 const TacoBell: Restaurant = {
-    id: "18",
+    id: "19",
     name: "Taco Bell",
     description:
         "Fast-food chain serving Mexican-inspired fare such as tacos, quesadillas & nachos.",
@@ -268,52 +276,56 @@ const TacoBell: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant20: Restaurant = {
-    id: "18",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const BuffaloWildWings: Restaurant = {
+    id: "20",
+    name: "Buffalo Wild Wings",
+    description:
+        "Chain dishing up wings, tenders & burgers, plus sauces ranging from sweet to very spicy.",
+    image: BWW,
+    menu: BWWMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant21: Restaurant = {
-    id: "18",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const TwoStones: Restaurant = {
+    id: "21",
+    name: "Two Stones Pub",
+    description:
+        "Bright gastropub serving a large selection of craft beers & upscale versions of bar food classics.",
+    image: twostones,
+    menu: TSMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant22: Restaurant = {
-    id: "18",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const Claymont: Restaurant = {
+    id: "22",
+    name: "Claymont Steak Shop",
+    description:
+        "Cheesesteaks, subs, grinders & other Philly-style fare in a relaxed spot with flat-screen TVs.",
+    image: claymont,
+    menu: ClaymontMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
-const restaurant23: Restaurant = {
-    id: "18",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+const BurgerKing: Restaurant = {
+    id: "23",
+    name: "Burger King",
+    description:
+        "Well-known fast-food chain serving grilled burgers, fries & shakes, plus breakfast.",
+    image: burgerking,
+    menu: BKMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant24: Restaurant = {
-    id: "18",
+    id: "24",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -324,7 +336,7 @@ const restaurant24: Restaurant = {
 };
 
 const restaurant25: Restaurant = {
-    id: "18",
+    id: "25",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -335,7 +347,7 @@ const restaurant25: Restaurant = {
 };
 
 const restaurant26: Restaurant = {
-    id: "18",
+    id: "26",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -346,7 +358,7 @@ const restaurant26: Restaurant = {
 };
 
 const restaurant27: Restaurant = {
-    id: "18",
+    id: "27",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -357,7 +369,7 @@ const restaurant27: Restaurant = {
 };
 
 const restaurant28: Restaurant = {
-    id: "18",
+    id: "28",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -368,7 +380,7 @@ const restaurant28: Restaurant = {
 };
 
 const restaurant29: Restaurant = {
-    id: "18",
+    id: "29",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -379,7 +391,7 @@ const restaurant29: Restaurant = {
 };
 
 const restaurant30: Restaurant = {
-    id: "18",
+    id: "30",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -390,7 +402,7 @@ const restaurant30: Restaurant = {
 };
 
 const restaurant31: Restaurant = {
-    id: "18",
+    id: "31",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -401,7 +413,7 @@ const restaurant31: Restaurant = {
 };
 
 const restaurant32: Restaurant = {
-    id: "18",
+    id: "32",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -412,7 +424,7 @@ const restaurant32: Restaurant = {
 };
 
 const restaurant33: Restaurant = {
-    id: "18",
+    id: "33",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -423,7 +435,7 @@ const restaurant33: Restaurant = {
 };
 
 const restaurant34: Restaurant = {
-    id: "18",
+    id: "34",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -434,7 +446,7 @@ const restaurant34: Restaurant = {
 };
 
 const restaurant35: Restaurant = {
-    id: "18",
+    id: "35",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -445,7 +457,7 @@ const restaurant35: Restaurant = {
 };
 
 const restaurant36: Restaurant = {
-    id: "18",
+    id: "36",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -456,7 +468,7 @@ const restaurant36: Restaurant = {
 };
 
 const restaurant37: Restaurant = {
-    id: "18",
+    id: "37",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -467,7 +479,7 @@ const restaurant37: Restaurant = {
 };
 
 const restaurant38: Restaurant = {
-    id: "18",
+    id: "38",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -478,7 +490,7 @@ const restaurant38: Restaurant = {
 };
 
 const restaurant39: Restaurant = {
-    id: "18",
+    id: "39",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -489,7 +501,7 @@ const restaurant39: Restaurant = {
 };
 
 const restaurant40: Restaurant = {
-    id: "18",
+    id: "40",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -500,7 +512,7 @@ const restaurant40: Restaurant = {
 };
 
 const restaurant41: Restaurant = {
-    id: "18",
+    id: "41",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -511,7 +523,7 @@ const restaurant41: Restaurant = {
 };
 
 const restaurant42: Restaurant = {
-    id: "18",
+    id: "42",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -522,7 +534,7 @@ const restaurant42: Restaurant = {
 };
 
 const restaurant43: Restaurant = {
-    id: "18",
+    id: "43",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -533,7 +545,7 @@ const restaurant43: Restaurant = {
 };
 
 const restaurant44: Restaurant = {
-    id: "18",
+    id: "44",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -544,7 +556,7 @@ const restaurant44: Restaurant = {
 };
 
 const restaurant45: Restaurant = {
-    id: "18",
+    id: "45",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -555,7 +567,7 @@ const restaurant45: Restaurant = {
 };
 
 const restaurant46: Restaurant = {
-    id: "18",
+    id: "46",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -566,7 +578,7 @@ const restaurant46: Restaurant = {
 };
 
 const restaurant47: Restaurant = {
-    id: "18",
+    id: "47",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -577,7 +589,7 @@ const restaurant47: Restaurant = {
 };
 
 const restaurant48: Restaurant = {
-    id: "18",
+    id: "48",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -588,7 +600,7 @@ const restaurant48: Restaurant = {
 };
 
 const restaurant49: Restaurant = {
-    id: "18",
+    id: "49",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -599,7 +611,7 @@ const restaurant49: Restaurant = {
 };
 
 const restaurant50: Restaurant = {
-    id: "18",
+    id: "50",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -629,10 +641,10 @@ const RestaurantList: Restaurant[] = [
     Wendys,
     ChickFilA,
     TacoBell,
-    restaurant20,
-    restaurant21,
-    restaurant22,
-    restaurant23,
+    BuffaloWildWings,
+    TwoStones,
+    Claymont,
+    BurgerKing,
     restaurant24,
     restaurant25,
     restaurant26,

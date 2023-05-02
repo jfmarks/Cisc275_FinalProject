@@ -691,10 +691,152 @@ const S4: MenuItem = {
 };
 
 const S5: MenuItem = {
-    name: "Cinnabon Delights 12 Pack ",
+    name: "Cinnabon Delights 12 Pack",
     description:
         "Sorry to tell you, buddy, but you've been had. Cinnabon Delights® are a thing. And they can play some serious mind games. You thought you were eating breakfast, but then you put this thing in your mouth and WOAH, cinnamon spheres filled with icing is obviously dessert, not breakfast.",
     price: "$6.39"
 };
 
 export const TBMenu: MenuItem[] = [S1, S2, S3, S4, S5];
+
+const T1: MenuItem = {
+    name: "10 Boneless Wings",
+    description:
+        "Juicy All-White Chicken / Lightly Breaded / Handspun in Choice of Sauce or Dry Seasoning",
+    price: "$13.49"
+};
+
+const T2: MenuItem = {
+    name: "2 Loaded Bird Dawgs + Fries",
+    description:
+        "Hand-Breaded Chicken Tenders / Wild Honey Mustard / Grilled Onions / New Belgium Fat Tire® Beer Cheese / Green Onions / Brioche Buns / Includes 2 Dawgs / Natural-Cut French Fries",
+    price: "$12.99"
+};
+
+const T3: MenuItem = {
+    name: "All-American Cheeseburger",
+    description:
+        "Double Patty / Hand-Smashed / Sea Salt / Coarse Black Pepper / American Cheese / Shredded Iceberg Lettuce / Tomato / Pickles / Mustard / Mayo / Challah Bun / Natural-Cut French Fries",
+    price: "$13.79"
+};
+
+const T4: MenuItem = {
+    name: "Street Tacos, Chips & Salsa",
+    description:
+        "Pulled Chicken / Parmesan Garlic / House-Made Pico de Gallo / Southwestern Ranch / Cilantro / Flour Tortillas / House-Made Tortilla Chips & Salsa",
+    price: "$13.49"
+};
+
+const T5: MenuItem = {
+    name: "Chocolate Fudge Cake",
+    description: "Chocolate Fudge Cake / Chocolate Sauce / Vanilla Ice Cream",
+    price: "$7.49"
+};
+
+export const BWWMenu: MenuItem[] = [T1, T2, T3, T4, T5];
+
+const U1: MenuItem = {
+    name: "Jerk-Fu Tacos",
+    description:
+        "caribbean spiced tofu, vegan coconut curry mayo, shredded lettuce, pickled jalapeno, mango pico de gallo, jicama wrap",
+    price: "$13.95"
+};
+
+const U2: MenuItem = {
+    name: "Two Stone Fruits Salad",
+    description:
+        "baby arugula, dark cherries, spanish olives, red onion, grape tomato, toasted almonds, sorrel, pink peppercorn vinaigrette",
+    price: "$15.95"
+};
+
+const U3: MenuItem = {
+    name: "Blackend Salmon",
+    description:
+        "cajun spice, creamed hominy, cornbread stuffing, pickled tomatillo salsa, jalapeno-maple gastrique, scallions",
+    price: "$24.95"
+};
+
+const U4: MenuItem = {
+    name: "Peebee & Jay Burger",
+    description: "pork belly, peanut butter, strawberry jam, arugula, brioche",
+    price: "$18.95"
+};
+
+const U5: MenuItem = {
+    name: "Grilled Organic Chicken BLT",
+    description:
+        "bacon, lettuce, tomato, onion, cheddar, avocado-lime aioli, brioche",
+    price: "$15.95"
+};
+
+export const TSMenu: MenuItem[] = [U1, U2, U3, U4, U5];
+
+const V1: MenuItem = {
+    name: "Onion Rings",
+    description: "A generous portion, perfectly seasoned and prepared.",
+    price: "$5.49"
+};
+
+const V2: MenuItem = {
+    name: "Claymont Cheesesteak",
+    description:
+        "The Classic Philly-Styled Thinly Sliced Premium Rib-Eye Steak and American Cheese.",
+    price: "$8.49"
+};
+
+const V3: MenuItem = {
+    name: "Cheese Stromboli",
+    description: "Pizza Sauce And Mozzarella.",
+    price: "$10.49"
+};
+
+const V4: MenuItem = {
+    name: "Turkey Club",
+    description:
+        "Potato Chips, Side Pickles, American, Lettuce, Tomato, Mayo, Bacon and Turkey.",
+    price: "$10.99"
+};
+
+const V5: MenuItem = {
+    name: "Chocolate Pudding",
+    description: "Topped with Whipped Cream",
+    price: "$5.25"
+};
+
+export const ClaymontMenu: MenuItem[] = [V1, V2, V3, V4, V5];
+
+const W1: MenuItem = {
+    name: "Whopper",
+    description:
+        "A ¼ lb of flame-grilled beef patty topped with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun.",
+    price: "$6.59"
+};
+
+const W2: MenuItem = {
+    name: "BK Royal Crispy Chicken",
+    description:
+        "Crispy white meat breast fillet topped with royal sauce, lettuce and juicy tomatoes on a toasted potato bun.",
+    price: "$5.99"
+};
+
+const W3: MenuItem = {
+    name: "8 Piece Chicken Nuggets",
+    description:
+        "Bite-sized white meat chicken coated in crispy homestyle seasoned breading.",
+    price: "$2.49"
+};
+
+const W4: MenuItem = {
+    name: "4 Piece Mozzarella Sticks",
+    description: "Perfectly matched with a marinara dipping sauce.",
+    price: "$1.99"
+};
+
+const W5: MenuItem = {
+    name: "Hershey's Sundae Pie",
+    description:
+        "A crunchy chocolate crust filled with chocolate crème filling and garnished with real Hershey's Chocolate Chips.",
+    price: "$2.29"
+};
+
+export const BKMenu: MenuItem[] = [W1, W2, W3, W4, W5];

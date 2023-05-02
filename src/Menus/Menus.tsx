@@ -622,4 +622,79 @@ const Q5: MenuItem = {
         "The Chocolate Frosty was born out of Dave's desire for a signature dessert to go with his vision of the perfect meal. Thick enough to use a spoon, smooth enough to use a straw, and perfect when enjoyed on the end of a fry.",
     price: "$1.99"
 };
+
 export const WendysMenu: MenuItem[] = [Q1, Q2, Q3, Q4, Q5];
+
+const R1: MenuItem = {
+    name: "Hash Brown Scramble Burrito w/ Nuggets",
+    description:
+        "A hearty morning meal of sliced Chick-fil-A Nuggets, crispy Hash Browns, scrambled eggs and a blend of Monterey Jack and Cheddar cheeses. Made fresh each morning. Rolled in a warm flour tortilla. Served with Jalapeño Salsa.",
+    price: "$8.39"
+};
+
+const R2: MenuItem = {
+    name: "Chick-fil-A Chicken Sandwich",
+    description:
+        "A boneless breast of chicken seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips. Also available on a multigrain bun.",
+    price: "$8.79"
+};
+
+const R3: MenuItem = {
+    name: "Mac & Cheese",
+    description:
+        "A classic macaroni and cheese recipe featuring a special blend of cheeses including Parmesan, Cheddar, and Romano. Baked in-restaurant to form a crispy top layer of baked cheese.",
+    price: "$6.79"
+};
+
+const R4: MenuItem = {
+    name: "Spicy Southwest Salad",
+    description:
+        "Slices of grilled spicy chicken breast served on a fresh bed of mixed greens, topped with grape tomatoes, a blend of Monterey Jack and Cheddar cheeses, and a zesty combination of roasted corn, black beans, poblano chiles, and red bell peppers. Prepared fresh daily. Served with Seasoned Tortilla Strips and Chili Lime Pepitas. Pairs well with Creamy Salsa dressing.",
+    price: "$14.39"
+};
+
+const R5: MenuItem = {
+    name: "Chocolate Chunk Cookie",
+    description:
+        "Cookies have both semi-sweet dark and milk chocolate chunks, along with wholesome oats.",
+    price: "$2.79"
+};
+
+export const CFAMenu: MenuItem[] = [R1, R2, R3, R4, R5];
+
+const S1: MenuItem = {
+    name: "Breakfast Crunchwrap Sausage",
+    description:
+        "A crispy hash brown, fluffy eggs, sausage patty, cheddar cheese, and creamy jalapeño sauce wrapped inside a warm flour tortilla and grilled to go.",
+    price: "$3.59"
+};
+
+const S2: MenuItem = {
+    name: "Chalupa Supreme",
+    description:
+        "The Chalupa Supreme sure weaves some beautiful witchcraft. Take a traditional flatbread, something already awesome in its own right, and fry it. Suddenly you have a shell that mysteriously marries chewy and crispy; pure sorcery. Add seasoned beef, a three-cheese blend, lettuce, tomatoes, and reduced fat sour cream, and you get a Dante-esque culinary anomaly. The only greater fried magic trick known to man is turning arbitrary dough splashes, into funnel cake. Now that is nothing short of a miracle.",
+    price: "$3.99"
+};
+
+const S3: MenuItem = {
+    name: "Beefy 5-Layer Burrito",
+    description:
+        "Sorry, lettuce, RSVP is closed. No, I get it, your friend Seasoned Beef is DJing tonight. But unless you're on the list, you can't get in. Oh, you're a personal friend of the promoters Beans and Cheese? Well, how about you give them a call, let them know you're out here in line, and maybe I can let you in. Oh, you don't have their number? I see, so now your dad owns the club, huh? Well, the owner Reduced Fat Sour Cream is coming down now, so I'm sure he'll take you, his child, straight to the VIP lounge where you belong huh? Sir? Oh, you don't know this guy? That's what I thought. Hey Nacho Cheese Sauce! Get this lettuce character out of my sight; I don't want him anywhere near the door to this burrito.",
+    price: "$3.39"
+};
+
+const S4: MenuItem = {
+    name: "Nacho Fries",
+    description:
+        "Golden, crisp Nacho Fries seasoned with bold Mexican spices and nacho cheese sauce for dipping.",
+    price: "$1.99"
+};
+
+const S5: MenuItem = {
+    name: "Cinnabon Delights 12 Pack ",
+    description:
+        "Sorry to tell you, buddy, but you've been had. Cinnabon Delights® are a thing. And they can play some serious mind games. You thought you were eating breakfast, but then you put this thing in your mouth and WOAH, cinnamon spheres filled with icing is obviously dessert, not breakfast.",
+    price: "$6.39"
+};
+
+export const TBMenu: MenuItem[] = [S1, S2, S3, S4, S5];

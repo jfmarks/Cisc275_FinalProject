@@ -48,8 +48,10 @@ function App() {
                                     </Button>
                                 </Row>
                             </Col>
+                            <Col style={{ width: "300px" }} lg={6}>
+                                <RestaurantBucket></RestaurantBucket>
+                            </Col>
                             <Col>
-                                <RestaurantBucket list={[]}></RestaurantBucket>
                                 <UserRestaurants></UserRestaurants>
                             </Col>
                         </Row>

@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
-import { Restaurant, droppedItem } from "../Interfaces";
+import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import "../RestaurantStyle.css";
 import DragRestaurant from "./RestaurantDrag";

@@ -2,25 +2,20 @@ import React, { useState } from "react";
 import { useDrop } from "react-dnd";
 import { Restaurant, droppedItem } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
-export default function RestaurantBucket({
-    list
-}: {
-    list: Restaurant[];
-}): JSX.Element {
-    const [items, setItems] = useState<Restaurant[]>(list);
+import { Card, Row } from "react-bootstrap";
+export default function RestaurantBucket(): JSX.Element {
+    const [items, setItems] = useState<Restaurant[]>([]);
     const handleAddRestaurant = (newItemID: string) => {
-        const newItem = RestaurantList.find(
+        const newItem: Restaurant = RestaurantList.find(
             (restaurant) => restaurant.id === newItemID
-        );
-        setItems([...items, newItem as Restaurant]);
+        ) as Restaurant;
+        setItems((items) => [...items, newItem as Restaurant]);
     };
 
-    const [{ isOver, canDrop }, drop] = useDrop(() => ({
+    const [{ isOver }, drop] = useDrop(() => ({
         accept: "RESTAURANT",
         drop: (item: droppedItem) => {
-            console.log(item);
             handleAddRestaurant(item.newItem);
-            console.log(items);
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
@@ -29,15 +24,23 @@ export default function RestaurantBucket({
     }));
 
     return (
-        <div
+        <Row
             ref={drop}
             role={"RestaurantBucket"}
-            style={{ backgroundColor: isOver ? "green" : "red" }}
+            style={{
+                backgroundColor: isOver ? "grey" : "white",
+                justifyContent: "center",
+                minHeight: "300px"
+            }}
         >
             Insert Restaurants here:
             {items.map((item) => (
-                <div key={item.id}>{item.name}</div>
+                <Card.Img
+                    key={item.id}
+                    src={item.image}
+                    className="card-image"
+                />
             ))}
-        </div>
+        </Row>
     );
 }

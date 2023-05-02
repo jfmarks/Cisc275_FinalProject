@@ -10,7 +10,7 @@ export default function DragRestaurant({
     image: string;
     dragItem: droppedItem;
 }) {
-    const [{ isDragging }, drag] = useDrag(
+    const [, drag] = useDrag(
         () => ({
             type: "RESTAURANT",
             item: dragItem,

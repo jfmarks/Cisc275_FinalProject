@@ -121,13 +121,13 @@ export function UserRestaurants(): JSX.Element {
                             <Button
                                 variant="success"
                                 onClick={() =>
-                                    CurrentUser.type == "Super"
+                                    CurrentUser.type == "Critic"
                                         ? setAddMode(!addMode)
                                         : null
                                 }
                                 disabled={
-                                    CurrentUser.type === "User" ||
-                                    CurrentUser.type === "Admin"
+                                    CurrentUser.type === "Manager" ||
+                                    CurrentUser.type === "Foodie"
                                 }
                             >
                                 {addMode ? "Cancel" : "Add Restaurant"}
@@ -135,12 +135,12 @@ export function UserRestaurants(): JSX.Element {
                         )}
                         <Button
                             onClick={() =>
-                                CurrentUser.type == "Super" ||
-                                CurrentUser.type == "Admin"
+                                CurrentUser.type == "Critic" ||
+                                CurrentUser.type == "Manager"
                                     ? handleEditRestaurant()
                                     : null
                             }
-                            disabled={CurrentUser.type === "User"}
+                            disabled={CurrentUser.type === "Foodie"}
                         >
                             {editMode ? "Save" : "Edit"}
                         </Button>

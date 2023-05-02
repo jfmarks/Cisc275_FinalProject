@@ -4,6 +4,7 @@ import "./RestaurantStyle.css";
 //import { Restaurant } from "./Components/Restaurant";
 import { UserRestaurants } from "./Components/UserRestaurants";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import CurrentUser from "./CurrentUser";
 
 function App() {
     return (
@@ -30,17 +31,32 @@ function App() {
                                 </Button>
                             </Row>
                             <Row className="App-main-button-rows">
-                                <Button className="App-main-buttons">
+                                <Button
+                                    className="App-main-buttons"
+                                    onClick={() =>
+                                        (CurrentUser.type = "Critic")
+                                    }
+                                >
                                     Critic
                                 </Button>
                             </Row>
                             <Row className="App-main-button-rows">
-                                <Button className="App-main-buttons">
+                                <Button
+                                    className="App-main-buttons"
+                                    onClick={() =>
+                                        (CurrentUser.type = "Manager")
+                                    }
+                                >
                                     Manager
                                 </Button>
                             </Row>
                             <Row className="App-main-button-rows">
-                                <Button className="App-main-buttons">
+                                <Button
+                                    className="App-main-buttons"
+                                    onClick={() =>
+                                        (CurrentUser.type = "Foodie")
+                                    }
+                                >
                                     Foodie
                                 </Button>
                             </Row>

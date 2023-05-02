@@ -622,4 +622,42 @@ const Q5: MenuItem = {
         "The Chocolate Frosty was born out of Dave's desire for a signature dessert to go with his vision of the perfect meal. Thick enough to use a spoon, smooth enough to use a straw, and perfect when enjoyed on the end of a fry.",
     price: "$1.99"
 };
+
 export const WendysMenu: MenuItem[] = [Q1, Q2, Q3, Q4, Q5];
+
+const R1: MenuItem = {
+    name: "Hash Brown Scramble Burrito w/ Nuggets",
+    description:
+        "A hearty morning meal of sliced Chick-fil-A Nuggets, crispy Hash Browns, scrambled eggs and a blend of Monterey Jack and Cheddar cheeses. Made fresh each morning. Rolled in a warm flour tortilla. Served with Jalapeño Salsa.",
+    price: "$8.39"
+};
+
+const R2: MenuItem = {
+    name: "Chick-fil-A Chicken Sandwich",
+    description:
+        "A boneless breast of chicken seasoned to perfection, freshly breaded, pressure cooked in 100% refined peanut oil and served on a toasted, buttered bun with dill pickle chips. Also available on a multigrain bun.",
+    price: "$8.79"
+};
+
+const R3: MenuItem = {
+    name: "Mac & Cheese",
+    description:
+        "A classic macaroni and cheese recipe featuring a special blend of cheeses including Parmesan, Cheddar, and Romano. Baked in-restaurant to form a crispy top layer of baked cheese.",
+    price: "$6.79"
+};
+
+const R4: MenuItem = {
+    name: "Spicy Southwest Salad",
+    description:
+        "Slices of grilled spicy chicken breast served on a fresh bed of mixed greens, topped with grape tomatoes, a blend of Monterey Jack and Cheddar cheeses, and a zesty combination of roasted corn, black beans, poblano chiles, and red bell peppers. Prepared fresh daily. Served with Seasoned Tortilla Strips and Chili Lime Pepitas. Pairs well with Creamy Salsa dressing.",
+    price: "$14.39"
+};
+
+const R5: MenuItem = {
+    name: "Chocolate Chunk Cookie",
+    description:
+        "Cookies have both semi-sweet dark and milk chocolate chunks, along with wholesome oats.",
+    price: "$2.79"
+};
+
+export const CFAMenu: MenuItem[] = [R1, R2, R3, R4, R5];

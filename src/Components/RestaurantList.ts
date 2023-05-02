@@ -16,6 +16,7 @@ import deerpark from "../Images/deerpark.png";
 import grottos from "../Images/grottos.png";
 import mcdonalds from "../Images/mcdonalds.png";
 import wendys from "../Images/wendys.png";
+import chickfila from "../Images/chickfila.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -33,7 +34,8 @@ import {
     DPMenu,
     GrottosMenu,
     McMenu,
-    WendysMenu
+    WendysMenu,
+    CFAMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -240,7 +242,140 @@ const Wendys: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant18: Restaurant = {
+const ChickFilA: Restaurant = {
+    id: "18",
+    name: "Chick-Fil-A",
+    description:
+        "Fast-food chain serving chicken sandwiches & nuggets along with salads & sides.",
+    image: chickfila,
+    menu: CFAMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const restaurant19: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant20: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant21: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant22: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant23: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant24: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant25: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant26: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant27: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant28: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant29: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant30: Restaurant = {
     id: "18",
     name: "Indian Sizzler",
     description: "",
@@ -268,7 +403,7 @@ const RestaurantList: Restaurant[] = [
     Grottos,
     McDonalds,
     Wendys,
-    restaurant18
+    ChickFilA
 ];
 
 export default RestaurantList;

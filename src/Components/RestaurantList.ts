@@ -388,6 +388,227 @@ const restaurant30: Restaurant = {
     diningExperience: "Luxury",
     priceRange: ""
 };
+
+const restaurant31: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant32: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant33: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant34: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant35: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant36: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant37: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant38: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant39: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant40: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant41: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant42: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant43: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant44: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant45: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant46: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant47: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant48: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant49: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant50: Restaurant = {
+    id: "18",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
 const RestaurantList: Restaurant[] = [
     AppleBees,
     Chipotle,
@@ -407,7 +628,38 @@ const RestaurantList: Restaurant[] = [
     McDonalds,
     Wendys,
     ChickFilA,
-    TacoBell
+    TacoBell,
+    restaurant20,
+    restaurant21,
+    restaurant22,
+    restaurant23,
+    restaurant24,
+    restaurant25,
+    restaurant26,
+    restaurant27,
+    restaurant28,
+    restaurant29,
+    restaurant30,
+    restaurant31,
+    restaurant32,
+    restaurant33,
+    restaurant34,
+    restaurant35,
+    restaurant36,
+    restaurant37,
+    restaurant38,
+    restaurant39,
+    restaurant40,
+    restaurant41,
+    restaurant42,
+    restaurant43,
+    restaurant44,
+    restaurant45,
+    restaurant46,
+    restaurant47,
+    restaurant48,
+    restaurant49,
+    restaurant50
 ];
 
 export default RestaurantList;

@@ -3,13 +3,14 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 //import { Interface } from "../Interfaces";
-import { User } from "../Interfaces";
+// import { User } from "../Interfaces";
 //import { log } from "console";
 
 const RANKS = ["User", "Super", "Admin"];
-
+export function UserList(): JSX.Element {
+    /*
 export function UserList(user: User): JSX.Element {
-    const id = user.id;
+    const id = user.id;*/
     function userButtons(): JSX.Element {
         /* function updateRank(event: React.ChangeEvent<HTMLSelectElement>) {
             setRank(event?.target.value);

@@ -20,6 +20,7 @@ import chickfila from "../Images/chickfila.png";
 import tacobell from "../Images/tacobell.png";
 import BWW from "../Images/BWW.png";
 import twostones from "../Images/twostones.png";
+import claymont from "../Images/claymont.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -41,7 +42,8 @@ import {
     CFAMenu,
     TBMenu,
     BWWMenu,
-    TSMenu
+    TSMenu,
+    ClaymontMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -296,15 +298,16 @@ const TwoStones: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant22: Restaurant = {
+const Claymont: Restaurant = {
     id: "22",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Claymont Steak Shop",
+    description:
+        "Cheesesteaks, subs, grinders & other Philly-style fare in a relaxed spot with flat-screen TVs.",
+    image: claymont,
+    menu: ClaymontMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const restaurant23: Restaurant = {
@@ -637,7 +640,7 @@ const RestaurantList: Restaurant[] = [
     TacoBell,
     BuffaloWildWings,
     TwoStones,
-    restaurant22,
+    Claymont,
     restaurant23,
     restaurant24,
     restaurant25,

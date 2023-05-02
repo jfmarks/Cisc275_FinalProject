@@ -770,3 +770,37 @@ const U5: MenuItem = {
 };
 
 export const TSMenu: MenuItem[] = [U1, U2, U3, U4, U5];
+
+const V1: MenuItem = {
+    name: "Onion Rings",
+    description: "A generous portion, perfectly seasoned and prepared.",
+    price: "$5.49"
+};
+
+const V2: MenuItem = {
+    name: "Claymont Cheesesteak",
+    description:
+        "The Classic Philly-Styled Thinly Sliced Premium Rib-Eye Steak and American Cheese.",
+    price: "$8.49"
+};
+
+const V3: MenuItem = {
+    name: "Cheese Stromboli",
+    description: "Pizza Sauce And Mozzarella.",
+    price: "$10.49"
+};
+
+const V4: MenuItem = {
+    name: "Turkey Club",
+    description:
+        "Potato Chips, Side Pickles, American, Lettuce, Tomato, Mayo, Bacon and Turkey.",
+    price: "$10.99"
+};
+
+const V5: MenuItem = {
+    name: "Chocolate Pudding",
+    description: "Topped with Whipped Cream",
+    price: "$5.25"
+};
+
+export const ClaymontMenu: MenuItem[] = [V1, V2, V3, V4, V5];

@@ -4,6 +4,7 @@ import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import "../RestaurantStyle.css";
+import { AddRestaurant } from "../AddRestaurant";
 
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
@@ -13,6 +14,7 @@ export function UserRestaurants(): JSX.Element {
         null
     ); // state to keep track of visible menu
     const [editMode, setEditMode] = useState(false); // Initial state for editMode is false
+    const [addMode, setAddMode] = useState(false);
     // Dummy data for restaurants (replace with actual fetch call)
     const fetchRestaurants = (): void => {
         const data = RestaurantList;
@@ -22,6 +24,10 @@ export function UserRestaurants(): JSX.Element {
     useState(() => {
         fetchRestaurants();
     });
+    const addRestaurant = (newRestaurant: Restaurant) => {
+        setRestaurants([...restaurants, newRestaurant]);
+        setAddMode(false);
+    };
     const handleShowMenu = (restaurantId: string): void => {
         // Toggle menu visibility for the selected restaurant
         setMenuVisible((prevId) =>
@@ -58,6 +64,29 @@ export function UserRestaurants(): JSX.Element {
         });
         setRestaurants(updatedRestaurants);
     };
+    const handleRestaurantPriceChange = (price: string, id: string) => {
+        setRestaurants((prevRestaurants) =>
+            prevRestaurants.map((rest) => {
+                if (rest.id === id) {
+                    return { ...rest, priceRange: price };
+                } else {
+                    return rest;
+                }
+            })
+        );
+    };
+    const handleRestaurantRatingChange = (
+        e: React.ChangeEvent<HTMLInputElement>,
+        id: string
+    ) => {
+        const updatedRestaurants = restaurants.map((restaurant) => {
+            if (restaurant.id === id) {
+                return { ...restaurant, averageRating: Number(e.target.value) };
+            }
+            return restaurant;
+        });
+        setRestaurants(updatedRestaurants);
+    };
     const handleDeleteRestaurant = (id: string) => {
         const updatedRestaurants = restaurants.filter(
             (restaurant) => restaurant.id !== id
@@ -88,6 +117,22 @@ export function UserRestaurants(): JSX.Element {
                         Restaurant List
                     </div>
                     <div>
+                        {editMode && (
+                            <Button
+                                variant="success"
+                                onClick={() =>
+                                    CurrentUser.type == "Super"
+                                        ? setAddMode(!addMode)
+                                        : null
+                                }
+                                disabled={
+                                    CurrentUser.type === "User" ||
+                                    CurrentUser.type === "Admin"
+                                }
+                            >
+                                {addMode ? "Cancel" : "Add Restaurant"}
+                            </Button>
+                        )}
                         <Button
                             onClick={() =>
                                 CurrentUser.type == "Super" ||
@@ -103,6 +148,9 @@ export function UserRestaurants(): JSX.Element {
                 </div>
             </h3>
             <Row>
+                {addMode && editMode && (
+                    <AddRestaurant addRestaurant={addRestaurant} />
+                )}
                 {restaurants.map((restaurant) => (
                     <Col
                         key={restaurant.id}
@@ -122,7 +170,7 @@ export function UserRestaurants(): JSX.Element {
                                     attributesVisible === restaurant.id ||
                                     editMode
                                         ? "fit-content"
-                                        : "350px",
+                                        : "400px",
                                 width: "600px",
                                 display: "flex",
                                 justifyContent: "center",
@@ -136,7 +184,7 @@ export function UserRestaurants(): JSX.Element {
                                 src={restaurant.image}
                                 className="card-image"
                             />
-                            <Card.Body>
+                            <Card.Body style={{ minHeight: "150px" }}>
                                 {editMode ? (
                                     <div className="editmode">
                                         <input
@@ -161,6 +209,74 @@ export function UserRestaurants(): JSX.Element {
                                                 )
                                             }
                                         />
+                                        <input
+                                            className="inputedit"
+                                            type="range"
+                                            step="0.1"
+                                            min="1"
+                                            max="5"
+                                            value={restaurant.averageRating}
+                                            onChange={(e) =>
+                                                handleRestaurantRatingChange(
+                                                    e,
+                                                    restaurant.id
+                                                )
+                                            }
+                                        />
+                                        <p style={{ marginTop: "-25px" }}>
+                                            {restaurant.averageRating} ★
+                                        </p>
+                                        <div className="priceButtonGroup">
+                                            <button
+                                                className={`priceButton ${
+                                                    restaurant.priceRange ===
+                                                    "$"
+                                                        ? "active"
+                                                        : ""
+                                                }`}
+                                                onClick={() =>
+                                                    handleRestaurantPriceChange(
+                                                        "$",
+                                                        restaurant.id
+                                                    )
+                                                }
+                                            >
+                                                $
+                                            </button>
+                                            <button
+                                                className={`priceButton ${
+                                                    restaurant.priceRange ===
+                                                    "$$"
+                                                        ? "active"
+                                                        : ""
+                                                }`}
+                                                onClick={() =>
+                                                    handleRestaurantPriceChange(
+                                                        "$$",
+                                                        restaurant.id
+                                                    )
+                                                }
+                                            >
+                                                $$
+                                            </button>
+                                            <button
+                                                className={`priceButton ${
+                                                    restaurant.priceRange ===
+                                                    "$$$"
+                                                        ? "active"
+                                                        : ""
+                                                }`}
+                                                onClick={() =>
+                                                    handleRestaurantPriceChange(
+                                                        "$$$",
+                                                        restaurant.id
+                                                    )
+                                                }
+                                            >
+                                                $$$
+                                            </button>
+                                        </div>
+                                        <br></br>
                                         {/* Render other editable fields as needed */}
                                         <Button
                                             variant="danger"
@@ -225,16 +341,25 @@ export function UserRestaurants(): JSX.Element {
                                                             height: "auto"
                                                         }}
                                                     >
-                                                        <p
-                                                            style={{
-                                                                fontSize:
-                                                                    "15px",
-                                                                fontStyle:
-                                                                    "oblique"
-                                                            }}
-                                                        >
+                                                        <p>
+                                                            {
+                                                                restaurant.diningExperience
+                                                            }
+                                                        </p>
+
+                                                        <p>
                                                             {
                                                                 restaurant.description
+                                                            }
+                                                        </p>
+                                                        <p>
+                                                            {
+                                                                restaurant.averageRating
+                                                            }
+                                                        </p>
+                                                        <p>
+                                                            {
+                                                                restaurant.priceRange
                                                             }
                                                         </p>
                                                     </div>

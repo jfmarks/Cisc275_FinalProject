@@ -17,6 +17,7 @@ import grottos from "../Images/grottos.png";
 import mcdonalds from "../Images/mcdonalds.png";
 import wendys from "../Images/wendys.png";
 import chickfila from "../Images/chickfila.png";
+import tacobell from "../Images/tacobell.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -35,7 +36,8 @@ import {
     GrottosMenu,
     McMenu,
     WendysMenu,
-    CFAMenu
+    CFAMenu,
+    TBMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -254,15 +256,16 @@ const ChickFilA: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant19: Restaurant = {
+const TacoBell: Restaurant = {
     id: "18",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Taco Bell",
+    description:
+        "Fast-food chain serving Mexican-inspired fare such as tacos, quesadillas & nachos.",
+    image: tacobell,
+    menu: TBMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant20: Restaurant = {
@@ -403,7 +406,8 @@ const RestaurantList: Restaurant[] = [
     Grottos,
     McDonalds,
     Wendys,
-    ChickFilA
+    ChickFilA,
+    TacoBell
 ];
 
 export default RestaurantList;

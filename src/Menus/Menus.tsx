@@ -661,3 +661,40 @@ const R5: MenuItem = {
 };
 
 export const CFAMenu: MenuItem[] = [R1, R2, R3, R4, R5];
+
+const S1: MenuItem = {
+    name: "Breakfast Crunchwrap Sausage",
+    description:
+        "A crispy hash brown, fluffy eggs, sausage patty, cheddar cheese, and creamy jalapeño sauce wrapped inside a warm flour tortilla and grilled to go.",
+    price: "$3.59"
+};
+
+const S2: MenuItem = {
+    name: "Chalupa Supreme",
+    description:
+        "The Chalupa Supreme sure weaves some beautiful witchcraft. Take a traditional flatbread, something already awesome in its own right, and fry it. Suddenly you have a shell that mysteriously marries chewy and crispy; pure sorcery. Add seasoned beef, a three-cheese blend, lettuce, tomatoes, and reduced fat sour cream, and you get a Dante-esque culinary anomaly. The only greater fried magic trick known to man is turning arbitrary dough splashes, into funnel cake. Now that is nothing short of a miracle.",
+    price: "$3.99"
+};
+
+const S3: MenuItem = {
+    name: "Beefy 5-Layer Burrito",
+    description:
+        "Sorry, lettuce, RSVP is closed. No, I get it, your friend Seasoned Beef is DJing tonight. But unless you're on the list, you can't get in. Oh, you're a personal friend of the promoters Beans and Cheese? Well, how about you give them a call, let them know you're out here in line, and maybe I can let you in. Oh, you don't have their number? I see, so now your dad owns the club, huh? Well, the owner Reduced Fat Sour Cream is coming down now, so I'm sure he'll take you, his child, straight to the VIP lounge where you belong huh? Sir? Oh, you don't know this guy? That's what I thought. Hey Nacho Cheese Sauce! Get this lettuce character out of my sight; I don't want him anywhere near the door to this burrito.",
+    price: "$3.39"
+};
+
+const S4: MenuItem = {
+    name: "Nacho Fries",
+    description:
+        "Golden, crisp Nacho Fries seasoned with bold Mexican spices and nacho cheese sauce for dipping.",
+    price: "$1.99"
+};
+
+const S5: MenuItem = {
+    name: "Cinnabon Delights 12 Pack ",
+    description:
+        "Sorry to tell you, buddy, but you've been had. Cinnabon Delights® are a thing. And they can play some serious mind games. You thought you were eating breakfast, but then you put this thing in your mouth and WOAH, cinnamon spheres filled with icing is obviously dessert, not breakfast.",
+    price: "$6.39"
+};
+
+export const TBMenu: MenuItem[] = [S1, S2, S3, S4, S5];

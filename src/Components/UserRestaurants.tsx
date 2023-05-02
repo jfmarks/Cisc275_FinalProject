@@ -4,8 +4,8 @@ import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import "../RestaurantStyle.css";
+import DragRestaurant from "./RestaurantDrag";
 import { AddRestaurant } from "./AddRestaurant";
-
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
@@ -179,12 +179,11 @@ export function UserRestaurants(): JSX.Element {
                             }}
                         >
                             <br></br>
-                            <Card.Img
-                                variant="top"
-                                src={restaurant.image}
-                                className="card-image"
-                            />
-                            <Card.Body style={{ minHeight: "150px" }}>
+                            <DragRestaurant
+                                image={restaurant.image}
+                                dragItem={{ newItem: restaurant.id }}
+                            ></DragRestaurant>
+                            <Card.Body>
                                 {editMode ? (
                                     <div className="editmode">
                                         <input

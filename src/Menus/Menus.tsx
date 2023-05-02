@@ -734,3 +734,39 @@ const T5: MenuItem = {
 };
 
 export const BWWMenu: MenuItem[] = [T1, T2, T3, T4, T5];
+
+const U1: MenuItem = {
+    name: "Jerk-Fu Tacos",
+    description:
+        "caribbean spiced tofu, vegan coconut curry mayo, shredded lettuce, pickled jalapeno, mango pico de gallo, jicama wrap",
+    price: "$13.95"
+};
+
+const U2: MenuItem = {
+    name: "Two Stone Fruits Salad",
+    description:
+        "baby arugula, dark cherries, spanish olives, red onion, grape tomato, toasted almonds, sorrel, pink peppercorn vinaigrette",
+    price: "$15.95"
+};
+
+const U3: MenuItem = {
+    name: "Blackend Salmon",
+    description:
+        "cajun spice, creamed hominy, cornbread stuffing, pickled tomatillo salsa, jalapeno-maple gastrique, scallions",
+    price: "$24.95"
+};
+
+const U4: MenuItem = {
+    name: "Peebee & Jay Burger",
+    description: "pork belly, peanut butter, strawberry jam, arugula, brioche",
+    price: "$18.95"
+};
+
+const U5: MenuItem = {
+    name: "Grilled Organic Chicken BLT",
+    description:
+        "bacon, lettuce, tomato, onion, cheddar, avocado-lime aioli, brioche",
+    price: "$15.95"
+};
+
+export const TSMenu: MenuItem[] = [U1, U2, U3, U4, U5];

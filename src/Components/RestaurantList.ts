@@ -19,6 +19,7 @@ import wendys from "../Images/wendys.png";
 import chickfila from "../Images/chickfila.png";
 import tacobell from "../Images/tacobell.png";
 import BWW from "../Images/BWW.png";
+import twostones from "../Images/twostones.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -39,7 +40,8 @@ import {
     WendysMenu,
     CFAMenu,
     TBMenu,
-    BWWMenu
+    BWWMenu,
+    TSMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -282,15 +284,16 @@ const BuffaloWildWings: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant21: Restaurant = {
+const TwoStones: Restaurant = {
     id: "21",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Two Stones Pub",
+    description:
+        "Bright gastropub serving a large selection of craft beers & upscale versions of bar food classics.",
+    image: twostones,
+    menu: TSMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant22: Restaurant = {
@@ -633,7 +636,7 @@ const RestaurantList: Restaurant[] = [
     ChickFilA,
     TacoBell,
     BuffaloWildWings,
-    restaurant21,
+    TwoStones,
     restaurant22,
     restaurant23,
     restaurant24,

@@ -840,3 +840,40 @@ const W5: MenuItem = {
 };
 
 export const BKMenu: MenuItem[] = [W1, W2, W3, W4, W5];
+
+const X1: MenuItem = {
+    name: "Fish & Chicken Meal",
+    description:
+        "1 piece of wild-caught Alaska Pollock and 2 pieces of all-white meat Chicken, hand-battered in our signature batter, served with 2 Sides, and 2 Hushpuppies.",
+    price: "$10.79"
+};
+
+const X2: MenuItem = {
+    name: "Grilled Salmon Meal",
+    description:
+        "1 piece of Grilled Salmon served on a bed of rice with 2 sides.",
+    price: "$11.69"
+};
+
+const X3: MenuItem = {
+    name: "Rice Bowls",
+    description:
+        "Customize your rice bowl with your choice of grilled salmon or grilled shrimp and one of our signature toppings.",
+    price: "$9.69"
+};
+
+const X4: MenuItem = {
+    name: "2 Tacos",
+    description:
+        "Customize your tacos with your choice of grilled salmon or grilled shrimp and one of our signature toppings.",
+    price: "$7.59"
+};
+
+const X5: MenuItem = {
+    name: "Chocolate Cream Pie",
+    description:
+        "Our chocolate creme pie is the bounty of choice for buccaneers and landlubbers alike.",
+    price: "$3.29"
+};
+
+export const LJSMenu: MenuItem[] = [X1, X2, X3, X4, X5];

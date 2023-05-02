@@ -22,6 +22,7 @@ import BWW from "../Images/BWW.png";
 import twostones from "../Images/twostones.png";
 import claymont from "../Images/claymont.png";
 import burgerking from "../Images/burgerking.png";
+import longjohns from "../Images/longjohns.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -45,7 +46,8 @@ import {
     BWWMenu,
     TSMenu,
     ClaymontMenu,
-    BKMenu
+    BKMenu,
+    LJSMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -324,15 +326,16 @@ const BurgerKing: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant24: Restaurant = {
+const LongJohn: Restaurant = {
     id: "24",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Long John Silver's",
+    description:
+        "Counter-serve chain offering fried fish & seafood combos, plus chicken & sides.",
+    image: longjohns,
+    menu: LJSMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant25: Restaurant = {
@@ -645,7 +648,7 @@ const RestaurantList: Restaurant[] = [
     TwoStones,
     Claymont,
     BurgerKing,
-    restaurant24,
+    LongJohn,
     restaurant25,
     restaurant26,
     restaurant27,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Row, Col, Button } from "react-bootstrap";
-import { Restaurant } from "./Interfaces";
+import { Restaurant } from "../Interfaces";
 
 interface AddRestaurantProps {
     addRestaurant: (newRestaurant: Restaurant) => void;

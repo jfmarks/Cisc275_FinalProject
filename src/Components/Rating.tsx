@@ -4,3 +4,6 @@ import { Restaurant } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import CurrentUser from "../CurrentUser";
 */
+export interface temp {
+    temp: string;
+}

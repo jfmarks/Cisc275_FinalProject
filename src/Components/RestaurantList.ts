@@ -25,6 +25,7 @@ import burgerking from "../Images/burgerking.png";
 import longjohns from "../Images/longjohns.png";
 import auntieannes from "../Images/auntieannes.png";
 import cheesecakefactory from "../Images/cheesecakefactory.png";
+import cinnabon from "../Images/cinnabon.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -51,7 +52,8 @@ import {
     BKMenu,
     LJSMenu,
     AAMenu,
-    CCFMenu
+    CCFMenu,
+    CinnabonMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -366,15 +368,16 @@ const CheesecakeFactory: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant27: Restaurant = {
+const Cinnabon: Restaurant = {
     id: "27",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Cinnabon",
+    description:
+        "Counter-serve chain serving cinnamon rolls plus other baked goods & specialty frozen beverages.",
+    image: cinnabon,
+    menu: CinnabonMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$"
 };
 
 const restaurant28: Restaurant = {
@@ -657,7 +660,7 @@ const RestaurantList: Restaurant[] = [
     LongJohnSilvers,
     AuntieAnnes,
     CheesecakeFactory,
-    restaurant27,
+    Cinnabon,
     restaurant28,
     restaurant29,
     restaurant30,

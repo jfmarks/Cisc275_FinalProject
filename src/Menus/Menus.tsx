@@ -951,3 +951,40 @@ const Z5: MenuItem = {
 };
 
 export const CCFMenu: MenuItem[] = [Z1, Z2, Z3, Z4, Z5];
+
+const AA1: MenuItem = {
+    name: "Cinnabon Classic Roll",
+    description:
+        "Our world-famous cinnamon roll is made with a combination of warm dough, legendary Makara cinnamon, and signature cream cheese for a freshly baked, irresistible sweet treat.",
+    price: "$3.76"
+};
+
+const AA2: MenuItem = {
+    name: "Caramel PecanBon",
+    description:
+        "Our signature Classic Roll, topped with decadent caramel frosting and pecans for the perfect crunch.",
+    price: "$4.71"
+};
+
+const AA3: MenuItem = {
+    name: "Churro Swirl",
+    description:
+        "Our spin on the classic beloved snack, baked to perfection and topped with our world-famous Makara cinnamon and sugar. Add a cup of our signature cream cheese frosting for a truly irresistible treat.",
+    price: "$2.49"
+};
+
+const AA4: MenuItem = {
+    name: "Center of the Roll",
+    description:
+        "The ooey-gooey center of the Cinnabon universe. Available in Classic and Caramel PecanBon flavors, this is the definition of a perfect treat.",
+    price: "$3.30"
+};
+
+const AA5: MenuItem = {
+    name: "OREO Cookies & Cream Chillatta",
+    description:
+        "Cookies and milk, all grown up and perfectly blended into a sweet frozen treat.",
+    price: "$4.71"
+};
+
+export const CinnabonMenu: MenuItem[] = [AA1, AA2, AA3, AA4, AA5];

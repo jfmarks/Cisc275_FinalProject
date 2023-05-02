@@ -24,6 +24,7 @@ import claymont from "../Images/claymont.png";
 import burgerking from "../Images/burgerking.png";
 import longjohns from "../Images/longjohns.png";
 import auntieannes from "../Images/auntieannes.png";
+import cheesecakefactory from "../Images/cheesecakefactory.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -49,7 +50,8 @@ import {
     ClaymontMenu,
     BKMenu,
     LJSMenu,
-    AAMenu
+    AAMenu,
+    CCFMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -352,15 +354,16 @@ const AuntieAnnes: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant26: Restaurant = {
+const CheesecakeFactory: Restaurant = {
     id: "26",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "The Cheesecake Factory",
+    description:
+        "American chain restaurant offering sizable portions from a vast menu including signature cheesecake",
+    image: cheesecakefactory,
+    menu: CCFMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant27: Restaurant = {
@@ -653,7 +656,7 @@ const RestaurantList: Restaurant[] = [
     BurgerKing,
     LongJohnSilvers,
     AuntieAnnes,
-    restaurant26,
+    CheesecakeFactory,
     restaurant27,
     restaurant28,
     restaurant29,

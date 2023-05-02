@@ -914,3 +914,40 @@ const Y5: MenuItem = {
 };
 
 export const AAMenu: MenuItem[] = [Y1, Y2, Y3, Y4, Y5];
+
+const Z1: MenuItem = {
+    name: "Roadside Sliders",
+    description:
+        "Bite-Sized Burgers on Mini-Buns Served with Grilled Onions, Pickles and Ketchup",
+    price: "$9.95"
+};
+
+const Z2: MenuItem = {
+    name: "Bee Sting Flatbread Pizza",
+    description:
+        "Italian Sausage, Pepperoni, Bacon and Calabrian Chiles with Mozzarella, Parmesan and Honey",
+    price: "$14.50"
+};
+
+const Z3: MenuItem = {
+    name: "Hibachi Steak",
+    description:
+        "Hanger Steak with Shiitake Mushrooms, Onions, Bean Sprouts, Wasabi Mashed Potatoes and Vegetables",
+    price: "$27.50"
+};
+
+const Z4: MenuItem = {
+    name: "Shepherd's Pie",
+    description:
+        "Ground Beef, Carrots, Peas, Zucchini and Onions in a Delicious Mushroom Gravy Covered with a Mashed Potato-Parmesan Cheese Crust",
+    price: "$19.95"
+};
+
+const Z5: MenuItem = {
+    name: "Chocolate Tower Truffle Cake",
+    description:
+        "Layers and Layers of Fudge Cake with Chocolate Truffle Cream and Chocolate Mousse",
+    price: "$10.50"
+};
+
+export const CCFMenu: MenuItem[] = [Z1, Z2, Z3, Z4, Z5];

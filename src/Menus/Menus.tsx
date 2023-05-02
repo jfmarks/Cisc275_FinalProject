@@ -877,3 +877,40 @@ const X5: MenuItem = {
 };
 
 export const LJSMenu: MenuItem[] = [X1, X2, X3, X4, X5];
+
+const Y1: MenuItem = {
+    name: "Original Pretzel",
+    description:
+        "Every single pretzel is an original, and freshly baked to raise the standard of snacking. It's the pretzel that started it all — made from five simple, fresh ingredients. Pick a pretzel up — it's sure to return the favor!",
+    price: "$3.99"
+};
+
+const Y2: MenuItem = {
+    name: "Cinnamon Sugar Pretzel",
+    description:
+        "A soft Cinnamon Sugar Pretzel will satisfy any spirit. It's hot from the oven, sprinkled with fresh cinnamon, sweet sugar and handed right over.",
+    price: "$3.99"
+};
+
+const Y3: MenuItem = {
+    name: "Pepperoni Pretzel Nuggets",
+    description:
+        "The Pepperoni Pretzel you know and love is now bite-size! Each nugget is topped with a slice of pepperoni and a sprinkle of three-cheese blend.",
+    price: "$6.49"
+};
+
+const Y4: MenuItem = {
+    name: "Cheese Pretzel Dog",
+    description:
+        "An Auntie Anne's Pretzel wrapped around a Nathan's Famous hot dog, topped with a simple three-cheese blend, is perfectly rewarding.",
+    price: "$4.69"
+};
+
+const Y5: MenuItem = {
+    name: "Cheese Dip",
+    description:
+        "This is the cheese that's sure to please any pretzel or pretzel dog. Simply cheesy and delicious.",
+    price: "$0.99"
+};
+
+export const AAMenu: MenuItem[] = [Y1, Y2, Y3, Y4, Y5];

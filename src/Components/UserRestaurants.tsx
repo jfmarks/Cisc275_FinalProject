@@ -1,10 +1,10 @@
 /* eslint-disable indent */
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
-import { Restaurant } from "../Interfaces";
+import { Restaurant, droppedItem } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import "../RestaurantStyle.css";
-
+import DragRestaurant from "./RestaurantDrag";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
@@ -131,11 +131,10 @@ export function UserRestaurants(): JSX.Element {
                             }}
                         >
                             <br></br>
-                            <Card.Img
-                                variant="top"
-                                src={restaurant.image}
-                                className="card-image"
-                            />
+                            <DragRestaurant
+                                image={restaurant.image}
+                                dragItem={{ newItem: restaurant.id }}
+                            ></DragRestaurant>
                             <Card.Body>
                                 {editMode ? (
                                     <div className="editmode">

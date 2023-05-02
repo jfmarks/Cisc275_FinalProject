@@ -691,10 +691,46 @@ const S4: MenuItem = {
 };
 
 const S5: MenuItem = {
-    name: "Cinnabon Delights 12 Pack ",
+    name: "Cinnabon Delights 12 Pack",
     description:
         "Sorry to tell you, buddy, but you've been had. Cinnabon Delights® are a thing. And they can play some serious mind games. You thought you were eating breakfast, but then you put this thing in your mouth and WOAH, cinnamon spheres filled with icing is obviously dessert, not breakfast.",
     price: "$6.39"
 };
 
 export const TBMenu: MenuItem[] = [S1, S2, S3, S4, S5];
+
+const T1: MenuItem = {
+    name: "10 Boneless Wings",
+    description:
+        "Juicy All-White Chicken / Lightly Breaded / Handspun in Choice of Sauce or Dry Seasoning",
+    price: "$13.49"
+};
+
+const T2: MenuItem = {
+    name: "2 Loaded Bird Dawgs + Fries",
+    description:
+        "Hand-Breaded Chicken Tenders / Wild Honey Mustard / Grilled Onions / New Belgium Fat Tire® Beer Cheese / Green Onions / Brioche Buns / Includes 2 Dawgs / Natural-Cut French Fries",
+    price: "$12.99"
+};
+
+const T3: MenuItem = {
+    name: "All-American Cheeseburger",
+    description:
+        "Double Patty / Hand-Smashed / Sea Salt / Coarse Black Pepper / American Cheese / Shredded Iceberg Lettuce / Tomato / Pickles / Mustard / Mayo / Challah Bun / Natural-Cut French Fries",
+    price: "$13.79"
+};
+
+const T4: MenuItem = {
+    name: "Street Tacos, Chips & Salsa",
+    description:
+        "Pulled Chicken / Parmesan Garlic / House-Made Pico de Gallo / Southwestern Ranch / Cilantro / Flour Tortillas / House-Made Tortilla Chips & Salsa",
+    price: "$13.49"
+};
+
+const T5: MenuItem = {
+    name: "Chocolate Fudge Cake",
+    description: "Chocolate Fudge Cake / Chocolate Sauce / Vanilla Ice Cream",
+    price: "$7.49"
+};
+
+export const BWWMenu: MenuItem[] = [T1, T2, T3, T4, T5];

@@ -22,6 +22,19 @@ import BWW from "../Images/BWW.png";
 import twostones from "../Images/twostones.png";
 import claymont from "../Images/claymont.png";
 import burgerking from "../Images/burgerking.png";
+import longjohns from "../Images/longjohns.png";
+import auntieannes from "../Images/auntieannes.png";
+import cheesecakefactory from "../Images/cheesecakefactory.png";
+import cinnabon from "../Images/cinnabon.png";
+import fiveguys from "../Images/fiveguys.png";
+import indiansizzler from "../Images/indiansizzler.png";
+import playabowls from "../Images/playabowls.png";
+import hamiltons from "../Images/hamiltons.png";
+import subway from "../Images/subway.png";
+import dairyqueen from "../Images/dairyqueen.png";
+import udairy from "../Images/udairy.png";
+import jerseymikes from "../Images/jerseymikes.png";
+import jimmyjohns from "../Images/jimmyjohns.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -45,7 +58,21 @@ import {
     BWWMenu,
     TSMenu,
     ClaymontMenu,
-    BKMenu
+    BKMenu,
+    LJSMenu,
+    AAMenu,
+    CCFMenu,
+    CinnabonMenu,
+    FGMenu,
+    ISMenu,
+    SakuraMenu,
+    PBMenu,
+    HamiltonsMenu,
+    SubwayMenu,
+    DQMenu,
+    UDairyMenu,
+    JMMenu,
+    JJMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -324,158 +351,171 @@ const BurgerKing: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant24: Restaurant = {
+const LongJohnSilvers: Restaurant = {
     id: "24",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Long John Silver's",
+    description:
+        "Counter-serve chain offering fried fish & seafood combos, plus chicken & sides.",
+    image: longjohns,
+    menu: LJSMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant25: Restaurant = {
+const AuntieAnnes: Restaurant = {
     id: "25",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Auntie Anne's",
+    description:
+        "Global chain of counters dispensing sweet & savory soft pretzels with a variety of toppings & dips.",
+    image: auntieannes,
+    menu: AAMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
-const restaurant26: Restaurant = {
+const CheesecakeFactory: Restaurant = {
     id: "26",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "The Cheesecake Factory",
+    description:
+        "American chain restaurant offering sizable portions from a vast menu including signature cheesecake",
+    image: cheesecakefactory,
+    menu: CCFMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant27: Restaurant = {
+const Cinnabon: Restaurant = {
     id: "27",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Cinnabon",
+    description:
+        "Counter-serve chain serving cinnamon rolls plus other baked goods & specialty frozen beverages.",
+    image: cinnabon,
+    menu: CinnabonMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$"
 };
 
-const restaurant28: Restaurant = {
+const FiveGuys: Restaurant = {
     id: "28",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Five Guys",
+    description:
+        "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait.",
+    image: fiveguys,
+    menu: FGMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$$"
 };
 
-const restaurant29: Restaurant = {
+const IndianSizzler: Restaurant = {
     id: "29",
     name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    description:
+        "Longtime casual restaurant known for its steak, burgers & seafood, plus a salad bar.",
+    image: indiansizzler,
+    menu: ISMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant30: Restaurant = {
+const Sakura: Restaurant = {
     id: "30",
-    name: "Indian Sizzler",
+    name: "Sakura Japanese Steakhouse?",
     description: "",
     image: "",
-    menu: [menuItem1],
+    menu: SakuraMenu,
     averageRating: 0,
     diningExperience: "Luxury",
     priceRange: ""
 };
 
-const restaurant31: Restaurant = {
+const PlayaBowls: Restaurant = {
     id: "31",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Playa Bowls",
+    description:
+        "Playa Bowls™ is your slice of summer, anytime. Using the freshest, highest quality ingredients, we serve healthy, delicious açaí, pitaya, coconut bowls and smoothies with sustainability and community in mind.",
+    image: playabowls,
+    menu: PBMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant32: Restaurant = {
+const Hamiltons: Restaurant = {
     id: "32",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Hamilton's on Main",
+    description:
+        "Approachable fine dining, craft cocktails, beer and wine served in a rustic chic setting.",
+    image: hamiltons,
+    menu: HamiltonsMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$$$"
 };
 
-const restaurant33: Restaurant = {
+const Subway: Restaurant = {
     id: "33",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Subway",
+    description:
+        "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
+    image: subway,
+    menu: SubwayMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
-const restaurant34: Restaurant = {
+const DairyQueen: Restaurant = {
     id: "34",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Dairy Queen",
+    description:
+        "Soft-serve ice cream & signature shakes top the menu at this classic burger & fries fast-food chain.",
+    image: dairyqueen,
+    menu: DQMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant35: Restaurant = {
+const UDairy: Restaurant = {
     id: "35",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "UDairy Creamery",
+    description:
+        "Shop selling premium ice cream produced by University of Delaware agriculture students.",
+    image: udairy,
+    menu: UDairyMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant36: Restaurant = {
+const JerseyMikes: Restaurant = {
     id: "36",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Jersey Mike's Subs",
+    description:
+        "New Jersey-based counter-serve sandwich chain serving jumbo subs filled with cold cuts & toppings.",
+    image: jerseymikes,
+    menu: JMMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
-const restaurant37: Restaurant = {
+const JimmyJohns: Restaurant = {
     id: "37",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Jimmy John's",
+    description:
+        "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips.",
+    image: jimmyjohns,
+    menu: JJMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const restaurant38: Restaurant = {
@@ -645,20 +685,20 @@ const RestaurantList: Restaurant[] = [
     TwoStones,
     Claymont,
     BurgerKing,
-    restaurant24,
-    restaurant25,
-    restaurant26,
-    restaurant27,
-    restaurant28,
-    restaurant29,
-    restaurant30,
-    restaurant31,
-    restaurant32,
-    restaurant33,
-    restaurant34,
-    restaurant35,
-    restaurant36,
-    restaurant37,
+    LongJohnSilvers,
+    AuntieAnnes,
+    CheesecakeFactory,
+    Cinnabon,
+    FiveGuys,
+    IndianSizzler,
+    Sakura,
+    PlayaBowls,
+    Hamiltons,
+    Subway,
+    DairyQueen,
+    UDairy,
+    JerseyMikes,
+    JimmyJohns,
     restaurant38,
     restaurant39,
     restaurant40,

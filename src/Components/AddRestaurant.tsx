@@ -128,11 +128,11 @@ export function AddRestaurant({ addRestaurant }: AddRestaurantProps) {
                         ></Form.Check>
                         <Form.Check
                             type="radio"
-                            label="Fine Dining"
+                            label="Luxury"
                             name="diningExperience"
                             id="diningExperience2"
-                            value="Fine Dining"
-                            checked={diningExperience === "Fine Dining"}
+                            value="Luxury"
+                            checked={diningExperience === "Luxury"}
                             onChange={(e) =>
                                 setDiningExperience(e.target.value)
                             }

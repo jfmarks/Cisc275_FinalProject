@@ -840,3 +840,501 @@ const W5: MenuItem = {
 };
 
 export const BKMenu: MenuItem[] = [W1, W2, W3, W4, W5];
+
+const X1: MenuItem = {
+    name: "Fish & Chicken Meal",
+    description:
+        "1 piece of wild-caught Alaska Pollock and 2 pieces of all-white meat Chicken, hand-battered in our signature batter, served with 2 Sides, and 2 Hushpuppies.",
+    price: "$10.79"
+};
+
+const X2: MenuItem = {
+    name: "Grilled Salmon Meal",
+    description:
+        "1 piece of Grilled Salmon served on a bed of rice with 2 sides.",
+    price: "$11.69"
+};
+
+const X3: MenuItem = {
+    name: "Rice Bowls",
+    description:
+        "Customize your rice bowl with your choice of grilled salmon or grilled shrimp and one of our signature toppings.",
+    price: "$9.69"
+};
+
+const X4: MenuItem = {
+    name: "2 Tacos",
+    description:
+        "Customize your tacos with your choice of grilled salmon or grilled shrimp and one of our signature toppings.",
+    price: "$7.59"
+};
+
+const X5: MenuItem = {
+    name: "Chocolate Cream Pie",
+    description:
+        "Our chocolate creme pie is the bounty of choice for buccaneers and landlubbers alike.",
+    price: "$3.29"
+};
+
+export const LJSMenu: MenuItem[] = [X1, X2, X3, X4, X5];
+
+const Y1: MenuItem = {
+    name: "Original Pretzel",
+    description:
+        "Every single pretzel is an original, and freshly baked to raise the standard of snacking. It's the pretzel that started it all — made from five simple, fresh ingredients. Pick a pretzel up — it's sure to return the favor!",
+    price: "$3.99"
+};
+
+const Y2: MenuItem = {
+    name: "Cinnamon Sugar Pretzel",
+    description:
+        "A soft Cinnamon Sugar Pretzel will satisfy any spirit. It's hot from the oven, sprinkled with fresh cinnamon, sweet sugar and handed right over.",
+    price: "$3.99"
+};
+
+const Y3: MenuItem = {
+    name: "Pepperoni Pretzel Nuggets",
+    description:
+        "The Pepperoni Pretzel you know and love is now bite-size! Each nugget is topped with a slice of pepperoni and a sprinkle of three-cheese blend.",
+    price: "$6.49"
+};
+
+const Y4: MenuItem = {
+    name: "Cheese Pretzel Dog",
+    description:
+        "An Auntie Anne's Pretzel wrapped around a Nathan's Famous hot dog, topped with a simple three-cheese blend, is perfectly rewarding.",
+    price: "$4.69"
+};
+
+const Y5: MenuItem = {
+    name: "Cheese Dip",
+    description:
+        "This is the cheese that's sure to please any pretzel or pretzel dog. Simply cheesy and delicious.",
+    price: "$0.99"
+};
+
+export const AAMenu: MenuItem[] = [Y1, Y2, Y3, Y4, Y5];
+
+const Z1: MenuItem = {
+    name: "Roadside Sliders",
+    description:
+        "Bite-Sized Burgers on Mini-Buns Served with Grilled Onions, Pickles and Ketchup",
+    price: "$9.95"
+};
+
+const Z2: MenuItem = {
+    name: "Bee Sting Flatbread Pizza",
+    description:
+        "Italian Sausage, Pepperoni, Bacon and Calabrian Chiles with Mozzarella, Parmesan and Honey",
+    price: "$14.50"
+};
+
+const Z3: MenuItem = {
+    name: "Hibachi Steak",
+    description:
+        "Hanger Steak with Shiitake Mushrooms, Onions, Bean Sprouts, Wasabi Mashed Potatoes and Vegetables",
+    price: "$27.50"
+};
+
+const Z4: MenuItem = {
+    name: "Shepherd's Pie",
+    description:
+        "Ground Beef, Carrots, Peas, Zucchini and Onions in a Delicious Mushroom Gravy Covered with a Mashed Potato-Parmesan Cheese Crust",
+    price: "$19.95"
+};
+
+const Z5: MenuItem = {
+    name: "Chocolate Tower Truffle Cake",
+    description:
+        "Layers and Layers of Fudge Cake with Chocolate Truffle Cream and Chocolate Mousse",
+    price: "$10.50"
+};
+
+export const CCFMenu: MenuItem[] = [Z1, Z2, Z3, Z4, Z5];
+
+const AA1: MenuItem = {
+    name: "Cinnabon Classic Roll",
+    description:
+        "Our world-famous cinnamon roll is made with a combination of warm dough, legendary Makara cinnamon, and signature cream cheese for a freshly baked, irresistible sweet treat.",
+    price: "$3.76"
+};
+
+const AA2: MenuItem = {
+    name: "Caramel PecanBon",
+    description:
+        "Our signature Classic Roll, topped with decadent caramel frosting and pecans for the perfect crunch.",
+    price: "$4.71"
+};
+
+const AA3: MenuItem = {
+    name: "Churro Swirl",
+    description:
+        "Our spin on the classic beloved snack, baked to perfection and topped with our world-famous Makara cinnamon and sugar. Add a cup of our signature cream cheese frosting for a truly irresistible treat.",
+    price: "$2.49"
+};
+
+const AA4: MenuItem = {
+    name: "Center of the Roll",
+    description:
+        "The ooey-gooey center of the Cinnabon universe. Available in Classic and Caramel PecanBon flavors, this is the definition of a perfect treat.",
+    price: "$3.30"
+};
+
+const AA5: MenuItem = {
+    name: "OREO Cookies & Cream Chillatta",
+    description:
+        "Cookies and milk, all grown up and perfectly blended into a sweet frozen treat.",
+    price: "$4.71"
+};
+
+export const CinnabonMenu: MenuItem[] = [AA1, AA2, AA3, AA4, AA5];
+
+const BB1: MenuItem = {
+    name: "Cheeseburger",
+    description:
+        "American-style cheese melted between fresh patties and placed on a soft, toasted sesame seed bun. Choose as many toppings as you want.",
+    price: "$10.60"
+};
+
+const BB2: MenuItem = {
+    name: "Cheese Dog",
+    description:
+        "All-beef hot dog, split and grilled lengthwise for a caramelized exterior with a layer of American-style cheese on top and any of your favorite toppings.",
+    price: "$7.60"
+};
+
+const BB3: MenuItem = {
+    name: "Grilled Cheese",
+    description:
+        "Slices of American-style cheese melted on an inside-out sesame seed bun with toppings of your choice and grilled until golden brown.",
+    price: "$5.70"
+};
+
+const BB4: MenuItem = {
+    name: "Five Guys Style Fries",
+    description:
+        "Freshly made boardwalk-style fries, cooked in pure, cholesterol-free, 100% peanut oil. Cut fresh and cooked twice - firm on the outside and mashed potato on the inside.",
+    price: "$5.70"
+};
+
+const BB5: MenuItem = {
+    name: "Chocolate Milkshake",
+    description: "Chocolate and fudge added to your handspun milkshake.",
+    price: "$5.90"
+};
+
+export const FGMenu: MenuItem[] = [BB1, BB2, BB3, BB4, BB5];
+
+const CC1: MenuItem = {
+    name: "Chicken Pakoras",
+    description: "Boneless Chicken Fritters battered with Chick  Peas & Flour",
+    price: "$5.99"
+};
+
+const CC2: MenuItem = {
+    name: "Naan",
+    description: "Fresh Indian Bread Make with Flour, Baked in the Clay Oven",
+    price: "$2.99"
+};
+
+const CC3: MenuItem = {
+    name: "Tandoori Chicken",
+    description:
+        "Half Chicken Marinated in Fresh Spices with Yogurt & Roasted in the Indian traditional Clay Oven - Served Sizzling Hot",
+    price: "$17.99"
+};
+
+const CC4: MenuItem = {
+    name: "Lamb Biryani",
+    description: "Cubes of Lamb Cooked with Basmati Rice, Nuts & Almonds",
+    price: "$16.99"
+};
+
+const CC5: MenuItem = {
+    name: "Gulab Jamun",
+    description: "Milk puffs Deep Fried & Soaked in a Special Syrup",
+    price: "$3.99"
+};
+
+export const ISMenu: MenuItem[] = [CC1, CC2, CC3, CC4, CC5];
+
+const DD1: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD2: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD3: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD4: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD5: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+export const SakuraMenu: MenuItem[] = [DD1, DD2, DD3, DD4, DD5];
+
+const EE1: MenuItem = {
+    name: "Nutella- Acai Bowl",
+    description:
+        "Playa Acai topped with granola, strawberry, banana, nutella, and coconut flakes",
+    price: "$14.00"
+};
+
+const EE2: MenuItem = {
+    name: "Pura Vida- Acai Bowl",
+    description:
+        "Playa Acai topped with granola, strawberry, blueberry, and honey",
+    price: "$13.00"
+};
+
+const EE3: MenuItem = {
+    name: "Stupid Cupid- Special Bowl",
+    description:
+        "Stupid cupid blend (strawberry, banana, coconut milk) topped with granola, strawberry, cacao nibs, coconut flakes, nutella and white chocolate",
+    price: "$14.00"
+};
+
+const EE4: MenuItem = {
+    name: "Strawberry Banana Smoothie 16oz",
+    description: "Strawberry, banana, and coconut milk",
+    price: "$9.99"
+};
+
+const EE5: MenuItem = {
+    name: "Kowabunga Smoothie 16oz",
+    description: "Strawberry, banana, blueberry, and coconut milk",
+    price: "$9.99"
+};
+
+export const PBMenu: MenuItem[] = [EE1, EE2, EE3, EE4, EE5];
+
+const FF1: MenuItem = {
+    name: "Whipped Ricotta w/ Focaccia",
+    description:
+        "fresh roasted tomato-herb focaccia, cracked black pepper, toasted pinenuts, local honey, and confit tomatoes",
+    price: "$15.00"
+};
+
+const FF2: MenuItem = {
+    name: "Hamilton's Burger",
+    description:
+        "8oz angus beef, savory bacon jam, gorgonzola, baby arugula, garlic aioli, fries, truffle ketchup",
+    price: "$20.00"
+};
+
+const FF3: MenuItem = {
+    name: "Seafood Newburg",
+    description:
+        "canadian lobster, lump crab, sea scallops, shrimp, sherry cream sauce, puff pastry, grilled asparagus",
+    price: "$38.00"
+};
+
+const FF4: MenuItem = {
+    name: "8 oz. Filet Mignon",
+    description:
+        "Enhanced by a blend of marbling and mellow flavor near the bone, this exceptional cut has quickly become a steak house favorite.",
+    price: "$64.00"
+};
+
+const FF5: MenuItem = {
+    name: "Chocolate Shoppe",
+    description:
+        "Mayan chocolate mousse, dark chocolate bundt cake w/chocolate ganache, chocolate torte, chocolate soil, whipped chantilly cream, strawberry",
+    price: "$14.00"
+};
+
+export const HamiltonsMenu: MenuItem[] = [FF1, FF2, FF3, FF4, FF5];
+
+const GG1: MenuItem = {
+    name: "#1 The Philly",
+    description:
+        "The classic cheesesteak stacked with juicy steak and a double helping of American cheese toasted on Artisan Italian bread and topped with green peppers, red onions and mayo.",
+    price: "$7.89"
+};
+
+const GG2: MenuItem = {
+    name: "#16 All-Pro Sweet Onion Teriyaki",
+    description:
+        "Tackle your hunger with our All-Pro Sweet Onion Teriyaki sandwich. Enjoy a delicious combination of toasted Hearty Multigrain bread, tender grilled chicken strips marinated in our Sweet Onion Teriyaki sauce, American cheese, lettuce, tomatoes, and red onions.",
+    price: "$7.69"
+};
+
+const GG3: MenuItem = {
+    name: "#11 Subway Club",
+    description:
+        "Oven-roasted turkey, Black Forest ham, USDA Choice Roast Beef, American cheese piled on Hearty Multigrain bread and topped with lettuce, tomatoes, red onions, and mayo. A club sandwich Subway style.",
+    price: "$7.69"
+};
+
+const GG4: MenuItem = {
+    name: "Meatball Marinara Wrap",
+    description:
+        "Our Meatball Marinara wrap is a double portion of Italian-style meatballs in irresistible marinara sauce, with Parmesan cheese, in a wrap. Get yourself one.",
+    price: "$8.69"
+};
+
+const GG5: MenuItem = {
+    name: "Chocolate Chip Cookie",
+    description:
+        "Every meal deserves a dessert, because simply put, they just belong together. So, when you're ordering your favorite sandwich, just remember that it pairs perfectly with one of our delectable cookies. They're freshly baked, come in a variety of flavors and they go hand-in-hand with that sub you're about to order.",
+    price: "$0.99"
+};
+
+export const SubwayMenu: MenuItem[] = [GG1, GG2, GG3, GG4, GG5];
+
+const HH1: MenuItem = {
+    name: "Two Cheese Deluxe Signature Stackburger",
+    description:
+        "Price includes one Stackburger, choose a double or triple. A double stack (1/3lb) or triple stack (1/2lb) of 100% seasoned real beef patties, melty Sharp American and White Cheddar, stacked with all your favorite toppings; juicy tomato, white onion and crisp lettuce, on a soft and toasted bun.",
+    price: "$7.79"
+};
+
+const HH2: MenuItem = {
+    name: "Chicken Strip Baskets",
+    description:
+        "A DQ signature! Choice of 4 or 6 100% all-tenderloin white meat chicken strips. Served with crispy fries, Texas toast, and your choice of dipping sauce, such as our delicious country gravy.",
+    price: "$8.99"
+};
+
+const HH3: MenuItem = {
+    name: "Crispy Chicken Strips Salad Bowl",
+    description:
+        "100% all-tenderloin white meat crispy chicken strips served on top of a crisp bed of lettuce, diced tomatoes, bacon, and shredded cheddar. Served with house-made Hidden Valley Ranch, or your choice of dressing.",
+    price: "$7.59"
+};
+
+const HH4: MenuItem = {
+    name: "Pretzel Sticks with Zesty Queso",
+    description:
+        "Soft pretzel sticks, served hot from the oven, topped with salt and served with warm zesty queso dipping sauce.",
+    price: "$3.39"
+};
+
+const HH5: MenuItem = {
+    name: "M&M'S Milk Chocolate Candies Blizzard Treat",
+    description:
+        "M&M's candy pieces and chocolaty topping blended with creamy DQ vanilla soft serve to BLIZZARD perfection.",
+    price: "$4.49"
+};
+
+export const DQMenu: MenuItem[] = [HH1, HH2, HH3, HH4, HH5];
+
+const II1: MenuItem = {
+    name: "Farmer's Grilled Cheese",
+    description: "Monterey Jack cheese and brandied pear preserves.",
+    price: "$6.25"
+};
+
+const II2: MenuItem = {
+    name: "Baklava",
+    description: "Honey and cinnamon flavored ice cream with baklava pieces.",
+    price: "$3.50"
+};
+
+const II3: MenuItem = {
+    name: "All Nighter Ice Cream",
+    description:
+        "Coffee ice cream with cookie dough, chocolate sandwich cookies, and a fudge swirl.",
+    price: "$3.50"
+};
+
+const II4: MenuItem = {
+    name: "Peanut-Cocoa-Loco",
+    description:
+        "Chocolate ice cream with a peanut butter swirl and Reese's peanut butter cup pieces.",
+    price: "$3.50"
+};
+
+const II5: MenuItem = {
+    name: "1923 Ice Cream",
+    description:
+        "French Vanila flavored ice cream with bittersweet chocolate chuncks and salted caramel swirls.",
+    price: "$3.50"
+};
+
+export const UDairyMenu: MenuItem[] = [II1, II2, II3, II4, II5];
+
+const JJ1: MenuItem = {
+    name: "#1 BLT",
+    description: "Bacon, lettuce and tomato",
+    price: "$10.99"
+};
+
+const JJ2: MenuItem = {
+    name: "#10 Tuna Fish",
+    description: "Freshly made on premises",
+    price: "$10.99"
+};
+
+const JJ3: MenuItem = {
+    name: "#16 Mike's Chicken Philly",
+    description: "Grilled onions, peppers & white American cheese.",
+    price: "$11.99"
+};
+
+const JJ4: MenuItem = {
+    name: "#19 BBQ Beef",
+    description:
+        "All natural oven roasted choice top round sliced fresh and smothered in BBQ sauce",
+    price: "$11.99"
+};
+
+const JJ5: MenuItem = {
+    name: "Brownie",
+    description: "Gooey chocolate chip brownies",
+    price: "$2.79"
+};
+
+export const JMMenu: MenuItem[] = [JJ1, JJ2, JJ3, JJ4, JJ5];
+
+const KK1: MenuItem = {
+    name: "#2 Big John",
+    description: "Roast Beef, lettuce, tomato & mayo",
+    price: "$8.25"
+};
+
+const KK2: MenuItem = {
+    name: "#4 Turkey Tom",
+    description: "Turkey, lettuce, tomato & mayo",
+    price: "$8.25"
+};
+
+const KK3: MenuItem = {
+    name: "Caprese Salami Pesto",
+    description:
+        "Salami & Fresh Mozzarella, slow roasted tomatoes, basil pesto, balsamic glaze, oil, oregano-basil, onion & mayo",
+    price: "$10.00"
+};
+
+const KK4: MenuItem = {
+    name: "The J.J. Gargantuan",
+    description:
+        "Salami, Capocollo, Turkey, Roast Beef, Ham & Provolone, onion, lettuce, tomato, mayo, oil & vinegar, & oregano-basil.",
+    price: "$11.75"
+};
+
+const KK5: MenuItem = {
+    name: "Fudge Chocolate Brownie",
+    description:
+        "Brownie made with semi-sweet chocolate, cocoa and melted chocolate.",
+    price: "$2.00"
+};
+
+export const JJMenu: MenuItem[] = [KK1, KK2, KK3, KK4, KK5];

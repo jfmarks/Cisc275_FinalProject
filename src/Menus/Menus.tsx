@@ -1198,3 +1198,40 @@ const GG5: MenuItem = {
 };
 
 export const SubwayMenu: MenuItem[] = [GG1, GG2, GG3, GG4, GG5];
+
+const HH1: MenuItem = {
+    name: "Two Cheese Deluxe Signature Stackburger",
+    description:
+        "Price includes one Stackburger, choose a double or triple. A double stack (1/3lb) or triple stack (1/2lb) of 100% seasoned real beef patties, melty Sharp American and White Cheddar, stacked with all your favorite toppings; juicy tomato, white onion and crisp lettuce, on a soft and toasted bun.",
+    price: "$7.79"
+};
+
+const HH2: MenuItem = {
+    name: "Chicken Strip Baskets",
+    description:
+        "A DQ signature! Choice of 4 or 6 100% all-tenderloin white meat chicken strips. Served with crispy fries, Texas toast, and your choice of dipping sauce, such as our delicious country gravy.",
+    price: "$8.99"
+};
+
+const HH3: MenuItem = {
+    name: "Crispy Chicken Strips Salad Bowl",
+    description:
+        "100% all-tenderloin white meat crispy chicken strips served on top of a crisp bed of lettuce, diced tomatoes, bacon, and shredded cheddar. Served with house-made Hidden Valley Ranch, or your choice of dressing.",
+    price: "$7.59"
+};
+
+const HH4: MenuItem = {
+    name: "Pretzel Sticks with Zesty Queso",
+    description:
+        "Soft pretzel sticks, served hot from the oven, topped with salt and served with warm zesty queso dipping sauce.",
+    price: "$3.39"
+};
+
+const HH5: MenuItem = {
+    name: "M&M'S Milk Chocolate Candies Blizzard Treat",
+    description:
+        "M&M's candy pieces and chocolaty topping blended with creamy DQ vanilla soft serve to BLIZZARD perfection.",
+    price: "$4.49"
+};
+
+export const DQMenu: MenuItem[] = [HH1, HH2, HH3, HH4, HH5];

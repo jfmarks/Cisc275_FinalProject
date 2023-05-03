@@ -31,6 +31,7 @@ import indiansizzler from "../Images/indiansizzler.png";
 import playabowls from "../Images/playabowls.png";
 import hamiltons from "../Images/hamiltons.png";
 import subway from "../Images/subway.png";
+import dairyqueen from "../Images/dairyqueen.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -64,7 +65,8 @@ import {
     SakuraMenu,
     PBMenu,
     HamiltonsMenu,
-    SubwayMenu
+    SubwayMenu,
+    DQMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -462,15 +464,16 @@ const Subway: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant34: Restaurant = {
+const DairyQueen: Restaurant = {
     id: "34",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Dairy Queen",
+    description:
+        "Soft-serve ice cream & signature shakes top the menu at this classic burger & fries fast-food chain.",
+    image: dairyqueen,
+    menu: DQMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant35: Restaurant = {
@@ -683,7 +686,7 @@ const RestaurantList: Restaurant[] = [
     PlayaBowls,
     Hamiltons,
     Subway,
-    restaurant34,
+    DairyQueen,
     restaurant35,
     restaurant36,
     restaurant37,

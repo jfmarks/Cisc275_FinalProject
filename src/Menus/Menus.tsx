@@ -1124,3 +1124,40 @@ const EE5: MenuItem = {
 };
 
 export const PBMenu: MenuItem[] = [EE1, EE2, EE3, EE4, EE5];
+
+const FF1: MenuItem = {
+    name: "Whipped Ricotta w/ Focaccia",
+    description:
+        "fresh roasted tomato-herb focaccia, cracked black pepper, toasted pinenuts, local honey, and confit tomatoes",
+    price: "$15.00"
+};
+
+const FF2: MenuItem = {
+    name: "Hamilton's Burger",
+    description:
+        "8oz angus beef, savory bacon jam, gorgonzola, baby arugula, garlic aioli, fries, truffle ketchup",
+    price: "$20.00"
+};
+
+const FF3: MenuItem = {
+    name: "Seafood Newburg",
+    description:
+        "canadian lobster, lump crab, sea scallops, shrimp, sherry cream sauce, puff pastry, grilled asparagus",
+    price: "$38.00"
+};
+
+const FF4: MenuItem = {
+    name: "8 oz. Filet Mignon",
+    description:
+        "Enhanced by a blend of marbling and mellow flavor near the bone, this exceptional cut has quickly become a steak house favorite.",
+    price: "$64.00"
+};
+
+const FF5: MenuItem = {
+    name: "Chocolate Shoppe",
+    description:
+        "Mayan chocolate mousse, dark chocolate bundt cake w/chocolate ganache, chocolate torte, chocolate soil, whipped chantilly cream, strawberry",
+    price: "$14.00"
+};
+
+export const HamiltonsMenu: MenuItem[] = [FF1, FF2, FF3, FF4, FF5];

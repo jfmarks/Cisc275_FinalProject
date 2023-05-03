@@ -29,6 +29,7 @@ import cinnabon from "../Images/cinnabon.png";
 import fiveguys from "../Images/fiveguys.png";
 import indiansizzler from "../Images/indiansizzler.png";
 import playabowls from "../Images/playabowls.png";
+import hamiltons from "../Images/hamiltons.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -60,7 +61,8 @@ import {
     FGMenu,
     ISMenu,
     SakuraMenu,
-    PBMenu
+    PBMenu,
+    HamiltonsMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -434,15 +436,16 @@ const PlayaBowls: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant32: Restaurant = {
+const Hamiltons: Restaurant = {
     id: "32",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Hamilton's on Main",
+    description:
+        "Approachable fine dining, craft cocktails, beer and wine served in a rustic chic setting.",
+    image: hamiltons,
+    menu: HamiltonsMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$$$"
 };
 
 const restaurant33: Restaurant = {
@@ -675,7 +678,7 @@ const RestaurantList: Restaurant[] = [
     IndianSizzler,
     Sakura,
     PlayaBowls,
-    restaurant32,
+    Hamiltons,
     restaurant33,
     restaurant34,
     restaurant35,

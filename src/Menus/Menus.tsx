@@ -988,3 +988,39 @@ const AA5: MenuItem = {
 };
 
 export const CinnabonMenu: MenuItem[] = [AA1, AA2, AA3, AA4, AA5];
+
+const BB1: MenuItem = {
+    name: "Cheeseburger",
+    description:
+        "American-style cheese melted between fresh patties and placed on a soft, toasted sesame seed bun. Choose as many toppings as you want.",
+    price: "$10.60"
+};
+
+const BB2: MenuItem = {
+    name: "Cheese Dog",
+    description:
+        "All-beef hot dog, split and grilled lengthwise for a caramelized exterior with a layer of American-style cheese on top and any of your favorite toppings.",
+    price: "$7.60"
+};
+
+const BB3: MenuItem = {
+    name: "Grilled Cheese",
+    description:
+        "Slices of American-style cheese melted on an inside-out sesame seed bun with toppings of your choice and grilled until golden brown.",
+    price: "$5.70"
+};
+
+const BB4: MenuItem = {
+    name: "Five Guys Style Fries",
+    description:
+        "Freshly made boardwalk-style fries, cooked in pure, cholesterol-free, 100% peanut oil. Cut fresh and cooked twice - firm on the outside and mashed potato on the inside.",
+    price: "$5.70"
+};
+
+const BB5: MenuItem = {
+    name: "Chocolate Milkshake",
+    description: "Chocolate and fudge added to your handspun milkshake.",
+    price: "$5.90"
+};
+
+export const FGMenu: MenuItem[] = [BB1, BB2, BB3, BB4, BB5];

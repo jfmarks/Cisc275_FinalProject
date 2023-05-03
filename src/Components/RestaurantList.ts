@@ -26,6 +26,8 @@ import longjohns from "../Images/longjohns.png";
 import auntieannes from "../Images/auntieannes.png";
 import cheesecakefactory from "../Images/cheesecakefactory.png";
 import cinnabon from "../Images/cinnabon.png";
+import fiveguys from "../Images/fiveguys.png";
+import indiansizzler from "../Images/indiansizzler.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -53,7 +55,8 @@ import {
     LJSMenu,
     AAMenu,
     CCFMenu,
-    CinnabonMenu
+    CinnabonMenu,
+    FGMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -380,26 +383,28 @@ const Cinnabon: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant28: Restaurant = {
+const FiveGuys: Restaurant = {
     id: "28",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Five Guys",
+    description:
+        "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait.",
+    image: fiveguys,
+    menu: FGMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$$"
 };
 
-const restaurant29: Restaurant = {
+const IndianSizzler: Restaurant = {
     id: "29",
     name: "Indian Sizzler",
-    description: "",
-    image: "",
+    description:
+        "Longtime casual restaurant known for its steak, burgers & seafood, plus a salad bar.",
+    image: indiansizzler,
     menu: [menuItem1],
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant30: Restaurant = {
@@ -661,7 +666,7 @@ const RestaurantList: Restaurant[] = [
     AuntieAnnes,
     CheesecakeFactory,
     Cinnabon,
-    restaurant28,
+    FiveGuys,
     restaurant29,
     restaurant30,
     restaurant31,

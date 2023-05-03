@@ -32,6 +32,7 @@ import playabowls from "../Images/playabowls.png";
 import hamiltons from "../Images/hamiltons.png";
 import subway from "../Images/subway.png";
 import dairyqueen from "../Images/dairyqueen.png";
+import udairy from "../Images/udairy.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -66,7 +67,8 @@ import {
     PBMenu,
     HamiltonsMenu,
     SubwayMenu,
-    DQMenu
+    DQMenu,
+    UDairyMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -476,15 +478,16 @@ const DairyQueen: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant35: Restaurant = {
+const UDairy: Restaurant = {
     id: "35",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "UDairy Creamery",
+    description:
+        "Shop selling premium ice cream produced by University of Delaware agriculture students.",
+    image: udairy,
+    menu: UDairyMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant36: Restaurant = {
@@ -687,7 +690,7 @@ const RestaurantList: Restaurant[] = [
     Hamiltons,
     Subway,
     DairyQueen,
-    restaurant35,
+    UDairy,
     restaurant36,
     restaurant37,
     restaurant38,

@@ -1235,3 +1235,38 @@ const HH5: MenuItem = {
 };
 
 export const DQMenu: MenuItem[] = [HH1, HH2, HH3, HH4, HH5];
+
+const II1: MenuItem = {
+    name: "Farmer's Grilled Cheese",
+    description: "Monterey Jack cheese and brandied pear preserves.",
+    price: "$6.25"
+};
+
+const II2: MenuItem = {
+    name: "Baklava",
+    description: "Honey and cinnamon flavored ice cream with baklava pieces.",
+    price: "$3.50"
+};
+
+const II3: MenuItem = {
+    name: "All Nighter Ice Cream",
+    description:
+        "Coffee ice cream with cookie dough, chocolate sandwich cookies, and a fudge swirl.",
+    price: "$3.50"
+};
+
+const II4: MenuItem = {
+    name: "Peanut-Cocoa-Loco",
+    description:
+        "Chocolate ice cream with a peanut butter swirl and Reese's peanut butter cup pieces.",
+    price: "$3.50"
+};
+
+const II5: MenuItem = {
+    name: "1923 Ice Cream",
+    description:
+        "French Vanila flavored ice cream with bittersweet chocolate chuncks and salted caramel swirls.",
+    price: "$3.50"
+};
+
+export const UDairyMenu: MenuItem[] = [II1, II2, II3, II4, II5];

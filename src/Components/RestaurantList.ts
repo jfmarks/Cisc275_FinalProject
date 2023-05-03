@@ -28,6 +28,7 @@ import cheesecakefactory from "../Images/cheesecakefactory.png";
 import cinnabon from "../Images/cinnabon.png";
 import fiveguys from "../Images/fiveguys.png";
 import indiansizzler from "../Images/indiansizzler.png";
+import playabowls from "../Images/playabowls.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -57,7 +58,9 @@ import {
     CCFMenu,
     CinnabonMenu,
     FGMenu,
-    ISMenu
+    ISMenu,
+    SakuraMenu,
+    PBMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -408,26 +411,27 @@ const IndianSizzler: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant30: Restaurant = {
+const Sakura: Restaurant = {
     id: "30",
-    name: "Indian Sizzler",
+    name: "Sakura Japanese Steakhouse?",
     description: "",
     image: "",
-    menu: [menuItem1],
+    menu: SakuraMenu,
     averageRating: 0,
     diningExperience: "Luxury",
     priceRange: ""
 };
 
-const restaurant31: Restaurant = {
+const PlayaBowls: Restaurant = {
     id: "31",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Playa Bowls",
+    description:
+        "Playa Bowls™ is your slice of summer, anytime. Using the freshest, highest quality ingredients, we serve healthy, delicious açaí, pitaya, coconut bowls and smoothies with sustainability and community in mind.",
+    image: playabowls,
+    menu: PBMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant32: Restaurant = {
@@ -669,8 +673,8 @@ const RestaurantList: Restaurant[] = [
     Cinnabon,
     FiveGuys,
     IndianSizzler,
-    restaurant30,
-    restaurant31,
+    Sakura,
+    PlayaBowls,
     restaurant32,
     restaurant33,
     restaurant34,

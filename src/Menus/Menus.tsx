@@ -1057,3 +1057,70 @@ const CC5: MenuItem = {
 };
 
 export const ISMenu: MenuItem[] = [CC1, CC2, CC3, CC4, CC5];
+
+const DD1: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD2: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD3: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD4: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+const DD5: MenuItem = {
+    name: "",
+    description: "",
+    price: ""
+};
+
+export const SakuraMenu: MenuItem[] = [DD1, DD2, DD3, DD4, DD5];
+
+const EE1: MenuItem = {
+    name: "Nutella- Acai Bowl",
+    description:
+        "Playa Acai topped with granola, strawberry, banana, nutella, and coconut flakes",
+    price: "$14.00"
+};
+
+const EE2: MenuItem = {
+    name: "Pura Vida- Acai Bowl",
+    description:
+        "Playa Acai topped with granola, strawberry, blueberry, and honey",
+    price: "$13.00"
+};
+
+const EE3: MenuItem = {
+    name: "Stupid Cupid- Special Bowl",
+    description:
+        "Stupid cupid blend (strawberry, banana, coconut milk) topped with granola, strawberry, cacao nibs, coconut flakes, nutella and white chocolate",
+    price: "$14.00"
+};
+
+const EE4: MenuItem = {
+    name: "Strawberry Banana Smoothie 16oz",
+    description: "Strawberry, banana, and coconut milk",
+    price: "$9.99"
+};
+
+const EE5: MenuItem = {
+    name: "Kowabunga Smoothie 16oz",
+    description: "Strawberry, banana, blueberry, and coconut milk",
+    price: "$9.99"
+};
+
+export const PBMenu: MenuItem[] = [EE1, EE2, EE3, EE4, EE5];

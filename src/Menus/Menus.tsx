@@ -1270,3 +1270,36 @@ const II5: MenuItem = {
 };
 
 export const UDairyMenu: MenuItem[] = [II1, II2, II3, II4, II5];
+
+const JJ1: MenuItem = {
+    name: "#1 BLT",
+    description: "Bacon, lettuce and tomato",
+    price: "$10.99"
+};
+
+const JJ2: MenuItem = {
+    name: "#10 Tuna Fish",
+    description: "Freshly made on premises",
+    price: "$10.99"
+};
+
+const JJ3: MenuItem = {
+    name: "#16 Mike's Chicken Philly",
+    description: "Grilled onions, peppers & white American cheese.",
+    price: "$11.99"
+};
+
+const JJ4: MenuItem = {
+    name: "#19 BBQ Beef",
+    description:
+        "All natural oven roasted choice top round sliced fresh and smothered in BBQ sauce",
+    price: "$11.99"
+};
+
+const JJ5: MenuItem = {
+    name: "Brownie",
+    description: "Gooey chocolate chip brownies",
+    price: "$2.79"
+};
+
+export const JMMenu: MenuItem[] = [JJ1, JJ2, JJ3, JJ4, JJ5];

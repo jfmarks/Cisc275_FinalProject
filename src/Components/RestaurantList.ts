@@ -30,6 +30,7 @@ import fiveguys from "../Images/fiveguys.png";
 import indiansizzler from "../Images/indiansizzler.png";
 import playabowls from "../Images/playabowls.png";
 import hamiltons from "../Images/hamiltons.png";
+import subway from "../Images/subway.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -62,7 +63,8 @@ import {
     ISMenu,
     SakuraMenu,
     PBMenu,
-    HamiltonsMenu
+    HamiltonsMenu,
+    SubwayMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -448,15 +450,16 @@ const Hamiltons: Restaurant = {
     priceRange: "$$$"
 };
 
-const restaurant33: Restaurant = {
+const Subway: Restaurant = {
     id: "33",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Subway",
+    description:
+        "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
+    image: subway,
+    menu: SubwayMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const restaurant34: Restaurant = {
@@ -679,7 +682,7 @@ const RestaurantList: Restaurant[] = [
     Sakura,
     PlayaBowls,
     Hamiltons,
-    restaurant33,
+    Subway,
     restaurant34,
     restaurant35,
     restaurant36,

@@ -1161,3 +1161,40 @@ const FF5: MenuItem = {
 };
 
 export const HamiltonsMenu: MenuItem[] = [FF1, FF2, FF3, FF4, FF5];
+
+const GG1: MenuItem = {
+    name: "#1 The Philly",
+    description:
+        "The classic cheesesteak stacked with juicy steak and a double helping of American cheese toasted on Artisan Italian bread and topped with green peppers, red onions and mayo.",
+    price: "$7.89"
+};
+
+const GG2: MenuItem = {
+    name: "#16 All-Pro Sweet Onion Teriyaki",
+    description:
+        "Tackle your hunger with our All-Pro Sweet Onion Teriyaki sandwich. Enjoy a delicious combination of toasted Hearty Multigrain bread, tender grilled chicken strips marinated in our Sweet Onion Teriyaki sauce, American cheese, lettuce, tomatoes, and red onions.",
+    price: "$7.69"
+};
+
+const GG3: MenuItem = {
+    name: "#11 Subway Club",
+    description:
+        "Oven-roasted turkey, Black Forest ham, USDA Choice Roast Beef, American cheese piled on Hearty Multigrain bread and topped with lettuce, tomatoes, red onions, and mayo. A club sandwich Subway style.",
+    price: "$7.69"
+};
+
+const GG4: MenuItem = {
+    name: "Meatball Marinara Wrap",
+    description:
+        "Our Meatball Marinara wrap is a double portion of Italian-style meatballs in irresistible marinara sauce, with Parmesan cheese, in a wrap. Get yourself one.",
+    price: "$8.69"
+};
+
+const GG5: MenuItem = {
+    name: "Chocolate Chip Cookie",
+    description:
+        "Every meal deserves a dessert, because simply put, they just belong together. So, when you're ordering your favorite sandwich, just remember that it pairs perfectly with one of our delectable cookies. They're freshly baked, come in a variety of flavors and they go hand-in-hand with that sub you're about to order.",
+    price: "$0.99"
+};
+
+export const SubwayMenu: MenuItem[] = [GG1, GG2, GG3, GG4, GG5];

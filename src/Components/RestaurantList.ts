@@ -34,6 +34,7 @@ import subway from "../Images/subway.png";
 import dairyqueen from "../Images/dairyqueen.png";
 import udairy from "../Images/udairy.png";
 import jerseymikes from "../Images/jerseymikes.png";
+import jimmyjohns from "../Images/jimmyjohns.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -70,7 +71,8 @@ import {
     SubwayMenu,
     DQMenu,
     UDairyMenu,
-    JMMenu
+    JMMenu,
+    JJMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -504,15 +506,16 @@ const JerseyMikes: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant37: Restaurant = {
+const JimmyJohns: Restaurant = {
     id: "37",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Jimmy John's",
+    description:
+        "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips.",
+    image: jimmyjohns,
+    menu: JJMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const restaurant38: Restaurant = {
@@ -695,7 +698,7 @@ const RestaurantList: Restaurant[] = [
     DairyQueen,
     UDairy,
     JerseyMikes,
-    restaurant37,
+    JimmyJohns,
     restaurant38,
     restaurant39,
     restaurant40,

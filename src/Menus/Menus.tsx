@@ -1303,3 +1303,38 @@ const JJ5: MenuItem = {
 };
 
 export const JMMenu: MenuItem[] = [JJ1, JJ2, JJ3, JJ4, JJ5];
+
+const KK1: MenuItem = {
+    name: "#2 Big John",
+    description: "Roast Beef, lettuce, tomato & mayo",
+    price: "$8.25"
+};
+
+const KK2: MenuItem = {
+    name: "#4 Turkey Tom",
+    description: "Turkey, lettuce, tomato & mayo",
+    price: "$8.25"
+};
+
+const KK3: MenuItem = {
+    name: "Caprese Salami Pesto",
+    description:
+        "Salami & Fresh Mozzarella, slow roasted tomatoes, basil pesto, balsamic glaze, oil, oregano-basil, onion & mayo",
+    price: "$10.00"
+};
+
+const KK4: MenuItem = {
+    name: "The J.J. Gargantuan",
+    description:
+        "Salami, Capocollo, Turkey, Roast Beef, Ham & Provolone, onion, lettuce, tomato, mayo, oil & vinegar, & oregano-basil.",
+    price: "$11.75"
+};
+
+const KK5: MenuItem = {
+    name: "Fudge Chocolate Brownie",
+    description:
+        "Brownie made with semi-sweet chocolate, cocoa and melted chocolate.",
+    price: "$2.00"
+};
+
+export const JJMenu: MenuItem[] = [KK1, KK2, KK3, KK4, KK5];

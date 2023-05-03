@@ -1024,3 +1024,36 @@ const BB5: MenuItem = {
 };
 
 export const FGMenu: MenuItem[] = [BB1, BB2, BB3, BB4, BB5];
+
+const CC1: MenuItem = {
+    name: "Chicken Pakoras",
+    description: "Boneless Chicken Fritters battered with Chick  Peas & Flour",
+    price: "$5.99"
+};
+
+const CC2: MenuItem = {
+    name: "Naan",
+    description: "Fresh Indian Bread Make with Flour, Baked in the Clay Oven",
+    price: "$2.99"
+};
+
+const CC3: MenuItem = {
+    name: "Tandoori Chicken",
+    description:
+        "Half Chicken Marinated in Fresh Spices with Yogurt & Roasted in the Indian traditional Clay Oven - Served Sizzling Hot",
+    price: "$17.99"
+};
+
+const CC4: MenuItem = {
+    name: "Lamb Biryani",
+    description: "Cubes of Lamb Cooked with Basmati Rice, Nuts & Almonds",
+    price: "$16.99"
+};
+
+const CC5: MenuItem = {
+    name: "Gulab Jamun",
+    description: "Milk puffs Deep Fried & Soaked in a Special Syrup",
+    price: "$3.99"
+};
+
+export const ISMenu: MenuItem[] = [CC1, CC2, CC3, CC4, CC5];

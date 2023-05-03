@@ -56,7 +56,8 @@ import {
     AAMenu,
     CCFMenu,
     CinnabonMenu,
-    FGMenu
+    FGMenu,
+    ISMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -401,7 +402,7 @@ const IndianSizzler: Restaurant = {
     description:
         "Longtime casual restaurant known for its steak, burgers & seafood, plus a salad bar.",
     image: indiansizzler,
-    menu: [menuItem1],
+    menu: ISMenu,
     averageRating: 0,
     diningExperience: "Casual",
     priceRange: "$$"
@@ -667,7 +668,7 @@ const RestaurantList: Restaurant[] = [
     CheesecakeFactory,
     Cinnabon,
     FiveGuys,
-    restaurant29,
+    IndianSizzler,
     restaurant30,
     restaurant31,
     restaurant32,

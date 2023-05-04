@@ -30,7 +30,7 @@ export function Counter(): JSX.Element {
             <Button onClick={() => setValue(1 + value)} disabled={value === 5}>
                 Click to Add a Star
             </Button>
-            {numbersToStars}
+            {numbersToStars(value)}
         </span>
     );
 }

@@ -27,18 +27,7 @@ function App() {
                         </Row>
                         <Row>
                             <Col className="App-left-col" sm="auto">
-                                <Row className="App-main-button-rows">
-                                    <Button
-                                        className="App-main-buttons"
-                                        style={{
-                                            height: "100px",
-                                            fontSize: 30,
-                                            marginTop: "-5px"
-                                        }}
-                                    >
-                                        List of Users
-                                    </Button>
-                                </Row>
+                                <Row className="App-main-button-rows"></Row>
                                 <Row className="App-main-button-rows">
                                     <Button
                                         className="App-main-buttons"

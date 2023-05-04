@@ -18,7 +18,6 @@ export interface MenuItem {
 export interface Rating {
     restaurantId: string;
     rating: number;
-    review: string;
 }
 
 export interface Restaurant {

@@ -4,7 +4,7 @@ import { Restaurant } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import CurrentUser from "../CurrentUser";
 
-export function Counter(): JSX.Element {
+export function Rating(): JSX.Element {
     const [value, setValue] = useState<number>(0);
     function numbersToStars(num: number): string {
         let stars = "";

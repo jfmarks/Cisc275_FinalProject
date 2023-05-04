@@ -4,10 +4,12 @@ import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import "../RestaurantStyle.css";
+import { Rating } from "./Rating";
 
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
+    const [ratingVisible, setRatingVisible] = useState<string | null>(null);
     const [menuVisible, setMenuVisible] = useState<string | null>(null);
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
@@ -31,6 +33,12 @@ export function UserRestaurants(): JSX.Element {
     const handleShowAttributes = (restaurantId: string): void => {
         // Toggle info visibility for the selected restaurant
         setAttributesVisible((prevId) =>
+            prevId === restaurantId ? null : restaurantId
+        );
+    };
+    const handleShowRating = (restaurantId: string): void => {
+        // Toggle info visibility for the selected restaurant
+        setRatingVisible((prevId) =>
             prevId === restaurantId ? null : restaurantId
         );
     };
@@ -64,6 +72,9 @@ export function UserRestaurants(): JSX.Element {
         );
         setRestaurants(updatedRestaurants);
     };
+
+    //const handleReview =
+
     const handleEditRestaurant = (): void => {
         setEditMode(!editMode);
     };
@@ -210,6 +221,21 @@ export function UserRestaurants(): JSX.Element {
                                                     ? "Hide Details"
                                                     : "Details"}
                                             </Button>
+                                            <div>
+                                                <Button
+                                                    variant="info"
+                                                    onClick={() =>
+                                                        handleShowRating(
+                                                            restaurant.id
+                                                        )
+                                                    }
+                                                >
+                                                    {ratingVisible ===
+                                                    restaurant.id
+                                                        ? "Hide Rating"
+                                                        : "Rating"}
+                                                </Button>
+                                            </div>
                                             <div
                                                 style={{
                                                     display:

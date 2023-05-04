@@ -1338,3 +1338,185 @@ const KK5: MenuItem = {
 };
 
 export const JJMenu: MenuItem[] = [KK1, KK2, KK3, KK4, KK5];
+
+const LL1: MenuItem = {
+    name: "Classic Cheese Steak",
+    description:
+        "It's called a classic for a reason. Our Classic Cheese Steak is prepared with grilled choice steak, mushrooms, onions, white American cheese and your choice of hot or sweet peppers.",
+    price: "$6.99"
+};
+
+const LL2: MenuItem = {
+    name: "Homemade Turkey",
+    description:
+        "No deli slices here. Our slow-roasted homemade turkey is hand-shredded and topped with provolone cheese, lettuce, tomato, onion, and mayo",
+    price: "$6.99"
+};
+
+const LL3: MenuItem = {
+    name: "Classic Meatball",
+    description:
+        "Satisfy your appetite with our Classic Meatball sub. Made with our savory meatballs, topped with marinara sauce, provolone, and Romano cheese",
+    price: "$6.99"
+};
+
+const LL4: MenuItem = {
+    name: "American Wagyu Roast Beef",
+    description:
+        "Ultra-premium American Wagyu beef slow-roasted, piled high then topped with provolone cheese, lettuce, tomato, onions, and mayo",
+    price: "$7.49"
+};
+
+const LL5: MenuItem = {
+    name: "Impossible Cheese Steak",
+    description:
+        "Cheese steak fans will be asking themselves, ''this isn't real meat?''. Our Impossible Cheese Steak is made with Impossible plant-based meat, melted white American Cheese, mushrooms, and onions",
+    price: "$7.99"
+};
+
+export const CapriottisMenu: MenuItem[] = [LL1, LL2, LL3, LL4, LL5];
+
+const MM1: MenuItem = {
+    name: "Chang's Chicken Lettuce Wraps",
+    description: "A secret family recipe and our signature dish. Enough said.",
+    price: "$14.00"
+};
+
+const MM2: MenuItem = {
+    name: "Dynamite Roll",
+    description:
+        "Tempura-battered shrimp, signature California roll, sriracha aioli, umami sauce",
+    price: "$16.00"
+};
+
+const MM3: MenuItem = {
+    name: "Kung Pao Chicken",
+    description:
+        "Spicy Sichuan chili sauce, peanuts, green onion, red chili peppers",
+    price: "$20.00"
+};
+
+const MM4: MenuItem = {
+    name: "Chicken Fried Rice",
+    description: "Wok-tossed with egg, carrots, bean sprouts, green onion",
+    price: "$15.00"
+};
+
+const MM5: MenuItem = {
+    name: "The Great Wall of Chocolate",
+    description:
+        "Six layers of chocolate cake, chocolate frosting, semi-sweet chocolate chips",
+    price: "$12.00"
+};
+
+export const PFCMenu: MenuItem[] = [MM1, MM2, MM3, MM4, MM5];
+
+const NN1: MenuItem = {
+    name: "Orange Chicken",
+    description:
+        "Our signature dish. Crispy chicken wok-tossed in a sweet and spicy orange sauce.",
+    price: "$4.20"
+};
+
+const NN2: MenuItem = {
+    name: "Chicken Egg Roll",
+    description:
+        "Cabbage, carrots, mushrooms, green onions and chicken in a crispy wonton wrapper.",
+    price: "$1.95"
+};
+
+const NN3: MenuItem = {
+    name: "Grilled Teriyaki Chicken",
+    description:
+        "Grilled chicken hand-sliced to order and served with teriyaki sauce.",
+    price: "$4.20"
+};
+
+const NN4: MenuItem = {
+    name: "Chow Mein",
+    description: "Stir-fried wheat noodles with onions, celery and cabbage.",
+    price: "$3.20"
+};
+
+const NN5: MenuItem = {
+    name: "Mixed Vegetables",
+    description:
+        "A healthful medley of broccoli, zucchini, carrots, string beans and cabbage.",
+    price: "$3.70"
+};
+
+export const PEMenu: MenuItem[] = [NN1, NN2, NN3, NN4, NN5];
+
+const OO1: MenuItem = {
+    name: "12 Piece Nuggets",
+    description:
+        "These tasty nuggets are made with 100% white meat chicken and hand breaded in our delicious Original Recipe. Pair them with your favorite 2 KFC sauces.",
+    price: "$6.49"
+};
+
+const OO2: MenuItem = {
+    name: "KFC Chicken Sandwich",
+    description:
+        "Enjoy a premium, all-white meat, double-breaded, Extra Crispy chicken breast filet, served on a freshly-toasted buttery brioche bun, with crispy, thick pickles, and the perfect amount of the Colonel's real mayo or spicy sauce.",
+    price: "$4.99"
+};
+
+const OO3: MenuItem = {
+    name: "4 Piece Tenders Combo",
+    description:
+        "Enjoy 4 of our Extra Crispy fried chicken tenders, a side of your choice, dipping sauce, biscuit and a medium drink.",
+    price: "$8.78"
+};
+
+const OO4: MenuItem = {
+    name: "Mac & Cheese Bowl",
+    description:
+        "Great for a quick lunch or dinner, our Chicken Mac & Cheese Bowl features our signature rich, creamy macaroni and cheese, topped with our crispy fried chicken nuggets and a three-cheese blend. Available in classic or spicy for a limited time!",
+    price: "$5.00"
+};
+
+const OO5: MenuItem = {
+    name: "Chocolate Chip Cake",
+    description:
+        "Get the party started with our Chocolate Chip Cake! Deliciously rich and great for sharing, our chocolate cake features a white icing drizzle - making it the perfect sweet treat for any occasion!",
+    price: "$4.99"
+};
+
+export const KFCMenu: MenuItem[] = [OO1, OO2, OO3, OO4, OO5];
+
+const PP1: MenuItem = {
+    name: "Tall Stack Cake",
+    description:
+        "Who said you can't eat cake for breakfast? Our Tall Stack Cake is ready to be served with caramel “syrup” and a dollop of “butter” in the form of vanilla ice cream. Customize the Tall Stack Cake with your favorite ice cream and cake flavor.",
+    price: "$41.99"
+};
+
+const PP2: MenuItem = {
+    name: "Oreo Cookies 'n Cream Polar Pizza Ice Cream Treat",
+    description:
+        "A double fudge brownie crust with Oreo Cookies 'n Cream Ice Cream, topped with crushed Oreo Cookies pieces and drizzled with marshmallow and fudge topping.",
+    price: "$21.99"
+};
+
+const PP3: MenuItem = {
+    name: "Cotton Candy Ice Cream",
+    description:
+        "A creamier, dreamier version of your favorite fluffy, puffy treat. Swirled in a carnival of color for extra cuteness.",
+    price: "$3.99"
+};
+
+const PP4: MenuItem = {
+    name: "Wild 'n Reckless Sherbet",
+    description:
+        "A green apple, blue raspberry, and fruit punch flavored sherbet party. Fruit has never had so much fun.",
+    price: "$3.99"
+};
+
+const PP5: MenuItem = {
+    name: "World Class Chocolate Ice Cream",
+    description:
+        "Rich white chocolate flavored mousse ice cream swirled with even richer milk chocolate flavored mousse ice cream.",
+    price: "$3.99"
+};
+
+export const BRMenu: MenuItem[] = [PP1, PP2, PP3, PP4, PP5];

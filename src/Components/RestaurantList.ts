@@ -35,6 +35,11 @@ import dairyqueen from "../Images/dairyqueen.png";
 import udairy from "../Images/udairy.png";
 import jerseymikes from "../Images/jerseymikes.png";
 import jimmyjohns from "../Images/jimmyjohns.png";
+import capriottis from "../Images/capriottis.png";
+import pfchangs from "../Images/pfchangs.png";
+import pandaexpress from "../Images/pandaexpress.png";
+import kfc from "../Images/kfc.png";
+import baskinrobbins from "../Images/baskinrobbins.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -72,7 +77,12 @@ import {
     DQMenu,
     UDairyMenu,
     JMMenu,
-    JJMenu
+    JJMenu,
+    CapriottisMenu,
+    PFCMenu,
+    PEMenu,
+    KFCMenu,
+    BRMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -518,59 +528,64 @@ const JimmyJohns: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant38: Restaurant = {
+const Capriottis: Restaurant = {
     id: "38",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Capriotti's Sandwich Shop",
+    description:
+        "Counter-service deli chain crafting hearty signature subs, salads & kids' meals in a casual setting.",
+    image: capriottis,
+    menu: CapriottisMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
-const restaurant39: Restaurant = {
+const PFChangs: Restaurant = {
     id: "39",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "P.F. Chang's",
+    description:
+        "Family-friendly chain offering creative takes on Asian fare in a striking space.",
+    image: pfchangs,
+    menu: PFCMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant40: Restaurant = {
+const PandaExpress: Restaurant = {
     id: "40",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Panda Express",
+    description:
+        "Fast-food chain for Chinese standards, including some health-conscious options.",
+    image: pandaexpress,
+    menu: PEMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant41: Restaurant = {
+const KFC: Restaurant = {
     id: "41",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "KFC",
+    description:
+        "Restaurant chain known for its buckets of fried chicken, plus combo meals & sides.",
+    image: kfc,
+    menu: KFCMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant42: Restaurant = {
+const BaskinRobbins: Restaurant = {
     id: "42",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Baskin-Robbins",
+    description:
+        "Colorful ice cream parlor chain known for its many flavors plus sorbet & yogurt.",
+    image: baskinrobbins,
+    menu: BRMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const restaurant43: Restaurant = {
@@ -699,11 +714,11 @@ const RestaurantList: Restaurant[] = [
     UDairy,
     JerseyMikes,
     JimmyJohns,
-    restaurant38,
-    restaurant39,
-    restaurant40,
-    restaurant41,
-    restaurant42,
+    Capriottis,
+    PFChangs,
+    PandaExpress,
+    KFC,
+    BaskinRobbins,
     restaurant43,
     restaurant44,
     restaurant45,

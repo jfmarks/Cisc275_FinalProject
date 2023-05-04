@@ -1,9 +1,13 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { useDrop } from "react-dnd";
+import { DragObjectWithType } from "react-dnd";
 import { Restaurant, droppedItem } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import { Card, Row } from "react-bootstrap";
+interface droppedItem extends DragObjectWithType {
+    newItem: string;
+}
 export default function RestaurantBucket(): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
     const handleAddRestaurant = (newItemID: string) => {
@@ -15,7 +19,7 @@ export default function RestaurantBucket(): JSX.Element {
 
     const [{ isOver }, drop] = useDrop({
         accept: "RESTAURANT",
-        drop: (item: droppedItem) => {
+        drop: (item: DragObjectWithType & { newItem: string }) => {
             handleAddRestaurant(item.newItem);
         },
         collect: (monitor) => ({

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
+import { AddRestaurant } from "./AddRestaurant";
 import "../RestaurantStyle.css";
 
 import { Card, Col, Container, Row, Button } from "react-bootstrap";

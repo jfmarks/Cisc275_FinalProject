@@ -1410,3 +1410,39 @@ const MM5: MenuItem = {
 };
 
 export const PFCMenu: MenuItem[] = [MM1, MM2, MM3, MM4, MM5];
+
+const NN1: MenuItem = {
+    name: "Orange Chicken",
+    description:
+        "Our signature dish. Crispy chicken wok-tossed in a sweet and spicy orange sauce.",
+    price: "$4.20"
+};
+
+const NN2: MenuItem = {
+    name: "Chicken Egg Roll",
+    description:
+        "Cabbage, carrots, mushrooms, green onions and chicken in a crispy wonton wrapper.",
+    price: "$1.95"
+};
+
+const NN3: MenuItem = {
+    name: "Grilled Teriyaki Chicken",
+    description:
+        "Grilled chicken hand-sliced to order and served with teriyaki sauce.",
+    price: "$4.20"
+};
+
+const NN4: MenuItem = {
+    name: "Chow Mein",
+    description: "Stir-fried wheat noodles with onions, celery and cabbage.",
+    price: "$3.20"
+};
+
+const NN5: MenuItem = {
+    name: "Mixed Vegetables",
+    description:
+        "A healthful medley of broccoli, zucchini, carrots, string beans and cabbage.",
+    price: "$3.70"
+};
+
+export const PEMenu: MenuItem[] = [NN1, NN2, NN3, NN4, NN5];

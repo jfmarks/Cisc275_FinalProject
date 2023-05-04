@@ -36,6 +36,7 @@ import udairy from "../Images/udairy.png";
 import jerseymikes from "../Images/jerseymikes.png";
 import jimmyjohns from "../Images/jimmyjohns.png";
 import capriottis from "../Images/capriottis.png";
+import pfchangs from "../Images/pfchangs.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -74,7 +75,8 @@ import {
     UDairyMenu,
     JMMenu,
     JJMenu,
-    CapriottisMenu
+    CapriottisMenu,
+    PFCMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -532,15 +534,16 @@ const Capriottis: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant39: Restaurant = {
+const PFChangs: Restaurant = {
     id: "39",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "P.F. Chang's",
+    description:
+        "Family-friendly chain offering creative takes on Asian fare in a striking space.",
+    image: pfchangs,
+    menu: PFCMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant40: Restaurant = {
@@ -703,7 +706,7 @@ const RestaurantList: Restaurant[] = [
     JerseyMikes,
     JimmyJohns,
     Capriottis,
-    restaurant39,
+    PFChangs,
     restaurant40,
     restaurant41,
     restaurant42,

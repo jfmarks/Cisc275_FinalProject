@@ -1375,3 +1375,38 @@ const LL5: MenuItem = {
 };
 
 export const CapriottisMenu: MenuItem[] = [LL1, LL2, LL3, LL4, LL5];
+
+const MM1: MenuItem = {
+    name: "Chang's Chicken Lettuce Wraps",
+    description: "A secret family recipe and our signature dish. Enough said.",
+    price: "$14.00"
+};
+
+const MM2: MenuItem = {
+    name: "Dynamite Roll",
+    description:
+        "Tempura-battered shrimp, signature California roll, sriracha aioli, umami sauce",
+    price: "$16.00"
+};
+
+const MM3: MenuItem = {
+    name: "Kung Pao Chicken",
+    description:
+        "Spicy Sichuan chili sauce, peanuts, green onion, red chili peppers",
+    price: "$20.00"
+};
+
+const MM4: MenuItem = {
+    name: "Chicken Fried Rice",
+    description: "Wok-tossed with egg, carrots, bean sprouts, green onion",
+    price: "$15.00"
+};
+
+const MM5: MenuItem = {
+    name: "The Great Wall of Chocolate",
+    description:
+        "Six layers of chocolate cake, chocolate frosting, semi-sweet chocolate chips",
+    price: "$12.00"
+};
+
+export const PFCMenu: MenuItem[] = [MM1, MM2, MM3, MM4, MM5];

@@ -295,14 +295,14 @@ export function UserRestaurants(): JSX.Element {
                                         <Button
                                             variant="danger"
                                             onClick={() =>
-                                                CurrentUser.type == "Super"
+                                                CurrentUser.type == "Critic"
                                                     ? handleDeleteRestaurant(
                                                           restaurant.id
                                                       )
                                                     : null
                                             }
                                             disabled={
-                                                CurrentUser.type === "Admin"
+                                                CurrentUser.type === "Manager"
                                             }
                                         >
                                             Delete

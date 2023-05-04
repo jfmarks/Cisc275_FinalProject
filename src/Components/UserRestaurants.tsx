@@ -4,6 +4,8 @@ import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import "../RestaurantStyle.css";
+import DragRestaurant from "./RestaurantDrag";
+import { AddRestaurant } from "./AddRestaurant";
 
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {

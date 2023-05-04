@@ -5,8 +5,85 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+  console.error
+    Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
+        at p
+        at div
+        at p
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
+        at div
+        at div
+        at div
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Card.js:49:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:13:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd/dist/cjs/common/DndProvider.js:40:23
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
+  console.error
+    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+        at div
+        at p
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
+        at div
+        at div
+        at div
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Card.js:49:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:13:43)
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
+        at div
+        at div
+        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd/dist/cjs/common/DndProvider.js:40:23
+        at App
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
+
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (194 ms)
+  ✕ renders the course name somewhere (673 ms)
 
   ● renders the course name somewhere
 
@@ -31,6 +108,7 @@ FAIL src/App.test.tsx
             [36m>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"App-title row"[39m
+                [33mstyle[39m=[32m"background-color: lightblue; color: black;"[39m
               [36m>[39m
                 [0mRate-a-Restaurant[0m
               [36m</div>[39m
@@ -83,6 +161,18 @@ FAIL src/App.test.tsx
                   [36m</div>[39m
                 [36m</div>[39m
                 [36m<div[39m
+                  [33mclass[39m=[32m"col-lg-6"[39m
+                  [33mstyle[39m=[32m"width: 300px;"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"row"[39m
+                    [33mrole[39m=[32m"RestaurantBucket"[39m
+                    [33mstyle[39m=[32m"background-color: white; justify-content: center; min-height: 300px;"[39m
+                  [36m>[39m
+                    [0mInsert Restaurants here:[0m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
                   [33mclass[39m=[32m"col"[39m
                 [36m>[39m
                   [36m<div[39m
@@ -114,16 +204,19 @@ FAIL src/App.test.tsx
                       [33mclass[39m=[32m"row"[39m
                     [36m>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"col-lg-3 col-md-4 col-sm-6"[39m
+                        [33mclass[39m=[32m"col-lg-6 col-md-6 col-sm-3"[39m
+                        [33mstyle[39m=[32m"display: flex; justify-content: center;"[39m
                       [36m>[39m
                         [36m<div[39m
-                          [33mclass[39m=[32m"card"[39m
-                          [33mstyle[39m=[32m"height: 250px; width: 250px; display: flex; justify-content: center; align-items: center;"[39m
+                          [33mclass[39m=[32m"card-gradient card"[39m
+                          [33mstyle[39m=[32m"height: 400px; width: 600px; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;"[39m
                         [36m>[39m
+                          [36m<br />[39m
                           [36m<img[39m
-                            [33mclass[39m=[32m"card-img-top"[39m
+                            [33mclass[39m=[32m"card-img-top card-image"[39m
+                            [33mdraggable[39m=[32m"true"[39m
                             [33msrc[39m=[32m"ABLogo.png"[39m
-                            [33mstyle[39m=[32m"height: 150px; width: 200px; object-fit: scale-down;"[39m
+                            [33mstyle[39m=[32m"opacity: 1;"[39m
                           [36m/>[39m
                           [36m<div[39m
                             [33mclass[39m=[32m"card-body"[39m
@@ -135,34 +228,24 @@ FAIL src/App.test.tsx
                                 [0mApplebee's Grill and Bar[0m
                               [36m</div>[39m
                               [36m<div>[39m
-                                [36m<div[39m
-                                  [33mstyle[39m=[32m"display: none;"[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"btn btn-info"[39m
+                                  [33mtype[39m=[32m"button"[39m
                                 [36m>[39m
-                                  [36m<strong[39m
-                                    [33mstyle[39m=[32m"background-color: royalblue; flex-direction: row;"[39m
+                                  [0mMenu[0m
+                                [36m</button>[39m
+                                [36m<button[39m
+                                  [33mclass[39m=[32m"btn btn-info"[39m
+                                  [33mtype[39m=[32m"button"[39m
+                                [36m>[39m
+                                  [0mDetails[0m
+                                [36m</button>[39m
+                                [36m<div>[39m
+                                  [36m<button[39m
+                                    [33mclass[39m=[32m"btn btn-info"[39m
+                                    [33mtype[39m=[32m"button"[39m
                                   [36m>[39m
-                                    [0mMenu[0m
-                                  [36m</strong>[39m
-                                  [36m<ul>[39m
-                                    [36m<li>[39m
-                                      [36m<strong>[39m
-                                        [0mOriental Chicken Salad[0m
-                                      [36m</strong>[39m
-                                      [0m [0m
-                                      [0mA long-running favorite, crispy breaded chicken tenders top a bed of Asian greens, rice noodles and almonds with our Oriental vinaigrette on the side. Served with a golden brown signature breadstick brushed with a buttery blend of garlic and parsley.[0m
-                                      [0m [0m
-                                      [0m-[0m
-                                      [0m [0m
-                                      [36m<strong>[39m
-                                        [0m$10.49[0m
-                                      [36m</strong>[39m
-                                    [36m</li>[39m
-                                    [36m<li>[39m
-                                      [36m<strong>[39m
-                                        [0mFiesta Lime Chicken[0m
-                                      [36m</strong>[39m
-                                      [0m [0m
-                                      [0mA celebration of flavor, this dish delivers on...
+                       ...
 
        5 | test("renders the course name somewhere", () => {
        6 |     render(<App />);
@@ -182,25 +265,29 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------------------|---------|----------|---------|---------|-----------------------------------------------------
-File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                   
-----------------------|---------|----------|---------|---------|-----------------------------------------------------
-All files             |   76.52 |     37.5 |      24 |   76.52 |                                                     
- src                  |      50 |      100 |     100 |      50 |                                                     
-  App.tsx             |     100 |      100 |     100 |     100 |                                                     
-  CurrentUser.tsx     |       0 |      100 |     100 |       0 | 3                                                   
-  Interfaces.ts       |       0 |        0 |       0 |       0 |                                                     
- src/Components       |      60 |     37.5 |   20.83 |      60 |                                                     
-  HomePage.tsx        |       0 |      100 |       0 |       0 | 15                                                  
-  Restaurant.tsx      |       0 |      100 |       0 |       0 | 5                                                   
-  RestaurantList.ts   |     100 |      100 |     100 |     100 |                                                     
-  UserList.tsx        |       0 |        0 |       0 |       0 |                                                     
-  UserRestaurants.tsx |   42.85 |     37.5 |   22.72 |   42.85 | 25-26,31-32,39-45,51-57,60-63,66,89,127-146,222-231 
- src/Menus            |     100 |      100 |     100 |     100 |                                                     
-  Menus.tsx           |     100 |      100 |     100 |     100 |                                                     
-----------------------|---------|----------|---------|---------|-----------------------------------------------------
+-----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                           
+-----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
+All files              |   77.16 |    21.42 |   14.28 |   77.34 |                                                                             
+ src                   |      40 |      100 |      25 |      40 |                                                                             
+  App.tsx              |      25 |      100 |      25 |      25 | 48-68                                                                       
+  CurrentUser.tsx      |     100 |      100 |     100 |     100 |                                                                             
+  Interfaces.ts        |       0 |        0 |       0 |       0 |                                                                             
+ src/Components        |    46.4 |    21.42 |   13.63 |   46.66 |                                                                             
+  AddRestaurant.tsx    |       0 |      100 |       0 |       0 | 10-148                                                                      
+  HomePage.tsx         |       0 |      100 |       0 |       0 | 15                                                                          
+  Rating.tsx           |       0 |        0 |       0 |       0 | 7-29                                                                        
+  Restaurant.tsx       |       0 |      100 |       0 |       0 | 5                                                                           
+  RestaurantBucket.tsx |   45.45 |       50 |   28.57 |      50 | 10-13,19,39                                                                 
+  RestaurantDrag.tsx   |     100 |       50 |     100 |     100 | 26                                                                          
+  RestaurantList.ts    |     100 |      100 |     100 |     100 |                                                                             
+  UserList.tsx         |       0 |      100 |       0 |       0 | 10-56                                                                       
+  UserRestaurants.tsx  |   35.29 |    23.21 |   13.88 |   35.29 | 31-32,36-37,42-43,48-49,56-62,68-74,77-82,91-97,100-103,109,136-150,209-347 
+ src/Menus             |     100 |      100 |     100 |     100 |                                                                             
+  Menus.tsx            |     100 |      100 |     100 |     100 |                                                                             
+-----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.917 s
+Time:        4.068 s
 Ran all test suites.

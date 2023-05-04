@@ -39,6 +39,7 @@ import capriottis from "../Images/capriottis.png";
 import pfchangs from "../Images/pfchangs.png";
 import pandaexpress from "../Images/pandaexpress.png";
 import kfc from "../Images/kfc.png";
+import baskinrobbins from "../Images/baskinrobbins.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -80,7 +81,8 @@ import {
     CapriottisMenu,
     PFCMenu,
     PEMenu,
-    KFCMenu
+    KFCMenu,
+    BRMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -574,15 +576,16 @@ const KFC: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant42: Restaurant = {
+const BaskinRobbins: Restaurant = {
     id: "42",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Baskin-Robbins",
+    description:
+        "Colorful ice cream parlor chain known for its many flavors plus sorbet & yogurt.",
+    image: baskinrobbins,
+    menu: BRMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const restaurant43: Restaurant = {
@@ -715,7 +718,7 @@ const RestaurantList: Restaurant[] = [
     PFChangs,
     PandaExpress,
     KFC,
-    restaurant42,
+    BaskinRobbins,
     restaurant43,
     restaurant44,
     restaurant45,

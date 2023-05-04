@@ -1483,3 +1483,40 @@ const OO5: MenuItem = {
 };
 
 export const KFCMenu: MenuItem[] = [OO1, OO2, OO3, OO4, OO5];
+
+const PP1: MenuItem = {
+    name: "Tall Stack Cake",
+    description:
+        "Who said you can't eat cake for breakfast? Our Tall Stack Cake is ready to be served with caramel “syrup” and a dollop of “butter” in the form of vanilla ice cream. Customize the Tall Stack Cake with your favorite ice cream and cake flavor.",
+    price: "$41.99"
+};
+
+const PP2: MenuItem = {
+    name: "Oreo Cookies 'n Cream Polar Pizza Ice Cream Treat",
+    description:
+        "A double fudge brownie crust with Oreo Cookies 'n Cream Ice Cream, topped with crushed Oreo Cookies pieces and drizzled with marshmallow and fudge topping.",
+    price: "$21.99"
+};
+
+const PP3: MenuItem = {
+    name: "Cotton Candy Ice Cream",
+    description:
+        "A creamier, dreamier version of your favorite fluffy, puffy treat. Swirled in a carnival of color for extra cuteness.",
+    price: "$3.99"
+};
+
+const PP4: MenuItem = {
+    name: "Wild 'n Reckless Sherbet",
+    description:
+        "A green apple, blue raspberry, and fruit punch flavored sherbet party. Fruit has never had so much fun.",
+    price: "$3.99"
+};
+
+const PP5: MenuItem = {
+    name: "World Class Chocolate Ice Cream",
+    description:
+        "Rich white chocolate flavored mousse ice cream swirled with even richer milk chocolate flavored mousse ice cream.",
+    price: "$3.99"
+};
+
+export const BRMenu: MenuItem[] = [PP1, PP2, PP3, PP4, PP5];

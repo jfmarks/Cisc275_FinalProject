@@ -2,9 +2,6 @@ import React from "react";
 
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import { Restaurant } from "../Interfaces";
-import RestaurantList from "./RestaurantList";
-import CurrentUser from "../CurrentUser";
 
 export function Rating(): JSX.Element {
     const [value, setValue] = useState<number>(0);

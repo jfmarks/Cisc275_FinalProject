@@ -14,10 +14,6 @@ function App() {
         <DndProvider backend={HTML5Backend}>
             <div className="App">
                 <FixedHeader></FixedHeader>
-                <h1 style={{ fontSize: 16 }}>
-                    By Quinten Bettin, Anastasia Donato, Kareena Keswani, Logan
-                    Levine, Jacob Marks, and Alex Peluso
-                </h1>
                 <div className="App">
                     <Container>
                         <Row

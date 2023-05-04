@@ -5,9 +5,7 @@ import { DragObjectWithType } from "react-dnd";
 import { Restaurant, droppedItem } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import { Card, Row } from "react-bootstrap";
-interface droppedItem extends DragObjectWithType {
-    newItem: string;
-}
+
 export default function RestaurantBucket(): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
     const handleAddRestaurant = (newItemID: string) => {

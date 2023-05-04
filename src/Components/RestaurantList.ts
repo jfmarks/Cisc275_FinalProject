@@ -38,6 +38,7 @@ import jimmyjohns from "../Images/jimmyjohns.png";
 import capriottis from "../Images/capriottis.png";
 import pfchangs from "../Images/pfchangs.png";
 import pandaexpress from "../Images/pandaexpress.png";
+import kfc from "../Images/kfc.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -78,7 +79,8 @@ import {
     JJMenu,
     CapriottisMenu,
     PFCMenu,
-    PEMenu
+    PEMenu,
+    KFCMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -560,15 +562,16 @@ const PandaExpress: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant41: Restaurant = {
+const KFC: Restaurant = {
     id: "41",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "KFC",
+    description:
+        "Restaurant chain known for its buckets of fried chicken, plus combo meals & sides.",
+    image: kfc,
+    menu: KFCMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant42: Restaurant = {
@@ -711,7 +714,7 @@ const RestaurantList: Restaurant[] = [
     Capriottis,
     PFChangs,
     PandaExpress,
-    restaurant41,
+    KFC,
     restaurant42,
     restaurant43,
     restaurant44,

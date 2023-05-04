@@ -1446,3 +1446,40 @@ const NN5: MenuItem = {
 };
 
 export const PEMenu: MenuItem[] = [NN1, NN2, NN3, NN4, NN5];
+
+const OO1: MenuItem = {
+    name: "12 Piece Nuggets",
+    description:
+        "These tasty nuggets are made with 100% white meat chicken and hand breaded in our delicious Original Recipe. Pair them with your favorite 2 KFC sauces.",
+    price: "$6.49"
+};
+
+const OO2: MenuItem = {
+    name: "KFC Chicken Sandwich",
+    description:
+        "Enjoy a premium, all-white meat, double-breaded, Extra Crispy chicken breast filet, served on a freshly-toasted buttery brioche bun, with crispy, thick pickles, and the perfect amount of the Colonel's real mayo or spicy sauce.",
+    price: "$4.99"
+};
+
+const OO3: MenuItem = {
+    name: "4 Piece Tenders Combo",
+    description:
+        "Enjoy 4 of our Extra Crispy fried chicken tenders, a side of your choice, dipping sauce, biscuit and a medium drink.",
+    price: "$8.78"
+};
+
+const OO4: MenuItem = {
+    name: "Mac & Cheese Bowl",
+    description:
+        "Great for a quick lunch or dinner, our Chicken Mac & Cheese Bowl features our signature rich, creamy macaroni and cheese, topped with our crispy fried chicken nuggets and a three-cheese blend. Available in classic or spicy for a limited time!",
+    price: "$5.00"
+};
+
+const OO5: MenuItem = {
+    name: "Chocolate Chip Cake",
+    description:
+        "Get the party started with our Chocolate Chip Cake! Deliciously rich and great for sharing, our chocolate cake features a white icing drizzle - making it the perfect sweet treat for any occasion!",
+    price: "$4.99"
+};
+
+export const KFCMenu: MenuItem[] = [OO1, OO2, OO3, OO4, OO5];

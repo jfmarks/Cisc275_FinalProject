@@ -1,10 +1,12 @@
 import React from "react";
 import "../App.css";
 import CurrentUser from "../CurrentUser";
+import { Button } from "react-bootstrap";
 
 const FixedHeader = () => {
     return (
         <header className="App-Fixed-Header">
+            <Button>List Of Users</Button>
             <label>
                 Select User Type:
                 <select>

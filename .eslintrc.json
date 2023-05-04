@@ -14,8 +14,8 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "pluggin.prettier/recommended"
+        "prettier"
+        //  "pluggin.prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {

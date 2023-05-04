@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Restaurant } from "../Interfaces";
@@ -33,4 +35,7 @@ export function Rating(): JSX.Element {
             {numbersToStars(value)}
         </span>
     );
+}
+export interface temp {
+    temp: string;
 }

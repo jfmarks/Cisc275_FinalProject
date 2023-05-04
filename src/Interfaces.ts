@@ -44,3 +44,6 @@ export interface CurrUser {
     id: string;
     username: string;
 }
+export interface droppedItem {
+    newItem: string;
+}

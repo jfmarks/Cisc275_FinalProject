@@ -8,6 +8,38 @@ import olivegarden from "../Images/olivegarden.png";
 import RCLogo from "../Images/RCLogo.png";
 import redlobster from "../Images/redlobster.png";
 import grain from "../Images/grain.png";
+import ironhill from "../Images/ironhill.png";
+import eldiablo from "../Images/eldiablo.png";
+import stoneballoon from "../Images/stoneballoon.png";
+import kates from "../Images/kates.png";
+import deerpark from "../Images/deerpark.png";
+import grottos from "../Images/grottos.png";
+import mcdonalds from "../Images/mcdonalds.png";
+import wendys from "../Images/wendys.png";
+import chickfila from "../Images/chickfila.png";
+import tacobell from "../Images/tacobell.png";
+import BWW from "../Images/BWW.png";
+import twostones from "../Images/twostones.png";
+import claymont from "../Images/claymont.png";
+import burgerking from "../Images/burgerking.png";
+import longjohns from "../Images/longjohns.png";
+import auntieannes from "../Images/auntieannes.png";
+import cheesecakefactory from "../Images/cheesecakefactory.png";
+import cinnabon from "../Images/cinnabon.png";
+import fiveguys from "../Images/fiveguys.png";
+import indiansizzler from "../Images/indiansizzler.png";
+import playabowls from "../Images/playabowls.png";
+import hamiltons from "../Images/hamiltons.png";
+import subway from "../Images/subway.png";
+import dairyqueen from "../Images/dairyqueen.png";
+import udairy from "../Images/udairy.png";
+import jerseymikes from "../Images/jerseymikes.png";
+import jimmyjohns from "../Images/jimmyjohns.png";
+import capriottis from "../Images/capriottis.png";
+import pfchangs from "../Images/pfchangs.png";
+import pandaexpress from "../Images/pandaexpress.png";
+import kfc from "../Images/kfc.png";
+import baskinrobbins from "../Images/baskinrobbins.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -17,7 +49,40 @@ import {
     OGMenu,
     RCMenu,
     RLMenu,
-    GrainMenu
+    GrainMenu,
+    IHMenu,
+    EDMenu,
+    SBMenu,
+    KatesMenu,
+    DPMenu,
+    GrottosMenu,
+    McMenu,
+    WendysMenu,
+    CFAMenu,
+    TBMenu,
+    BWWMenu,
+    TSMenu,
+    ClaymontMenu,
+    BKMenu,
+    LJSMenu,
+    AAMenu,
+    CCFMenu,
+    CinnabonMenu,
+    FGMenu,
+    ISMenu,
+    SakuraMenu,
+    PBMenu,
+    HamiltonsMenu,
+    SubwayMenu,
+    DQMenu,
+    UDairyMenu,
+    JMMenu,
+    JJMenu,
+    CapriottisMenu,
+    PFCMenu,
+    PEMenu,
+    KFCMenu,
+    BRMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -25,7 +90,7 @@ const AppleBees: Restaurant = {
     id: "1",
     name: "Applebee's Grill and Bar",
     description:
-        "Good food, good people. The Applebee's concept focuses on casual dining, with mainstream American dishes such as salads, chicken, pasta, burgers, and riblets (Applebee's signature dish). Fun Fact: The founders picked the name out of a phone book Founders Bill and T.J. Palmer looked for inspiration in a phone book and fell in love with the name Appleby. After finding there was already a copyright on the name, they changed it to Applebee's.",
+        "Full-service chain bar & grill providing hearty American eats in an informal setting.",
     image: ABLogo,
     menu: ABMenu,
     averageRating: 0,
@@ -37,19 +102,19 @@ const Chipotle: Restaurant = {
     id: "2",
     name: "Chipotle",
     description:
-        "Chipotle was born of the radical belief that there is a connection between how food is raised and prepared, and how it tastes. Real is better. Better for You, Better for People, Better for Our Planet. It may be the hard way to do things, but it's the right way.",
+        "Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.",
     image: chipotlelogo,
     menu: ChipotleMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$$"
+    priceRange: "$"
 };
 
 const Texas_Roadhouse: Restaurant = {
     id: "3",
     name: "Texas Roadhouse",
     description:
-        "Welcome To Legendary. Legendary means Hand-Cut Steaks, Fall-Off-The-Bone Ribs, Made-From-Scratch Sides, Ice-Cold Beer, and of course, our irresistible Fresh-Baked Bread.",
+        "Lively chain steakhouse serving American fare with a Southwestern spin amid Texas-themed decor.",
     image: TRLogo,
     menu: TRMenu,
     averageRating: 0,
@@ -72,7 +137,7 @@ const Chilis: Restaurant = {
     id: "5",
     name: "Chili's",
     description:
-        "Like no place else. Fun. Fresh. Flavorful. Chili's serves American food, Tex-Mex cuisine and dishes influenced by Mexican cuisine, such as spicy shrimp tacos, quesadillas, fajitas. In addition to their regular menu, the company offers a nutritional menu, allergen menu, and vegetarian menu.",
+        "Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style setting.",
     image: chilis,
     menu: ChilisMenu,
     averageRating: 0,
@@ -84,7 +149,7 @@ const OliveGarden: Restaurant = {
     id: "6",
     name: "Olive Garden",
     description:
-        "Italian generosity is always on the table. At Olive Garden, we know that life is better together and everyone is happiest when they're with family.",
+        "Lively, family-friendly chain featuring Italian standards such as pastas & salads.",
     image: olivegarden,
     menu: OGMenu,
     averageRating: 0,
@@ -101,14 +166,14 @@ const Raising_Canes: Restaurant = {
     menu: RCMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$$"
+    priceRange: "$"
 };
 
 const Red_Lobster: Restaurant = {
     id: "8",
     name: "Red Lobster",
     description:
-        "At Red Lobster, our passion for seafood drives how we create every dish, and comes through in how we source our seafood, and give back to our communities.",
+        "Lively chain restaurant serving American seafood standards amid New England-themed decor.",
     image: redlobster,
     menu: RLMenu,
     averageRating: 0,
@@ -128,96 +193,403 @@ const Grain: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant10: Restaurant = {
+const IronHill: Restaurant = {
     id: "10",
-    name: "PizzaCabin",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Iron Hill Brewery & Restaurant",
+    description:
+        "Regional brewpub chain dispensing housemade beers & elevated comfort food staples.",
+    image: ironhill,
+    menu: IHMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$$"
 };
 
-const restaurant11: Restaurant = {
+const ElDiablo: Restaurant = {
     id: "11",
-    name: "FatherJohn's",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "El Diablo Burritos",
+    description:
+        "Contemporary counter-serve offering a build-your-own burrito option, plus tacos & quesadillas",
+    image: eldiablo,
+    menu: EDMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant12: Restaurant = {
+const StoneBalloon: Restaurant = {
     id: "12",
-    name: "Raisin Canes",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Stone Balloon Ale House",
+    description:
+        "Local brews, classic cocktails & creative New American eats in a former historic music venue",
+    image: stoneballoon,
+    menu: SBMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant13: Restaurant = {
+const Kates: Restaurant = {
     id: "13",
-    name: "Sakura Japanese Steakhouse",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Klondike Kate's Restaurant & Saloon",
+    description:
+        "Classic American fare & drinks in a circa-1880 building featuring vintage railroad station decor",
+    image: kates,
+    menu: KatesMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant14: Restaurant = {
+const DeerPark: Restaurant = {
     id: "14",
-    name: "Claymont Steak Shop",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Deer Park Tavern",
+    description:
+        "Landmark spot on site with Revolutionary War roots features a bar, American fare & trivia nights.",
+    image: deerpark,
+    menu: DPMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant15: Restaurant = {
+const Grottos: Restaurant = {
     id: "15",
-    name: "Buffalo Wild Wings",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Grotto Pizza",
+    description:
+        "Family-friendly pizzeria & sports-bar chain offering a broad menu of Italian mainstays.",
+    image: grottos,
+    menu: GrottosMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant16: Restaurant = {
+const McDonalds: Restaurant = {
     id: "16",
-    name: "Suki Hana",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "McDonald's",
+    description:
+        "Classic, long-running fast-food chain known for its burgers & fries.",
+    image: mcdonalds,
+    menu: McMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant17: Restaurant = {
+const Wendys: Restaurant = {
     id: "17",
-    name: "Playa Bowls",
+    name: "Wendy's",
+    description:
+        "Fast-food burger chain serving sides such as chili & baked potatoes.",
+    image: wendys,
+    menu: WendysMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const ChickFilA: Restaurant = {
+    id: "18",
+    name: "Chick-Fil-A",
+    description:
+        "Fast-food chain serving chicken sandwiches & nuggets along with salads & sides.",
+    image: chickfila,
+    menu: CFAMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const TacoBell: Restaurant = {
+    id: "19",
+    name: "Taco Bell",
+    description:
+        "Fast-food chain serving Mexican-inspired fare such as tacos, quesadillas & nachos.",
+    image: tacobell,
+    menu: TBMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const BuffaloWildWings: Restaurant = {
+    id: "20",
+    name: "Buffalo Wild Wings",
+    description:
+        "Chain dishing up wings, tenders & burgers, plus sauces ranging from sweet to very spicy.",
+    image: BWW,
+    menu: BWWMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$$"
+};
+
+const TwoStones: Restaurant = {
+    id: "21",
+    name: "Two Stones Pub",
+    description:
+        "Bright gastropub serving a large selection of craft beers & upscale versions of bar food classics.",
+    image: twostones,
+    menu: TSMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$$"
+};
+
+const Claymont: Restaurant = {
+    id: "22",
+    name: "Claymont Steak Shop",
+    description:
+        "Cheesesteaks, subs, grinders & other Philly-style fare in a relaxed spot with flat-screen TVs.",
+    image: claymont,
+    menu: ClaymontMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$"
+};
+
+const BurgerKing: Restaurant = {
+    id: "23",
+    name: "Burger King",
+    description:
+        "Well-known fast-food chain serving grilled burgers, fries & shakes, plus breakfast.",
+    image: burgerking,
+    menu: BKMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const LongJohnSilvers: Restaurant = {
+    id: "24",
+    name: "Long John Silver's",
+    description:
+        "Counter-serve chain offering fried fish & seafood combos, plus chicken & sides.",
+    image: longjohns,
+    menu: LJSMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const AuntieAnnes: Restaurant = {
+    id: "25",
+    name: "Auntie Anne's",
+    description:
+        "Global chain of counters dispensing sweet & savory soft pretzels with a variety of toppings & dips.",
+    image: auntieannes,
+    menu: AAMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$"
+};
+
+const CheesecakeFactory: Restaurant = {
+    id: "26",
+    name: "The Cheesecake Factory",
+    description:
+        "American chain restaurant offering sizable portions from a vast menu including signature cheesecake",
+    image: cheesecakefactory,
+    menu: CCFMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$$"
+};
+
+const Cinnabon: Restaurant = {
+    id: "27",
+    name: "Cinnabon",
+    description:
+        "Counter-serve chain serving cinnamon rolls plus other baked goods & specialty frozen beverages.",
+    image: cinnabon,
+    menu: CinnabonMenu,
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: "$"
+};
+
+const FiveGuys: Restaurant = {
+    id: "28",
+    name: "Five Guys",
+    description:
+        "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait.",
+    image: fiveguys,
+    menu: FGMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$$"
+};
+
+const IndianSizzler: Restaurant = {
+    id: "29",
+    name: "Indian Sizzler",
+    description:
+        "Longtime casual restaurant known for its steak, burgers & seafood, plus a salad bar.",
+    image: indiansizzler,
+    menu: ISMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$$"
+};
+
+const Sakura: Restaurant = {
+    id: "30",
+    name: "Sakura Japanese Steakhouse?",
     description: "",
     image: "",
-    menu: [menuItem1],
+    menu: SakuraMenu,
     averageRating: 0,
     diningExperience: "Luxury",
     priceRange: ""
 };
 
-const restaurant18: Restaurant = {
-    id: "18",
+const PlayaBowls: Restaurant = {
+    id: "31",
+    name: "Playa Bowls",
+    description:
+        "Playa Bowls™ is your slice of summer, anytime. Using the freshest, highest quality ingredients, we serve healthy, delicious açaí, pitaya, coconut bowls and smoothies with sustainability and community in mind.",
+    image: playabowls,
+    menu: PBMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$$"
+};
+
+const Hamiltons: Restaurant = {
+    id: "32",
+    name: "Hamilton's on Main",
+    description:
+        "Approachable fine dining, craft cocktails, beer and wine served in a rustic chic setting.",
+    image: hamiltons,
+    menu: HamiltonsMenu,
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: "$$$"
+};
+
+const Subway: Restaurant = {
+    id: "33",
+    name: "Subway",
+    description:
+        "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
+    image: subway,
+    menu: SubwayMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$"
+};
+
+const DairyQueen: Restaurant = {
+    id: "34",
+    name: "Dairy Queen",
+    description:
+        "Soft-serve ice cream & signature shakes top the menu at this classic burger & fries fast-food chain.",
+    image: dairyqueen,
+    menu: DQMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const UDairy: Restaurant = {
+    id: "35",
+    name: "UDairy Creamery",
+    description:
+        "Shop selling premium ice cream produced by University of Delaware agriculture students.",
+    image: udairy,
+    menu: UDairyMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$$"
+};
+
+const JerseyMikes: Restaurant = {
+    id: "36",
+    name: "Jersey Mike's Subs",
+    description:
+        "New Jersey-based counter-serve sandwich chain serving jumbo subs filled with cold cuts & toppings.",
+    image: jerseymikes,
+    menu: JMMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$"
+};
+
+const JimmyJohns: Restaurant = {
+    id: "37",
+    name: "Jimmy John's",
+    description:
+        "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips.",
+    image: jimmyjohns,
+    menu: JJMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$"
+};
+
+const Capriottis: Restaurant = {
+    id: "38",
+    name: "Capriotti's Sandwich Shop",
+    description:
+        "Counter-service deli chain crafting hearty signature subs, salads & kids' meals in a casual setting.",
+    image: capriottis,
+    menu: CapriottisMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$"
+};
+
+const PFChangs: Restaurant = {
+    id: "39",
+    name: "P.F. Chang's",
+    description:
+        "Family-friendly chain offering creative takes on Asian fare in a striking space.",
+    image: pfchangs,
+    menu: PFCMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$$"
+};
+
+const PandaExpress: Restaurant = {
+    id: "40",
+    name: "Panda Express",
+    description:
+        "Fast-food chain for Chinese standards, including some health-conscious options.",
+    image: pandaexpress,
+    menu: PEMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const KFC: Restaurant = {
+    id: "41",
+    name: "KFC",
+    description:
+        "Restaurant chain known for its buckets of fried chicken, plus combo meals & sides.",
+    image: kfc,
+    menu: KFCMenu,
+    averageRating: 0,
+    diningExperience: "Fast",
+    priceRange: "$"
+};
+
+const BaskinRobbins: Restaurant = {
+    id: "42",
+    name: "Baskin-Robbins",
+    description:
+        "Colorful ice cream parlor chain known for its many flavors plus sorbet & yogurt.",
+    image: baskinrobbins,
+    menu: BRMenu,
+    averageRating: 0,
+    diningExperience: "Casual",
+    priceRange: "$"
+};
+
+const restaurant43: Restaurant = {
+    id: "43",
     name: "Indian Sizzler",
     description: "",
     image: "",
@@ -226,6 +598,84 @@ const restaurant18: Restaurant = {
     diningExperience: "Luxury",
     priceRange: ""
 };
+
+const restaurant44: Restaurant = {
+    id: "44",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant45: Restaurant = {
+    id: "45",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant46: Restaurant = {
+    id: "46",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant47: Restaurant = {
+    id: "47",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant48: Restaurant = {
+    id: "48",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant49: Restaurant = {
+    id: "49",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
+const restaurant50: Restaurant = {
+    id: "50",
+    name: "Indian Sizzler",
+    description: "",
+    image: "",
+    menu: [menuItem1],
+    averageRating: 0,
+    diningExperience: "Luxury",
+    priceRange: ""
+};
+
 const RestaurantList: Restaurant[] = [
     AppleBees,
     Chipotle,
@@ -236,15 +686,47 @@ const RestaurantList: Restaurant[] = [
     Raising_Canes,
     Red_Lobster,
     Grain,
-    restaurant10,
-    restaurant11,
-    restaurant12,
-    restaurant13,
-    restaurant14,
-    restaurant15,
-    restaurant16,
-    restaurant17,
-    restaurant18
+    IronHill,
+    ElDiablo,
+    StoneBalloon,
+    Kates,
+    DeerPark,
+    Grottos,
+    McDonalds,
+    Wendys,
+    ChickFilA,
+    TacoBell,
+    BuffaloWildWings,
+    TwoStones,
+    Claymont,
+    BurgerKing,
+    LongJohnSilvers,
+    AuntieAnnes,
+    CheesecakeFactory,
+    Cinnabon,
+    FiveGuys,
+    IndianSizzler,
+    Sakura,
+    PlayaBowls,
+    Hamiltons,
+    Subway,
+    DairyQueen,
+    UDairy,
+    JerseyMikes,
+    JimmyJohns,
+    Capriottis,
+    PFChangs,
+    PandaExpress,
+    KFC,
+    BaskinRobbins,
+    restaurant43,
+    restaurant44,
+    restaurant45,
+    restaurant46,
+    restaurant47,
+    restaurant48,
+    restaurant49,
+    restaurant50
 ];
 
 export default RestaurantList;

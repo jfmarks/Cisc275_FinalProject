@@ -13,7 +13,7 @@ export default function RestaurantBucket(): JSX.Element {
         setItems((items) => [...items, newItem as Restaurant]);
     };
 
-    const [{ isOver }, drop] = useDrop(() => ({
+    const [{ isOver }, drop] = useDrop({
         accept: "RESTAURANT",
         drop: (item: droppedItem) => {
             handleAddRestaurant(item.newItem);
@@ -22,7 +22,7 @@ export default function RestaurantBucket(): JSX.Element {
             isOver: !!monitor.isOver(),
             canDrop: !!monitor.canDrop()
         })
-    }));
+    });
 
     return (
         <Row

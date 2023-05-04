@@ -1,14 +1,14 @@
 import React from "react";
 import { useDrag } from "react-dnd";
 import { Card } from "react-bootstrap";
-import { droppedItem } from "../Interfaces";
+import { DraggedRestaurant } from "../Interfaces";
 
 export default function DragRestaurant({
     image,
     dragItem
 }: {
     image: string;
-    dragItem: droppedItem;
+    dragItem: DraggedRestaurant;
 }) {
     const [, drag] = useDrag(
         () => ({

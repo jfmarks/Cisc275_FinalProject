@@ -18,7 +18,15 @@ function App() {
                 </h1>
                 <div className="App">
                     <Container>
-                        <Row className="App-title">Rate-a-Restaurant</Row>
+                        <Row
+                            style={{
+                                backgroundColor: "lightblue",
+                                color: "black"
+                            }}
+                            className="App-title"
+                        >
+                            Rate-a-Restaurant
+                        </Row>
                         <Row>
                             <Col className="App-left-col" sm="auto">
                                 <Row className="App-main-button-rows">

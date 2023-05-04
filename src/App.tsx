@@ -7,11 +7,13 @@ import RestaurantBucket from "./Components/RestaurantBucket";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import CurrentUser from "./CurrentUser";
+import FixedHeader from "./Components/FixedHeader";
 
 function App() {
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="App">
+                <FixedHeader></FixedHeader>
                 <h1 style={{ fontSize: 16 }}>
                     By Quinten Bettin, Anastasia Donato, Kareena Keswani, Logan
                     Levine, Jacob Marks, and Alex Peluso

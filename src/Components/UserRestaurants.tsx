@@ -193,7 +193,10 @@ export function UserRestaurants(): JSX.Element {
                             <br></br>
                             <DragRestaurant
                                 image={restaurant.image}
-                                dragItem={{ newItem: restaurant.id }}
+                                dragItem={{
+                                    type: "RESTAURANT",
+                                    newItem: restaurant.id
+                                }}
                             ></DragRestaurant>
                             <Card.Body>
                                 {editMode ? (

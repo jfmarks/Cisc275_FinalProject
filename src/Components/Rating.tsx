@@ -8,19 +8,19 @@ export function Counter(): JSX.Element {
     const [value, setValue] = useState<number>(0);
     function numbersToStars(num: number): string {
         let stars = "";
-        if (num == 1) {
+        if (num === 1) {
             stars = "⭐️";
         }
-        if (num == 2) {
+        if (num === 2) {
             stars = "⭐️⭐️";
         }
-        if (num == 3) {
+        if (num === 3) {
             stars = "⭐️⭐️⭐️";
         }
-        if (num == 4) {
+        if (num === 4) {
             stars = "⭐️⭐️⭐️⭐️";
         }
-        if (num == 5) {
+        if (num === 5) {
             stars = "⭐️⭐️⭐️⭐️⭐️";
         }
         return stars;

@@ -40,6 +40,7 @@ import pfchangs from "../Images/pfchangs.png";
 import pandaexpress from "../Images/pandaexpress.png";
 import kfc from "../Images/kfc.png";
 import baskinrobbins from "../Images/baskinrobbins.png";
+import sakura from "../Images/sakura.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -435,13 +436,14 @@ const IndianSizzler: Restaurant = {
 
 const Sakura: Restaurant = {
     id: "30",
-    name: "Sakura Japanese Steakhouse?",
-    description: "",
-    image: "",
+    name: "Sakura Japanese Steak, Seafood House & Sushi Bar",
+    description:
+        "Chain teppanyaki grill serving steaks & seafood, plus sushi & a traditional Japanese menu.",
+    image: sakura,
     menu: SakuraMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: ""
+    priceRange: "$$"
 };
 
 const PlayaBowls: Restaurant = {

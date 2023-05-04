@@ -1338,3 +1338,40 @@ const KK5: MenuItem = {
 };
 
 export const JJMenu: MenuItem[] = [KK1, KK2, KK3, KK4, KK5];
+
+const LL1: MenuItem = {
+    name: "Classic Cheese Steak",
+    description:
+        "It's called a classic for a reason. Our Classic Cheese Steak is prepared with grilled choice steak, mushrooms, onions, white American cheese and your choice of hot or sweet peppers.",
+    price: "$6.99"
+};
+
+const LL2: MenuItem = {
+    name: "Homemade Turkey",
+    description:
+        "No deli slices here. Our slow-roasted homemade turkey is hand-shredded and topped with provolone cheese, lettuce, tomato, onion, and mayo",
+    price: "$6.99"
+};
+
+const LL3: MenuItem = {
+    name: "Classic Meatball",
+    description:
+        "Satisfy your appetite with our Classic Meatball sub. Made with our savory meatballs, topped with marinara sauce, provolone, and Romano cheese",
+    price: "$6.99"
+};
+
+const LL4: MenuItem = {
+    name: "American Wagyu Roast Beef",
+    description:
+        "Ultra-premium American Wagyu beef slow-roasted, piled high then topped with provolone cheese, lettuce, tomato, onions, and mayo",
+    price: "$7.49"
+};
+
+const LL5: MenuItem = {
+    name: "Impossible Cheese Steak",
+    description:
+        "Cheese steak fans will be asking themselves, ''this isn't real meat?''. Our Impossible Cheese Steak is made with Impossible plant-based meat, melted white American Cheese, mushrooms, and onions",
+    price: "$7.99"
+};
+
+export const CapriottisMenu: MenuItem[] = [LL1, LL2, LL3, LL4, LL5];

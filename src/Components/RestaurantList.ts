@@ -42,6 +42,7 @@ import kfc from "../Images/kfc.png";
 import baskinrobbins from "../Images/baskinrobbins.png";
 import sakura from "../Images/sakura.png";
 import pokebros from "../Images/pokebros.png";
+import starbucks from "../Images/starbucks.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -85,7 +86,8 @@ import {
     PEMenu,
     KFCMenu,
     BRMenu,
-    PokeMenu
+    PokeMenu,
+    StarbucksMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -604,15 +606,16 @@ const PokeBros: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant44: Restaurant = {
+const Starbucks: Restaurant = {
     id: "44",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Starbucks",
+    description:
+        "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
+    image: starbucks,
+    menu: StarbucksMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant45: Restaurant = {
@@ -725,7 +728,7 @@ const RestaurantList: Restaurant[] = [
     KFC,
     BaskinRobbins,
     PokeBros,
-    restaurant44,
+    Starbucks,
     restaurant45,
     restaurant46,
     restaurant47,

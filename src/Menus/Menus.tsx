@@ -1560,3 +1560,40 @@ const QQ5: MenuItem = {
 };
 
 export const PokeMenu: MenuItem[] = [QQ1, QQ2, QQ3, QQ4, QQ5];
+
+const RR1: MenuItem = {
+    name: "Bacon, Sausage & Egg Wrap",
+    description:
+        "Double-smoked bacon, savory pork sausage and cage-free scrambled eggs combined with Cheddar cheese and potatoes--all wrapped in a flour tortilla.",
+    price: "$4.25"
+};
+
+const RR2: MenuItem = {
+    name: "Bacon & Gruyère Egg Bites",
+    description:
+        "Applewood-smoked bacon and aged Gruyère Monterey Jack cheeses folded into cage-free eggs and cooked using the French ''sous vide'' technique to create a velvety texture that's full of flavor.",
+    price: "$4.65"
+};
+
+const RR3: MenuItem = {
+    name: "Crispy Grilled Cheese on Sourdough",
+    description:
+        "A blend of white Cheddar and mozzarella cheeses on sourdough bread, topped with a Parmesan butter spread.",
+    price: "$5.95"
+};
+
+const RR4: MenuItem = {
+    name: "Mocha Cookie Crumble Frappuccino",
+    description:
+        "Frappuccino Roast coffee, mocha sauce and Frappuccino chips blended with milk and ice, layered on top of whipped cream and chocolate cookie crumble and topped with vanilla whipped cream, mocha drizzle and even more chocolate cookie crumble. Each sip is as good as the last . . . all the way to the end.",
+    price: "$5.45"
+};
+
+const RR5: MenuItem = {
+    name: "Double Chocolaty Chip Crème Frappuccino Blended Beverage",
+    description:
+        "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash. Top it off with sweetened whipped cream and mocha drizzle for a real party in your mouth.",
+    price: "$4.95"
+};
+
+export const StarbucksMenu: MenuItem[] = [RR1, RR2, RR3, RR4, RR5];

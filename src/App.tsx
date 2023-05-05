@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import "./RestaurantStyle.css";
 import { UserRestaurants } from "./Components/UserRestaurants";

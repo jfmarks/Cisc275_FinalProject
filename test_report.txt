@@ -83,7 +83,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (904 ms)
+  ✕ renders the course name somewhere (1083 ms)
 
   ● renders the course name somewhere
 
@@ -95,11 +95,46 @@ FAIL src/App.test.tsx
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
         [36m>[39m
-          [36m<h1[39m
-            [33mstyle[39m=[32m"font-size: 16px;"[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"App-Fixed-Header"[39m
           [36m>[39m
-            [0mBy Quinten Bettin, Anastasia Donato, Kareena Keswani, Logan Levine, Jacob Marks, and Alex Peluso[0m
-          [36m</h1>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mstyle[39m=[32m"position: absolute; left: 5px;"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mList Of Users[0m
+            [36m</button>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"position: absolute; right: 5px;"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label>[39m
+                  [0mSelect user type:[0m
+                  [36m<select>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Critic"[39m
+                    [36m>[39m
+                      [0mCritic[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Manager"[39m
+                    [36m>[39m
+                      [0mManager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Foodie"[39m
+                    [36m>[39m
+                      [0mFoodie[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<h1>[39m
+              [0mRate-A-Restaurant[0m
+            [36m</h1>[39m
+          [36m</header>[39m
           [36m<div[39m
             [33mclass[39m=[32m"App"[39m
           [36m>[39m
@@ -107,59 +142,9 @@ FAIL src/App.test.tsx
               [33mclass[39m=[32m"container"[39m
             [36m>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"App-title row"[39m
-                [33mstyle[39m=[32m"background-color: lightblue; color: black;"[39m
-              [36m>[39m
-                [0mRate-a-Restaurant[0m
-              [36m</div>[39m
-              [36m<div[39m
                 [33mclass[39m=[32m"row"[39m
+                [33mstyle[39m=[32m"position: absolute; top: 60px;"[39m
               [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"App-left-col col-sm-auto"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"App-main-button-rows row"[39m
-                  [36m>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
-                      [33mstyle[39m=[32m"height: 100px; font-size: 30px; margin-top: -5px;"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mList of Users[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"App-main-button-rows row"[39m
-                  [36m>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mCritic[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"App-main-button-rows row"[39m
-                  [36m>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mManager[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"App-main-button-rows row"[39m
-                  [36m>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"App-main-buttons btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mFoodie[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"col-lg-6"[39m
                   [33mstyle[39m=[32m"width: 300px;"[39m
@@ -245,7 +230,24 @@ FAIL src/App.test.tsx
                                     [33mclass[39m=[32m"btn btn-info"[39m
                                     [33mtype[39m=[32m"button"[39m
                                   [36m>[39m
-                       ...
+                                    [0mRating[0m
+                                  [36m</button>[39m
+                                [36m</div>[39m
+                                [36m<div[39m
+                                  [33mstyle[39m=[32m"display: none;"[39m
+                                [36m>[39m
+                                  [36m<p[39m
+                                    [33mclass[39m=[32m"card-text"[39m
+                                  [36m>[39m
+                                    [36m<div[39m
+                                      [33mstyle[39m=[32m"height: auto;"[39m
+                                    [36m>[39m
+                                      [36m<p>[39m
+                                        [0mCasual[0m
+                                      [36m</p>[39m
+                                      [36m<p>[39m
+                                        [0mFull-service chain bar & grill providing hearty American eats in an informal setting.[0m
+          ...
 
        5 | test("renders the course name somewhere", () => {
        6 |     render(<App />);
@@ -268,13 +270,14 @@ FAIL src/App.test.tsx
 -----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                           
 -----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
-All files              |   77.16 |    21.42 |   14.28 |   77.34 |                                                                             
- src                   |      40 |      100 |      25 |      40 |                                                                             
-  App.tsx              |      25 |      100 |      25 |      25 | 48-68                                                                       
+All files              |   77.47 |    21.42 |   17.14 |   77.65 |                                                                             
+ src                   |     100 |      100 |     100 |     100 |                                                                             
+  App.tsx              |     100 |      100 |     100 |     100 |                                                                             
   CurrentUser.tsx      |     100 |      100 |     100 |     100 |                                                                             
   Interfaces.ts        |       0 |        0 |       0 |       0 |                                                                             
- src/Components        |    46.4 |    21.42 |   13.63 |   46.66 |                                                                             
+ src/Components        |   47.36 |    21.42 |   15.94 |   47.61 |                                                                             
   AddRestaurant.tsx    |       0 |      100 |       0 |       0 | 10-148                                                                      
+  FixedHeader.tsx      |     100 |      100 |     100 |     100 |                                                                             
   HomePage.tsx         |       0 |      100 |       0 |       0 | 15                                                                          
   Rating.tsx           |       0 |        0 |       0 |       0 | 7-29                                                                        
   Restaurant.tsx       |       0 |      100 |       0 |       0 | 5                                                                           
@@ -283,11 +286,12 @@ All files              |   77.16 |    21.42 |   14.28 |   77.34 |
   RestaurantList.ts    |     100 |      100 |     100 |     100 |                                                                             
   UserList.tsx         |       0 |      100 |       0 |       0 | 10-56                                                                       
   UserRestaurants.tsx  |   35.29 |    23.21 |   13.88 |   35.29 | 31-32,36-37,42-43,48-49,56-62,68-74,77-82,91-97,100-103,109,136-150,209-347 
+  UserSelector.tsx     |   57.14 |      100 |      50 |   57.14 | 8-10                                                                        
  src/Menus             |     100 |      100 |     100 |     100 |                                                                             
   Menus.tsx            |     100 |      100 |     100 |     100 |                                                                             
 -----------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.772 s
+Time:        5.759 s
 Ran all test suites.

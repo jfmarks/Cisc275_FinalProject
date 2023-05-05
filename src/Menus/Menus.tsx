@@ -1059,33 +1059,36 @@ const CC5: MenuItem = {
 export const ISMenu: MenuItem[] = [CC1, CC2, CC3, CC4, CC5];
 
 const DD1: MenuItem = {
-    name: "",
-    description: "",
-    price: ""
+    name: "Lobster, Shrimp and Scallops",
+    description:
+        "Imperial seafood combination with uniquely seasoned with special herbs.",
+    price: "$40.95"
 };
 
 const DD2: MenuItem = {
-    name: "",
-    description: "",
-    price: ""
+    name: "Rib Eye Steak",
+    description:
+        "12 oz. of top-quality rib eye steak cooked with care to present the natural flavor.",
+    price: "$32.95"
 };
 
 const DD3: MenuItem = {
-    name: "",
-    description: "",
-    price: ""
+    name: "Miso Soup",
+    description: "Soup that is made from miso paste.",
+    price: "$2.20"
 };
 
 const DD4: MenuItem = {
-    name: "",
-    description: "",
-    price: ""
+    name: "Ikura with Quail Egg",
+    description: "Salmon roe.",
+    price: "$8.95"
 };
 
 const DD5: MenuItem = {
-    name: "",
-    description: "",
-    price: ""
+    name: "Sakura Special Roll",
+    description:
+        "Tuna, salmon, yellowtail, shrimp tempura, crab, avocado, cucumber, and Masago. 8 pieces.",
+    price: "$18.50"
 };
 
 export const SakuraMenu: MenuItem[] = [DD1, DD2, DD3, DD4, DD5];

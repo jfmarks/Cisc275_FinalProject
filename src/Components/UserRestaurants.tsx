@@ -1,11 +1,12 @@
+/* eslint-disable no-extra-parens */
 /* eslint-disable indent */
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
 import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
+import { AddRestaurant } from "./AddRestaurant";
 import "../RestaurantStyle.css";
 import DragRestaurant from "./RestaurantDrag";
-import { AddRestaurant } from "./AddRestaurant";
 
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 export function UserRestaurants(): JSX.Element {
@@ -192,7 +193,10 @@ export function UserRestaurants(): JSX.Element {
                             <br></br>
                             <DragRestaurant
                                 image={restaurant.image}
-                                dragItem={{ newItem: restaurant.id }}
+                                dragItem={{
+                                    type: "RESTAURANT",
+                                    newItem: restaurant.id
+                                }}
                             ></DragRestaurant>
                             <Card.Body>
                                 {editMode ? (
@@ -291,14 +295,14 @@ export function UserRestaurants(): JSX.Element {
                                         <Button
                                             variant="danger"
                                             onClick={() =>
-                                                CurrentUser.type == "Super"
+                                                CurrentUser.type == "Critic"
                                                     ? handleDeleteRestaurant(
                                                           restaurant.id
                                                       )
                                                     : null
                                             }
                                             disabled={
-                                                CurrentUser.type === "Admin"
+                                                CurrentUser.type === "Manager"
                                             }
                                         >
                                             Delete

@@ -1523,3 +1523,40 @@ const PP5: MenuItem = {
 };
 
 export const BRMenu: MenuItem[] = [PP1, PP2, PP3, PP4, PP5];
+
+const QQ1: MenuItem = {
+    name: "Johnny Utah",
+    description:
+        "Salmon, Avocado, Edamame, Cucumber, Masago, OG Sauce, Sriracha Aioli",
+    price: "$12.50"
+};
+
+const QQ2: MenuItem = {
+    name: "The Duke",
+    description:
+        "Tuna, Salmon, Shrimp, Seaweed Salad, Jalapeno, Sweet Onion, Edamame, Cucumber, Ponzu, OG Sauce, Gochujang",
+    price: "$14.00"
+};
+
+const QQ3: MenuItem = {
+    name: "High Tide",
+    description:
+        "Chicken, Shrimp, Edamame, Carrots, Pineapple, Green Onion, Avocado, Corn, Cucumber, Sriracha Aioli, Sweet Soy, OG Sauce",
+    price: "$12.00"
+};
+
+const QQ4: MenuItem = {
+    name: "Hula",
+    description:
+        "Shrimp, Green Onion, Cucumber, Crab Stick, Avocado, Masago, OG Sauce, Sriracha Aioli, Coconut Ginger",
+    price: "$11.50"
+};
+
+const QQ5: MenuItem = {
+    name: "Belgian Chocolate Mochi - 2 Pieces",
+    description:
+        "A miraculous match of mochi dough with marvelously mouthwatering ice cream.",
+    price: "$4.00"
+};
+
+export const PokeMenu: MenuItem[] = [QQ1, QQ2, QQ3, QQ4, QQ5];

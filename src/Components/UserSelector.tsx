@@ -4,7 +4,7 @@ import CurrentUser from "../CurrentUser";
 const UserSelector = () => {
     const [userType, setUserType] = useState(CurrentUser.type);
 
-    const handleUserTypeChange = (event: { target: { value: any } }) => {
+    const handleUserTypeChange = (event: { target: { value: string } }) => {
         const newUserType = event.target.value;
         setUserType(newUserType);
         CurrentUser.type = newUserType;

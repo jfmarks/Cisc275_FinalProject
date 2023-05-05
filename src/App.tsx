@@ -16,16 +16,7 @@ function App() {
                 <FixedHeader></FixedHeader>
                 <div className="App">
                     <Container>
-                        <Row
-                            style={{
-                                backgroundColor: "lightblue",
-                                color: "black"
-                            }}
-                            className="App-title"
-                        >
-                            Rate-a-Restaurant
-                        </Row>
-                        <Row>
+                        <Row style={{ position: "absolute", top: 60 }}>
                             <Col style={{ width: "300px" }} lg={6}>
                                 <RestaurantBucket></RestaurantBucket>
                             </Col>

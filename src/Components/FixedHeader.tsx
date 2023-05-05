@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
-import CurrentUser from "../CurrentUser";
 import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
-import { left } from "@popperjs/core";
 
 const FixedHeader = () => {
     return (
@@ -14,6 +12,7 @@ const FixedHeader = () => {
             <div style={{ position: "absolute", right: 5 }}>
                 <UserSelector></UserSelector>
             </div>
+            <h1>Rate-A-Restaurant</h1>
         </header>
     );
 };

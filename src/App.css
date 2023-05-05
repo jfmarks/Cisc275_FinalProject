@@ -30,8 +30,8 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: black;
-    color: white;
+    background-color: lightblue;
+    color: black;
 }
 .App-title {
     border: 1px solid #ccc;

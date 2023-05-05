@@ -26,39 +26,6 @@ function App() {
                             Rate-a-Restaurant
                         </Row>
                         <Row>
-                            <Col className="App-left-col" sm="auto">
-                                <Row className="App-main-button-rows"></Row>
-                                <Row className="App-main-button-rows">
-                                    <Button
-                                        className="App-main-buttons"
-                                        onClick={() =>
-                                            (CurrentUser.type = "Critic")
-                                        }
-                                    >
-                                        Critic
-                                    </Button>
-                                </Row>
-                                <Row className="App-main-button-rows">
-                                    <Button
-                                        className="App-main-buttons"
-                                        onClick={() =>
-                                            (CurrentUser.type = "Manager")
-                                        }
-                                    >
-                                        Manager
-                                    </Button>
-                                </Row>
-                                <Row className="App-main-button-rows">
-                                    <Button
-                                        className="App-main-buttons"
-                                        onClick={() =>
-                                            (CurrentUser.type = "Foodie")
-                                        }
-                                    >
-                                        Foodie
-                                    </Button>
-                                </Row>
-                            </Col>
                             <Col style={{ width: "300px" }} lg={6}>
                                 <RestaurantBucket></RestaurantBucket>
                             </Col>

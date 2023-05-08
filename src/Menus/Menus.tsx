@@ -1670,3 +1670,39 @@ const TT5: MenuItem = {
 };
 
 export const SSMenu: MenuItem[] = [TT1, TT2, TT3, TT4, TT5];
+
+const UU1: MenuItem = {
+    name: "Chicken Parmesan Sandwich",
+    description:
+        "Seasoned all white meat chicken breast, tomato basil marinara, and premium Parmesan-asiago and provolone cheeses on our artisan Italian bread and baked to a perfect golden brown.",
+    price: "$6.99"
+};
+
+const UU2: MenuItem = {
+    name: "Chicken Carbonara",
+    description:
+        "Grilled 100% all white meat chicken, bacon, onions and mushrooms mixed with penne pasta and baked to perfection with creamy Alfredo sauce.",
+    price: "$6.99"
+};
+
+const UU3: MenuItem = {
+    name: "Small 10'' Cheese Pizza",
+    description: "On classic hand-tossed crust.",
+    price: "$7.99"
+};
+
+const UU4: MenuItem = {
+    name: "Wisconsin 6 Cheese Pizza",
+    description:
+        "Mozzarella, feta, provolone, cheddar, Parmesan and Asiago cheese sprinkled with oregano on a cheesy Parmesan-Asiago crust.",
+    price: "$13.99"
+};
+
+const UU5: MenuItem = {
+    name: "Philly Cheese Steak Pizza",
+    description:
+        "Tender slices of steak, fresh onions, fresh green peppers and fresh mushrooms with provolone and American cheese on a cheesy provolone crust.",
+    price: "$13.99"
+};
+
+export const DominosMenu: MenuItem[] = [UU1, UU2, UU3, UU4, UU5];

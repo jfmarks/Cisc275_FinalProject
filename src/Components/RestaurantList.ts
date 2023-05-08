@@ -45,6 +45,7 @@ import pokebros from "../Images/pokebros.png";
 import starbucks from "../Images/starbucks.png";
 import wawa from "../Images/wawa.png";
 import shakeshack from "../Images/shakeshack.png";
+import dominos from "../Images/dominos.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -91,7 +92,8 @@ import {
     PokeMenu,
     StarbucksMenu,
     WawaMenu,
-    SSMenu
+    SSMenu,
+    DominosMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -646,15 +648,16 @@ const ShakeShack: Restaurant = {
     priceRange: "$$"
 };
 
-const restaurant47: Restaurant = {
+const Dominos: Restaurant = {
     id: "47",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Domino's",
+    description:
+        "Delivery/carryout chain offering a wide range of pizzas & a variety of other dishes & sides.",
+    image: dominos,
+    menu: DominosMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant48: Restaurant = {
@@ -737,7 +740,7 @@ const RestaurantList: Restaurant[] = [
     Starbucks,
     Wawa,
     ShakeShack,
-    restaurant47,
+    Dominos,
     restaurant48,
     restaurant49,
     restaurant50

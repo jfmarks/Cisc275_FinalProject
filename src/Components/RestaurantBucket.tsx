@@ -1,6 +1,7 @@
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { useDrop } from "react-dnd";
-import { Restaurant, droppedItem } from "../Interfaces";
+import { Restaurant, DraggedRestaurant } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import { Card, Row } from "react-bootstrap";
 export default function RestaurantBucket(): JSX.Element {
@@ -12,16 +13,16 @@ export default function RestaurantBucket(): JSX.Element {
         setItems((items) => [...items, newItem as Restaurant]);
     };
 
-    const [{ isOver }, drop] = useDrop(() => ({
+    const [{ isOver }, drop] = useDrop({
         accept: "RESTAURANT",
-        drop: (item: droppedItem) => {
+        drop: (item: DraggedRestaurant) => {
             handleAddRestaurant(item.newItem);
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
             canDrop: !!monitor.canDrop()
         })
-    }));
+    });
 
     return (
         <Row

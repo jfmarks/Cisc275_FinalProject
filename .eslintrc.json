@@ -16,7 +16,7 @@
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "prettier"
-        //  "pluggin.prettier/recommended"
+        
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -40,8 +40,7 @@
             {
                 "nestedBinaryExpressions": false,
                 "returnAssign": false,
-                "enforceForArrowConditionals": false,
-                "ignoreJSX": "all"
+                "enforceForArrowConditionals": false
             }
         ],
         "brace-style": ["error", "1tbs"],

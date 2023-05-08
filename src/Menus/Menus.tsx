@@ -1634,3 +1634,39 @@ const SS5: MenuItem = {
 };
 
 export const WawaMenu: MenuItem[] = [SS1, SS2, SS3, SS4, SS5];
+
+const TT1: MenuItem = {
+    name: "Shack Stack",
+    description:
+        "Cheeseburger topped with a 'Shroom Burger with lettuce, tomato, ShackSauce",
+    price: "$13.19"
+};
+
+const TT2: MenuItem = {
+    name: "Grilled Cheese",
+    description: "American cheese melted in a grilled potato bun",
+    price: "$5.19"
+};
+
+const TT3: MenuItem = {
+    name: "Bourbon Bacon Cheddar Chicken",
+    description:
+        "Crispy chicken breast topped with white-cheddar cheese and our bourbon bacon jam made with Maker's Mark Bourbon over pickles on a toasted potato bun",
+    price: "$10.09"
+};
+
+const TT4: MenuItem = {
+    name: "Oreo Funnel Cake Shake",
+    description:
+        "Oreo cookies and funnel cake crunch hand spun with vanilla frozen custard, topped with chocolate whipped cream",
+    price: "$6.99"
+};
+
+const TT5: MenuItem = {
+    name: "Chocolate Churro Shake",
+    description:
+        "Hand-spun cinnamon churro frozen custard, topped with spiced dark chocolate sauce, topped with whipped cream and cinnamon waffle cone crumbles",
+    price: "$6.99"
+};
+
+export const SSMenu: MenuItem[] = [TT1, TT2, TT3, TT4, TT5];

@@ -44,6 +44,7 @@ import sakura from "../Images/sakura.png";
 import pokebros from "../Images/pokebros.png";
 import starbucks from "../Images/starbucks.png";
 import wawa from "../Images/wawa.png";
+import shakeshack from "../Images/shakeshack.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -89,7 +90,8 @@ import {
     BRMenu,
     PokeMenu,
     StarbucksMenu,
-    WawaMenu
+    WawaMenu,
+    SSMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -632,15 +634,16 @@ const Wawa: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant46: Restaurant = {
+const ShakeShack: Restaurant = {
     id: "46",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Shake Shack",
+    description:
+        "Hip, counter-serve chain for gourmet takes on fast-food classics like burgers & frozen custard.",
+    image: shakeshack,
+    menu: SSMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
 const restaurant47: Restaurant = {
@@ -733,7 +736,7 @@ const RestaurantList: Restaurant[] = [
     PokeBros,
     Starbucks,
     Wawa,
-    restaurant46,
+    ShakeShack,
     restaurant47,
     restaurant48,
     restaurant49,

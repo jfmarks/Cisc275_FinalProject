@@ -351,8 +351,8 @@ export function UserRestaurants(): JSX.Element {
                                                 >
                                                     {ratingVisible ===
                                                     restaurant.id
-                                                        ? "Hide Rating"
-                                                        : "Rating"}
+                                                        ? "Done Rating"
+                                                        : "Rate"}
                                                 </Button>
                                             </div>
                                             <div

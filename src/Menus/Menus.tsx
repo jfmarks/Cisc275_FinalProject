@@ -1780,3 +1780,40 @@ const WW5: MenuItem = {
 };
 
 export const PHMenu: MenuItem[] = [WW1, WW2, WW3, WW4, WW5];
+
+const XX1: MenuItem = {
+    name: "Bagel with Cream Cheese Spread",
+    description:
+        "A delicious way to start your day. Soft and chewy, these freshly baked bagels come in some of your favorite varieties.",
+    price: "$4.36"
+};
+
+const XX2: MenuItem = {
+    name: "Original Blend Iced Coffee",
+    description:
+        "Freshly brewed and full of flavor, our Iced Coffee is the perfect pick-me-up any time of day or night, giving you the boost you need to keep on running.",
+    price: "$4.11"
+};
+
+const XX3: MenuItem = {
+    name: "Classic Donuts",
+    description:
+        "Treat yourself or share the joy by bringing people together with a dozen donuts made in these delicious varieties: Glazed, Chocolate Frosted, Strawberry Frosted, Old Fashioned, Boston Kreme, Glazed Chocolate Cake and Jelly.",
+    price: "$1.98"
+};
+
+const XX4: MenuItem = {
+    name: "Munchkins Donut Hole Treats",
+    description:
+        "Our Famous Munchkins make the perfect treat to share with friends, family and colleagues alike. Made fresh daily in a variety of colorful and delicious flavors, there's a favorite for everyone. Available in the following varieties: Glazed; Glazed Chocolate; Jelly; Powdered Sugar; Cinnamon; Sugar Raised.",
+    price: "$2.36"
+};
+
+const XX5: MenuItem = {
+    name: "Croissant",
+    description:
+        "A delicious way to start your day. Our warm, freshly baked croissant is the perfect pair to a freshly brewed Hot or Iced Coffee.",
+    price: "$2.98"
+};
+
+export const DDMenu: MenuItem[] = [XX1, XX2, XX3, XX4, XX5];

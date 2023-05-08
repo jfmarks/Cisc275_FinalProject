@@ -48,6 +48,7 @@ import shakeshack from "../Images/shakeshack.png";
 import dominos from "../Images/dominos.png";
 import papajohns from "../Images/papajohns.png";
 import pizzahut from "../Images/pizzahut.png";
+import dunkin from "../Images/dunkin.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -97,7 +98,8 @@ import {
     SSMenu,
     DominosMenu,
     PJMenu,
-    PHMenu
+    PHMenu,
+    DDMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -688,15 +690,16 @@ const PizzaHut: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant50: Restaurant = {
+const Dunkin: Restaurant = {
     id: "50",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Dunkin' Donuts",
+    description:
+        "Long-running chain serving signature breakfast items & a variety of coffee drinks.",
+    image: dunkin,
+    menu: DDMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const RestaurantList: Restaurant[] = [
@@ -749,7 +752,7 @@ const RestaurantList: Restaurant[] = [
     Dominos,
     PapaJohns,
     PizzaHut,
-    restaurant50
+    Dunkin
 ];
 
 export default RestaurantList;

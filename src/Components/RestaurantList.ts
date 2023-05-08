@@ -1,4 +1,4 @@
-import { Restaurant, MenuItem } from "../Interfaces";
+import { Restaurant } from "../Interfaces";
 import ABLogo from "../Images/ABLogo.png";
 import chipotlelogo from "../Images/chipotlelogo.png";
 import TRLogo from "../Images/TRLogo.png";
@@ -102,7 +102,6 @@ import {
     DDMenu
 } from "../Menus/Menus";
 
-const menuItem1: MenuItem = { name: "", description: "", price: "0" };
 const AppleBees: Restaurant = {
     id: "1",
     name: "Applebee's Grill and Bar",

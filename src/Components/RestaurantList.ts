@@ -47,6 +47,7 @@ import wawa from "../Images/wawa.png";
 import shakeshack from "../Images/shakeshack.png";
 import dominos from "../Images/dominos.png";
 import papajohns from "../Images/papajohns.png";
+import pizzahut from "../Images/pizzahut.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -95,7 +96,8 @@ import {
     WawaMenu,
     SSMenu,
     DominosMenu,
-    PJMenu
+    PJMenu,
+    PHMenu
 } from "../Menus/Menus";
 
 const menuItem1: MenuItem = { name: "", description: "", price: "0" };
@@ -674,15 +676,16 @@ const PapaJohns: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant49: Restaurant = {
+const PizzaHut: Restaurant = {
     id: "49",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Pizza Hut",
+    description:
+        "Popular delivery, carry-out & dine-in chain known for pizza, wings & pasta, plus sides & desserts.",
+    image: pizzahut,
+    menu: PHMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
 const restaurant50: Restaurant = {
@@ -745,7 +748,7 @@ const RestaurantList: Restaurant[] = [
     ShakeShack,
     Dominos,
     PapaJohns,
-    restaurant49,
+    PizzaHut,
     restaurant50
 ];
 

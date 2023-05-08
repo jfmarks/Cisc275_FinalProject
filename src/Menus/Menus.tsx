@@ -1743,3 +1743,40 @@ const VV5: MenuItem = {
 };
 
 export const PJMenu: MenuItem[] = [VV1, VV2, VV3, VV4, VV5];
+
+const WW1: MenuItem = {
+    name: "Meat Lover's Pizza",
+    description:
+        "Classic marinara sauce, authentic old-world pepperoni, all-natural Italian sausage, slow-roasted ham, applewood smoked bacon, seasoned pork and beef.",
+    price: "$20.99"
+};
+
+const WW2: MenuItem = {
+    name: "Pepperoni Pizza",
+    description:
+        "You literally can't go wrong with pepperoni and mozzarella cheese. Classic for a reason.",
+    price: "$17.29"
+};
+
+const WW3: MenuItem = {
+    name: "Oven-Baked Cheesy Alfredo Pasta",
+    description:
+        "A cheese lover's dream featuring our new creamy Alfredo sauce and 2 layers of cheese, including parmesan on top.",
+    price: "$9.49"
+};
+
+const WW4: MenuItem = {
+    name: "Breaded Boneless Wings",
+    description:
+        "All the wings. None of the work. Get these tasty, 100% all-white meat boneless wings tossed in your favorite sauce.",
+    price: "$9.19"
+};
+
+const WW5: MenuItem = {
+    name: "Triple Chocolate Brownie",
+    description:
+        "Chocolate, chocolate, and more chocolate. Dig into this rich, decadent brownie made with semi-sweet chocolate chips, dark chocolate chips and cocoa. Did we mention there's chocolate?",
+    price: "$8.19"
+};
+
+export const PHMenu: MenuItem[] = [WW1, WW2, WW3, WW4, WW5];

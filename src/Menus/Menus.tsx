@@ -1706,3 +1706,40 @@ const UU5: MenuItem = {
 };
 
 export const DominosMenu: MenuItem[] = [UU1, UU2, UU3, UU4, UU5];
+
+const VV1: MenuItem = {
+    name: "The Works Pizza",
+    description:
+        "It's everything you want on a pizza - and then some. A heaping helping of pepperoni, julienne-cut Canadian bacon, spicy Italian sausage, fresh-cut onions, crisp green peppers, mushrooms, ripe black olives, and real cheese made from mozzarella. When you're hungry for a hearty pizza, the Works always works.",
+    price: "$19.00"
+};
+
+const VV2: MenuItem = {
+    name: "Zesty Italian Trio Pizza",
+    description:
+        "A tasty trio of zesty Italian sausage, salami, and pepperoni, plus banana peppers, a three-cheese blend, and real cheese made from mozzarella on our signature sauce and original fresh dough. Sprinkled with classic Italian seasoning for an extra dash of flavor.",
+    price: "$19.00"
+};
+
+const VV3: MenuItem = {
+    name: "Meatball Pepperoni Pizza",
+    description:
+        "Savory meatballs and pepperoni make for a tasty combination, especially when we add a three-cheese blend, and real cheese made from mozzarella on our original crust, then sprinkle it all with classic Italian seasoning for an extra dash of flavor.",
+    price: "$19.00"
+};
+
+const VV4: MenuItem = {
+    name: "BBQ Chicken Bacon Pizza",
+    description:
+        "We had you at bacon, right? It gets even better. Smoky Southern-style BBQ sauce adds a tangy twist to this irresistible pizza topped with grilled chicken, hickory-smoked bacon, fresh-cut onions, and real cheese made from mozzarella. Round one up today.",
+    price: "$19.00"
+};
+
+const VV5: MenuItem = {
+    name: "Philly Cheesesteak Pizza",
+    description:
+        "Whether you're a native Philadelphian or still waiting to visit the City of Brotherly Love, “youse” can enjoy an elevated form of the classic Philly cheesesteak in this original tribute to the king of hot sandwiches, the Papa John's Philly Cheesesteak pizza. Considered by its fans to be one of the best Papa John's pizza varieties, this meaty and cheesy triumph will keep the party going all night long. For a flavorful treat that would satisfy even the Philly Phanatic, try the Philly Cheesesteak pizza from Papa John's.",
+    price: "$19.00"
+};
+
+export const PJMenu: MenuItem[] = [VV1, VV2, VV3, VV4, VV5];

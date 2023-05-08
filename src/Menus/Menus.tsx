@@ -1597,3 +1597,40 @@ const RR5: MenuItem = {
 };
 
 export const StarbucksMenu: MenuItem[] = [RR1, RR2, RR3, RR4, RR5];
+
+const SS1: MenuItem = {
+    name: "Smoothies",
+    description:
+        "Available in varieties like Strawberry Banana and Mango. Or try on of our Premium Smoothies, made with cookie crumbles & chocolate chips.",
+    price: "$4.09"
+};
+
+const SS2: MenuItem = {
+    name: "Salads",
+    description:
+        "Available in varieties like Chicken Caesar, Turkey BLT, Chef, & Garden.",
+    price: "$5.99"
+};
+
+const SS3: MenuItem = {
+    name: "Breakfast Burritos",
+    description:
+        "Available with Scrambled Eggs, Egg Omelet, or Egg White Omelet. Varieties include Sausage, Applewood Smoked Bacon, Cheesesteak, and Veggies.",
+    price: "$4.69"
+};
+
+const SS4: MenuItem = {
+    name: "Hoagies & Sandwiches",
+    description:
+        "Enjoy light and chewy ciabatta packed with flavorful ingredients, like our new Bruschetta Spread. Try our artisanal Signature Recipes, or create your own elevated sandwich experience.",
+    price: "$7.49"
+};
+
+const SS5: MenuItem = {
+    name: "Flurricanes",
+    description:
+        "Available in varieties like Cookies & Cream, Chocolate Chip, and Mint Chocolate Chip.",
+    price: "$4.99"
+};
+
+export const WawaMenu: MenuItem[] = [SS1, SS2, SS3, SS4, SS5];

@@ -1523,3 +1523,297 @@ const PP5: MenuItem = {
 };
 
 export const BRMenu: MenuItem[] = [PP1, PP2, PP3, PP4, PP5];
+
+const QQ1: MenuItem = {
+    name: "Johnny Utah",
+    description:
+        "Salmon, Avocado, Edamame, Cucumber, Masago, OG Sauce, Sriracha Aioli",
+    price: "$12.50"
+};
+
+const QQ2: MenuItem = {
+    name: "The Duke",
+    description:
+        "Tuna, Salmon, Shrimp, Seaweed Salad, Jalapeno, Sweet Onion, Edamame, Cucumber, Ponzu, OG Sauce, Gochujang",
+    price: "$14.00"
+};
+
+const QQ3: MenuItem = {
+    name: "High Tide",
+    description:
+        "Chicken, Shrimp, Edamame, Carrots, Pineapple, Green Onion, Avocado, Corn, Cucumber, Sriracha Aioli, Sweet Soy, OG Sauce",
+    price: "$12.00"
+};
+
+const QQ4: MenuItem = {
+    name: "Hula",
+    description:
+        "Shrimp, Green Onion, Cucumber, Crab Stick, Avocado, Masago, OG Sauce, Sriracha Aioli, Coconut Ginger",
+    price: "$11.50"
+};
+
+const QQ5: MenuItem = {
+    name: "Belgian Chocolate Mochi - 2 Pieces",
+    description:
+        "A miraculous match of mochi dough with marvelously mouthwatering ice cream.",
+    price: "$4.00"
+};
+
+export const PokeMenu: MenuItem[] = [QQ1, QQ2, QQ3, QQ4, QQ5];
+
+const RR1: MenuItem = {
+    name: "Bacon, Sausage & Egg Wrap",
+    description:
+        "Double-smoked bacon, savory pork sausage and cage-free scrambled eggs combined with Cheddar cheese and potatoes--all wrapped in a flour tortilla.",
+    price: "$4.25"
+};
+
+const RR2: MenuItem = {
+    name: "Bacon & Gruyère Egg Bites",
+    description:
+        "Applewood-smoked bacon and aged Gruyère Monterey Jack cheeses folded into cage-free eggs and cooked using the French ''sous vide'' technique to create a velvety texture that's full of flavor.",
+    price: "$4.65"
+};
+
+const RR3: MenuItem = {
+    name: "Crispy Grilled Cheese on Sourdough",
+    description:
+        "A blend of white Cheddar and mozzarella cheeses on sourdough bread, topped with a Parmesan butter spread.",
+    price: "$5.95"
+};
+
+const RR4: MenuItem = {
+    name: "Mocha Cookie Crumble Frappuccino",
+    description:
+        "Frappuccino Roast coffee, mocha sauce and Frappuccino chips blended with milk and ice, layered on top of whipped cream and chocolate cookie crumble and topped with vanilla whipped cream, mocha drizzle and even more chocolate cookie crumble. Each sip is as good as the last . . . all the way to the end.",
+    price: "$5.45"
+};
+
+const RR5: MenuItem = {
+    name: "Double Chocolaty Chip Crème Frappuccino Blended Beverage",
+    description:
+        "Rich mocha-flavored sauce meets up with chocolaty chips, milk and ice for a blender bash. Top it off with sweetened whipped cream and mocha drizzle for a real party in your mouth.",
+    price: "$4.95"
+};
+
+export const StarbucksMenu: MenuItem[] = [RR1, RR2, RR3, RR4, RR5];
+
+const SS1: MenuItem = {
+    name: "Smoothies",
+    description:
+        "Available in varieties like Strawberry Banana and Mango. Or try on of our Premium Smoothies, made with cookie crumbles & chocolate chips.",
+    price: "$4.09"
+};
+
+const SS2: MenuItem = {
+    name: "Salads",
+    description:
+        "Available in varieties like Chicken Caesar, Turkey BLT, Chef, & Garden.",
+    price: "$5.99"
+};
+
+const SS3: MenuItem = {
+    name: "Breakfast Burritos",
+    description:
+        "Available with Scrambled Eggs, Egg Omelet, or Egg White Omelet. Varieties include Sausage, Applewood Smoked Bacon, Cheesesteak, and Veggies.",
+    price: "$4.69"
+};
+
+const SS4: MenuItem = {
+    name: "Hoagies & Sandwiches",
+    description:
+        "Enjoy light and chewy ciabatta packed with flavorful ingredients, like our new Bruschetta Spread. Try our artisanal Signature Recipes, or create your own elevated sandwich experience.",
+    price: "$7.49"
+};
+
+const SS5: MenuItem = {
+    name: "Flurricanes",
+    description:
+        "Available in varieties like Cookies & Cream, Chocolate Chip, and Mint Chocolate Chip.",
+    price: "$4.99"
+};
+
+export const WawaMenu: MenuItem[] = [SS1, SS2, SS3, SS4, SS5];
+
+const TT1: MenuItem = {
+    name: "Shack Stack",
+    description:
+        "Cheeseburger topped with a 'Shroom Burger with lettuce, tomato, ShackSauce",
+    price: "$13.19"
+};
+
+const TT2: MenuItem = {
+    name: "Grilled Cheese",
+    description: "American cheese melted in a grilled potato bun",
+    price: "$5.19"
+};
+
+const TT3: MenuItem = {
+    name: "Bourbon Bacon Cheddar Chicken",
+    description:
+        "Crispy chicken breast topped with white-cheddar cheese and our bourbon bacon jam made with Maker's Mark Bourbon over pickles on a toasted potato bun",
+    price: "$10.09"
+};
+
+const TT4: MenuItem = {
+    name: "Oreo Funnel Cake Shake",
+    description:
+        "Oreo cookies and funnel cake crunch hand spun with vanilla frozen custard, topped with chocolate whipped cream",
+    price: "$6.99"
+};
+
+const TT5: MenuItem = {
+    name: "Chocolate Churro Shake",
+    description:
+        "Hand-spun cinnamon churro frozen custard, topped with spiced dark chocolate sauce, topped with whipped cream and cinnamon waffle cone crumbles",
+    price: "$6.99"
+};
+
+export const SSMenu: MenuItem[] = [TT1, TT2, TT3, TT4, TT5];
+
+const UU1: MenuItem = {
+    name: "Chicken Parmesan Sandwich",
+    description:
+        "Seasoned all white meat chicken breast, tomato basil marinara, and premium Parmesan-asiago and provolone cheeses on our artisan Italian bread and baked to a perfect golden brown.",
+    price: "$6.99"
+};
+
+const UU2: MenuItem = {
+    name: "Chicken Carbonara",
+    description:
+        "Grilled 100% all white meat chicken, bacon, onions and mushrooms mixed with penne pasta and baked to perfection with creamy Alfredo sauce.",
+    price: "$6.99"
+};
+
+const UU3: MenuItem = {
+    name: "Small 10'' Cheese Pizza",
+    description: "On classic hand-tossed crust.",
+    price: "$7.99"
+};
+
+const UU4: MenuItem = {
+    name: "Wisconsin 6 Cheese Pizza",
+    description:
+        "Mozzarella, feta, provolone, cheddar, Parmesan and Asiago cheese sprinkled with oregano on a cheesy Parmesan-Asiago crust.",
+    price: "$13.99"
+};
+
+const UU5: MenuItem = {
+    name: "Philly Cheese Steak Pizza",
+    description:
+        "Tender slices of steak, fresh onions, fresh green peppers and fresh mushrooms with provolone and American cheese on a cheesy provolone crust.",
+    price: "$13.99"
+};
+
+export const DominosMenu: MenuItem[] = [UU1, UU2, UU3, UU4, UU5];
+
+const VV1: MenuItem = {
+    name: "The Works Pizza",
+    description:
+        "It's everything you want on a pizza - and then some. A heaping helping of pepperoni, julienne-cut Canadian bacon, spicy Italian sausage, fresh-cut onions, crisp green peppers, mushrooms, ripe black olives, and real cheese made from mozzarella. When you're hungry for a hearty pizza, the Works always works.",
+    price: "$19.00"
+};
+
+const VV2: MenuItem = {
+    name: "Zesty Italian Trio Pizza",
+    description:
+        "A tasty trio of zesty Italian sausage, salami, and pepperoni, plus banana peppers, a three-cheese blend, and real cheese made from mozzarella on our signature sauce and original fresh dough. Sprinkled with classic Italian seasoning for an extra dash of flavor.",
+    price: "$19.00"
+};
+
+const VV3: MenuItem = {
+    name: "Meatball Pepperoni Pizza",
+    description:
+        "Savory meatballs and pepperoni make for a tasty combination, especially when we add a three-cheese blend, and real cheese made from mozzarella on our original crust, then sprinkle it all with classic Italian seasoning for an extra dash of flavor.",
+    price: "$19.00"
+};
+
+const VV4: MenuItem = {
+    name: "BBQ Chicken Bacon Pizza",
+    description:
+        "We had you at bacon, right? It gets even better. Smoky Southern-style BBQ sauce adds a tangy twist to this irresistible pizza topped with grilled chicken, hickory-smoked bacon, fresh-cut onions, and real cheese made from mozzarella. Round one up today.",
+    price: "$19.00"
+};
+
+const VV5: MenuItem = {
+    name: "Philly Cheesesteak Pizza",
+    description:
+        "Whether you're a native Philadelphian or still waiting to visit the City of Brotherly Love, “youse” can enjoy an elevated form of the classic Philly cheesesteak in this original tribute to the king of hot sandwiches, the Papa John's Philly Cheesesteak pizza. Considered by its fans to be one of the best Papa John's pizza varieties, this meaty and cheesy triumph will keep the party going all night long. For a flavorful treat that would satisfy even the Philly Phanatic, try the Philly Cheesesteak pizza from Papa John's.",
+    price: "$19.00"
+};
+
+export const PJMenu: MenuItem[] = [VV1, VV2, VV3, VV4, VV5];
+
+const WW1: MenuItem = {
+    name: "Meat Lover's Pizza",
+    description:
+        "Classic marinara sauce, authentic old-world pepperoni, all-natural Italian sausage, slow-roasted ham, applewood smoked bacon, seasoned pork and beef.",
+    price: "$20.99"
+};
+
+const WW2: MenuItem = {
+    name: "Pepperoni Pizza",
+    description:
+        "You literally can't go wrong with pepperoni and mozzarella cheese. Classic for a reason.",
+    price: "$17.29"
+};
+
+const WW3: MenuItem = {
+    name: "Oven-Baked Cheesy Alfredo Pasta",
+    description:
+        "A cheese lover's dream featuring our new creamy Alfredo sauce and 2 layers of cheese, including parmesan on top.",
+    price: "$9.49"
+};
+
+const WW4: MenuItem = {
+    name: "Breaded Boneless Wings",
+    description:
+        "All the wings. None of the work. Get these tasty, 100% all-white meat boneless wings tossed in your favorite sauce.",
+    price: "$9.19"
+};
+
+const WW5: MenuItem = {
+    name: "Triple Chocolate Brownie",
+    description:
+        "Chocolate, chocolate, and more chocolate. Dig into this rich, decadent brownie made with semi-sweet chocolate chips, dark chocolate chips and cocoa. Did we mention there's chocolate?",
+    price: "$8.19"
+};
+
+export const PHMenu: MenuItem[] = [WW1, WW2, WW3, WW4, WW5];
+
+const XX1: MenuItem = {
+    name: "Bagel with Cream Cheese Spread",
+    description:
+        "A delicious way to start your day. Soft and chewy, these freshly baked bagels come in some of your favorite varieties.",
+    price: "$4.36"
+};
+
+const XX2: MenuItem = {
+    name: "Original Blend Iced Coffee",
+    description:
+        "Freshly brewed and full of flavor, our Iced Coffee is the perfect pick-me-up any time of day or night, giving you the boost you need to keep on running.",
+    price: "$4.11"
+};
+
+const XX3: MenuItem = {
+    name: "Classic Donuts",
+    description:
+        "Treat yourself or share the joy by bringing people together with a dozen donuts made in these delicious varieties: Glazed, Chocolate Frosted, Strawberry Frosted, Old Fashioned, Boston Kreme, Glazed Chocolate Cake and Jelly.",
+    price: "$1.98"
+};
+
+const XX4: MenuItem = {
+    name: "Munchkins Donut Hole Treats",
+    description:
+        "Our Famous Munchkins make the perfect treat to share with friends, family and colleagues alike. Made fresh daily in a variety of colorful and delicious flavors, there's a favorite for everyone. Available in the following varieties: Glazed; Glazed Chocolate; Jelly; Powdered Sugar; Cinnamon; Sugar Raised.",
+    price: "$2.36"
+};
+
+const XX5: MenuItem = {
+    name: "Croissant",
+    description:
+        "A delicious way to start your day. Our warm, freshly baked croissant is the perfect pair to a freshly brewed Hot or Iced Coffee.",
+    price: "$2.98"
+};
+
+export const DDMenu: MenuItem[] = [XX1, XX2, XX3, XX4, XX5];

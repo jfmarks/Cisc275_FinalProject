@@ -1,4 +1,4 @@
-import { Restaurant, MenuItem } from "../Interfaces";
+import { Restaurant } from "../Interfaces";
 import ABLogo from "../Images/ABLogo.png";
 import chipotlelogo from "../Images/chipotlelogo.png";
 import TRLogo from "../Images/TRLogo.png";
@@ -41,6 +41,14 @@ import pandaexpress from "../Images/pandaexpress.png";
 import kfc from "../Images/kfc.png";
 import baskinrobbins from "../Images/baskinrobbins.png";
 import sakura from "../Images/sakura.png";
+import pokebros from "../Images/pokebros.png";
+import starbucks from "../Images/starbucks.png";
+import wawa from "../Images/wawa.png";
+import shakeshack from "../Images/shakeshack.png";
+import dominos from "../Images/dominos.png";
+import papajohns from "../Images/papajohns.png";
+import pizzahut from "../Images/pizzahut.png";
+import dunkin from "../Images/dunkin.png";
 import {
     ABMenu,
     ChipotleMenu,
@@ -83,10 +91,17 @@ import {
     PFCMenu,
     PEMenu,
     KFCMenu,
-    BRMenu
+    BRMenu,
+    PokeMenu,
+    StarbucksMenu,
+    WawaMenu,
+    SSMenu,
+    DominosMenu,
+    PJMenu,
+    PHMenu,
+    DDMenu
 } from "../Menus/Menus";
 
-const menuItem1: MenuItem = { name: "", description: "", price: "0" };
 const AppleBees: Restaurant = {
     id: "1",
     name: "Applebee's Grill and Bar",
@@ -590,92 +605,100 @@ const BaskinRobbins: Restaurant = {
     priceRange: "$"
 };
 
-const restaurant43: Restaurant = {
+const PokeBros: Restaurant = {
     id: "43",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Poke Bros.",
+    description:
+        "Fast, fresh, fit. High-quality, sushi-grade fish and farm-fresh veggies in an authentic Hawaiian poké bowl.",
+    image: pokebros,
+    menu: PokeMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant44: Restaurant = {
+const Starbucks: Restaurant = {
     id: "44",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Starbucks",
+    description:
+        "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
+    image: starbucks,
+    menu: StarbucksMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant45: Restaurant = {
+const Wawa: Restaurant = {
     id: "45",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Wawa",
+    description:
+        "Convenience store chain known for sandwiches & coffee. Many offer fuel & are open 24/7.",
+    image: wawa,
+    menu: WawaMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant46: Restaurant = {
+const ShakeShack: Restaurant = {
     id: "46",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Shake Shack",
+    description:
+        "Hip, counter-serve chain for gourmet takes on fast-food classics like burgers & frozen custard.",
+    image: shakeshack,
+    menu: SSMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$$"
 };
 
-const restaurant47: Restaurant = {
+const Dominos: Restaurant = {
     id: "47",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Domino's",
+    description:
+        "Delivery/carryout chain offering a wide range of pizzas & a variety of other dishes & sides.",
+    image: dominos,
+    menu: DominosMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant48: Restaurant = {
+const PapaJohns: Restaurant = {
     id: "48",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Papa John's",
+    description:
+        "Pizza take-out & delivery chain offering classic & specialty pizzas, plus wings, sides & desserts.",
+    image: papajohns,
+    menu: PJMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant49: Restaurant = {
+const PizzaHut: Restaurant = {
     id: "49",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Pizza Hut",
+    description:
+        "Popular delivery, carry-out & dine-in chain known for pizza, wings & pasta, plus sides & desserts.",
+    image: pizzahut,
+    menu: PHMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Fast",
+    priceRange: "$"
 };
 
-const restaurant50: Restaurant = {
+const Dunkin: Restaurant = {
     id: "50",
-    name: "Indian Sizzler",
-    description: "",
-    image: "",
-    menu: [menuItem1],
+    name: "Dunkin' Donuts",
+    description:
+        "Long-running chain serving signature breakfast items & a variety of coffee drinks.",
+    image: dunkin,
+    menu: DDMenu,
     averageRating: 0,
-    diningExperience: "Luxury",
-    priceRange: ""
+    diningExperience: "Casual",
+    priceRange: "$"
 };
 
 const RestaurantList: Restaurant[] = [
@@ -721,14 +744,14 @@ const RestaurantList: Restaurant[] = [
     PandaExpress,
     KFC,
     BaskinRobbins,
-    restaurant43,
-    restaurant44,
-    restaurant45,
-    restaurant46,
-    restaurant47,
-    restaurant48,
-    restaurant49,
-    restaurant50
+    PokeBros,
+    Starbucks,
+    Wawa,
+    ShakeShack,
+    Dominos,
+    PapaJohns,
+    PizzaHut,
+    Dunkin
 ];
 
 export default RestaurantList;

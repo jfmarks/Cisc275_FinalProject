@@ -1,3 +1,5 @@
+import { DragObjectWithType } from "react-dnd";
+
 export interface Admin {
     id: string;
     username: string;
@@ -18,7 +20,6 @@ export interface MenuItem {
 export interface Rating {
     restaurantId: string;
     rating: number;
-    review: string;
 }
 
 export interface Restaurant {
@@ -44,6 +45,6 @@ export interface CurrUser {
     id: string;
     username: string;
 }
-export interface droppedItem {
+export interface DraggedRestaurant extends DragObjectWithType {
     newItem: string;
 }

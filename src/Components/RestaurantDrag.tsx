@@ -5,22 +5,28 @@ import { DraggedRestaurant } from "../Interfaces";
 
 export default function DragRestaurant({
     image,
-    dragItem
+    dragItem,
+    dragItemType
 }: {
     image: string;
     dragItem: DraggedRestaurant;
+    dragItemType: string;
 }) {
-    const [{ isDragging }, drag] = useDrag({
-        item: dragItem,
-        collect: (monitor: DragSourceMonitor) => ({
-            isDragging: monitor.isDragging()
-        })
-    });
+    const [{ isDragging }, drag] = useDrag(
+        () => ({
+            type: dragItemType,
+            item: dragItem,
+            collect: (monitor: DragSourceMonitor) => ({
+                isDragging: monitor.isDragging()
+            })
+        }),
+        [dragItem]
+    );
 
     return (
-        <Card.Img
-            variant="top"
+        <img
             src={image}
+            alt="restaurant"
             className="card-image"
             ref={drag}
             style={{ opacity: isDragging ? 0.5 : 1 }}

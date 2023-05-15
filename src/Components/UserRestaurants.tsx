@@ -362,6 +362,19 @@ export function UserRestaurants(): JSX.Element {
                                                         ? "Done Rating"
                                                         : "Rate"}
                                                 </Button>
+                                                <Button
+                                                    variant="info"
+                                                    onClick={() =>
+                                                        handleShowReviews(
+                                                            restaurant.id
+                                                        )
+                                                    }
+                                                >
+                                                    {reviewsVisible ===
+                                                    restaurant.id
+                                                        ? "Hide Reviews"
+                                                        : "Show Reviews"}
+                                                </Button>
                                             </div>
                                             <div
                                                 style={{
@@ -397,35 +410,23 @@ export function UserRestaurants(): JSX.Element {
                                                                 restaurant.priceRange
                                                             }
                                                         </p>
-                                                        <Button
-                                                            onClick={() =>
-                                                                handleShowReviews(
-                                                                    restaurant.id
-                                                                )
-                                                            }
-                                                        >
-                                                            {reviewsVisible ===
-                                                            restaurant.id
-                                                                ? "Hide Reviews"
-                                                                : "Show Reviews"}
-                                                        </Button>
-                                                        <div
-                                                            style={{
-                                                                display:
-                                                                    reviewsVisible ===
-                                                                    restaurant.id
-                                                                        ? "block"
-                                                                        : "none"
-                                                            }}
-                                                        >
-                                                            <ReviewDisplayElement
-                                                                restaurantReviews={
-                                                                    restaurant.reviews
-                                                                }
-                                                            ></ReviewDisplayElement>
-                                                        </div>
                                                     </div>
                                                 </Card.Text>
+                                            </div>
+                                            <div
+                                                style={{
+                                                    display:
+                                                        reviewsVisible ===
+                                                        restaurant.id
+                                                            ? "block"
+                                                            : "none"
+                                                }}
+                                            >
+                                                <ReviewDisplayElement
+                                                    restaurantReviews={
+                                                        restaurant.reviews
+                                                    }
+                                                ></ReviewDisplayElement>
                                             </div>
                                             <div
                                                 style={{

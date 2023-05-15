@@ -50,8 +50,10 @@
     },
     "devDependencies": {
         "@types/react": "^18.2.6",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
         "gh-pages": "^3.2.3",
-        "prettier": "2.5.1"
+        "prettier": "^2.5.1"
     },
     "jest": {
         "collectCoverageFrom": [

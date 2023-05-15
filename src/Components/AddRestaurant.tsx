@@ -12,6 +12,7 @@ export function AddRestaurant({ addRestaurant }: AddRestaurantProps) {
     const [image, setImage] = useState("");
     const [priceRange, setPriceRange] = useState("");
     const [diningExperience, setDiningExperience] = useState("");
+    const [reviews, setReviews] = useState([]);
 
     const handleAddRestaurant = () => {
         const newRestaurant: Restaurant = {
@@ -22,7 +23,8 @@ export function AddRestaurant({ addRestaurant }: AddRestaurantProps) {
             menu: [],
             averageRating: 0,
             priceRange,
-            diningExperience
+            diningExperience,
+            reviews
         };
         addRestaurant(newRestaurant);
         setName("");
@@ -30,6 +32,7 @@ export function AddRestaurant({ addRestaurant }: AddRestaurantProps) {
         setImage("");
         setPriceRange("");
         setDiningExperience("");
+        setReviews([]);
     };
 
     return (

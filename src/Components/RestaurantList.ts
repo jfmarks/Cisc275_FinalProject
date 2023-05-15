@@ -111,7 +111,8 @@ const AppleBees: Restaurant = {
     menu: ABMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Chipotle: Restaurant = {
@@ -123,7 +124,8 @@ const Chipotle: Restaurant = {
     menu: ChipotleMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const Texas_Roadhouse: Restaurant = {
@@ -135,7 +137,8 @@ const Texas_Roadhouse: Restaurant = {
     menu: TRMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Tasty_Wok: Restaurant = {
@@ -146,7 +149,8 @@ const Tasty_Wok: Restaurant = {
     menu: TWMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Chilis: Restaurant = {
@@ -158,7 +162,8 @@ const Chilis: Restaurant = {
     menu: ChilisMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const OliveGarden: Restaurant = {
@@ -170,7 +175,8 @@ const OliveGarden: Restaurant = {
     menu: OGMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Raising_Canes: Restaurant = {
@@ -182,7 +188,8 @@ const Raising_Canes: Restaurant = {
     menu: RCMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const Red_Lobster: Restaurant = {
@@ -194,7 +201,8 @@ const Red_Lobster: Restaurant = {
     menu: RLMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Grain: Restaurant = {
@@ -206,7 +214,8 @@ const Grain: Restaurant = {
     menu: GrainMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const IronHill: Restaurant = {
@@ -218,7 +227,8 @@ const IronHill: Restaurant = {
     menu: IHMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const ElDiablo: Restaurant = {
@@ -230,7 +240,8 @@ const ElDiablo: Restaurant = {
     menu: EDMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const StoneBalloon: Restaurant = {
@@ -242,7 +253,8 @@ const StoneBalloon: Restaurant = {
     menu: SBMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Kates: Restaurant = {
@@ -254,7 +266,8 @@ const Kates: Restaurant = {
     menu: KatesMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const DeerPark: Restaurant = {
@@ -266,7 +279,8 @@ const DeerPark: Restaurant = {
     menu: DPMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Grottos: Restaurant = {
@@ -278,7 +292,8 @@ const Grottos: Restaurant = {
     menu: GrottosMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const McDonalds: Restaurant = {
@@ -290,7 +305,8 @@ const McDonalds: Restaurant = {
     menu: McMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const Wendys: Restaurant = {
@@ -302,7 +318,8 @@ const Wendys: Restaurant = {
     menu: WendysMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const ChickFilA: Restaurant = {
@@ -314,7 +331,8 @@ const ChickFilA: Restaurant = {
     menu: CFAMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const TacoBell: Restaurant = {
@@ -326,7 +344,8 @@ const TacoBell: Restaurant = {
     menu: TBMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const BuffaloWildWings: Restaurant = {
@@ -338,7 +357,8 @@ const BuffaloWildWings: Restaurant = {
     menu: BWWMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const TwoStones: Restaurant = {
@@ -350,7 +370,8 @@ const TwoStones: Restaurant = {
     menu: TSMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Claymont: Restaurant = {
@@ -362,7 +383,8 @@ const Claymont: Restaurant = {
     menu: ClaymontMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const BurgerKing: Restaurant = {
@@ -374,7 +396,8 @@ const BurgerKing: Restaurant = {
     menu: BKMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const LongJohnSilvers: Restaurant = {
@@ -386,7 +409,8 @@ const LongJohnSilvers: Restaurant = {
     menu: LJSMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const AuntieAnnes: Restaurant = {
@@ -398,7 +422,8 @@ const AuntieAnnes: Restaurant = {
     menu: AAMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const CheesecakeFactory: Restaurant = {
@@ -410,7 +435,8 @@ const CheesecakeFactory: Restaurant = {
     menu: CCFMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Cinnabon: Restaurant = {
@@ -422,7 +448,8 @@ const Cinnabon: Restaurant = {
     menu: CinnabonMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const FiveGuys: Restaurant = {
@@ -434,7 +461,8 @@ const FiveGuys: Restaurant = {
     menu: FGMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const IndianSizzler: Restaurant = {
@@ -446,7 +474,8 @@ const IndianSizzler: Restaurant = {
     menu: ISMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Sakura: Restaurant = {
@@ -458,7 +487,8 @@ const Sakura: Restaurant = {
     menu: SakuraMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const PlayaBowls: Restaurant = {
@@ -470,7 +500,8 @@ const PlayaBowls: Restaurant = {
     menu: PBMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Hamiltons: Restaurant = {
@@ -482,7 +513,8 @@ const Hamiltons: Restaurant = {
     menu: HamiltonsMenu,
     averageRating: 0,
     diningExperience: "Luxury",
-    priceRange: "$$$"
+    priceRange: "$$$",
+    reviews: []
 };
 
 const Subway: Restaurant = {
@@ -494,7 +526,8 @@ const Subway: Restaurant = {
     menu: SubwayMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const DairyQueen: Restaurant = {
@@ -506,7 +539,8 @@ const DairyQueen: Restaurant = {
     menu: DQMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const UDairy: Restaurant = {
@@ -518,7 +552,8 @@ const UDairy: Restaurant = {
     menu: UDairyMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const JerseyMikes: Restaurant = {
@@ -530,7 +565,8 @@ const JerseyMikes: Restaurant = {
     menu: JMMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const JimmyJohns: Restaurant = {
@@ -542,7 +578,8 @@ const JimmyJohns: Restaurant = {
     menu: JJMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const Capriottis: Restaurant = {
@@ -554,7 +591,8 @@ const Capriottis: Restaurant = {
     menu: CapriottisMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const PFChangs: Restaurant = {
@@ -566,7 +604,8 @@ const PFChangs: Restaurant = {
     menu: PFCMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const PandaExpress: Restaurant = {
@@ -578,7 +617,8 @@ const PandaExpress: Restaurant = {
     menu: PEMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const KFC: Restaurant = {
@@ -590,7 +630,8 @@ const KFC: Restaurant = {
     menu: KFCMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const BaskinRobbins: Restaurant = {
@@ -602,7 +643,8 @@ const BaskinRobbins: Restaurant = {
     menu: BRMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const PokeBros: Restaurant = {
@@ -614,7 +656,8 @@ const PokeBros: Restaurant = {
     menu: PokeMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Starbucks: Restaurant = {
@@ -626,7 +669,8 @@ const Starbucks: Restaurant = {
     menu: StarbucksMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Wawa: Restaurant = {
@@ -638,7 +682,8 @@ const Wawa: Restaurant = {
     menu: WawaMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const ShakeShack: Restaurant = {
@@ -650,7 +695,8 @@ const ShakeShack: Restaurant = {
     menu: SSMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$$"
+    priceRange: "$$",
+    reviews: []
 };
 
 const Dominos: Restaurant = {
@@ -662,7 +708,8 @@ const Dominos: Restaurant = {
     menu: DominosMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const PapaJohns: Restaurant = {
@@ -674,7 +721,8 @@ const PapaJohns: Restaurant = {
     menu: PJMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const PizzaHut: Restaurant = {
@@ -686,7 +734,8 @@ const PizzaHut: Restaurant = {
     menu: PHMenu,
     averageRating: 0,
     diningExperience: "Fast",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const Dunkin: Restaurant = {
@@ -698,7 +747,8 @@ const Dunkin: Restaurant = {
     menu: DDMenu,
     averageRating: 0,
     diningExperience: "Casual",
-    priceRange: "$"
+    priceRange: "$",
+    reviews: []
 };
 
 const RestaurantList: Restaurant[] = [

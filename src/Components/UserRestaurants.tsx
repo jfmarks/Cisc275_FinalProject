@@ -7,8 +7,8 @@ import CurrentUser from "../CurrentUser";
 import { AddRestaurant } from "./AddRestaurant";
 import "../RestaurantStyle.css";
 import DragRestaurant from "./RestaurantDrag";
-
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import ReviewDisplayElement from "./ReviewDisplay";
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     const [ratingVisible, setRatingVisible] = useState<string | null>(null);
@@ -16,6 +16,7 @@ export function UserRestaurants(): JSX.Element {
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
     ); // state to keep track of visible menu
+    const [reviewsVisible, setReviewVisible] = useState<string | null>(null);
     const [editMode, setEditMode] = useState(false); // Initial state for editMode is false
     const [addMode, setAddMode] = useState(false);
     // Dummy data for restaurants (replace with actual fetch call)
@@ -40,6 +41,12 @@ export function UserRestaurants(): JSX.Element {
     const handleShowAttributes = (restaurantId: string): void => {
         // Toggle info visibility for the selected restaurant
         setAttributesVisible((prevId) =>
+            prevId === restaurantId ? null : restaurantId
+        );
+    };
+    const handleShowReviews = (restaurantId: string): void => {
+        // Toggle info visibility for the selected restaurant
+        setReviewVisible((prevId) =>
             prevId === restaurantId ? null : restaurantId
         );
     };
@@ -133,7 +140,7 @@ export function UserRestaurants(): JSX.Element {
                             <Button
                                 variant="success"
                                 onClick={() =>
-                                    CurrentUser.type == "Critic"
+                                    CurrentUser.type === "Critic"
                                         ? setAddMode(!addMode)
                                         : null
                                 }
@@ -147,8 +154,8 @@ export function UserRestaurants(): JSX.Element {
                         )}
                         <Button
                             onClick={() =>
-                                CurrentUser.type == "Critic" ||
-                                CurrentUser.type == "Manager"
+                                CurrentUser.type === "Critic" ||
+                                CurrentUser.type === "Manager"
                                     ? handleEditRestaurant()
                                     : null
                             }
@@ -198,7 +205,6 @@ export function UserRestaurants(): JSX.Element {
                                     newItem: restaurant.id,
                                     id: restaurant.id
                                 }}
-                                dragItemType="RESTAURANT"
                             />
                             <Card.Body>
                                 {editMode ? (
@@ -297,7 +303,7 @@ export function UserRestaurants(): JSX.Element {
                                         <Button
                                             variant="danger"
                                             onClick={() =>
-                                                CurrentUser.type == "Critic"
+                                                CurrentUser.type === "Critic"
                                                     ? handleDeleteRestaurant(
                                                           restaurant.id
                                                       )
@@ -387,12 +393,37 @@ export function UserRestaurants(): JSX.Element {
                                                             {
                                                                 restaurant.averageRating
                                                             }
-                                                        </p>
-                                                        <p>
                                                             {
                                                                 restaurant.priceRange
                                                             }
                                                         </p>
+                                                        <Button
+                                                            onClick={() =>
+                                                                handleShowReviews(
+                                                                    restaurant.id
+                                                                )
+                                                            }
+                                                        >
+                                                            {reviewsVisible ===
+                                                            restaurant.id
+                                                                ? "Hide Reviews"
+                                                                : "Show Reviews"}
+                                                        </Button>
+                                                        <div
+                                                            style={{
+                                                                display:
+                                                                    reviewsVisible ===
+                                                                    restaurant.id
+                                                                        ? "block"
+                                                                        : "none"
+                                                            }}
+                                                        >
+                                                            <ReviewDisplayElement
+                                                                restaurantReviews={
+                                                                    restaurant.reviews
+                                                                }
+                                                            ></ReviewDisplayElement>
+                                                        </div>
                                                     </div>
                                                 </Card.Text>
                                             </div>

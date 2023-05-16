@@ -112,7 +112,7 @@ export function UserRestaurants(): JSX.Element {
     return (
         <div
             style={{
-                height: "500px",
+                height: "100vh",
                 overflowY: "scroll",
                 overflowX: "hidden"
             }}

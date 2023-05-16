@@ -1,0 +1,14 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #ffd700; /* Yellow color for stars */
+}
+
+.star-rating .star {
+    margin-right: 2px; /* Adjust spacing between stars */
+}
+
+.star-rating .average-rating {
+    margin-left: 8px; /* Adjust spacing between stars and average rating */
+}

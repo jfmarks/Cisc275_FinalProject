@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import { Restaurant } from "../Interfaces";
+interface SearchBarProps {
+    placeholder: string;
+    data: Restaurant;
+}
 
-function SearchBar({ placeholder, data }) {
+function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
     return (
         <div className="search">
             <div className="searchInputs">

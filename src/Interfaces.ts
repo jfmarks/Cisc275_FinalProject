@@ -1,5 +1,3 @@
-import { DragObjectWithType } from "react-dnd";
-
 export interface Admin {
     id: string;
     username: string;
@@ -45,6 +43,8 @@ export interface CurrUser {
     id: string;
     username: string;
 }
-export interface DraggedRestaurant extends DragObjectWithType {
+export interface DraggedRestaurant {
+    type: string;
+    id: string;
     newItem: string;
 }

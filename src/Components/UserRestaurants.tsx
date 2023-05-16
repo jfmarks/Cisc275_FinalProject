@@ -6,9 +6,11 @@ import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import { AddRestaurant } from "./AddRestaurant";
 import "../RestaurantStyle.css";
+import "../StarStyling.css";
 import DragRestaurant from "./RestaurantDrag";
-
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import StarRating from "./displayRating";
+
 export function UserRestaurants(): JSX.Element {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     const [ratingVisible, setRatingVisible] = useState<string | null>(null);
@@ -23,7 +25,6 @@ export function UserRestaurants(): JSX.Element {
         const data = RestaurantList;
         setRestaurants(data);
     };
-
     useState(() => {
         fetchRestaurants();
     });
@@ -195,9 +196,11 @@ export function UserRestaurants(): JSX.Element {
                                 image={restaurant.image}
                                 dragItem={{
                                     type: "RESTAURANT",
-                                    newItem: restaurant.id
+                                    newItem: restaurant.id,
+                                    id: restaurant.id
                                 }}
-                            ></DragRestaurant>
+                                dragItemType="RESTAURANT"
+                            />
                             <Card.Body>
                                 {editMode ? (
                                     <div className="editmode">
@@ -365,32 +368,61 @@ export function UserRestaurants(): JSX.Element {
                                                 }}
                                             >
                                                 <Card.Text>
-                                                    <div
-                                                        style={{
-                                                            height: "auto"
-                                                        }}
-                                                    >
-                                                        <p>
-                                                            {
-                                                                restaurant.diningExperience
-                                                            }
-                                                        </p>
-
-                                                        <p>
+                                                    <div className="card-details">
+                                                        <div
+                                                            style={{
+                                                                height: "auto"
+                                                            }}
+                                                        >
+                                                            <p
+                                                                style={{
+                                                                    display:
+                                                                        "inline"
+                                                                }}
+                                                            >
+                                                                For a{" "}
+                                                            </p>
+                                                            <p
+                                                                className="card-dining-experience"
+                                                                style={{
+                                                                    display:
+                                                                        "inline"
+                                                                }}
+                                                            >
+                                                                {
+                                                                    restaurant.diningExperience
+                                                                }
+                                                            </p>
+                                                            <p
+                                                                style={{
+                                                                    display:
+                                                                        "inline"
+                                                                }}
+                                                            >
+                                                                {" "}
+                                                                dining
+                                                                experience
+                                                            </p>
+                                                        </div>
+                                                        <p className="card-description">
                                                             {
                                                                 restaurant.description
                                                             }
                                                         </p>
-                                                        <p>
-                                                            {
-                                                                restaurant.averageRating
-                                                            }
-                                                        </p>
-                                                        <p>
-                                                            {
-                                                                restaurant.priceRange
-                                                            }
-                                                        </p>
+                                                        <div className="card-rating-price">
+                                                            <div className="priceButtonGroup">
+                                                                <button className="priceButton active">
+                                                                    {
+                                                                        restaurant.priceRange
+                                                                    }
+                                                                </button>
+                                                            </div>
+                                                            <StarRating
+                                                                rating={
+                                                                    restaurant.averageRating
+                                                                }
+                                                            />
+                                                        </div>
                                                     </div>
                                                 </Card.Text>
                                             </div>

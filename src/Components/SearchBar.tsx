@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Restaurant } from "../Interfaces";
 interface SearchBarProps {
     placeholder: string;
-    data: Restaurant;
+    data: Restaurant[];
 }
 
 function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {

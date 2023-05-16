@@ -13,10 +13,10 @@ function App() {
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="App">
+                <SearchBar />
+            </div>
+            <div className="App">
                 <FixedHeader></FixedHeader>
-                <div className="App">
-                    <SearchBar />
-                </div>
                 <div className="App">
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Cisc275_FinalProject/static/css/main.ff0a0bcc.css",
-    "main.js": "/Cisc275_FinalProject/static/js/main.132c6462.js",
+    "main.css": "/Cisc275_FinalProject/static/css/main.b8871a14.css",
+    "main.js": "/Cisc275_FinalProject/static/js/main.fc4da251.js",
     "static/js/787.4ef7427d.chunk.js": "/Cisc275_FinalProject/static/js/787.4ef7427d.chunk.js",
     "static/media/auntieannes.png": "/Cisc275_FinalProject/static/media/auntieannes.5ec9524c5bc8e8dd9e9d.png",
     "static/media/hamiltons.png": "/Cisc275_FinalProject/static/media/hamiltons.216281341859a1866d34.png",
@@ -24,7 +24,9 @@
     "static/media/subway.png": "/Cisc275_FinalProject/static/media/subway.49a4587a40f51586f258.png",
     "static/media/chickfila.png": "/Cisc275_FinalProject/static/media/chickfila.6d72140db4f6d6426eaf.png",
     "static/media/BWW.png": "/Cisc275_FinalProject/static/media/BWW.1b4c9c365cc156ae3063.png",
+    "static/media/shakeshack.png": "/Cisc275_FinalProject/static/media/shakeshack.9e4fa18dd161313791eb.png",
     "static/media/eldiablo.png": "/Cisc275_FinalProject/static/media/eldiablo.4e4ed2e3e830b40beeca.png",
+    "static/media/dunkin.png": "/Cisc275_FinalProject/static/media/dunkin.8afe396a588062bf3e87.png",
     "static/media/kates.png": "/Cisc275_FinalProject/static/media/kates.c78951ef2bc01707bac5.png",
     "static/media/cinnabon.png": "/Cisc275_FinalProject/static/media/cinnabon.077850cb5afaaeca2324.png",
     "static/media/ironhill.png": "/Cisc275_FinalProject/static/media/ironhill.caef34bdd536382ff927.png",
@@ -33,12 +35,12 @@
     "static/media/grain.png": "/Cisc275_FinalProject/static/media/grain.05ed6def35795791b500.png",
     "static/media/jerseymikes.png": "/Cisc275_FinalProject/static/media/jerseymikes.02643520c7881d3670c8.png",
     "index.html": "/Cisc275_FinalProject/index.html",
-    "main.ff0a0bcc.css.map": "/Cisc275_FinalProject/static/css/main.ff0a0bcc.css.map",
-    "main.132c6462.js.map": "/Cisc275_FinalProject/static/js/main.132c6462.js.map",
+    "main.b8871a14.css.map": "/Cisc275_FinalProject/static/css/main.b8871a14.css.map",
+    "main.fc4da251.js.map": "/Cisc275_FinalProject/static/js/main.fc4da251.js.map",
     "787.4ef7427d.chunk.js.map": "/Cisc275_FinalProject/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff0a0bcc.css",
-    "static/js/main.132c6462.js"
+    "static/css/main.b8871a14.css",
+    "static/js/main.fc4da251.js"
   ]
 }

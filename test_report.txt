@@ -2,296 +2,79 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-Browserslist: caniuse-lite is outdated. Please run:
-  npx browserslist@latest --update-db
-  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-  console.error
-    Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
-        at p
-        at div
-        at p
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
-        at div
-        at div
-        at div
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Card.js:49:3
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
-        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:13:43)
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
-        at div
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd/dist/cjs/common/DndProvider.js:40:23
-        at App
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-
-  console.error
-    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
-        at div
-        at p
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
-        at div
-        at div
-        at div
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/createWithBsPrefix.js:31:5
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Card.js:49:3
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
-        at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:13:43)
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Col.js:72:8
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Row.js:22:3
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-bootstrap/cjs/Container.js:24:3
-        at div
-        at div
-        at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd/dist/cjs/common/DndProvider.js:40:23
-        at App
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (1083 ms)
+  ● Test suite failed to run
 
-  ● renders the course name somewhere
+    Jest encountered an unexpected token
 
-    TestingLibraryElementError: Unable to find an element with the text: /CISC275/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
 
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-Fixed-Header"[39m
-          [36m>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mstyle[39m=[32m"position: absolute; left: 5px;"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mList Of Users[0m
-            [36m</button>[39m
-            [36m<div[39m
-              [33mstyle[39m=[32m"position: absolute; right: 5px;"[39m
-            [36m>[39m
-              [36m<div>[39m
-                [36m<label>[39m
-                  [0mSelect user type:[0m
-                  [36m<select>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Critic"[39m
-                    [36m>[39m
-                      [0mCritic[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Manager"[39m
-                    [36m>[39m
-                      [0mManager[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"Foodie"[39m
-                    [36m>[39m
-                      [0mFoodie[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                [36m</label>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<h1>[39m
-              [0mRate-A-Restaurant[0m
-            [36m</h1>[39m
-          [36m</header>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"App"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"container"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"row"[39m
-                [33mstyle[39m=[32m"position: absolute; top: 60px;"[39m
-              [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"col-lg-6"[39m
-                  [33mstyle[39m=[32m"width: 300px;"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"row"[39m
-                    [33mrole[39m=[32m"RestaurantBucket"[39m
-                    [33mstyle[39m=[32m"background-color: white; justify-content: center; min-height: 300px;"[39m
-                  [36m>[39m
-                    [0mInsert Restaurants here:[0m
-                  [36m</div>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"col"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"container"[39m
-                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 10px; padding: 10px;"[39m
-                  [36m>[39m
-                    [36m<h3[39m
-                      [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 10px; padding: 10px; background-color: lightblue;"[39m
-                    [36m>[39m
-                      [36m<div[39m
-                        [33mstyle[39m=[32m"display: flex; justify-content: center;"[39m
-                      [36m>[39m
-                        [36m<div[39m
-                          [33mstyle[39m=[32m"flex: 1; text-align: center;"[39m
-                        [36m>[39m
-                          [0mRestaurant List[0m
-                        [36m</div>[39m
-                        [36m<div>[39m
-                          [36m<button[39m
-                            [33mclass[39m=[32m"btn btn-primary"[39m
-                            [33mtype[39m=[32m"button"[39m
-                          [36m>[39m
-                            [0mEdit[0m
-                          [36m</button>[39m
-                        [36m</div>[39m
-                      [36m</div>[39m
-                    [36m</h3>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"row"[39m
-                    [36m>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"col-lg-6 col-md-6 col-sm-3"[39m
-                        [33mstyle[39m=[32m"display: flex; justify-content: center;"[39m
-                      [36m>[39m
-                        [36m<div[39m
-                          [33mclass[39m=[32m"card-gradient card"[39m
-                          [33mstyle[39m=[32m"height: 400px; width: 600px; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;"[39m
-                        [36m>[39m
-                          [36m<br />[39m
-                          [36m<img[39m
-                            [33mclass[39m=[32m"card-img-top card-image"[39m
-                            [33mdraggable[39m=[32m"true"[39m
-                            [33msrc[39m=[32m"ABLogo.png"[39m
-                            [33mstyle[39m=[32m"opacity: 1;"[39m
-                          [36m/>[39m
-                          [36m<div[39m
-                            [33mclass[39m=[32m"card-body"[39m
-                          [36m>[39m
-                            [36m<div>[39m
-                              [36m<div[39m
-                                [33mclass[39m=[32m"card-title h5"[39m
-                              [36m>[39m
-                                [0mApplebee's Grill and Bar[0m
-                              [36m</div>[39m
-                              [36m<div>[39m
-                                [36m<button[39m
-                                  [33mclass[39m=[32m"btn btn-info"[39m
-                                  [33mtype[39m=[32m"button"[39m
-                                [36m>[39m
-                                  [0mMenu[0m
-                                [36m</button>[39m
-                                [36m<button[39m
-                                  [33mclass[39m=[32m"btn btn-info"[39m
-                                  [33mtype[39m=[32m"button"[39m
-                                [36m>[39m
-                                  [0mDetails[0m
-                                [36m</button>[39m
-                                [36m<div>[39m
-                                  [36m<button[39m
-                                    [33mclass[39m=[32m"btn btn-info"[39m
-                                    [33mtype[39m=[32m"button"[39m
-                                  [36m>[39m
-                                    [0mRating[0m
-                                  [36m</button>[39m
-                                [36m</div>[39m
-                                [36m<div[39m
-                                  [33mstyle[39m=[32m"display: none;"[39m
-                                [36m>[39m
-                                  [36m<p[39m
-                                    [33mclass[39m=[32m"card-text"[39m
-                                  [36m>[39m
-                                    [36m<div[39m
-                                      [33mstyle[39m=[32m"height: auto;"[39m
-                                    [36m>[39m
-                                      [36m<p>[39m
-                                        [0mCasual[0m
-                                      [36m</p>[39m
-                                      [36m<p>[39m
-                                        [0mFull-service chain bar & grill providing hearty American eats in an informal setting.[0m
-          ...
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
 
-       5 | test("renders the course name somewhere", () => {
-       6 |     render(<App />);
-    >  7 |     const linkElement = screen.getByText(/CISC275/i);
-         |                                ^
-       8 |     expect(linkElement).toBeInTheDocument();
-       9 | });
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd-html5-backend/dist/index.js:1
+    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import { HTML5BackendImpl } from './HTML5BackendImpl.js';
+                                                                                      ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+       6 | import RestaurantBucket from "./Components/RestaurantBucket";
+       7 | import { DndProvider } from "react-dnd";
+    >  8 | import { HTML5Backend } from "react-dnd-html5-backend";
+         | ^
+       9 | import FixedHeader from "./Components/FixedHeader";
       10 |
+      11 | function App() {
 
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/App.test.tsx:7:32)
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
+      at Object.<anonymous> (src/App.tsx:8:1)
+      at Object.<anonymous> (src/App.test.tsx:3:1)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                           
------------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
-All files              |   77.47 |    21.42 |   17.14 |   77.65 |                                                                             
- src                   |     100 |      100 |     100 |     100 |                                                                             
-  App.tsx              |     100 |      100 |     100 |     100 |                                                                             
-  CurrentUser.tsx      |     100 |      100 |     100 |     100 |                                                                             
-  Interfaces.ts        |       0 |        0 |       0 |       0 |                                                                             
- src/Components        |   47.36 |    21.42 |   15.94 |   47.61 |                                                                             
-  AddRestaurant.tsx    |       0 |      100 |       0 |       0 | 10-148                                                                      
-  FixedHeader.tsx      |     100 |      100 |     100 |     100 |                                                                             
-  HomePage.tsx         |       0 |      100 |       0 |       0 | 15                                                                          
-  Rating.tsx           |       0 |        0 |       0 |       0 | 7-29                                                                        
-  Restaurant.tsx       |       0 |      100 |       0 |       0 | 5                                                                           
-  RestaurantBucket.tsx |   45.45 |       50 |   28.57 |      50 | 10-13,19,39                                                                 
-  RestaurantDrag.tsx   |     100 |       50 |     100 |     100 | 26                                                                          
-  RestaurantList.ts    |     100 |      100 |     100 |     100 |                                                                             
-  UserList.tsx         |       0 |      100 |       0 |       0 | 10-56                                                                       
-  UserRestaurants.tsx  |   35.29 |    23.21 |   13.88 |   35.29 | 31-32,36-37,42-43,48-49,56-62,68-74,77-82,91-97,100-103,109,136-150,209-347 
-  UserSelector.tsx     |   57.14 |      100 |      50 |   57.14 | 8-10                                                                        
- src/Menus             |     100 |      100 |     100 |     100 |                                                                             
-  Menus.tsx            |     100 |      100 |     100 |     100 |                                                                             
------------------------|---------|----------|---------|---------|-----------------------------------------------------------------------------
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |       0 |        0 |       0 |       0 |                   
+ src                   |       0 |      100 |       0 |       0 |                   
+  App.tsx              |       0 |      100 |       0 |       0 | 12                
+  CurrentUser.tsx      |       0 |      100 |     100 |       0 | 3                 
+  Interfaces.ts        |       0 |        0 |       0 |       0 |                   
+ src/Components        |       0 |        0 |       0 |       0 |                   
+  AddRestaurant.tsx    |       0 |      100 |       0 |       0 | 10-148            
+  FixedHeader.tsx      |       0 |      100 |       0 |       0 | 6-7               
+  HomePage.tsx         |       0 |      100 |       0 |       0 | 15                
+  Rating.tsx           |       0 |        0 |       0 |       0 | 7-29              
+  Restaurant.tsx       |       0 |      100 |       0 |       0 | 5                 
+  RestaurantBucket.tsx |       0 |        0 |       0 |       0 | 8-39              
+  RestaurantDrag.tsx   |       0 |        0 |       0 |       0 | 14-25             
+  RestaurantList.ts    |       0 |      100 |     100 |       0 | 105-704           
+  UserList.tsx         |       0 |      100 |       0 |       0 | 10-56             
+  UserRestaurants.tsx  |       0 |        0 |       0 |       0 | 15-460            
+  UserSelector.tsx     |       0 |      100 |       0 |       0 | 4-13              
+  displayRating.tsx    |       0 |        0 |       0 |       0 | 12-43             
+ src/Menus             |       0 |      100 |     100 |       0 |                   
+  Menus.tsx            |       0 |      100 |     100 |       0 | 9-1819            
+-----------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
+Tests:       0 total
 Snapshots:   0 total
-Time:        5.759 s
+Time:        4.583 s
 Ran all test suites.

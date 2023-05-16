@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Restaurant } from "../Interfaces";
+import "./SearchBar.css";
 
 interface SearchBarProps {
     placeholder: string;

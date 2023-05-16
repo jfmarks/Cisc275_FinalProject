@@ -7,12 +7,16 @@ import RestaurantBucket from "./Components/RestaurantBucket";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import FixedHeader from "./Components/FixedHeader";
+import SearchBar from "./Components/SearchBar";
 
 function App() {
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="App">
                 <FixedHeader></FixedHeader>
+                <div className="App">
+                    <SearchBar />
+                </div>
                 <div className="App">
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>

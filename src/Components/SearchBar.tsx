@@ -15,7 +15,7 @@ function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
             </div>
             <div className="dataResult">
                 {data.map((value, key) => {
-                    return <div></div>;
+                    return <div> {} </div>;
                 })}
             </div>
         </div>

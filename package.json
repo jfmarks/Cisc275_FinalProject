@@ -14,6 +14,7 @@
         "@types/jest": "^27.4.0",
         "@types/node": "^16.11.21",
         "@types/react-dom": "^17.0.11",
+        "jsx-runtime": "^1.2.0",
         "react": "^17.0.2",
         "react-bootstrap": "^2.1.1",
         "react-dnd": "^16.0.1",
@@ -67,11 +68,5 @@
             "!src/reportWebVitals.ts",
             "!src/react-app-env.d.ts"
         ]
-    },
-    "type": "commonjs",
-    "exports": {
-        ".": "./index.js",
-        "./jsx-dev-runtime": "./jsx-dev-runtime.js",
-        "./jsx-runtime": "./jsx-runtime.js"
     }
 }

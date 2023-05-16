@@ -13,7 +13,11 @@ function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
             <div className="searchInputs">
                 <input type="text" placeholder={placeholder} />
             </div>
-            <div className="dataResult"></div>
+            <div className="dataResult">
+                {data.map((value, key) => {
+                    return <div></div>;
+                })}
+            </div>
         </div>
     );
 }

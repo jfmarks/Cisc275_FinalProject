@@ -4,7 +4,17 @@ import { useDrop } from "react-dnd";
 import { Restaurant, DraggedRestaurant } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import { Card, Row } from "react-bootstrap";
-export default function RestaurantBucket(): JSX.Element {
+import AddReview from "./AddReview";
+
+interface RestaurantBucketProps {
+    restaurants: Restaurant[];
+    handleChange: (listR: Restaurant[]) => void;
+}
+
+export default function RestaurantBucket({
+    restaurants,
+    handleChange
+}: RestaurantBucketProps): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
     const handleAddRestaurant = (newItemID: string) => {
         const newItem: Restaurant = RestaurantList.find(
@@ -36,11 +46,19 @@ export default function RestaurantBucket(): JSX.Element {
         >
             Insert Restaurants here:
             {items.map((item) => (
-                <Card.Img
-                    key={item.id}
-                    src={item.image}
-                    className="card-image"
-                />
+                <div key={item.id}>
+                    <Card.Img
+                        key={item.id}
+                        src={item.image}
+                        className="card-image"
+                    />
+                    <AddReview
+                        key={item.id}
+                        id={item.id}
+                        restaurants={restaurants}
+                        handleChange={handleChange}
+                    ></AddReview>
+                </div>
             ))}
         </Row>
     );

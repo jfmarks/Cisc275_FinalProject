@@ -13,10 +13,11 @@ export function AddRestaurant({ addRestaurant }: AddRestaurantProps) {
     const [priceRange, setPriceRange] = useState("");
     const [diningExperience, setDiningExperience] = useState("");
     const [reviews, setReviews] = useState([]);
+    const [id, setPrevId] = useState(51);
 
     const handleAddRestaurant = () => {
         const newRestaurant: Restaurant = {
-            id: String(Math.random()),
+            id: String(id),
             name,
             description,
             image,
@@ -27,6 +28,7 @@ export function AddRestaurant({ addRestaurant }: AddRestaurantProps) {
             reviews
         };
         addRestaurant(newRestaurant);
+        setPrevId(id + 1);
         setName("");
         setDescription("");
         setImage("");

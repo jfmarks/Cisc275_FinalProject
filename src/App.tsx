@@ -16,11 +16,14 @@ function App() {
                 <div className="App">
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>
-                            <Col style={{ width: "300px" }} lg={6}>
+                            <Col style={{ width: "250px" }} lg={6}>
                                 <RestaurantBucket></RestaurantBucket>
                             </Col>
                             <Col>
                                 <UserRestaurants></UserRestaurants>
+                            </Col>
+                            <Col style={{ width: "250px" }} lg={6}>
+                                <RestaurantBucket></RestaurantBucket>
                             </Col>
                         </Row>
                     </Container>

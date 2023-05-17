@@ -8,7 +8,6 @@ import { AddRestaurant } from "./AddRestaurant";
 import "../RestaurantStyle.css";
 import DragRestaurant from "./RestaurantDrag";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
-import ReviewDisplayElement from "./ReviewDisplay";
 
 interface RestaurantBucketProps {
     restaurants: Restaurant[];
@@ -24,7 +23,6 @@ export function UserRestaurants({
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
     ); // state to keep track of visible menu
-    const [reviewsVisible, setReviewVisible] = useState<string | null>(null);
     const [editMode, setEditMode] = useState(false); // Initial state for editMode is false
     const [addMode, setAddMode] = useState(false);
     // Dummy data for restaurants (replace with actual fetch call)
@@ -49,12 +47,6 @@ export function UserRestaurants({
     const handleShowAttributes = (restaurantId: string): void => {
         // Toggle info visibility for the selected restaurant
         setAttributesVisible((prevId) =>
-            prevId === restaurantId ? null : restaurantId
-        );
-    };
-    const handleShowReviews = (restaurantId: string): void => {
-        // Toggle info visibility for the selected restaurant
-        setReviewVisible((prevId) =>
             prevId === restaurantId ? null : restaurantId
         );
     };
@@ -116,8 +108,6 @@ export function UserRestaurants({
         );
         handleChange(updatedRestaurants);
     };
-
-    //const handleReview =
 
     const handleEditRestaurant = (): void => {
         setEditMode(!editMode);
@@ -191,12 +181,7 @@ export function UserRestaurants({
                         <Card
                             className="card-gradient"
                             style={{
-                                height:
-                                    menuVisible === restaurant.id ||
-                                    attributesVisible === restaurant.id ||
-                                    editMode
-                                        ? "fit-content"
-                                        : "400px",
+                                height: "auto",
                                 width: "600px",
                                 display: "flex",
                                 justifyContent: "center",
@@ -355,34 +340,6 @@ export function UserRestaurants({
                                                     ? "Hide Details"
                                                     : "Details"}
                                             </Button>
-                                            <div>
-                                                <Button
-                                                    variant="info"
-                                                    onClick={() =>
-                                                        handleShowRating(
-                                                            restaurant.id
-                                                        )
-                                                    }
-                                                >
-                                                    {ratingVisible ===
-                                                    restaurant.id
-                                                        ? "Done Rating"
-                                                        : "Rate"}
-                                                </Button>
-                                                <Button
-                                                    variant="info"
-                                                    onClick={() =>
-                                                        handleShowReviews(
-                                                            restaurant.id
-                                                        )
-                                                    }
-                                                >
-                                                    {reviewsVisible ===
-                                                    restaurant.id
-                                                        ? "Hide Reviews"
-                                                        : "Show Reviews"}
-                                                </Button>
-                                            </div>
                                             <div
                                                 style={{
                                                     display:
@@ -419,21 +376,6 @@ export function UserRestaurants({
                                                         </p>
                                                     </div>
                                                 </Card.Text>
-                                            </div>
-                                            <div
-                                                style={{
-                                                    display:
-                                                        reviewsVisible ===
-                                                        restaurant.id
-                                                            ? "block"
-                                                            : "none"
-                                                }}
-                                            >
-                                                <ReviewDisplayElement
-                                                    restaurantReviews={
-                                                        restaurant.reviews
-                                                    }
-                                                ></ReviewDisplayElement>
                                             </div>
                                             <div
                                                 style={{

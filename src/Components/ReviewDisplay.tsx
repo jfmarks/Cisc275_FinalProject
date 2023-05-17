@@ -1,16 +1,15 @@
 /* eslint-disable no-extra-parens */
 import React from "react";
+import { Restaurant } from "../Interfaces";
 
 export default function ReviewDisplayElement({
-    restaurantReviews
+    restaurant
 }: {
-    restaurantReviews: string[];
+    restaurant: Restaurant;
 }): JSX.Element {
     return (
-        <div>
-            {restaurantReviews.map((review) => (
-                <p key={restaurantReviews.indexOf(review)}>{review}</p>
-            ))}
-        </div>
+        <p>
+            {restaurant.averageRating} {restaurant.reviews}
+        </p>
     );
 }

@@ -22,10 +22,7 @@ function App() {
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>
                             <Col style={{ width: "300px" }} lg={6}>
-                                <RestaurantBucket
-                                    restaurants={restaurants}
-                                    handleChange={handleChange}
-                                ></RestaurantBucket>
+                                <RestaurantBucket></RestaurantBucket>
                             </Col>
                             <Col>
                                 <UserRestaurants

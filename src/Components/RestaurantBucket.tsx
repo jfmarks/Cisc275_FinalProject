@@ -3,19 +3,15 @@ import React, { useState } from "react";
 import { useDrop } from "react-dnd";
 import { Restaurant, DraggedRestaurant } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
-import { Card, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import AddReview from "./AddReview";
+import ReviewDisplayElement from "./ReviewDisplay";
 
-interface RestaurantBucketProps {
-    restaurants: Restaurant[];
-    handleChange: (listR: Restaurant[]) => void;
-}
-
-export default function RestaurantBucket({
-    restaurants,
-    handleChange
-}: RestaurantBucketProps): JSX.Element {
+export default function RestaurantBucket(): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
+    function handleChange(listR: Restaurant[]) {
+        setItems(listR);
+    }
     const handleAddRestaurant = (newItemID: string) => {
         const newItem: Restaurant = RestaurantList.find(
             (restaurant) => restaurant.id === newItemID
@@ -52,12 +48,17 @@ export default function RestaurantBucket({
                         src={item.image}
                         className="card-image"
                     />
-                    <AddReview
-                        key={item.id}
-                        id={item.id}
-                        restaurants={restaurants}
-                        handleChange={handleChange}
-                    ></AddReview>
+                    <Col>
+                        <AddReview
+                            key={item.id}
+                            id={item.id}
+                            restaurants={items}
+                            handleChange={handleChange}
+                        ></AddReview>
+                        <ReviewDisplayElement
+                            restaurant={item}
+                        ></ReviewDisplayElement>
+                    </Col>
                 </div>
             ))}
         </Row>

@@ -112,7 +112,7 @@ const AppleBees: Restaurant = {
     averageRating: 0,
     diningExperience: "Casual",
     priceRange: "$$",
-    reviews: ["the", "cow", "jumped"]
+    reviews: []
 };
 
 const Chipotle: Restaurant = {

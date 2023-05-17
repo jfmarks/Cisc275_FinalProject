@@ -12,6 +12,7 @@ export default function ReviewDisplayElement({
     handleChange: (listR: Restaurant[]) => void;
 }): JSX.Element {
     const [review, setNewReview] = useState("");
+    const [rating, setNewRating] = useState(0);
     const handleAddReview = () => {
         handleChange(updatedRestaurants);
     };
@@ -21,7 +22,8 @@ export default function ReviewDisplayElement({
             if (restaurant.id === id) {
                 return {
                     ...restaurant,
-                    reviews: [...restaurant.reviews, review]
+                    reviews: [review],
+                    averageRating: rating
                 };
             }
             return restaurant; // Return the original restaurant if ID doesn't match
@@ -36,6 +38,13 @@ export default function ReviewDisplayElement({
                     type="text"
                     value={review}
                     onChange={(e) => setNewReview(e.target.value)}
+                />
+                <Form.Control
+                    type="number"
+                    value={rating}
+                    onChange={(e) =>
+                        setNewRating(e.target.value as unknown as number)
+                    }
                 />
             </Form.Group>
             <Button variant="primary" onClick={handleAddReview}>

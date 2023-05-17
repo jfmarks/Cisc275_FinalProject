@@ -14,14 +14,14 @@ function App() {
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="App">
+                <SearchBar
+                    placeholder="Enter a Restaurant Name..."
+                    data={Restaurant}
+                />
+            </div>
+            <div className="App">
                 <FixedHeader></FixedHeader>
                 <div className="App">
-                    <div className="App">
-                        <SearchBar
-                            placeholder="Enter a Restaurant Name..."
-                            data={Restaurant}
-                        />
-                    </div>
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>
                             <Col style={{ width: "300px" }} lg={6}>

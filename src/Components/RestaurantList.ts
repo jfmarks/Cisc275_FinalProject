@@ -109,7 +109,7 @@ const AppleBees: Restaurant = {
         "Full-service chain bar & grill providing hearty American eats in an informal setting.",
     image: ABLogo,
     menu: ABMenu,
-    averageRating: 0,
+    averageRating: 3.8,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -121,7 +121,7 @@ const Chipotle: Restaurant = {
         "Fast-food chain offering Mexican fare, including design-your-own burritos, tacos & bowls.",
     image: chipotlelogo,
     menu: ChipotleMenu,
-    averageRating: 0,
+    averageRating: 3.1,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -133,7 +133,7 @@ const Texas_Roadhouse: Restaurant = {
         "Lively chain steakhouse serving American fare with a Southwestern spin amid Texas-themed decor.",
     image: TRLogo,
     menu: TRMenu,
-    averageRating: 0,
+    averageRating: 1.6,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -144,7 +144,7 @@ const Tasty_Wok: Restaurant = {
     description: "Brings nostalgia of the good old college life in China.",
     image: TastyWok,
     menu: TWMenu,
-    averageRating: 0,
+    averageRating: 4.0,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -156,7 +156,7 @@ const Chilis: Restaurant = {
         "Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style setting.",
     image: chilis,
     menu: ChilisMenu,
-    averageRating: 0,
+    averageRating: 2.5,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -168,7 +168,7 @@ const OliveGarden: Restaurant = {
         "Lively, family-friendly chain featuring Italian standards such as pastas & salads.",
     image: olivegarden,
     menu: OGMenu,
-    averageRating: 0,
+    averageRating: 1.2,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -180,7 +180,7 @@ const Raising_Canes: Restaurant = {
         "Raising Cane's Chicken Fingers is an American fast-food chain specializing in chicken fingers founded in 1996 in Baton Rouge, Louisiana by Todd Graves and Craig Silvey. The company is named after Graves's dog, a yellow Labrador.",
     image: RCLogo,
     menu: RCMenu,
-    averageRating: 0,
+    averageRating: 3.7,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -192,7 +192,7 @@ const Red_Lobster: Restaurant = {
         "Lively chain restaurant serving American seafood standards amid New England-themed decor.",
     image: redlobster,
     menu: RLMenu,
-    averageRating: 0,
+    averageRating: 3.9,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -204,7 +204,7 @@ const Grain: Restaurant = {
         "Rustic-chic gastropub with USB chargers at the bar offering craft beer, upscale bar eats & music.",
     image: grain,
     menu: GrainMenu,
-    averageRating: 0,
+    averageRating: 3.9,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -216,7 +216,7 @@ const IronHill: Restaurant = {
         "Regional brewpub chain dispensing housemade beers & elevated comfort food staples.",
     image: ironhill,
     menu: IHMenu,
-    averageRating: 0,
+    averageRating: 2.6,
     diningExperience: "Luxury",
     priceRange: "$$"
 };
@@ -228,7 +228,7 @@ const ElDiablo: Restaurant = {
         "Contemporary counter-serve offering a build-your-own burrito option, plus tacos & quesadillas",
     image: eldiablo,
     menu: EDMenu,
-    averageRating: 0,
+    averageRating: 2.6,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -240,7 +240,7 @@ const StoneBalloon: Restaurant = {
         "Local brews, classic cocktails & creative New American eats in a former historic music venue",
     image: stoneballoon,
     menu: SBMenu,
-    averageRating: 0,
+    averageRating: 4.7,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -252,7 +252,7 @@ const Kates: Restaurant = {
         "Classic American fare & drinks in a circa-1880 building featuring vintage railroad station decor",
     image: kates,
     menu: KatesMenu,
-    averageRating: 0,
+    averageRating: 4.5,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -264,7 +264,7 @@ const DeerPark: Restaurant = {
         "Landmark spot on site with Revolutionary War roots features a bar, American fare & trivia nights.",
     image: deerpark,
     menu: DPMenu,
-    averageRating: 0,
+    averageRating: 2.3,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -276,7 +276,7 @@ const Grottos: Restaurant = {
         "Family-friendly pizzeria & sports-bar chain offering a broad menu of Italian mainstays.",
     image: grottos,
     menu: GrottosMenu,
-    averageRating: 0,
+    averageRating: 2.9,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -288,7 +288,7 @@ const McDonalds: Restaurant = {
         "Classic, long-running fast-food chain known for its burgers & fries.",
     image: mcdonalds,
     menu: McMenu,
-    averageRating: 0,
+    averageRating: 1.6,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -300,7 +300,7 @@ const Wendys: Restaurant = {
         "Fast-food burger chain serving sides such as chili & baked potatoes.",
     image: wendys,
     menu: WendysMenu,
-    averageRating: 0,
+    averageRating: 1.8,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -312,7 +312,7 @@ const ChickFilA: Restaurant = {
         "Fast-food chain serving chicken sandwiches & nuggets along with salads & sides.",
     image: chickfila,
     menu: CFAMenu,
-    averageRating: 0,
+    averageRating: 2.3,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -324,7 +324,7 @@ const TacoBell: Restaurant = {
         "Fast-food chain serving Mexican-inspired fare such as tacos, quesadillas & nachos.",
     image: tacobell,
     menu: TBMenu,
-    averageRating: 0,
+    averageRating: 1.8,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -336,7 +336,7 @@ const BuffaloWildWings: Restaurant = {
         "Chain dishing up wings, tenders & burgers, plus sauces ranging from sweet to very spicy.",
     image: BWW,
     menu: BWWMenu,
-    averageRating: 0,
+    averageRating: 2.9,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -348,7 +348,7 @@ const TwoStones: Restaurant = {
         "Bright gastropub serving a large selection of craft beers & upscale versions of bar food classics.",
     image: twostones,
     menu: TSMenu,
-    averageRating: 0,
+    averageRating: 4.5,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -360,7 +360,7 @@ const Claymont: Restaurant = {
         "Cheesesteaks, subs, grinders & other Philly-style fare in a relaxed spot with flat-screen TVs.",
     image: claymont,
     menu: ClaymontMenu,
-    averageRating: 0,
+    averageRating: 4.0,
     diningExperience: "Casual",
     priceRange: "$"
 };
@@ -372,7 +372,7 @@ const BurgerKing: Restaurant = {
         "Well-known fast-food chain serving grilled burgers, fries & shakes, plus breakfast.",
     image: burgerking,
     menu: BKMenu,
-    averageRating: 0,
+    averageRating: 1.2,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -384,7 +384,7 @@ const LongJohnSilvers: Restaurant = {
         "Counter-serve chain offering fried fish & seafood combos, plus chicken & sides.",
     image: longjohns,
     menu: LJSMenu,
-    averageRating: 0,
+    averageRating: 1.0,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -396,7 +396,7 @@ const AuntieAnnes: Restaurant = {
         "Global chain of counters dispensing sweet & savory soft pretzels with a variety of toppings & dips.",
     image: auntieannes,
     menu: AAMenu,
-    averageRating: 0,
+    averageRating: 3.2,
     diningExperience: "Casual",
     priceRange: "$"
 };
@@ -408,7 +408,7 @@ const CheesecakeFactory: Restaurant = {
         "American chain restaurant offering sizable portions from a vast menu including signature cheesecake",
     image: cheesecakefactory,
     menu: CCFMenu,
-    averageRating: 0,
+    averageRating: 4.8,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -420,7 +420,7 @@ const Cinnabon: Restaurant = {
         "Counter-serve chain serving cinnamon rolls plus other baked goods & specialty frozen beverages.",
     image: cinnabon,
     menu: CinnabonMenu,
-    averageRating: 0,
+    averageRating: 4.1,
     diningExperience: "Luxury",
     priceRange: "$"
 };
@@ -432,7 +432,7 @@ const FiveGuys: Restaurant = {
         "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait.",
     image: fiveguys,
     menu: FGMenu,
-    averageRating: 0,
+    averageRating: 3.7,
     diningExperience: "Fast",
     priceRange: "$$"
 };
@@ -444,7 +444,7 @@ const IndianSizzler: Restaurant = {
         "Longtime casual restaurant known for its steak, burgers & seafood, plus a salad bar.",
     image: indiansizzler,
     menu: ISMenu,
-    averageRating: 0,
+    averageRating: 3.4,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -456,7 +456,7 @@ const Sakura: Restaurant = {
         "Chain teppanyaki grill serving steaks & seafood, plus sushi & a traditional Japanese menu.",
     image: sakura,
     menu: SakuraMenu,
-    averageRating: 0,
+    averageRating: 4.1,
     diningExperience: "Luxury",
     priceRange: "$$"
 };
@@ -468,7 +468,7 @@ const PlayaBowls: Restaurant = {
         "Playa Bowls™ is your slice of summer, anytime. Using the freshest, highest quality ingredients, we serve healthy, delicious açaí, pitaya, coconut bowls and smoothies with sustainability and community in mind.",
     image: playabowls,
     menu: PBMenu,
-    averageRating: 0,
+    averageRating: 3.8,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -480,7 +480,7 @@ const Hamiltons: Restaurant = {
         "Approachable fine dining, craft cocktails, beer and wine served in a rustic chic setting.",
     image: hamiltons,
     menu: HamiltonsMenu,
-    averageRating: 0,
+    averageRating: 4.6,
     diningExperience: "Luxury",
     priceRange: "$$$"
 };
@@ -492,7 +492,7 @@ const Subway: Restaurant = {
         "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
     image: subway,
     menu: SubwayMenu,
-    averageRating: 0,
+    averageRating: 2.8,
     diningExperience: "Casual",
     priceRange: "$"
 };
@@ -504,7 +504,7 @@ const DairyQueen: Restaurant = {
         "Soft-serve ice cream & signature shakes top the menu at this classic burger & fries fast-food chain.",
     image: dairyqueen,
     menu: DQMenu,
-    averageRating: 0,
+    averageRating: 2.7,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -516,7 +516,7 @@ const UDairy: Restaurant = {
         "Shop selling premium ice cream produced by University of Delaware agriculture students.",
     image: udairy,
     menu: UDairyMenu,
-    averageRating: 0,
+    averageRating: 4.8,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -528,7 +528,7 @@ const JerseyMikes: Restaurant = {
         "New Jersey-based counter-serve sandwich chain serving jumbo subs filled with cold cuts & toppings.",
     image: jerseymikes,
     menu: JMMenu,
-    averageRating: 0,
+    averageRating: 4.3,
     diningExperience: "Casual",
     priceRange: "$"
 };
@@ -540,7 +540,7 @@ const JimmyJohns: Restaurant = {
         "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips.",
     image: jimmyjohns,
     menu: JJMenu,
-    averageRating: 0,
+    averageRating: 2.1,
     diningExperience: "Casual",
     priceRange: "$"
 };
@@ -552,7 +552,7 @@ const Capriottis: Restaurant = {
         "Counter-service deli chain crafting hearty signature subs, salads & kids' meals in a casual setting.",
     image: capriottis,
     menu: CapriottisMenu,
-    averageRating: 0,
+    averageRating: 2.3,
     diningExperience: "Casual",
     priceRange: "$"
 };
@@ -564,7 +564,7 @@ const PFChangs: Restaurant = {
         "Family-friendly chain offering creative takes on Asian fare in a striking space.",
     image: pfchangs,
     menu: PFCMenu,
-    averageRating: 0,
+    averageRating: 1.5,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -576,7 +576,7 @@ const PandaExpress: Restaurant = {
         "Fast-food chain for Chinese standards, including some health-conscious options.",
     image: pandaexpress,
     menu: PEMenu,
-    averageRating: 0,
+    averageRating: 1.8,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -588,7 +588,7 @@ const KFC: Restaurant = {
         "Restaurant chain known for its buckets of fried chicken, plus combo meals & sides.",
     image: kfc,
     menu: KFCMenu,
-    averageRating: 0,
+    averageRating: 2.7,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -600,7 +600,7 @@ const BaskinRobbins: Restaurant = {
         "Colorful ice cream parlor chain known for its many flavors plus sorbet & yogurt.",
     image: baskinrobbins,
     menu: BRMenu,
-    averageRating: 0,
+    averageRating: 3.5,
     diningExperience: "Casual",
     priceRange: "$"
 };
@@ -612,7 +612,7 @@ const PokeBros: Restaurant = {
         "Fast, fresh, fit. High-quality, sushi-grade fish and farm-fresh veggies in an authentic Hawaiian poké bowl.",
     image: pokebros,
     menu: PokeMenu,
-    averageRating: 0,
+    averageRating: 3.9,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -624,7 +624,7 @@ const Starbucks: Restaurant = {
         "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
     image: starbucks,
     menu: StarbucksMenu,
-    averageRating: 0,
+    averageRating: 4.7,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -636,7 +636,7 @@ const Wawa: Restaurant = {
         "Convenience store chain known for sandwiches & coffee. Many offer fuel & are open 24/7.",
     image: wawa,
     menu: WawaMenu,
-    averageRating: 0,
+    averageRating: 3.6,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -648,7 +648,7 @@ const ShakeShack: Restaurant = {
         "Hip, counter-serve chain for gourmet takes on fast-food classics like burgers & frozen custard.",
     image: shakeshack,
     menu: SSMenu,
-    averageRating: 0,
+    averageRating: 4.9,
     diningExperience: "Casual",
     priceRange: "$$"
 };
@@ -660,7 +660,7 @@ const Dominos: Restaurant = {
         "Delivery/carryout chain offering a wide range of pizzas & a variety of other dishes & sides.",
     image: dominos,
     menu: DominosMenu,
-    averageRating: 0,
+    averageRating: 1.2,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -672,7 +672,7 @@ const PapaJohns: Restaurant = {
         "Pizza take-out & delivery chain offering classic & specialty pizzas, plus wings, sides & desserts.",
     image: papajohns,
     menu: PJMenu,
-    averageRating: 0,
+    averageRating: 1.3,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -684,7 +684,7 @@ const PizzaHut: Restaurant = {
         "Popular delivery, carry-out & dine-in chain known for pizza, wings & pasta, plus sides & desserts.",
     image: pizzahut,
     menu: PHMenu,
-    averageRating: 0,
+    averageRating: 1.8,
     diningExperience: "Fast",
     priceRange: "$"
 };
@@ -696,7 +696,7 @@ const Dunkin: Restaurant = {
         "Long-running chain serving signature breakfast items & a variety of coffee drinks.",
     image: dunkin,
     menu: DDMenu,
-    averageRating: 0,
+    averageRating: 5.0,
     diningExperience: "Casual",
     priceRange: "$"
 };

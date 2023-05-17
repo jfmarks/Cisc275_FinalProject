@@ -1,6 +1,5 @@
 import React from "react";
 import { useDrag, DragSourceMonitor } from "react-dnd";
-import { Card } from "react-bootstrap";
 import { DraggedRestaurant } from "../Interfaces";
 
 export default function DragRestaurant({

@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { useDrop } from "react-dnd";
@@ -6,6 +7,8 @@ import RestaurantList from "./RestaurantList";
 import { Card, Col, Row } from "react-bootstrap";
 import AddReview from "./AddReview";
 import ReviewDisplayElement from "./ReviewDisplay";
+import SortSelector from "./SortStyleSelector";
+import CurrentSortStyle from "../CurrentSort";
 
 interface bucketProp {
     user: CurrUser;
@@ -52,18 +55,50 @@ export default function RestaurantBucket({
         })
     });
 
+    const alphabetical = [...items];
+    alphabetical.sort((a, b) => a.name.localeCompare(b.name));
+
+    const highToLow = [...items];
+    highToLow.sort((a, b) => b.averageRating - a.averageRating);
+
     return (
-        <Row
-            ref={drop}
-            role={"RestaurantBucket"}
-            style={{
-                backgroundColor: isOver ? "grey" : "lightblue",
-                justifyContent: "center",
-                minHeight: "500px"
-            }}
-        >
-            Insert Restaurants here:
-            {items.map((item) => (
+        <>
+            <div>
+                <SortSelector edit={true}></SortSelector>
+            </div>
+            <Row
+                ref={drop}
+                role={"RestaurantBucket"}
+                style={{
+                    backgroundColor: isOver ? "grey" : "lightblue",
+                    justifyContent: "center",
+                    minHeight: "500px"
+                }}
+            >
+                Insert Restaurants here:
+                {CurrentSortStyle.type == "alphabetical"
+                    ? alphabetical.map((item) => (
+                <div key={item.id} style={{ minHeight: "300px" }}>
+                    <Card.Img
+                        key={item.id}
+                        src={item.image}
+                        className="card-image"
+                    />
+                    <Col>
+                        <AddReview
+                            key={item.id}
+                            id={item.id}
+                            restaurants={items}
+                            handleChange={handleChange}
+                            handleRemove={handleRemove}
+                        ></AddReview>
+                        <ReviewDisplayElement
+                            restaurant={item}
+                        ></ReviewDisplayElement>
+                    </Col>
+                </div>
+            ))
+                    : highToLow.map((item) => (
                 <div key={item.id} style={{ minHeight: "300px" }}>
                     <Card.Img
                         key={item.id}
@@ -84,6 +119,7 @@ export default function RestaurantBucket({
                     </Col>
                 </div>
             ))}
-        </Row>
+            </Row>
+        </>
     );
 }

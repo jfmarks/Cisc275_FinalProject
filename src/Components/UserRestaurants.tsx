@@ -117,7 +117,7 @@ export function UserRestaurants({
     highToLow.sort((a, b) => b.averageRating - a.averageRating);
 
     return (
-        <div style={{ height: "600px", width: "650px", overflowY: "scroll" }}>
+        <div style={{ height: "600px", width: "500px", overflowY: "scroll" }}>
             <Container
                 style={{
                     border: "1px solid #ccc", // Border color

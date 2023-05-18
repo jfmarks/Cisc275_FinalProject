@@ -16,7 +16,7 @@ function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
             <div className="dataResult">
                 {data.map((value, key) => {
                     // eslint-disable-next-line react/jsx-key
-                    return <a> {value.name} </a>;
+                    return <div> {value.name} </div>;
                 })}
             </div>
         </div>

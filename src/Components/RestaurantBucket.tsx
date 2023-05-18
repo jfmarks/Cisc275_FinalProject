@@ -35,9 +35,9 @@ export default function RestaurantBucket(): JSX.Element {
             ref={drop}
             role={"RestaurantBucket"}
             style={{
-                backgroundColor: isOver ? "grey" : "white",
+                backgroundColor: isOver ? "grey" : "lightblue",
                 justifyContent: "center",
-                minHeight: "300px"
+                minHeight: "500px"
             }}
         >
             Insert Restaurants here:

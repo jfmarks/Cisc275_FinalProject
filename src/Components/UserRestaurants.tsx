@@ -106,6 +106,9 @@ export function UserRestaurants({
     const handleEditRestaurant = (): void => {
         setEditMode(!editMode);
     };
+
+    const sorted = restaurants.sort((a, b) => a.name.localeCompare(b.name));
+
     return (
         <div style={{ height: "600px", width: "500px", overflowY: "scroll" }}>
             <Container
@@ -124,6 +127,9 @@ export function UserRestaurants({
                     }}
                 >
                     <div style={{ display: "flex", justifyContent: "center" }}>
+                        <div>
+                            <Button>Sort</Button>
+                        </div>
                         <div style={{ flex: 1, textAlign: "center" }}>
                             Restaurant List
                         </div>
@@ -162,7 +168,7 @@ export function UserRestaurants({
                     {addMode && editMode && (
                         <AddRestaurant addRestaurant={addRestaurant} />
                     )}
-                    {restaurants.map((restaurant) => (
+                    {sorted.map((restaurant) => (
                         <Col
                             key={restaurant.id}
                             sm={3}

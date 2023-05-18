@@ -9,6 +9,7 @@ import "../RestaurantStyle.css";
 import "../StarStyling.css";
 import DragRestaurant from "./RestaurantDrag";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import StarRating from "./displayRating";
 
 interface RestaurantBucketProps {
     restaurants: Restaurant[];
@@ -18,8 +19,6 @@ export function UserRestaurants({
     restaurants,
     handleChange
 }: RestaurantBucketProps): JSX.Element {
-    //const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
-    const [ratingVisible, setRatingVisible] = useState<string | null>(null);
     const [menuVisible, setMenuVisible] = useState<string | null>(null);
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
@@ -47,12 +46,6 @@ export function UserRestaurants({
     const handleShowAttributes = (restaurantId: string): void => {
         // Toggle info visibility for the selected restaurant
         setAttributesVisible((prevId) =>
-            prevId === restaurantId ? null : restaurantId
-        );
-    };
-    const handleShowRating = (restaurantId: string): void => {
-        // Toggle info visibility for the selected restaurant
-        setRatingVisible((prevId) =>
             prevId === restaurantId ? null : restaurantId
         );
     };
@@ -209,7 +202,6 @@ export function UserRestaurants({
                                         newItem: restaurant.id,
                                         id: restaurant.id
                                     }}
-                                    dragItemType="RESTAURANT"
                                 />
                                 <Card.Body>
                                     {editMode ? (
@@ -355,21 +347,6 @@ export function UserRestaurants({
                                                         ? "Hide Details"
                                                         : "Details"}
                                                 </Button>
-                                                <div>
-                                                    <Button
-                                                        variant="info"
-                                                        onClick={() =>
-                                                            handleShowRating(
-                                                                restaurant.id
-                                                            )
-                                                        }
-                                                    >
-                                                        {ratingVisible ===
-                                                        restaurant.id
-                                                            ? "Done Rating"
-                                                            : "Rate"}
-                                                    </Button>
-                                                </div>
                                                 <div
                                                     style={{
                                                         display:

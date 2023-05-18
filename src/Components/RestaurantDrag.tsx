@@ -1,6 +1,7 @@
 import React from "react";
 import { useDrag, DragSourceMonitor } from "react-dnd";
 import { DraggedRestaurant } from "../Interfaces";
+import { Card } from "react-bootstrap";
 
 export default function DragRestaurant({
     image,
@@ -9,13 +10,16 @@ export default function DragRestaurant({
     image: string;
     dragItem: DraggedRestaurant;
 }) {
-    const [{ isDragging }, drag] = useDrag({
-        item: dragItem,
-        collect: (monitor: DragSourceMonitor) => ({
-            isDragging: monitor.isDragging()
-        })
-    });
-
+    const [{ isDragging }, drag] = useDrag(
+        () => ({
+            type: "RESTAURANT",
+            item: dragItem,
+            collect: (monitor: DragSourceMonitor) => ({
+                isDragging: monitor.isDragging()
+            })
+        }),
+        [dragItem]
+    );
     return (
         <Card.Img
             variant="top"

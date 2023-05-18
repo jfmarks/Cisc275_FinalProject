@@ -1,13 +1,21 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { useDrop } from "react-dnd";
-import { Restaurant, DraggedRestaurant } from "../Interfaces";
+import { Restaurant, DraggedRestaurant, CurrUser } from "../Interfaces";
 import RestaurantList from "./RestaurantList";
 import { Card, Col, Row } from "react-bootstrap";
 import AddReview from "./AddReview";
 import ReviewDisplayElement from "./ReviewDisplay";
 
-export default function RestaurantBucket(): JSX.Element {
+interface bucketProp {
+    user: CurrUser;
+    acceptingUserOfType: string;
+}
+
+export default function RestaurantBucket({
+    user,
+    acceptingUserOfType
+}: bucketProp): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
     function handleChange(listR: Restaurant[]) {
         setItems(listR);
@@ -23,6 +31,9 @@ export default function RestaurantBucket(): JSX.Element {
         accept: "RESTAURANT",
         drop: (item: DraggedRestaurant) => {
             handleAddRestaurant(item.newItem);
+        },
+        canDrop: () => {
+            return user.type === acceptingUserOfType;
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),

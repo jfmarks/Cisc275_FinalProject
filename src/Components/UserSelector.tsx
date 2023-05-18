@@ -10,8 +10,8 @@ const UserSelector = ({ handleUserChange }: userProp) => {
     const [userIndex, setUserIndex] = useState<number>(0);
 
     const handleUserTypeChange = (event: { target: { value: string } }) => {
+        handleUserChange(event.target.value as unknown as number);
         setUserIndex(event.target.value as unknown as number);
-        handleUserChange(userIndex);
     };
     return (
         <div>

@@ -18,7 +18,6 @@ const SortSelector = () => {
                 style={{ fontSize: 12 }}
             >
                 <option value="alphabetical">A-Z</option>
-                <option value="lowToHigh">Rating Low-High</option>
                 <option value="highToLow">Rating High-Low</option>
             </select>
         </div>

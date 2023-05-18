@@ -11,7 +11,7 @@ const FixedHeader = () => {
             <Button style={{ position: "absolute", left: 5 }}>
                 List Of Users
             </Button>
-            <div style={{ position: "absolute", left: 5 }}>
+            <div>
                 <SearchBar
                     placeholder="Do we have your restaurant?"
                     data={Restaurant}

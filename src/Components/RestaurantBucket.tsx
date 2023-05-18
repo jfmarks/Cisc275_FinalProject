@@ -20,14 +20,25 @@ export default function RestaurantBucket({
     acceptingUserOfType
 }: bucketProp): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
+    const [curID, setID] = useState<number>(0);
     function handleChange(listR: Restaurant[]) {
         setItems(listR);
     }
     const handleAddRestaurant = (newItemID: string) => {
-        const newItem: Restaurant = RestaurantList.find(
-            (restaurant) => restaurant.id === newItemID
-        ) as Restaurant;
+        const newItem: Restaurant = {
+            ...(RestaurantList.find(
+                (restaurant) => restaurant.id === newItemID
+            ) as Restaurant),
+            id: curID as unknown as string
+        };
         setItems((items) => [...items, newItem as Restaurant]);
+        setID(curID + 1);
+    };
+    const handleRemove = (id: string) => {
+        const updatedRestaurants = items.filter(
+            (restaurant) => restaurant.id !== id
+        );
+        setItems(updatedRestaurants);
     };
 
     const [{ isOver }, drop] = useDrop({
@@ -67,45 +78,47 @@ export default function RestaurantBucket({
                 Insert Restaurants here:
                 {CurrentSortStyle.type == "alphabetical"
                     ? alphabetical.map((item) => (
-                          <div key={item.id}>
-                              <Card.Img
-                                  key={item.id}
-                                  src={item.image}
-                                  className="card-image"
-                              />
-                              <Col>
-                                  <AddReview
-                                      key={item.id}
-                                      id={item.id}
-                                      restaurants={items}
-                                      handleChange={handleChange}
-                                  ></AddReview>
-                                  <ReviewDisplayElement
-                                      restaurant={item}
-                                  ></ReviewDisplayElement>
-                              </Col>
-                          </div>
-                      ))
+                <div key={item.id} style={{ minHeight: "300px" }}>
+                    <Card.Img
+                        key={item.id}
+                        src={item.image}
+                        className="card-image"
+                    />
+                    <Col>
+                        <AddReview
+                            key={item.id}
+                            id={item.id}
+                            restaurants={items}
+                            handleChange={handleChange}
+                            handleRemove={handleRemove}
+                        ></AddReview>
+                        <ReviewDisplayElement
+                            restaurant={item}
+                        ></ReviewDisplayElement>
+                    </Col>
+                </div>
+            ))
                     : highToLow.map((item) => (
-                          <div key={item.id}>
-                              <Card.Img
-                                  key={item.id}
-                                  src={item.image}
-                                  className="card-image"
-                              />
-                              <Col>
-                                  <AddReview
-                                      key={item.id}
-                                      id={item.id}
-                                      restaurants={items}
-                                      handleChange={handleChange}
-                                  ></AddReview>
-                                  <ReviewDisplayElement
-                                      restaurant={item}
-                                  ></ReviewDisplayElement>
-                              </Col>
-                          </div>
-                      ))}
+                <div key={item.id} style={{ minHeight: "300px" }}>
+                    <Card.Img
+                        key={item.id}
+                        src={item.image}
+                        className="card-image"
+                    />
+                    <Col>
+                        <AddReview
+                            key={item.id}
+                            id={item.id}
+                            restaurants={items}
+                            handleChange={handleChange}
+                            handleRemove={handleRemove}
+                        ></AddReview>
+                        <ReviewDisplayElement
+                            restaurant={item}
+                        ></ReviewDisplayElement>
+                    </Col>
+                </div>
+            ))}
             </Row>
         </>
     );

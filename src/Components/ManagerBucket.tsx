@@ -31,6 +31,17 @@ export default function ManagerBucket({
             setIDs([...itemIDs, newItemID as unknown as number]);
         }
     };
+    const handleEdit = (editedR: Restaurant) => {
+        const updatedRestaurants = items.filter(
+            (restaurant) => restaurant.id !== editedR.id
+        );
+        const updatedIDs = itemIDs.filter(
+            (id) => id !== (editedR.id as unknown as number)
+        );
+        setIDs(updatedIDs);
+        setItems(updatedRestaurants);
+        makeChanges(editedR);
+    };
 
     const handleRestaurantNameChange = (
         e: React.ChangeEvent<HTMLInputElement>,
@@ -118,227 +129,203 @@ export default function ManagerBucket({
                 Insert Restaurants here:
                 {CurrentSortStyle.type == "alphabetical"
                     ? alphabetical.map((item) => (
-                          <div key={item.id}>
-                              <Card.Img
-                                  key={item.id}
-                                  src={item.image}
-                                  className="card-image"
-                              />
-                              <Card.Body>
-                                  <div
-                                      className="editmode"
-                                      style={{ minHeight: "300px" }}
-                                  >
-                                      <input
-                                          className="inputedit"
-                                          type="text"
-                                          value={item.name}
-                                          onChange={(e) =>
-                                              handleRestaurantNameChange(
-                                                  e,
-                                                  item.id
-                                              )
-                                          }
-                                      />
-                                      <input
-                                          className="inputedit"
-                                          type="text"
-                                          value={item.description}
-                                          onChange={(e) =>
-                                              handleRestaurantDescriptionChange(
-                                                  e,
-                                                  item.id
-                                              )
-                                          }
-                                      />
-                                      <input
-                                          className="inputedit"
-                                          type="range"
-                                          step="0.1"
-                                          min="1"
-                                          max="5"
-                                          value={item.averageRating}
-                                          onChange={(e) =>
-                                              handleRestaurantRatingChange(
-                                                  e,
-                                                  item.id
-                                              )
-                                          }
-                                      />
-                                      <p
-                                          style={{
-                                              marginTop: "-25px"
-                                          }}
-                                      >
-                                          {item.averageRating} ★
-                                      </p>
-                                      <div className="priceButtonGroup">
-                                          <Button
-                                              className={`priceButton ${
-                                                  item.priceRange === "$"
-                                                      ? "active"
-                                                      : ""
-                                              }`}
-                                              onClick={() =>
-                                                  handleRestaurantPriceChange(
-                                                      "$",
-                                                      item.id
-                                                  )
-                                              }
-                                          >
-                                              $
-                                          </Button>
-                                          <Button
-                                              className={`priceButton ${
-                                                  item.priceRange === "$$"
-                                                      ? "active"
-                                                      : ""
-                                              }`}
-                                              onClick={() =>
-                                                  handleRestaurantPriceChange(
-                                                      "$$",
-                                                      item.id
-                                                  )
-                                              }
-                                          >
-                                              $$
-                                          </Button>
-                                          <Button
-                                              className={`priceButton ${
-                                                  item.priceRange === "$$$"
-                                                      ? "active"
-                                                      : ""
-                                              }`}
-                                              onClick={() =>
-                                                  handleRestaurantPriceChange(
-                                                      "$$$",
-                                                      item.id
-                                                  )
-                                              }
-                                          >
-                                              $$$
-                                          </Button>
-                                          <Button
-                                              onClick={() => makeChanges(item)}
-                                          >
-                                              save
-                                          </Button>
-                                      </div>
-                                  </div>
-                              </Card.Body>
-                          </div>
-                      ))
+                <div key={item.id}>
+                    <Card.Img
+                        key={item.id}
+                        src={item.image}
+                        className="card-image"
+                    />
+                    <Card.Body>
+                        <div
+                            className="editmode"
+                            style={{ minHeight: "300px" }}
+                        >
+                            <input
+                                className="inputedit"
+                                type="text"
+                                value={item.name}
+                                onChange={(e) =>
+                                    handleRestaurantNameChange(e, item.id)
+                                }
+                            />
+                            <input
+                                className="inputedit"
+                                type="text"
+                                value={item.description}
+                                onChange={(e) =>
+                                    handleRestaurantDescriptionChange(
+                                        e,
+                                        item.id
+                                    )
+                                }
+                            />
+                            <input
+                                className="inputedit"
+                                type="range"
+                                step="0.1"
+                                min="1"
+                                max="5"
+                                value={item.averageRating}
+                                onChange={(e) =>
+                                    handleRestaurantRatingChange(e, item.id)
+                                }
+                            />
+                            <p
+                                style={{
+                                    marginTop: "-25px"
+                                }}
+                            >
+                                {item.averageRating} ★
+                            </p>
+                            <div className="priceButtonGroup">
+                                <Button
+                                    className={`priceButton ${
+                                        item.priceRange === "$" ? "active" : ""
+                                    }`}
+                                    onClick={() =>
+                                        handleRestaurantPriceChange(
+                                            "$",
+                                            item.id
+                                        )
+                                    }
+                                >
+                                    $
+                                </Button>
+                                <Button
+                                    className={`priceButton ${
+                                        item.priceRange === "$$" ? "active" : ""
+                                    }`}
+                                    onClick={() =>
+                                        handleRestaurantPriceChange(
+                                            "$$",
+                                            item.id
+                                        )
+                                    }
+                                >
+                                    $$
+                                </Button>
+                                <Button
+                                    className={`priceButton ${
+                                        item.priceRange === "$$$"
+                                            ? "active"
+                                            : ""
+                                    }`}
+                                    onClick={() =>
+                                        handleRestaurantPriceChange(
+                                            "$$$",
+                                            item.id
+                                        )
+                                    }
+                                >
+                                    $$$
+                                </Button>
+                                <Button onClick={() => handleEdit(item)}>
+                                    Done
+                                </Button>
+                            </div>
+                        </div>
+                    </Card.Body>
+                </div>
+            ))
                     : highToLow.map((item) => (
-                          <div key={item.id}>
-                              <Card.Img
-                                  key={item.id}
-                                  src={item.image}
-                                  className="card-image"
-                              />
-                              <Card.Body>
-                                  <div
-                                      className="editmode"
-                                      style={{ minHeight: "300px" }}
-                                  >
-                                      <input
-                                          className="inputedit"
-                                          type="text"
-                                          value={item.name}
-                                          onChange={(e) =>
-                                              handleRestaurantNameChange(
-                                                  e,
-                                                  item.id
-                                              )
-                                          }
-                                      />
-                                      <input
-                                          className="inputedit"
-                                          type="text"
-                                          value={item.description}
-                                          onChange={(e) =>
-                                              handleRestaurantDescriptionChange(
-                                                  e,
-                                                  item.id
-                                              )
-                                          }
-                                      />
-                                      <input
-                                          className="inputedit"
-                                          type="range"
-                                          step="0.1"
-                                          min="1"
-                                          max="5"
-                                          value={item.averageRating}
-                                          onChange={(e) =>
-                                              handleRestaurantRatingChange(
-                                                  e,
-                                                  item.id
-                                              )
-                                          }
-                                      />
-                                      <p
-                                          style={{
-                                              marginTop: "-25px"
-                                          }}
-                                      >
-                                          {item.averageRating} ★
-                                      </p>
-                                      <div className="priceButtonGroup">
-                                          <Button
-                                              className={`priceButton ${
-                                                  item.priceRange === "$"
-                                                      ? "active"
-                                                      : ""
-                                              }`}
-                                              onClick={() =>
-                                                  handleRestaurantPriceChange(
-                                                      "$",
-                                                      item.id
-                                                  )
-                                              }
-                                          >
-                                              $
-                                          </Button>
-                                          <Button
-                                              className={`priceButton ${
-                                                  item.priceRange === "$$"
-                                                      ? "active"
-                                                      : ""
-                                              }`}
-                                              onClick={() =>
-                                                  handleRestaurantPriceChange(
-                                                      "$$",
-                                                      item.id
-                                                  )
-                                              }
-                                          >
-                                              $$
-                                          </Button>
-                                          <Button
-                                              className={`priceButton ${
-                                                  item.priceRange === "$$$"
-                                                      ? "active"
-                                                      : ""
-                                              }`}
-                                              onClick={() =>
-                                                  handleRestaurantPriceChange(
-                                                      "$$$",
-                                                      item.id
-                                                  )
-                                              }
-                                          >
-                                              $$$
-                                          </Button>
-                                          <Button
-                                              onClick={() => makeChanges(item)}
-                                          >
-                                              save
-                                          </Button>
-                                      </div>
-                                  </div>
-                              </Card.Body>
-                          </div>
-                      ))}
+                <div key={item.id}>
+                    <Card.Img
+                        key={item.id}
+                        src={item.image}
+                        className="card-image"
+                    />
+                    <Card.Body>
+                        <div
+                            className="editmode"
+                            style={{ minHeight: "300px" }}
+                        >
+                            <input
+                                className="inputedit"
+                                type="text"
+                                value={item.name}
+                                onChange={(e) =>
+                                    handleRestaurantNameChange(e, item.id)
+                                }
+                            />
+                            <input
+                                className="inputedit"
+                                type="text"
+                                value={item.description}
+                                onChange={(e) =>
+                                    handleRestaurantDescriptionChange(
+                                        e,
+                                        item.id
+                                    )
+                                }
+                            />
+                            <input
+                                className="inputedit"
+                                type="range"
+                                step="0.1"
+                                min="1"
+                                max="5"
+                                value={item.averageRating}
+                                onChange={(e) =>
+                                    handleRestaurantRatingChange(e, item.id)
+                                }
+                            />
+                            <p
+                                style={{
+                                    marginTop: "-25px"
+                                }}
+                            >
+                                {item.averageRating} ★
+                            </p>
+                            <div className="priceButtonGroup">
+                                <Button
+                                    className={`priceButton ${
+                                        item.priceRange === "$" ? "active" : ""
+                                    }`}
+                                    onClick={() =>
+                                        handleRestaurantPriceChange(
+                                            "$",
+                                            item.id
+                                        )
+                                    }
+                                >
+                                    $
+                                </Button>
+                                <Button
+                                    className={`priceButton ${
+                                        item.priceRange === "$$" ? "active" : ""
+                                    }`}
+                                    onClick={() =>
+                                        handleRestaurantPriceChange(
+                                            "$$",
+                                            item.id
+                                        )
+                                    }
+                                >
+                                    $$
+                                </Button>
+                                <Button
+                                    className={`priceButton ${
+                                        item.priceRange === "$$$"
+                                            ? "active"
+                                            : ""
+                                    }`}
+                                    onClick={() =>
+                                        handleRestaurantPriceChange(
+                                            "$$$",
+                                            item.id
+                                        )
+                                    }
+                                >
+                                    $$$
+                                </Button>
+                                <Button onClick={() => handleEdit(item)}>
+                                    Done
+                                </Button>
+                            </div>
+                        </div>
+                    </Card.Body>
+                </div>
+            ))}
             </Row>
         </>
     );

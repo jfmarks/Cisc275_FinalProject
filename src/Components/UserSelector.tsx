@@ -1,27 +1,34 @@
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
-import CurrentUser from "../CurrentUser";
+import { CurrUser } from "../Interfaces";
+import userList from "../CurrentUser";
 
-const UserSelector = () => {
-    const [userType, setUserType] = useState(CurrentUser.type);
+interface userProp {
+    user: CurrUser;
+    handleUserChange: (newUser: number) => void;
+}
+
+const UserSelector = ({ user, handleUserChange }: userProp) => {
+    const [userIndex, setUserIndex] = useState<number>(0);
 
     const handleUserTypeChange = (event: { target: { value: string } }) => {
-        const newUserType = event.target.value;
-        setUserType(newUserType);
-        CurrentUser.type = newUserType;
+        setUserIndex(event.target.value as unknown as number);
+        handleUserChange(userIndex);
     };
-
     return (
         <div>
             <label style={{ fontWeight: "bold", fontSize: 17 }}>
-                Select user type:{" "}
+                Select user:
                 <select
-                    value={userType}
+                    value={user.id}
                     onChange={handleUserTypeChange}
                     style={{ fontWeight: "bold" }}
                 >
-                    <option value="Critic">Critic</option>
-                    <option value="Manager">Manager</option>
-                    <option value="Foodie">Foodie</option>
+                    {userList.map((UserOption) => (
+                        <option key={UserOption.id} value={UserOption.id}>
+                            {UserOption.type} {": "} {UserOption.username}
+                        </option>
+                    ))}
                 </select>
             </label>
         </div>

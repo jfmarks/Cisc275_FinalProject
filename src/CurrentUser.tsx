@@ -1,8 +1,19 @@
 import { CurrUser } from "./Interfaces";
 
-const CurrentUser: CurrUser = {
+const User0: CurrUser = {
     type: "Critic",
-    id: "1",
-    username: "Mr.Manager"
+    id: "0",
+    username: "Mr. Critique"
 };
-export default CurrentUser;
+const User1: CurrUser = {
+    type: "Manager",
+    id: "1",
+    username: "Mr. Manager"
+};
+const User2: CurrUser = {
+    type: "Foodie",
+    id: "2",
+    username: "Mr. Fudge"
+};
+const userList: CurrUser[] = [User0, User1, User2];
+export default userList;

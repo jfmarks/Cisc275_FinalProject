@@ -7,17 +7,26 @@ import RestaurantBucket from "./Components/RestaurantBucket";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import FixedHeader from "./Components/FixedHeader";
-import { Restaurant } from "./Interfaces";
+import { CurrUser, Restaurant } from "./Interfaces";
+import userList from "./CurrentUser";
 
 function App() {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
     function handleChange(listR: Restaurant[]) {
         setRestaurants(listR);
     }
+    const [user, setUser] = useState<CurrUser>(userList[0]);
+
+    const handleUserChange = (newUser: number) => {
+        setUser(userList[newUser]);
+    };
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="App">
-                <FixedHeader></FixedHeader>
+                <FixedHeader
+                    user={user}
+                    handleUserChange={handleUserChange}
+                ></FixedHeader>
                 <div className="App">
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>
@@ -29,6 +38,7 @@ function App() {
                                 <UserRestaurants
                                     restaurants={restaurants}
                                     handleChange={handleChange}
+                                    user={user}
                                 ></UserRestaurants>
                             </Col>
                             <Col style={{ width: "300px" }} lg={6}>

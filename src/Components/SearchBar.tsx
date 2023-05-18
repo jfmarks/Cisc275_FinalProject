@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Restaurant } from "../Interfaces";
 import "../SearchBar.css";
@@ -33,6 +35,7 @@ function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
             </div>
             {filteredData.length != 0 && (
                 <div className="dataResult">
+                    {" "}
                     {filteredData.slice(0, 5).map((value, key) => {
                         return (
                             // eslint-disable-next-line react/jsx-key

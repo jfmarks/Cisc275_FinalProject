@@ -44,7 +44,10 @@ function App() {
                         <Row style={{ position: "absolute", top: 200 }}>
                             <Col style={{ width: "300px" }} lg={6}>
                                 <h1>Foodie List</h1>
-                                <RestaurantBucket></RestaurantBucket>
+                                <RestaurantBucket
+                                    user={user}
+                                    acceptingUserOfType="Foodie"
+                                ></RestaurantBucket>
                             </Col>
                             <Col>
                                 <UserRestaurants
@@ -55,7 +58,10 @@ function App() {
                             </Col>
                             <Col style={{ width: "300px" }} lg={6}>
                                 <h1>Manager List</h1>
-                                <RestaurantBucket></RestaurantBucket>
+                                <RestaurantBucket
+                                    user={user}
+                                    acceptingUserOfType="Manager"
+                                ></RestaurantBucket>
                             </Col>
                         </Row>
                     </Container>

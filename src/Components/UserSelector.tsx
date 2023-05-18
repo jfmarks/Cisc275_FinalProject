@@ -15,8 +15,8 @@ const UserSelector = ({ handleUserChange }: userProp) => {
     };
     return (
         <div>
-            <label style={{ fontWeight: "bold", fontSize: 17 }}>
-                Select user:
+            <label style={{ fontWeight: "bold", fontSize: 15 }}>
+                Select user:{" "}
                 <select
                     value={userList[userIndex].id}
                     onChange={handleUserTypeChange}

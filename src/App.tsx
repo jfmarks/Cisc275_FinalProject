@@ -9,6 +9,8 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import FixedHeader from "./Components/FixedHeader";
 import { CurrUser, Restaurant } from "./Interfaces";
 import userList from "./CurrentUser";
+import SearchBar from "./Components/SearchBar";
+import restaurant from "./Components/RestaurantList";
 
 function App() {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
@@ -25,8 +27,21 @@ function App() {
             <div className="App">
                 <FixedHeader handleUserChange={handleUserChange}></FixedHeader>
                 <div className="App">
+                    <div
+                        style={{
+                            border: "1px solid #ccc", // Border color
+                            borderRadius: "1px", // Border radius
+                            padding: "10px", // Padding around the container
+                            backgroundColor: "lightblue"
+                        }}
+                    >
+                        <SearchBar
+                            placeholder="Do we have your restaurant?"
+                            data={restaurant}
+                        />
+                    </div>
                     <Container>
-                        <Row style={{ position: "absolute", top: 60 }}>
+                        <Row style={{ position: "absolute", top: 200 }}>
                             <Col style={{ width: "300px" }} lg={6}>
                                 <h1>Foodie List</h1>
                                 <RestaurantBucket></RestaurantBucket>

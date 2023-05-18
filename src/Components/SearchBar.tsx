@@ -28,6 +28,7 @@ function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
         <div className="search">
             <div className="searchInputs">
                 <input
+                    style={{ fontSize: 20, height: "10px" }}
                     type="text"
                     placeholder={placeholder}
                     onChange={handleFilter}

@@ -4,8 +4,14 @@ import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
 import SearchBar from "./SearchBar";
 import Restaurant from "./RestaurantList";
+import { CurrUser } from "../Interfaces";
 
-const FixedHeader = () => {
+interface userProp {
+    user: CurrUser;
+    handleUserChange: (newUser: number) => void;
+}
+
+const FixedHeader = ({ user, handleUserChange }: userProp) => {
     return (
         <header className="App-Fixed-Header">
             <Button
@@ -25,7 +31,10 @@ const FixedHeader = () => {
                 />
             </div>
             <div style={{ position: "absolute", right: 15, top: 15 }}>
-                <UserSelector></UserSelector>
+                <UserSelector
+                    user={user}
+                    handleUserChange={handleUserChange}
+                ></UserSelector>
             </div>
             <h1 style={{ fontWeight: "bold" }}>Rate-A-Restaurant! 🍽️</h1>
         </header>

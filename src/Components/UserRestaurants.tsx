@@ -2,8 +2,7 @@
 /* eslint-disable indent */
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
-import { Restaurant } from "../Interfaces";
-import CurrentUser from "../CurrentUser";
+import { CurrUser, Restaurant } from "../Interfaces";
 import { AddRestaurant } from "./AddRestaurant";
 import "../RestaurantStyle.css";
 import DragRestaurant from "./RestaurantDrag";
@@ -12,14 +11,16 @@ import StarRating from "./displayRating";
 import SortSelector from "./SortStyleSelector";
 import CurrentSortStyle from "../CurrentSort";
 
-interface RestaurantBucketProps {
+interface RestaurantProps {
     restaurants: Restaurant[];
     handleChange: (listR: Restaurant[]) => void;
+    user: CurrUser;
 }
 export function UserRestaurants({
     restaurants,
-    handleChange
-}: RestaurantBucketProps): JSX.Element {
+    handleChange,
+    user
+}: RestaurantProps): JSX.Element {
     const [menuVisible, setMenuVisible] = useState<string | null>(null);
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
@@ -144,13 +145,13 @@ export function UserRestaurants({
                                 <Button
                                     variant="success"
                                     onClick={() =>
-                                        CurrentUser.type == "Critic"
+                                        user.type == "Critic"
                                             ? setAddMode(!addMode)
                                             : null
                                     }
                                     disabled={
-                                        CurrentUser.type === "Manager" ||
-                                        CurrentUser.type === "Foodie"
+                                        user.type === "Manager" ||
+                                        user.type === "Foodie"
                                     }
                                 >
                                     {addMode ? "Cancel" : "Add Restaurant"}
@@ -158,12 +159,12 @@ export function UserRestaurants({
                             )}
                             <Button
                                 onClick={() =>
-                                    CurrentUser.type == "Critic" ||
-                                    CurrentUser.type == "Manager"
+                                    user.type == "Critic" ||
+                                    user.type == "Manager"
                                         ? handleEditRestaurant()
                                         : null
                                 }
-                                disabled={CurrentUser.type === "Foodie"}
+                                disabled={user.type === "Foodie"}
                             >
                                 {editMode ? "Save" : "Edit"}
                             </Button>
@@ -319,15 +320,14 @@ export function UserRestaurants({
                                                   <Button
                                                       variant="danger"
                                                       onClick={() =>
-                                                          CurrentUser.type ==
-                                                          "Critic"
+                                                          user.type == "Critic"
                                                               ? handleDeleteRestaurant(
                                                                     restaurant.id
                                                                 )
                                                               : null
                                                       }
                                                       disabled={
-                                                          CurrentUser.type ===
+                                                          user.type ===
                                                           "Manager"
                                                       }
                                                   >
@@ -638,15 +638,14 @@ export function UserRestaurants({
                                                   <Button
                                                       variant="danger"
                                                       onClick={() =>
-                                                          CurrentUser.type ==
-                                                          "Critic"
+                                                          user.type == "Critic"
                                                               ? handleDeleteRestaurant(
                                                                     restaurant.id
                                                                 )
                                                               : null
                                                       }
                                                       disabled={
-                                                          CurrentUser.type ===
+                                                          user.type ===
                                                           "Manager"
                                                       }
                                                   >

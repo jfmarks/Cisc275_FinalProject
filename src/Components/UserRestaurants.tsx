@@ -198,6 +198,7 @@ export function UserRestaurants(): JSX.Element {
                                     newItem: restaurant.id,
                                     id: restaurant.id
                                 }}
+                                dragItemType="RESTAURANT"
                             />
                             <Card.Body>
                                 {editMode ? (

@@ -11,9 +11,14 @@ import DragRestaurant from "./RestaurantDrag";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import StarRating from "./displayRating";
 
-export function UserRestaurants(): JSX.Element {
-    const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
-    const [ratingVisible, setRatingVisible] = useState<string | null>(null);
+interface RestaurantBucketProps {
+    restaurants: Restaurant[];
+    handleChange: (listR: Restaurant[]) => void;
+}
+export function UserRestaurants({
+    restaurants,
+    handleChange
+}: RestaurantBucketProps): JSX.Element {
     const [menuVisible, setMenuVisible] = useState<string | null>(null);
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
@@ -23,13 +28,13 @@ export function UserRestaurants(): JSX.Element {
     // Dummy data for restaurants (replace with actual fetch call)
     const fetchRestaurants = (): void => {
         const data = RestaurantList;
-        setRestaurants(data);
+        handleChange(data);
     };
     useState(() => {
         fetchRestaurants();
     });
     const addRestaurant = (newRestaurant: Restaurant) => {
-        setRestaurants([...restaurants, newRestaurant]);
+        handleChange([...restaurants, newRestaurant]);
         setAddMode(false);
     };
     const handleShowMenu = (restaurantId: string): void => {
@@ -44,12 +49,6 @@ export function UserRestaurants(): JSX.Element {
             prevId === restaurantId ? null : restaurantId
         );
     };
-    const handleShowRating = (restaurantId: string): void => {
-        // Toggle info visibility for the selected restaurant
-        setRatingVisible((prevId) =>
-            prevId === restaurantId ? null : restaurantId
-        );
-    };
     const handleRestaurantNameChange = (
         e: React.ChangeEvent<HTMLInputElement>,
         id: string
@@ -60,7 +59,7 @@ export function UserRestaurants(): JSX.Element {
             }
             return restaurant;
         });
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
     const handleRestaurantDescriptionChange = (
         e: React.ChangeEvent<HTMLInputElement>,
@@ -72,18 +71,17 @@ export function UserRestaurants(): JSX.Element {
             }
             return restaurant;
         });
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
     const handleRestaurantPriceChange = (price: string, id: string) => {
-        setRestaurants((prevRestaurants) =>
-            prevRestaurants.map((rest) => {
-                if (rest.id === id) {
-                    return { ...rest, priceRange: price };
-                } else {
-                    return rest;
-                }
-            })
-        );
+        const newList = restaurants.map((rest: Restaurant) => {
+            if (rest.id === id) {
+                return { ...rest, priceRange: price };
+            } else {
+                return rest;
+            }
+        });
+        handleChange(newList);
     };
     const handleRestaurantRatingChange = (
         e: React.ChangeEvent<HTMLInputElement>,
@@ -95,16 +93,14 @@ export function UserRestaurants(): JSX.Element {
             }
             return restaurant;
         });
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
     const handleDeleteRestaurant = (id: string) => {
         const updatedRestaurants = restaurants.filter(
             (restaurant) => restaurant.id !== id
         );
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
-
-    //const handleReview =
 
     const handleEditRestaurant = (): void => {
         setEditMode(!editMode);
@@ -206,7 +202,6 @@ export function UserRestaurants(): JSX.Element {
                                         newItem: restaurant.id,
                                         id: restaurant.id
                                     }}
-                                    dragItemType="RESTAURANT"
                                 />
                                 <Card.Body>
                                     {editMode ? (
@@ -352,21 +347,6 @@ export function UserRestaurants(): JSX.Element {
                                                         ? "Hide Details"
                                                         : "Details"}
                                                 </Button>
-                                                <div>
-                                                    <Button
-                                                        variant="info"
-                                                        onClick={() =>
-                                                            handleShowRating(
-                                                                restaurant.id
-                                                            )
-                                                        }
-                                                    >
-                                                        {ratingVisible ===
-                                                        restaurant.id
-                                                            ? "Done Rating"
-                                                            : "Rate"}
-                                                    </Button>
-                                                </div>
                                                 <div
                                                     style={{
                                                         display:

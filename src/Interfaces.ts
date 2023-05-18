@@ -29,6 +29,7 @@ export interface Restaurant {
     averageRating: number;
     priceRange: string;
     diningExperience: string;
+    reviews: string[];
 }
 
 export interface User {

@@ -29,6 +29,7 @@ export interface Restaurant {
     averageRating: number;
     priceRange: string;
     diningExperience: string;
+    reviews: string[];
 }
 
 export interface User {
@@ -43,6 +44,11 @@ export interface CurrUser {
     id: string;
     username: string;
 }
+
+export interface CurrSort {
+    type: string;
+}
+
 export interface DraggedRestaurant {
     type: string;
     id: string;

@@ -6,14 +6,20 @@ import { Restaurant } from "../Interfaces";
 import CurrentUser from "../CurrentUser";
 import { AddRestaurant } from "./AddRestaurant";
 import "../RestaurantStyle.css";
-import "../StarStyling.css";
 import DragRestaurant from "./RestaurantDrag";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import StarRating from "./displayRating";
+import SortSelector from "./SortStyleSelector";
+import CurrentSortStyle from "../CurrentSort";
 
-export function UserRestaurants(): JSX.Element {
-    const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
-    const [ratingVisible, setRatingVisible] = useState<string | null>(null);
+interface RestaurantBucketProps {
+    restaurants: Restaurant[];
+    handleChange: (listR: Restaurant[]) => void;
+}
+export function UserRestaurants({
+    restaurants,
+    handleChange
+}: RestaurantBucketProps): JSX.Element {
     const [menuVisible, setMenuVisible] = useState<string | null>(null);
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
@@ -23,13 +29,13 @@ export function UserRestaurants(): JSX.Element {
     // Dummy data for restaurants (replace with actual fetch call)
     const fetchRestaurants = (): void => {
         const data = RestaurantList;
-        setRestaurants(data);
+        handleChange(data);
     };
     useState(() => {
         fetchRestaurants();
     });
     const addRestaurant = (newRestaurant: Restaurant) => {
-        setRestaurants([...restaurants, newRestaurant]);
+        handleChange([...restaurants, newRestaurant]);
         setAddMode(false);
     };
     const handleShowMenu = (restaurantId: string): void => {
@@ -44,12 +50,6 @@ export function UserRestaurants(): JSX.Element {
             prevId === restaurantId ? null : restaurantId
         );
     };
-    const handleShowRating = (restaurantId: string): void => {
-        // Toggle info visibility for the selected restaurant
-        setRatingVisible((prevId) =>
-            prevId === restaurantId ? null : restaurantId
-        );
-    };
     const handleRestaurantNameChange = (
         e: React.ChangeEvent<HTMLInputElement>,
         id: string
@@ -60,7 +60,7 @@ export function UserRestaurants(): JSX.Element {
             }
             return restaurant;
         });
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
     const handleRestaurantDescriptionChange = (
         e: React.ChangeEvent<HTMLInputElement>,
@@ -72,18 +72,17 @@ export function UserRestaurants(): JSX.Element {
             }
             return restaurant;
         });
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
     const handleRestaurantPriceChange = (price: string, id: string) => {
-        setRestaurants((prevRestaurants) =>
-            prevRestaurants.map((rest) => {
-                if (rest.id === id) {
-                    return { ...rest, priceRange: price };
-                } else {
-                    return rest;
-                }
-            })
-        );
+        const newList = restaurants.map((rest: Restaurant) => {
+            if (rest.id === id) {
+                return { ...rest, priceRange: price };
+            } else {
+                return rest;
+            }
+        });
+        handleChange(newList);
     };
     const handleRestaurantRatingChange = (
         e: React.ChangeEvent<HTMLInputElement>,
@@ -95,13 +94,13 @@ export function UserRestaurants(): JSX.Element {
             }
             return restaurant;
         });
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
     const handleDeleteRestaurant = (id: string) => {
         const updatedRestaurants = restaurants.filter(
             (restaurant) => restaurant.id !== id
         );
-        setRestaurants(updatedRestaurants);
+        handleChange(updatedRestaurants);
     };
 
     //const handleReview =
@@ -109,14 +108,15 @@ export function UserRestaurants(): JSX.Element {
     const handleEditRestaurant = (): void => {
         setEditMode(!editMode);
     };
+
+    const alphabetical = [...restaurants];
+    alphabetical.sort((a, b) => a.name.localeCompare(b.name));
+
+    const highToLow = [...restaurants];
+    highToLow.sort((a, b) => b.averageRating - a.averageRating);
+
     return (
-        <div
-            style={{
-                height: "100vh",
-                overflowY: "scroll",
-                overflowX: "hidden"
-            }}
-        >
+        <div style={{ height: "600px", width: "500px", overflowY: "scroll" }}>
             <Container
                 style={{
                     border: "1px solid #ccc", // Border color
@@ -133,6 +133,9 @@ export function UserRestaurants(): JSX.Element {
                     }}
                 >
                     <div style={{ display: "flex", justifyContent: "center" }}>
+                        <div>
+                            <SortSelector></SortSelector>
+                        </div>
                         <div style={{ flex: 1, textAlign: "center" }}>
                             Restaurant List
                         </div>
@@ -171,326 +174,646 @@ export function UserRestaurants(): JSX.Element {
                     {addMode && editMode && (
                         <AddRestaurant addRestaurant={addRestaurant} />
                     )}
-                    {restaurants.map((restaurant) => (
-                        <Col
-                            key={restaurant.id}
-                            sm={3}
-                            md={6}
-                            lg={6}
-                            style={{
-                                display: "flex",
-                                justifyContent: "center"
-                            }}
-                        >
-                            <Card
-                                className="card-gradient"
-                                style={{
-                                    height:
-                                        menuVisible === restaurant.id ||
-                                        attributesVisible === restaurant.id ||
-                                        editMode
-                                            ? "fit-content"
-                                            : "400px",
-                                    width: "600px",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    marginBottom: "10px"
-                                }}
-                            >
-                                <br></br>
-                                <DragRestaurant
-                                    image={restaurant.image}
-                                    dragItem={{
-                                        type: "RESTAURANT",
-                                        newItem: restaurant.id,
-                                        id: restaurant.id
-                                    }}
-                                    dragItemType="RESTAURANT"
-                                />
-                                <Card.Body>
-                                    {editMode ? (
-                                        <div className="editmode">
-                                            <input
-                                                className="inputedit"
-                                                type="text"
-                                                value={restaurant.name}
-                                                onChange={(e) =>
-                                                    handleRestaurantNameChange(
-                                                        e,
-                                                        restaurant.id
-                                                    )
-                                                }
-                                            />
-                                            <input
-                                                className="inputedit"
-                                                type="text"
-                                                value={restaurant.description}
-                                                onChange={(e) =>
-                                                    handleRestaurantDescriptionChange(
-                                                        e,
-                                                        restaurant.id
-                                                    )
-                                                }
-                                            />
-                                            <input
-                                                className="inputedit"
-                                                type="range"
-                                                step="0.1"
-                                                min="1"
-                                                max="5"
-                                                value={restaurant.averageRating}
-                                                onChange={(e) =>
-                                                    handleRestaurantRatingChange(
-                                                        e,
-                                                        restaurant.id
-                                                    )
-                                                }
-                                            />
-                                            <p style={{ marginTop: "-25px" }}>
-                                                {restaurant.averageRating} ★
-                                            </p>
-                                            <div className="priceButtonGroup">
-                                                <button
-                                                    className={`priceButton ${
-                                                        restaurant.priceRange ===
-                                                        "$"
-                                                            ? "active"
-                                                            : ""
-                                                    }`}
-                                                    onClick={() =>
-                                                        handleRestaurantPriceChange(
-                                                            "$",
-                                                            restaurant.id
-                                                        )
-                                                    }
-                                                >
-                                                    $
-                                                </button>
-                                                <button
-                                                    className={`priceButton ${
-                                                        restaurant.priceRange ===
-                                                        "$$"
-                                                            ? "active"
-                                                            : ""
-                                                    }`}
-                                                    onClick={() =>
-                                                        handleRestaurantPriceChange(
-                                                            "$$",
-                                                            restaurant.id
-                                                        )
-                                                    }
-                                                >
-                                                    $$
-                                                </button>
-                                                <button
-                                                    className={`priceButton ${
-                                                        restaurant.priceRange ===
-                                                        "$$$"
-                                                            ? "active"
-                                                            : ""
-                                                    }`}
-                                                    onClick={() =>
-                                                        handleRestaurantPriceChange(
-                                                            "$$$",
-                                                            restaurant.id
-                                                        )
-                                                    }
-                                                >
-                                                    $$$
-                                                </button>
-                                            </div>
-                                            <br></br>
-                                            {/* Render other editable fields as needed */}
-                                            <Button
-                                                variant="danger"
-                                                onClick={() =>
-                                                    CurrentUser.type == "Critic"
-                                                        ? handleDeleteRestaurant(
+                    {/* {alphabetical.map((restaurant) => ( */}
+                    {CurrentSortStyle.type == "alphabetical"
+                        ? alphabetical.map((restaurant) => (
+                              <Col
+                                  key={restaurant.id}
+                                  sm={3}
+                                  md={6}
+                                  lg={6}
+                                  style={{
+                                      display: "flex",
+                                      justifyContent: "center"
+                                  }}
+                              >
+                                  <Card
+                                      className="card-gradient"
+                                      style={{
+                                          height:
+                                              menuVisible === restaurant.id ||
+                                              attributesVisible ===
+                                                  restaurant.id ||
+                                              editMode
+                                                  ? "fit-content"
+                                                  : "400px",
+                                          width: "600px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          marginBottom: "10px"
+                                      }}
+                                  >
+                                      <br></br>
+                                      <DragRestaurant
+                                          image={restaurant.image}
+                                          dragItem={{
+                                              type: "RESTAURANT",
+                                              newItem: restaurant.id,
+                                              id: restaurant.id
+                                          }}
+                                      />
+                                      <Card.Body>
+                                          {editMode ? (
+                                              <div className="editmode">
+                                                  <input
+                                                      className="inputedit"
+                                                      type="text"
+                                                      value={restaurant.name}
+                                                      onChange={(e) =>
+                                                          handleRestaurantNameChange(
+                                                              e,
                                                               restaurant.id
                                                           )
-                                                        : null
-                                                }
-                                                disabled={
-                                                    CurrentUser.type ===
-                                                    "Manager"
-                                                }
-                                            >
-                                                Delete
-                                            </Button>
-                                        </div>
-                                    ) : (
-                                        <div>
-                                            <Card.Title>
-                                                {restaurant.name}
-                                            </Card.Title>
-                                            {/* Render other attributes as needed */}
-                                            <div>
-                                                <Button
-                                                    variant="info"
-                                                    onClick={() =>
-                                                        handleShowMenu(
-                                                            restaurant.id
-                                                        )
-                                                    }
-                                                >
-                                                    {menuVisible ===
-                                                    restaurant.id
-                                                        ? "Hide Menu"
-                                                        : "Menu"}
-                                                </Button>
-                                                <Button
-                                                    variant="info"
-                                                    onClick={() =>
-                                                        handleShowAttributes(
-                                                            restaurant.id
-                                                        )
-                                                    }
-                                                >
-                                                    {attributesVisible ===
-                                                    restaurant.id
-                                                        ? "Hide Details"
-                                                        : "Details"}
-                                                </Button>
-                                                <div>
-                                                    <Button
-                                                        variant="info"
-                                                        onClick={() =>
-                                                            handleShowRating(
-                                                                restaurant.id
-                                                            )
-                                                        }
-                                                    >
-                                                        {ratingVisible ===
-                                                        restaurant.id
-                                                            ? "Done Rating"
-                                                            : "Rate"}
-                                                    </Button>
-                                                </div>
-                                                <div
-                                                    style={{
-                                                        display:
-                                                            attributesVisible ===
-                                                            restaurant.id
-                                                                ? "block"
-                                                                : "none"
-                                                    }}
-                                                >
-                                                    <Card.Text>
-                                                        <div className="card-details">
-                                                            <div
-                                                                style={{
-                                                                    height: "auto"
-                                                                }}
-                                                            >
-                                                                <p
-                                                                    style={{
-                                                                        display:
-                                                                            "inline"
-                                                                    }}
-                                                                >
-                                                                    For a{" "}
-                                                                </p>
-                                                                <p
-                                                                    className="card-dining-experience"
-                                                                    style={{
-                                                                        display:
-                                                                            "inline"
-                                                                    }}
-                                                                >
-                                                                    {
-                                                                        restaurant.diningExperience
-                                                                    }
-                                                                </p>
-                                                                <p
-                                                                    style={{
-                                                                        display:
-                                                                            "inline"
-                                                                    }}
-                                                                >
-                                                                    {" "}
-                                                                    dining
-                                                                    experience
-                                                                </p>
-                                                            </div>
-                                                            <p className="card-description">
-                                                                {
-                                                                    restaurant.description
-                                                                }
-                                                            </p>
-                                                            <div className="card-rating-price">
-                                                                <div className="priceButtonGroup">
-                                                                    <button className="priceButton active">
-                                                                        {
-                                                                            restaurant.priceRange
-                                                                        }
-                                                                    </button>
-                                                                </div>
-                                                                <StarRating
-                                                                    rating={
-                                                                        restaurant.averageRating
-                                                                    }
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </Card.Text>
-                                                </div>
-                                                <div
-                                                    style={{
-                                                        display:
-                                                            menuVisible ===
-                                                            restaurant.id
-                                                                ? "block"
-                                                                : "none"
-                                                    }}
-                                                >
-                                                    <p className="menu-text">
-                                                        Menu
-                                                    </p>
-                                                    <div
-                                                        style={{
-                                                            height: "200px",
-                                                            overflowY: "scroll",
-                                                            overflowX: "hidden"
-                                                        }}
-                                                    >
-                                                        <ul>
-                                                            {restaurant.menu.map(
-                                                                (menuItem) => (
-                                                                    <li
-                                                                        key={
-                                                                            menuItem.name
-                                                                        }
-                                                                    >
-                                                                        <p className="menu-name">
-                                                                            {
-                                                                                menuItem.name
-                                                                            }{" "}
-                                                                            -{" "}
-                                                                            <span className="menu-price">
-                                                                                {
-                                                                                    menuItem.price
-                                                                                }
-                                                                            </span>
-                                                                        </p>
-                                                                        <p className="menu-description">
-                                                                            {
-                                                                                menuItem.description
-                                                                            }
-                                                                        </p>
-                                                                    </li>
+                                                      }
+                                                  />
+                                                  <input
+                                                      className="inputedit"
+                                                      type="text"
+                                                      value={
+                                                          restaurant.description
+                                                      }
+                                                      onChange={(e) =>
+                                                          handleRestaurantDescriptionChange(
+                                                              e,
+                                                              restaurant.id
+                                                          )
+                                                      }
+                                                  />
+                                                  <input
+                                                      className="inputedit"
+                                                      type="range"
+                                                      step="0.1"
+                                                      min="1"
+                                                      max="5"
+                                                      value={
+                                                          restaurant.averageRating
+                                                      }
+                                                      onChange={(e) =>
+                                                          handleRestaurantRatingChange(
+                                                              e,
+                                                              restaurant.id
+                                                          )
+                                                      }
+                                                  />
+                                                  <p
+                                                      style={{
+                                                          marginTop: "-25px"
+                                                      }}
+                                                  >
+                                                      {restaurant.averageRating}{" "}
+                                                      ★
+                                                  </p>
+                                                  <div className="priceButtonGroup">
+                                                      <button
+                                                          className={`priceButton ${
+                                                              restaurant.priceRange ===
+                                                              "$"
+                                                                  ? "active"
+                                                                  : ""
+                                                          }`}
+                                                          onClick={() =>
+                                                              handleRestaurantPriceChange(
+                                                                  "$",
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          $
+                                                      </button>
+                                                      <button
+                                                          className={`priceButton ${
+                                                              restaurant.priceRange ===
+                                                              "$$"
+                                                                  ? "active"
+                                                                  : ""
+                                                          }`}
+                                                          onClick={() =>
+                                                              handleRestaurantPriceChange(
+                                                                  "$$",
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          $$
+                                                      </button>
+                                                      <button
+                                                          className={`priceButton ${
+                                                              restaurant.priceRange ===
+                                                              "$$$"
+                                                                  ? "active"
+                                                                  : ""
+                                                          }`}
+                                                          onClick={() =>
+                                                              handleRestaurantPriceChange(
+                                                                  "$$$",
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          $$$
+                                                      </button>
+                                                  </div>
+                                                  <br></br>
+                                                  {/* Render other editable fields as needed */}
+                                                  <Button
+                                                      variant="danger"
+                                                      onClick={() =>
+                                                          CurrentUser.type ==
+                                                          "Critic"
+                                                              ? handleDeleteRestaurant(
+                                                                    restaurant.id
                                                                 )
-                                                            )}
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )}
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))}
+                                                              : null
+                                                      }
+                                                      disabled={
+                                                          CurrentUser.type ===
+                                                          "Manager"
+                                                      }
+                                                  >
+                                                      Delete
+                                                  </Button>
+                                              </div>
+                                          ) : (
+                                              <div>
+                                                  <Card.Title>
+                                                      {restaurant.name}
+                                                  </Card.Title>
+                                                  {/* Render other attributes as needed */}
+                                                  <div>
+                                                      <Button
+                                                          variant="info"
+                                                          onClick={() =>
+                                                              handleShowMenu(
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          {menuVisible ===
+                                                          restaurant.id
+                                                              ? "Hide Menu"
+                                                              : "Menu"}
+                                                      </Button>
+                                                      <Button
+                                                          variant="info"
+                                                          onClick={() =>
+                                                              handleShowAttributes(
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          {attributesVisible ===
+                                                          restaurant.id
+                                                              ? "Hide Details"
+                                                              : "Details"}
+                                                      </Button>
+                                                      <div
+                                                          style={{
+                                                              display:
+                                                                  attributesVisible ===
+                                                                  restaurant.id
+                                                                      ? "block"
+                                                                      : "none"
+                                                          }}
+                                                      >
+                                                          <Card.Text>
+                                                              <div className="card-details">
+                                                                  <div
+                                                                      style={{
+                                                                          height: "auto"
+                                                                      }}
+                                                                  >
+                                                                      <p
+                                                                          style={{
+                                                                              display:
+                                                                                  "inline"
+                                                                          }}
+                                                                      >
+                                                                          For a{" "}
+                                                                      </p>
+                                                                      <p
+                                                                          className="card-dining-experience"
+                                                                          style={{
+                                                                              display:
+                                                                                  "inline"
+                                                                          }}
+                                                                      >
+                                                                          {
+                                                                              restaurant.diningExperience
+                                                                          }
+                                                                      </p>
+                                                                      <p
+                                                                          style={{
+                                                                              display:
+                                                                                  "inline"
+                                                                          }}
+                                                                      >
+                                                                          {" "}
+                                                                          dining
+                                                                          experience
+                                                                      </p>
+                                                                  </div>
+                                                                  <p className="card-description">
+                                                                      {
+                                                                          restaurant.description
+                                                                      }
+                                                                  </p>
+                                                                  <div className="card-rating-price">
+                                                                      <div className="priceButtonGroup">
+                                                                          <button className="priceButton active">
+                                                                              {
+                                                                                  restaurant.priceRange
+                                                                              }
+                                                                          </button>
+                                                                      </div>
+                                                                      <StarRating
+                                                                          rating={
+                                                                              restaurant.averageRating
+                                                                          }
+                                                                      />
+                                                                  </div>
+                                                              </div>
+                                                          </Card.Text>
+                                                      </div>
+                                                      <div
+                                                          style={{
+                                                              display:
+                                                                  menuVisible ===
+                                                                  restaurant.id
+                                                                      ? "block"
+                                                                      : "none"
+                                                          }}
+                                                      >
+                                                          <p className="menu-text">
+                                                              Menu
+                                                          </p>
+                                                          <div
+                                                              style={{
+                                                                  height: "200px",
+                                                                  overflowY:
+                                                                      "scroll",
+                                                                  overflowX:
+                                                                      "hidden"
+                                                              }}
+                                                          >
+                                                              <ul>
+                                                                  {restaurant.menu.map(
+                                                                      (
+                                                                          menuItem
+                                                                      ) => (
+                                                                          <li
+                                                                              key={
+                                                                                  menuItem.name
+                                                                              }
+                                                                          >
+                                                                              <p className="menu-name">
+                                                                                  {
+                                                                                      menuItem.name
+                                                                                  }{" "}
+                                                                                  -{" "}
+                                                                                  <span className="menu-price">
+                                                                                      {
+                                                                                          menuItem.price
+                                                                                      }
+                                                                                  </span>
+                                                                              </p>
+                                                                              <p className="menu-description">
+                                                                                  {
+                                                                                      menuItem.description
+                                                                                  }
+                                                                              </p>
+                                                                          </li>
+                                                                      )
+                                                                  )}
+                                                              </ul>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          )}
+                                      </Card.Body>
+                                  </Card>
+                              </Col>
+                          ))
+                        : highToLow.map((restaurant) => (
+                              <Col
+                                  key={restaurant.id}
+                                  sm={3}
+                                  md={6}
+                                  lg={6}
+                                  style={{
+                                      display: "flex",
+                                      justifyContent: "center"
+                                  }}
+                              >
+                                  <Card
+                                      className="card-gradient"
+                                      style={{
+                                          height:
+                                              menuVisible === restaurant.id ||
+                                              attributesVisible ===
+                                                  restaurant.id ||
+                                              editMode
+                                                  ? "fit-content"
+                                                  : "400px",
+                                          width: "600px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          marginBottom: "10px"
+                                      }}
+                                  >
+                                      <br></br>
+                                      <DragRestaurant
+                                          image={restaurant.image}
+                                          dragItem={{
+                                              type: "RESTAURANT",
+                                              newItem: restaurant.id,
+                                              id: restaurant.id
+                                          }}
+                                      />
+                                      <Card.Body>
+                                          {editMode ? (
+                                              <div className="editmode">
+                                                  <input
+                                                      className="inputedit"
+                                                      type="text"
+                                                      value={restaurant.name}
+                                                      onChange={(e) =>
+                                                          handleRestaurantNameChange(
+                                                              e,
+                                                              restaurant.id
+                                                          )
+                                                      }
+                                                  />
+                                                  <input
+                                                      className="inputedit"
+                                                      type="text"
+                                                      value={
+                                                          restaurant.description
+                                                      }
+                                                      onChange={(e) =>
+                                                          handleRestaurantDescriptionChange(
+                                                              e,
+                                                              restaurant.id
+                                                          )
+                                                      }
+                                                  />
+                                                  <input
+                                                      className="inputedit"
+                                                      type="range"
+                                                      step="0.1"
+                                                      min="1"
+                                                      max="5"
+                                                      value={
+                                                          restaurant.averageRating
+                                                      }
+                                                      onChange={(e) =>
+                                                          handleRestaurantRatingChange(
+                                                              e,
+                                                              restaurant.id
+                                                          )
+                                                      }
+                                                  />
+                                                  <p
+                                                      style={{
+                                                          marginTop: "-25px"
+                                                      }}
+                                                  >
+                                                      {restaurant.averageRating}{" "}
+                                                      ★
+                                                  </p>
+                                                  <div className="priceButtonGroup">
+                                                      <button
+                                                          className={`priceButton ${
+                                                              restaurant.priceRange ===
+                                                              "$"
+                                                                  ? "active"
+                                                                  : ""
+                                                          }`}
+                                                          onClick={() =>
+                                                              handleRestaurantPriceChange(
+                                                                  "$",
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          $
+                                                      </button>
+                                                      <button
+                                                          className={`priceButton ${
+                                                              restaurant.priceRange ===
+                                                              "$$"
+                                                                  ? "active"
+                                                                  : ""
+                                                          }`}
+                                                          onClick={() =>
+                                                              handleRestaurantPriceChange(
+                                                                  "$$",
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          $$
+                                                      </button>
+                                                      <button
+                                                          className={`priceButton ${
+                                                              restaurant.priceRange ===
+                                                              "$$$"
+                                                                  ? "active"
+                                                                  : ""
+                                                          }`}
+                                                          onClick={() =>
+                                                              handleRestaurantPriceChange(
+                                                                  "$$$",
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          $$$
+                                                      </button>
+                                                  </div>
+                                                  <br></br>
+                                                  {/* Render other editable fields as needed */}
+                                                  <Button
+                                                      variant="danger"
+                                                      onClick={() =>
+                                                          CurrentUser.type ==
+                                                          "Critic"
+                                                              ? handleDeleteRestaurant(
+                                                                    restaurant.id
+                                                                )
+                                                              : null
+                                                      }
+                                                      disabled={
+                                                          CurrentUser.type ===
+                                                          "Manager"
+                                                      }
+                                                  >
+                                                      Delete
+                                                  </Button>
+                                              </div>
+                                          ) : (
+                                              <div>
+                                                  <Card.Title>
+                                                      {restaurant.name}
+                                                  </Card.Title>
+                                                  {/* Render other attributes as needed */}
+                                                  <div>
+                                                      <Button
+                                                          variant="info"
+                                                          onClick={() =>
+                                                              handleShowMenu(
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          {menuVisible ===
+                                                          restaurant.id
+                                                              ? "Hide Menu"
+                                                              : "Menu"}
+                                                      </Button>
+                                                      <Button
+                                                          variant="info"
+                                                          onClick={() =>
+                                                              handleShowAttributes(
+                                                                  restaurant.id
+                                                              )
+                                                          }
+                                                      >
+                                                          {attributesVisible ===
+                                                          restaurant.id
+                                                              ? "Hide Details"
+                                                              : "Details"}
+                                                      </Button>
+                                                      <div
+                                                          style={{
+                                                              display:
+                                                                  attributesVisible ===
+                                                                  restaurant.id
+                                                                      ? "block"
+                                                                      : "none"
+                                                          }}
+                                                      >
+                                                          <Card.Text>
+                                                              <div className="card-details">
+                                                                  <div
+                                                                      style={{
+                                                                          height: "auto"
+                                                                      }}
+                                                                  >
+                                                                      <p
+                                                                          style={{
+                                                                              display:
+                                                                                  "inline"
+                                                                          }}
+                                                                      >
+                                                                          For a{" "}
+                                                                      </p>
+                                                                      <p
+                                                                          className="card-dining-experience"
+                                                                          style={{
+                                                                              display:
+                                                                                  "inline"
+                                                                          }}
+                                                                      >
+                                                                          {
+                                                                              restaurant.diningExperience
+                                                                          }
+                                                                      </p>
+                                                                      <p
+                                                                          style={{
+                                                                              display:
+                                                                                  "inline"
+                                                                          }}
+                                                                      >
+                                                                          {" "}
+                                                                          dining
+                                                                          experience
+                                                                      </p>
+                                                                  </div>
+                                                                  <p className="card-description">
+                                                                      {
+                                                                          restaurant.description
+                                                                      }
+                                                                  </p>
+                                                                  <div className="card-rating-price">
+                                                                      <div className="priceButtonGroup">
+                                                                          <button className="priceButton active">
+                                                                              {
+                                                                                  restaurant.priceRange
+                                                                              }
+                                                                          </button>
+                                                                      </div>
+                                                                      <StarRating
+                                                                          rating={
+                                                                              restaurant.averageRating
+                                                                          }
+                                                                      />
+                                                                  </div>
+                                                              </div>
+                                                          </Card.Text>
+                                                      </div>
+                                                      <div
+                                                          style={{
+                                                              display:
+                                                                  menuVisible ===
+                                                                  restaurant.id
+                                                                      ? "block"
+                                                                      : "none"
+                                                          }}
+                                                      >
+                                                          <p className="menu-text">
+                                                              Menu
+                                                          </p>
+                                                          <div
+                                                              style={{
+                                                                  height: "200px",
+                                                                  overflowY:
+                                                                      "scroll",
+                                                                  overflowX:
+                                                                      "hidden"
+                                                              }}
+                                                          >
+                                                              <ul>
+                                                                  {restaurant.menu.map(
+                                                                      (
+                                                                          menuItem
+                                                                      ) => (
+                                                                          <li
+                                                                              key={
+                                                                                  menuItem.name
+                                                                              }
+                                                                          >
+                                                                              <p className="menu-name">
+                                                                                  {
+                                                                                      menuItem.name
+                                                                                  }{" "}
+                                                                                  -{" "}
+                                                                                  <span className="menu-price">
+                                                                                      {
+                                                                                          menuItem.price
+                                                                                      }
+                                                                                  </span>
+                                                                              </p>
+                                                                              <p className="menu-description">
+                                                                                  {
+                                                                                      menuItem.description
+                                                                                  }
+                                                                              </p>
+                                                                          </li>
+                                                                      )
+                                                                  )}
+                                                              </ul>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          )}
+                                      </Card.Body>
+                                  </Card>
+                              </Col>
+                          ))}
                 </Row>
             </Container>
         </div>

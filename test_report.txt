@@ -898,7 +898,7 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   65.04 |     3.25 |    8.39 |   65.78 |                   
+All files               |   65.04 |      3.2 |    8.39 |   65.78 |                   
  src                    |   29.41 |        0 |       0 |   29.41 |                   
   App.tsx               |       0 |        0 |       0 |       0 | 17-36             
   CurrentSort.tsx       |     100 |      100 |     100 |     100 |                   
@@ -925,5 +925,5 @@ All files               |   65.04 |     3.25 |    8.39 |   65.78 |
 Test Suites: 6 failed, 3 passed, 9 total
 Tests:       5 failed, 9 passed, 14 total
 Snapshots:   0 total
-Time:        7.949 s
+Time:        9.631 s
 Ran all test suites.

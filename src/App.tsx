@@ -7,18 +7,10 @@ import RestaurantBucket from "./Components/RestaurantBucket";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import FixedHeader from "./Components/FixedHeader";
-import SearchBar from "./Components/SearchBar";
-import Restaurant from "./Components/RestaurantList";
 
 function App() {
     return (
         <DndProvider backend={HTML5Backend}>
-            <div className="App">
-                <SearchBar
-                    placeholder="Do we have your restaurant?"
-                    data={Restaurant}
-                />
-            </div>
             <div className="App">
                 <FixedHeader></FixedHeader>
                 <div className="App">

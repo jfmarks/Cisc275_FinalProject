@@ -68,12 +68,21 @@ function App() {
                                 ></UserRestaurants>
                             </Col>
                             <Col style={{ width: "300px" }} lg={6}>
-                                <h1>Manager List</h1>
-                                <ManagerBucket
-                                    user={user}
-                                    acceptingUserOfType="Manager"
-                                    makeChanges={makeChanges}
-                                ></ManagerBucket>
+                                <div
+                                    style={{
+                                        visibility:
+                                            user.type == "Manager"
+                                                ? "visible"
+                                                : "hidden"
+                                    }}
+                                >
+                                    <h1>Manager List</h1>
+                                    <ManagerBucket
+                                        user={user}
+                                        acceptingUserOfType="Manager"
+                                        makeChanges={makeChanges}
+                                    ></ManagerBucket>
+                                </div>
                             </Col>
                         </Row>
                     </Container>

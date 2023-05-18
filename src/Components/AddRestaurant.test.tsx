@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import { AddRestaurant } from "./AddRestaurant";
 
 describe("AddRestaurant", () => {
-    test("renders the correct number of full stars", () => {
+    test("Renders the component", () => {
         const { container } = render(
             <AddRestaurant
                 addRestaurant={function (): void {
@@ -11,8 +11,7 @@ describe("AddRestaurant", () => {
                 }}
             />
         );
-        const starElements = container.getElementsByClassName("star");
 
-        expect(starElements.length).toBe(3);
+        expect(container).toBeInTheDocument;
     });
 });

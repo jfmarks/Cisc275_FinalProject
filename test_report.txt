@@ -946,7 +946,7 @@ All files              |   78.92 |     6.45 |   15.49 |      79 |
   RestaurantList.ts    |     100 |      100 |     100 |     100 |                   
   ReviewDisplay.tsx    |     100 |      100 |     100 |     100 |                   
   UserList.tsx         |   28.57 |      100 |      20 |   28.57 | 20-43             
-  UserRestaurants.tsx  |   14.51 |        0 |    9.37 |   14.51 | 35-432            
+  UserRestaurants.tsx  |   14.51 |        0 |    9.37 |   14.51 | 35-435            
   UserSelector.tsx     |       0 |      100 |       0 |       0 | 4-13              
   displayRating.tsx    |     100 |      100 |     100 |     100 |                   
  src/Menus             |     100 |      100 |     100 |     100 |                   
@@ -955,5 +955,5 @@ All files              |   78.92 |     6.45 |   15.49 |      79 |
 Test Suites: 8 failed, 1 passed, 9 total
 Tests:       7 failed, 7 passed, 14 total
 Snapshots:   0 total
-Time:        6.991 s
+Time:        7.56 s
 Ran all test suites.

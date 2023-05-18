@@ -4,14 +4,12 @@ import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
 import SearchBar from "./SearchBar";
 import Restaurant from "./RestaurantList";
-import { CurrUser } from "../Interfaces";
 
 interface userProp {
-    user: CurrUser;
     handleUserChange: (newUser: number) => void;
 }
 
-const FixedHeader = ({ user, handleUserChange }: userProp) => {
+const FixedHeader = ({ handleUserChange }: userProp) => {
     return (
         <header className="App-Fixed-Header">
             <Button

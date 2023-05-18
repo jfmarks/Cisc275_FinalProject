@@ -9,6 +9,7 @@ import "../RestaurantStyle.css";
 import DragRestaurant from "./RestaurantDrag";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import StarRating from "./displayRating";
+import SortSelector from "./SortStyleSelector";
 
 interface RestaurantBucketProps {
     restaurants: Restaurant[];
@@ -107,7 +108,9 @@ export function UserRestaurants({
         setEditMode(!editMode);
     };
 
-    const sorted = restaurants.sort((a, b) => a.name.localeCompare(b.name));
+    const alphabetical = restaurants.sort((a, b) =>
+        a.name.localeCompare(b.name)
+    );
 
     return (
         <div style={{ height: "600px", width: "500px", overflowY: "scroll" }}>
@@ -128,11 +131,7 @@ export function UserRestaurants({
                 >
                     <div style={{ display: "flex", justifyContent: "center" }}>
                         <div>
-                            <select>
-                                <option>A-Z</option>
-                                <option>Rating Low-High</option>
-                                <option>Rating High-Low</option>
-                            </select>
+                            <SortSelector></SortSelector>
                         </div>
                         <div style={{ flex: 1, textAlign: "center" }}>
                             Restaurant List
@@ -172,7 +171,7 @@ export function UserRestaurants({
                     {addMode && editMode && (
                         <AddRestaurant addRestaurant={addRestaurant} />
                     )}
-                    {sorted.map((restaurant) => (
+                    {alphabetical.map((restaurant) => (
                         <Col
                             key={restaurant.id}
                             sm={3}

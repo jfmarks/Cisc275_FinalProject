@@ -6,11 +6,13 @@ import "../RestaurantStyle.css";
 export default function ReviewDisplayElement({
     id,
     restaurants,
-    handleChange
+    handleChange,
+    handleRemove
 }: {
     id: string;
     restaurants: Restaurant[];
     handleChange: (listR: Restaurant[]) => void;
+    handleRemove: (ID: string) => void;
 }): JSX.Element {
     const [review, setNewReview] = useState("");
     const [rating, setNewRating] = useState(0);
@@ -56,8 +58,19 @@ export default function ReviewDisplayElement({
                 />
                 <div className="slider-value">{rating.toFixed(1)} ★</div>
             </Form.Group>
-            <Button variant="primary" onClick={handleAddReview}>
+            <Button
+                style={{ marginRight: "5px" }}
+                variant="primary"
+                onClick={handleAddReview}
+            >
                 Add Review
+            </Button>
+            <Button
+                style={{ marginLeft: "5px" }}
+                variant="primary"
+                onClick={() => handleRemove(id)}
+            >
+                Remove
             </Button>
         </Form>
     );

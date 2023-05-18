@@ -28,6 +28,17 @@ export default function ManagerBucket({
             setIDs([...itemIDs, newItemID as unknown as number]);
         }
     };
+    const handleEdit = (editedR: Restaurant) => {
+        const updatedRestaurants = items.filter(
+            (restaurant) => restaurant.id !== editedR.id
+        );
+        const updatedIDs = itemIDs.filter(
+            (id) => id !== (editedR.id as unknown as number)
+        );
+        setIDs(updatedIDs);
+        setItems(updatedRestaurants);
+        makeChanges(editedR);
+    };
 
     const handleRestaurantNameChange = (
         e: React.ChangeEvent<HTMLInputElement>,
@@ -192,8 +203,8 @@ export default function ManagerBucket({
                                 >
                                     $$$
                                 </Button>
-                                <Button onClick={() => makeChanges(item)}>
-                                    save
+                                <Button onClick={() => handleEdit(item)}>
+                                    Done
                                 </Button>
                             </div>
                         </div>

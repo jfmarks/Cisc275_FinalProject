@@ -17,14 +17,25 @@ export default function RestaurantBucket({
     acceptingUserOfType
 }: bucketProp): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
+    const [curID, setID] = useState<number>(0);
     function handleChange(listR: Restaurant[]) {
         setItems(listR);
     }
     const handleAddRestaurant = (newItemID: string) => {
-        const newItem: Restaurant = RestaurantList.find(
-            (restaurant) => restaurant.id === newItemID
-        ) as Restaurant;
+        const newItem: Restaurant = {
+            ...(RestaurantList.find(
+                (restaurant) => restaurant.id === newItemID
+            ) as Restaurant),
+            id: curID as unknown as string
+        };
         setItems((items) => [...items, newItem as Restaurant]);
+        setID(curID + 1);
+    };
+    const handleRemove = (id: string) => {
+        const updatedRestaurants = items.filter(
+            (restaurant) => restaurant.id !== id
+        );
+        setItems(updatedRestaurants);
     };
 
     const [{ isOver }, drop] = useDrop({
@@ -53,7 +64,7 @@ export default function RestaurantBucket({
         >
             Insert Restaurants here:
             {items.map((item) => (
-                <div key={item.id}>
+                <div key={item.id} style={{ minHeight: "300px" }}>
                     <Card.Img
                         key={item.id}
                         src={item.image}
@@ -65,6 +76,7 @@ export default function RestaurantBucket({
                             id={item.id}
                             restaurants={items}
                             handleChange={handleChange}
+                            handleRemove={handleRemove}
                         ></AddReview>
                         <ReviewDisplayElement
                             restaurant={item}

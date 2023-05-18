@@ -11,6 +11,9 @@ describe("AddReview", () => {
                 handleChange={function (): void {
                     throw new Error("Function not implemented.");
                 }}
+                handleRemove={function (): void {
+                    throw new Error("Function not implemented.");
+                }}
             />
         );
         const starElements = container.getElementsByClassName("star");

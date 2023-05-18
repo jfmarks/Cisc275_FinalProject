@@ -15,7 +15,7 @@ function App() {
         <DndProvider backend={HTML5Backend}>
             <div className="App">
                 <SearchBar
-                    placeholder="Enter a Restaurant Name..."
+                    placeholder="Do we have your restaurant?"
                     data={Restaurant}
                 />
             </div>

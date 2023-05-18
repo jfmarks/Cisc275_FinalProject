@@ -932,20 +932,21 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   75.56 |     4.59 |   12.79 |    75.9 |                   
+All files               |   74.16 |     4.39 |   12.22 |   74.48 |                   
  src                    |      40 |      100 |       0 |      40 |                   
   App.tsx               |       0 |      100 |       0 |       0 | 13-17             
   CurrentSort.tsx       |     100 |      100 |     100 |     100 |                   
   CurrentUser.tsx       |     100 |      100 |     100 |     100 |                   
   Interfaces.ts         |       0 |        0 |       0 |       0 |                   
- src/Components         |   43.49 |     4.59 |   13.09 |   43.57 |                   
+ src/Components         |   41.63 |     4.39 |    12.5 |   41.66 |                   
   AddRestaurant.tsx     |   33.33 |      100 |    9.09 |   33.33 | 19-37,52-153      
   AddReview.tsx         |   46.15 |        0 |      20 |   46.15 | 18,21-22,27-34,45 
-  FixedHeader.tsx       |       0 |      100 |       0 |       0 | 6-7               
+  FixedHeader.tsx       |       0 |      100 |       0 |       0 | 8-9               
   RestaurantBucket.tsx  |      25 |        0 |    12.5 |   27.27 | 13,16-19,25-45    
   RestaurantDrag.tsx    |      50 |        0 |   66.66 |      50 | 17-23             
   RestaurantList.ts     |     100 |      100 |     100 |     100 |                   
   ReviewDisplay.tsx     |     100 |      100 |     100 |     100 |                   
+  SearchBar.tsx         |       0 |        0 |       0 |       0 | 14-40             
   SortStyleSelector.tsx |   14.28 |      100 |       0 |   14.28 | 5-13              
   UserList.tsx          |   28.57 |      100 |      20 |   28.57 | 20-43             
   UserRestaurants.tsx   |   11.39 |        0 |    6.66 |   11.68 | 37-783            
@@ -957,5 +958,5 @@ All files               |   75.56 |     4.59 |   12.79 |    75.9 |
 Test Suites: 8 failed, 1 passed, 9 total
 Tests:       7 failed, 7 passed, 14 total
 Snapshots:   0 total
-Time:        7.009 s
+Time:        9.369 s
 Ran all test suites.

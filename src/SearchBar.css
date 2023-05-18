@@ -51,7 +51,3 @@ a {
 a:hover {
     background-color: green;
 }
-
-#clearBtn {
-    cursor: pointer;
-}

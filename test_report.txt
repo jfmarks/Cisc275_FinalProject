@@ -157,24 +157,7 @@ PASS src/Components/displayRating.test.tsx
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
       at Object.<anonymous> (src/Components/displayRating.test.tsx:47:37)
 
-FAIL src/Components/ReviewDisplay.test.tsx
-  ● ReviewDisplay › ReviewDisplay renders correctly
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: 2.7
-    Received: 0
-
-      24 |         const starElements = container.getElementsByClassName("averageRating");
-      25 |
-    > 26 |         expect(starElements.length).toBe(2.7);
-         |                                     ^
-      27 |     });
-      28 | });
-      29 |
-
-      at Object.<anonymous> (src/Components/ReviewDisplay.test.tsx:26:37)
-
+PASS src/Components/ReviewDisplay.test.tsx
 FAIL src/Components/UserRestaurants.test.tsx
   ● Console
 
@@ -629,24 +612,6 @@ FAIL src/Components/RestaurantDrag.test.tsx
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
       at Object.<anonymous> (src/Components/RestaurantDrag.test.tsx:14:37)
 
-FAIL src/Components/AddRestaurant.test.tsx
-  ● AddRestaurant › renders the correct number of full stars
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: 3
-    Received: 0
-
-      14 |         const starElements = container.getElementsByClassName("star");
-      15 |
-    > 16 |         expect(starElements.length).toBe(3);
-         |                                     ^
-      17 |     });
-      18 | });
-      19 |
-
-      at Object.<anonymous> (src/Components/AddRestaurant.test.tsx:16:37)
-
 FAIL src/Components/RestaurantBucket.test.tsx
   ● Console
 
@@ -864,6 +829,7 @@ FAIL src/Components/RestaurantBucket.test.tsx
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
       at Object.<anonymous> (src/Components/RestaurantBucket.test.tsx:8:37)
 
+PASS src/Components/AddRestaurant.test.tsx
 FAIL src/Components/UserList.test.tsx
   ● UserList › renders the correct number of full stars
 
@@ -955,8 +921,8 @@ All files               |   73.76 |     4.39 |   11.82 |   74.07 |
  src/Menus              |     100 |      100 |     100 |     100 |                   
   Menus.tsx             |     100 |      100 |     100 |     100 |                   
 ------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 8 failed, 1 passed, 9 total
-Tests:       7 failed, 7 passed, 14 total
+Test Suites: 6 failed, 3 passed, 9 total
+Tests:       5 failed, 9 passed, 14 total
 Snapshots:   0 total
-Time:        7.347 s
+Time:        9.095 s
 Ran all test suites.

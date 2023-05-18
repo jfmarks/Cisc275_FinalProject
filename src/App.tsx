@@ -11,6 +11,7 @@ import { CurrUser, Restaurant } from "./Interfaces";
 import userList from "./CurrentUser";
 import SearchBar from "./Components/SearchBar";
 import restaurant from "./Components/RestaurantList";
+import ManagerBucket from "./Components/ManagerBucket";
 
 function App() {
     const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
@@ -21,6 +22,16 @@ function App() {
 
     const handleUserChange = (newUser: number) => {
         setUser(userList[newUser]);
+    };
+    const makeChanges = (changedR: Restaurant) => {
+        const updatedRestaurants = restaurants.map((restaurant: Restaurant) => {
+            if (restaurant.id === changedR.id) {
+                return changedR;
+            } else {
+                return restaurant;
+            }
+        });
+        setRestaurants(updatedRestaurants as Restaurant[]);
     };
     return (
         <DndProvider backend={HTML5Backend}>
@@ -58,10 +69,11 @@ function App() {
                             </Col>
                             <Col style={{ width: "300px" }} lg={6}>
                                 <h1>Manager List</h1>
-                                <RestaurantBucket
+                                <ManagerBucket
                                     user={user}
                                     acceptingUserOfType="Manager"
-                                ></RestaurantBucket>
+                                    makeChanges={makeChanges}
+                                ></ManagerBucket>
                             </Col>
                         </Row>
                     </Container>

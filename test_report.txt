@@ -235,12 +235,12 @@ FAIL src/Components/UserRestaurants.test.tsx
           at runTestInternal (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:389:16)
           at runTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:475:34) Error: Function not implemented.
           at handleChange (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:11:27)
-          at fetchRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:30:9)
-          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:33:9
+          at fetchRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:31:9)
+          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:34:9
           at mountState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:15626:20)
           at Object.useState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:16248:16)
           at useState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react/cjs/react.development.js:1508:21)
-          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:32:13)
+          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:33:13)
           at renderWithHooks (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:14985:18)
           at mountIndeterminateComponent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:17811:13)
           at beginWork (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:19049:16)
@@ -319,7 +319,7 @@ FAIL src/Components/UserRestaurants.test.tsx
     console.error
       The above error occurred in the <UserRestaurants> component:
       
-          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:18:5)
+          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:19:5)
       
       Consider adding an error boundary to your tree to customize error handling behavior.
       Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -377,12 +377,12 @@ FAIL src/Components/UserRestaurants.test.tsx
       14 |         );
 
       at handleChange (src/Components/UserRestaurants.test.tsx:11:27)
-      at fetchRestaurants (src/Components/UserRestaurants.tsx:30:9)
-      at src/Components/UserRestaurants.tsx:33:9
+      at fetchRestaurants (src/Components/UserRestaurants.tsx:31:9)
+      at src/Components/UserRestaurants.tsx:34:9
       at mountState (node_modules/react-dom/cjs/react-dom.development.js:15626:20)
       at Object.useState (node_modules/react-dom/cjs/react-dom.development.js:16248:16)
       at useState (node_modules/react/cjs/react.development.js:1508:21)
-      at UserRestaurants (src/Components/UserRestaurants.tsx:32:13)
+      at UserRestaurants (src/Components/UserRestaurants.tsx:33:13)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17811:13)
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19049:16)
@@ -929,31 +929,33 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |   78.92 |     6.45 |   15.49 |      79 |                   
- src                   |      25 |      100 |       0 |      25 |                   
-  App.tsx              |       0 |      100 |       0 |       0 | 13-17             
-  CurrentUser.tsx      |     100 |      100 |     100 |     100 |                   
-  Interfaces.ts        |       0 |        0 |       0 |       0 |                   
- src/Components        |   48.24 |     6.45 |   15.94 |   47.95 |                   
-  AddRestaurant.tsx    |   33.33 |      100 |    9.09 |   33.33 | 19-37,52-153      
-  AddReview.tsx        |   46.15 |        0 |      20 |   46.15 | 18,21-22,27-34,45 
-  FixedHeader.tsx      |       0 |      100 |       0 |       0 | 6-7               
-  RestaurantBucket.tsx |      25 |        0 |    12.5 |   27.27 | 13,16-19,25-45    
-  RestaurantDrag.tsx   |      50 |        0 |   66.66 |      50 | 17-23             
-  RestaurantList.ts    |     100 |      100 |     100 |     100 |                   
-  ReviewDisplay.tsx    |     100 |      100 |     100 |     100 |                   
-  UserList.tsx         |   28.57 |      100 |      20 |   28.57 | 20-43             
-  UserRestaurants.tsx  |   14.51 |        0 |    9.37 |   14.51 | 35-435            
-  UserSelector.tsx     |       0 |      100 |       0 |       0 | 4-13              
-  displayRating.tsx    |     100 |      100 |     100 |     100 |                   
- src/Menus             |     100 |      100 |     100 |     100 |                   
-  Menus.tsx            |     100 |      100 |     100 |     100 |                   
------------------------|---------|----------|---------|---------|-------------------
+------------------------|---------|----------|---------|---------|-------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------|---------|----------|---------|---------|-------------------
+All files               |   77.77 |     6.45 |   14.86 |   77.84 |                   
+ src                    |      40 |      100 |       0 |      40 |                   
+  App.tsx               |       0 |      100 |       0 |       0 | 13-17             
+  CurrentSort.tsx       |     100 |      100 |     100 |     100 |                   
+  CurrentUser.tsx       |     100 |      100 |     100 |     100 |                   
+  Interfaces.ts         |       0 |        0 |       0 |       0 |                   
+ src/Components         |   46.63 |     6.45 |   15.27 |   46.34 |                   
+  AddRestaurant.tsx     |   33.33 |      100 |    9.09 |   33.33 | 19-37,52-153      
+  AddReview.tsx         |   46.15 |        0 |      20 |   46.15 | 18,21-22,27-34,45 
+  FixedHeader.tsx       |       0 |      100 |       0 |       0 | 6-7               
+  RestaurantBucket.tsx  |      25 |        0 |    12.5 |   27.27 | 13,16-19,25-45    
+  RestaurantDrag.tsx    |      50 |        0 |   66.66 |      50 | 17-23             
+  RestaurantList.ts     |     100 |      100 |     100 |     100 |                   
+  ReviewDisplay.tsx     |     100 |      100 |     100 |     100 |                   
+  SortStyleSelector.tsx |   14.28 |      100 |       0 |   14.28 | 5-13              
+  UserList.tsx          |   28.57 |      100 |      20 |   28.57 | 20-43             
+  UserRestaurants.tsx   |   14.06 |        0 |    9.09 |   14.06 | 36-444            
+  UserSelector.tsx      |       0 |      100 |       0 |       0 | 4-13              
+  displayRating.tsx     |     100 |      100 |     100 |     100 |                   
+ src/Menus              |     100 |      100 |     100 |     100 |                   
+  Menus.tsx             |     100 |      100 |     100 |     100 |                   
+------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 8 failed, 1 passed, 9 total
 Tests:       7 failed, 7 passed, 14 total
 Snapshots:   0 total
-Time:        7.56 s
+Time:        8.583 s
 Ran all test suites.

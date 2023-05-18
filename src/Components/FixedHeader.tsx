@@ -2,6 +2,8 @@ import React from "react";
 import "../App.css";
 import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
+import SearchBar from "./SearchBar";
+import Restaurant from "./RestaurantList";
 
 const FixedHeader = () => {
     return (
@@ -16,6 +18,12 @@ const FixedHeader = () => {
             >
                 List Of Users
             </Button>
+            <div>
+                <SearchBar
+                    placeholder="Do we have your restaurant?"
+                    data={Restaurant}
+                />
+            </div>
             <div style={{ position: "absolute", right: 15, top: 15 }}>
                 <UserSelector></UserSelector>
             </div>

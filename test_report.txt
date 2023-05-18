@@ -38,8 +38,8 @@ FAIL src/App.test.tsx
     >  8 | import { HTML5Backend } from "react-dnd-html5-backend";
          | ^
        9 | import FixedHeader from "./Components/FixedHeader";
-      10 |
-      11 | function App() {
+      10 | import { Restaurant } from "./Interfaces";
+      11 |
 
       at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
       at Object.<anonymous> (src/App.tsx:8:1)
@@ -54,20 +54,22 @@ File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line
 -----------------------|---------|----------|---------|---------|-------------------
 All files              |       0 |        0 |       0 |       0 |                   
  src                   |       0 |      100 |       0 |       0 |                   
-  App.tsx              |       0 |      100 |       0 |       0 | 12                
+  App.tsx              |       0 |      100 |       0 |       0 | 13-17             
   CurrentUser.tsx      |       0 |      100 |     100 |       0 | 3                 
   Interfaces.ts        |       0 |        0 |       0 |       0 |                   
  src/Components        |       0 |        0 |       0 |       0 |                   
-  AddRestaurant.tsx    |       0 |      100 |       0 |       0 | 10-148            
+  AddRestaurant.tsx    |       0 |      100 |       0 |       0 | 10-153            
+  AddReview.tsx        |       0 |        0 |       0 |       0 | 14-46             
   FixedHeader.tsx      |       0 |      100 |       0 |       0 | 6-7               
   HomePage.tsx         |       0 |      100 |       0 |       0 | 15                
   Rating.tsx           |       0 |        0 |       0 |       0 | 7-29              
   Restaurant.tsx       |       0 |      100 |       0 |       0 | 5                 
-  RestaurantBucket.tsx |       0 |        0 |       0 |       0 | 8-39              
-  RestaurantDrag.tsx   |       0 |        0 |       0 |       0 | 14-25             
-  RestaurantList.ts    |       0 |      100 |     100 |       0 | 105-704           
+  RestaurantBucket.tsx |       0 |        0 |       0 |       0 | 11-45             
+  RestaurantDrag.tsx   |       0 |        0 |       0 |       0 | 13-23             
+  RestaurantList.ts    |       0 |      100 |     100 |       0 | 105-754           
+  ReviewDisplay.tsx    |       0 |      100 |       0 |       0 | 10                
   UserList.tsx         |       0 |      100 |       0 |       0 | 10-56             
-  UserRestaurants.tsx  |       0 |        0 |       0 |       0 | 15-460            
+  UserRestaurants.tsx  |       0 |        0 |       0 |       0 | 22-440            
   UserSelector.tsx     |       0 |      100 |       0 |       0 | 4-13              
   displayRating.tsx    |       0 |        0 |       0 |       0 | 12-43             
  src/Menus             |       0 |      100 |     100 |       0 |                   
@@ -76,5 +78,5 @@ All files              |       0 |        0 |       0 |       0 |
 Test Suites: 1 failed, 1 total
 Tests:       0 total
 Snapshots:   0 total
-Time:        4.259 s
+Time:        4.357 s
 Ran all test suites.

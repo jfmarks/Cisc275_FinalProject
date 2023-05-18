@@ -1,18 +1,24 @@
 {
     "name": "react-typescript-starter",
-    "homepage": "homepage",
+    "homepage": "https://jfmarks.github.io/Cisc275_FinalProject/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.4.0",
+        "@fortawesome/free-regular-svg-icons": "^6.4.0",
+        "@fortawesome/free-solid-svg-icons": "^6.4.0",
+        "@fortawesome/react-fontawesome": "^0.2.0",
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
         "@testing-library/user-event": "^13.5.0",
         "@types/jest": "^27.4.0",
         "@types/node": "^16.11.21",
-        "@types/react": "^17.0.38",
         "@types/react-dom": "^17.0.11",
+        "jsx-runtime": "^1.2.0",
         "react": "^17.0.2",
         "react-bootstrap": "^2.1.1",
+        "react-dnd": "^15.1.2",
+        "react-dnd-html5-backend": "^16.0.1",
         "react-dom": "^17.0.2",
         "react-scripts": "5.0.0",
         "typescript": "^4.5.5",
@@ -48,10 +54,11 @@
         ]
     },
     "devDependencies": {
-        
+        "@types/react": "^18.2.6",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
         "gh-pages": "^3.2.3",
-        "prettier": "2.5.1"
-        
+        "prettier": "^2.5.1"
     },
     "jest": {
         "collectCoverageFrom": [

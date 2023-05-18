@@ -1,0 +1,225 @@
+.priceButtonGroup {
+    display: inline-flex;
+    border-radius: 0.25rem;
+    margin-bottom: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.priceButton {
+    text-align: center;
+    color: #212529;
+    background-color: transparent;
+    border: 0;
+    border-right: 1px solid #dee2e6;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.priceButton:hover {
+    background-color: #e9ecef;
+}
+
+.priceButton.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.priceButton.active:hover {
+    background-color: #0069d9;
+}
+.card-image {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+.editmode {
+    justify-content: center;
+}
+.inputedit {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.inputedit:focus {
+    outline: none;
+    border-color: #1e90ff;
+}
+.card-gradient {
+    background: linear-gradient(180deg, #f6fefe 0%, #eff6fc 100%);
+    color: #000000;
+}
+.card-gradient:hover,
+.card-gradient:focus {
+    outline: 2px solid rgb(159, 187, 234);
+}
+.menu-text {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #3f84a9;
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.menu-name {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+.menu-description {
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #000831;
+    border-left: 1px solid #000831;
+    color: #000000;
+    margin-top: -10px;
+    margin-left: -30px;
+    position: relative;
+}
+.menu-description:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.497) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: lightsweep 2s infinite;
+}
+
+@keyframes lightsweep {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.menu-price {
+    font-weight: bold;
+    color: #f3b227;
+    display: inline;
+}
+
+.menu-price:hover {
+    animation: sparkly 0.5s ease-in-out infinite;
+}
+
+@keyframes sparkly {
+    0% {
+        color: #f39c12;
+        text-shadow: none;
+    }
+    50% {
+        color: #ffd700;
+        text-shadow: 0 0 5px #ffd700;
+    }
+    100% {
+        color: #f39c12;
+        text-shadow: none;
+    }
+}
+.card-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-details > div {
+    margin-bottom: 10px;
+}
+
+.card-dining-experience {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-rating-price {
+    display: flex;
+    align-items: center;
+}
+
+.priceButtonGroup {
+    margin-right: 10px;
+}
+
+.priceButton {
+    text-align: center;
+    color: #212529;
+    background-color: transparent;
+    border: 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.priceButton:hover {
+    background-color: #e9ecef;
+}
+
+.priceButton.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.priceButton.active:hover {
+    background-color: #0069d9;
+}
+
+.card-average-rating {
+    font-size: 16px;
+    margin-left: auto;
+}
+.slider-bar {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background: #428de9;
+    outline: none;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+.slider-bar:focus {
+    outline: none; /* Remove the default focus outline */
+}
+
+.slider-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #1e90ff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-value {
+    margin-top: 8px;
+    font-size: 16px;
+}

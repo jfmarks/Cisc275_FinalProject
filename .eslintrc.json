@@ -10,6 +10,7 @@
         }
     },
     "extends": [
+        "prettier",
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
@@ -38,8 +39,7 @@
             {
                 "nestedBinaryExpressions": false,
                 "returnAssign": false,
-                "enforceForArrowConditionals": false,
-                "ignoreJSX": "all"
+                "enforceForArrowConditionals": false
             }
         ],
         "brace-style": ["error", "1tbs"],

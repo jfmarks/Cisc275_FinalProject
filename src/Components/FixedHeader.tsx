@@ -2,8 +2,6 @@ import React from "react";
 import "../App.css";
 import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
-import SearchBar from "./SearchBar";
-import Restaurant from "./RestaurantList";
 
 const FixedHeader = () => {
     return (

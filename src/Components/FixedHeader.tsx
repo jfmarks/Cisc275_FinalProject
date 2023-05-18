@@ -32,7 +32,6 @@ const FixedHeader = ({ user, handleUserChange }: userProp) => {
             </div>
             <div style={{ position: "absolute", right: 15, top: 15 }}>
                 <UserSelector
-                    user={user}
                     handleUserChange={handleUserChange}
                 ></UserSelector>
             </div>

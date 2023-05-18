@@ -1,14 +1,12 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
-import { CurrUser } from "../Interfaces";
 import userList from "../CurrentUser";
 
 interface userProp {
-    user: CurrUser;
     handleUserChange: (newUser: number) => void;
 }
 
-const UserSelector = ({ user, handleUserChange }: userProp) => {
+const UserSelector = ({ handleUserChange }: userProp) => {
     const [userIndex, setUserIndex] = useState<number>(0);
 
     const handleUserTypeChange = (event: { target: { value: string } }) => {

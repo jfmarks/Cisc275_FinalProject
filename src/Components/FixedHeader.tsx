@@ -5,11 +5,10 @@ import UserSelector from "./UserSelector";
 import { CurrUser } from "../Interfaces";
 
 interface userProp {
-    user: CurrUser;
     handleUserChange: (newUser: number) => void;
 }
 
-const FixedHeader = ({ user, handleUserChange }: userProp) => {
+const FixedHeader = ({ handleUserChange }: userProp) => {
     return (
         <header className="App-Fixed-Header">
             <p
@@ -35,7 +34,6 @@ const FixedHeader = ({ user, handleUserChange }: userProp) => {
             <div style={{ left: 10, fontSize: 10 }}></div>
             <div style={{ position: "absolute", right: 15, top: 15 }}>
                 <UserSelector
-                    user={user}
                     handleUserChange={handleUserChange}
                 ></UserSelector>
             </div>

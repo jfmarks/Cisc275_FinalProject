@@ -20,7 +20,7 @@ const UserSelector = ({ user, handleUserChange }: userProp) => {
             <label style={{ fontWeight: "bold", fontSize: 17 }}>
                 Select user:
                 <select
-                    value={user.id}
+                    value={userList[userIndex].id}
                     onChange={handleUserTypeChange}
                     style={{ fontWeight: "bold" }}
                 >

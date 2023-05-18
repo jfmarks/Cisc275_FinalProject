@@ -71,9 +71,9 @@ function App() {
                                 <div
                                     style={{
                                         visibility:
-                                            user.type == "Manager"
-                                                ? "visible"
-                                                : "hidden"
+                                            user.type == "Foodie"
+                                                ? "hidden"
+                                                : "visible"
                                     }}
                                 >
                                     <h1>Manager List</h1>

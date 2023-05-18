@@ -23,10 +23,7 @@ function App() {
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="App">
-                <FixedHeader
-                    user={user}
-                    handleUserChange={handleUserChange}
-                ></FixedHeader>
+                <FixedHeader handleUserChange={handleUserChange}></FixedHeader>
                 <div className="App">
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>

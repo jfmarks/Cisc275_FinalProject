@@ -117,7 +117,7 @@ export function UserRestaurants({
     highToLow.sort((a, b) => b.averageRating - a.averageRating);
 
     return (
-        <div style={{ height: "600px", width: "500px", overflowY: "scroll" }}>
+        <div style={{ height: "600px", width: "650px", overflowY: "scroll" }}>
             <Container
                 style={{
                     border: "1px solid #ccc", // Border color
@@ -159,12 +159,14 @@ export function UserRestaurants({
                             )}
                             <Button
                                 onClick={() =>
-                                    user.type == "Critic" ||
-                                    user.type == "Manager"
+                                    user.type == "Critic"
                                         ? handleEditRestaurant()
                                         : null
                                 }
-                                disabled={user.type === "Foodie"}
+                                disabled={
+                                    user.type === "Foodie" ||
+                                    user.type === "Manager"
+                                }
                             >
                                 {editMode ? "Save" : "Edit"}
                             </Button>

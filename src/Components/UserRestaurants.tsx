@@ -128,7 +128,11 @@ export function UserRestaurants({
                 >
                     <div style={{ display: "flex", justifyContent: "center" }}>
                         <div>
-                            <Button>Sort</Button>
+                            <select>
+                                <option>A-Z</option>
+                                <option>Rating Low-High</option>
+                                <option>Rating High-Low</option>
+                            </select>
                         </div>
                         <div style={{ flex: 1, textAlign: "center" }}>
                             Restaurant List

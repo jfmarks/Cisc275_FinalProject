@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
-import { CurrUser } from "../Interfaces";
 
 interface userProp {
     handleUserChange: (newUser: number) => void;

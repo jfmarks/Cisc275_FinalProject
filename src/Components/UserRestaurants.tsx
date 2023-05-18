@@ -25,8 +25,8 @@ export function UserRestaurants({
     const [attributesVisible, setAttributesVisible] = useState<string | null>(
         null
     ); // state to keep track of visible menu
-    const [editMode, setEditMode] = useState(false); // Initial state for editMode is false
-    const [addMode, setAddMode] = useState(false);
+    const [editMode, setEditMode] = useState<boolean>(false); // Initial state for editMode is false
+    const [addMode, setAddMode] = useState<boolean>(false);
     // Dummy data for restaurants (replace with actual fetch call)
     const fetchRestaurants = (): void => {
         const data = RestaurantList;
@@ -135,7 +135,7 @@ export function UserRestaurants({
                 >
                     <div style={{ display: "flex", justifyContent: "center" }}>
                         <div>
-                            <SortSelector></SortSelector>
+                            <SortSelector edit={editMode}></SortSelector>
                         </div>
                         <div style={{ flex: 1, textAlign: "center" }}>
                             Restaurant List

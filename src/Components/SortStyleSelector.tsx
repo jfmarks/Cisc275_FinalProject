@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import CurrentSort from "../CurrentSort";
 
-const SortSelector = () => {
+interface editProp {
+    edit: boolean;
+}
+
+const SortSelector = ({ edit }: editProp) => {
     const [sortType, setSortType] = useState(CurrentSort.type);
 
     const handleSortChange = (event: { target: { value: string } }) => {
@@ -13,6 +17,7 @@ const SortSelector = () => {
     return (
         <div>
             <select
+                disabled={!edit}
                 value={sortType}
                 onChange={handleSortChange}
                 style={{ fontSize: 12 }}

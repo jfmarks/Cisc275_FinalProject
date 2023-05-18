@@ -78,47 +78,47 @@ export default function RestaurantBucket({
                 Insert Restaurants here:
                 {CurrentSortStyle.type == "alphabetical"
                     ? alphabetical.map((item) => (
-                <div key={item.id} style={{ minHeight: "300px" }}>
-                    <Card.Img
-                        key={item.id}
-                        src={item.image}
-                        className="card-image"
-                    />
-                    <Col>
-                        <AddReview
-                            key={item.id}
-                            id={item.id}
-                            restaurants={items}
-                            handleChange={handleChange}
-                            handleRemove={handleRemove}
-                        ></AddReview>
-                        <ReviewDisplayElement
-                            restaurant={item}
-                        ></ReviewDisplayElement>
-                    </Col>
-                </div>
-            ))
+                          <div key={item.id} style={{ minHeight: "300px" }}>
+                              <Card.Img
+                                  key={item.id}
+                                  src={item.image}
+                                  className="card-image"
+                              />
+                              <Col>
+                                  <AddReview
+                                      key={item.id}
+                                      id={item.id}
+                                      restaurants={items}
+                                      handleChange={handleChange}
+                                      handleRemove={handleRemove}
+                                  ></AddReview>
+                                  <ReviewDisplayElement
+                                      restaurant={item}
+                                  ></ReviewDisplayElement>
+                              </Col>
+                          </div>
+                      ))
                     : highToLow.map((item) => (
-                <div key={item.id} style={{ minHeight: "300px" }}>
-                    <Card.Img
-                        key={item.id}
-                        src={item.image}
-                        className="card-image"
-                    />
-                    <Col>
-                        <AddReview
-                            key={item.id}
-                            id={item.id}
-                            restaurants={items}
-                            handleChange={handleChange}
-                            handleRemove={handleRemove}
-                        ></AddReview>
-                        <ReviewDisplayElement
-                            restaurant={item}
-                        ></ReviewDisplayElement>
-                    </Col>
-                </div>
-            ))}
+                          <div key={item.id} style={{ minHeight: "300px" }}>
+                              <Card.Img
+                                  key={item.id}
+                                  src={item.image}
+                                  className="card-image"
+                              />
+                              <Col>
+                                  <AddReview
+                                      key={item.id}
+                                      id={item.id}
+                                      restaurants={items}
+                                      handleChange={handleChange}
+                                      handleRemove={handleRemove}
+                                  ></AddReview>
+                                  <ReviewDisplayElement
+                                      restaurant={item}
+                                  ></ReviewDisplayElement>
+                              </Col>
+                          </div>
+                      ))}
             </Row>
         </>
     );

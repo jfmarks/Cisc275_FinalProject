@@ -2,8 +2,6 @@ import React from "react";
 import "../App.css";
 import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
-import SearchBar from "./SearchBar";
-import Restaurant from "./RestaurantList";
 import { CurrUser } from "../Interfaces";
 
 interface userProp {
@@ -14,29 +12,33 @@ interface userProp {
 const FixedHeader = ({ user, handleUserChange }: userProp) => {
     return (
         <header className="App-Fixed-Header">
+            <p
+                style={{
+                    fontWeight: "bold",
+                    fontSize: 40,
+                    position: "absolute",
+                    left: 10
+                }}
+            >
+                Rate-A-Restaurant! 🍽️
+            </p>
             <Button
                 style={{
                     position: "absolute",
-                    left: 10,
+                    right: 300,
                     top: 8,
                     fontWeight: "bold"
                 }}
             >
                 List Of Users
             </Button>
-            <div>
-                <SearchBar
-                    placeholder="Do we have your restaurant?"
-                    data={Restaurant}
-                />
-            </div>
+            <div style={{ left: 10, fontSize: 10 }}></div>
             <div style={{ position: "absolute", right: 15, top: 15 }}>
                 <UserSelector
                     user={user}
                     handleUserChange={handleUserChange}
                 ></UserSelector>
             </div>
-            <h1 style={{ fontWeight: "bold" }}>Rate-A-Restaurant! 🍽️</h1>
         </header>
     );
 };

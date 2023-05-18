@@ -13,7 +13,12 @@ function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
             <div className="searchInputs">
                 <input type="text" placeholder={placeholder} />
             </div>
-            <div className="dataResult"></div>
+            <div className="dataResult">
+                {data.map((value, key) => {
+                    // eslint-disable-next-line react/jsx-key
+                    return <a> {value.id} </a>;
+                })}
+            </div>
         </div>
     );
 }

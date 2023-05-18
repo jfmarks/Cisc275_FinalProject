@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Restaurant } from "../Interfaces";
+import "../RestaurantStyle.css";
 
 export default function ReviewDisplayElement({
     id,
@@ -15,6 +16,10 @@ export default function ReviewDisplayElement({
     const [rating, setNewRating] = useState(0);
     const handleAddReview = () => {
         handleChange(updatedRestaurants);
+    };
+    const handleSliderChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const newRating = parseFloat(e.target.value);
+        setNewRating(newRating);
     };
 
     const updatedRestaurants: Restaurant[] = restaurants.map(
@@ -40,12 +45,16 @@ export default function ReviewDisplayElement({
                     onChange={(e) => setNewReview(e.target.value)}
                 />
                 <Form.Control
-                    type="number"
+                    type="range"
+                    step="0.1"
+                    min="1"
+                    max="5"
                     value={rating}
-                    onChange={(e) =>
-                        setNewRating(e.target.value as unknown as number)
-                    }
+                    onChange={handleSliderChange}
+                    className="slider-bar"
+                    style={{ backgroundColor: "grey" }}
                 />
+                <div className="slider-value">{rating.toFixed(1)} ★</div>
             </Form.Group>
             <Button variant="primary" onClick={handleAddReview}>
                 Add Review

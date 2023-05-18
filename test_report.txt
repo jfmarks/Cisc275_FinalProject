@@ -175,24 +175,6 @@ FAIL src/Components/ReviewDisplay.test.tsx
 
       at Object.<anonymous> (src/Components/ReviewDisplay.test.tsx:26:37)
 
-FAIL src/Components/AddReview.test.tsx
-  ● AddReview › renders the correct number of full stars
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: 3
-    Received: 0
-
-      16 |         const starElements = container.getElementsByClassName("star");
-      17 |
-    > 18 |         expect(starElements.length).toBe(3);
-         |                                     ^
-      19 |     });
-      20 | });
-      21 |
-
-      at Object.<anonymous> (src/Components/AddReview.test.tsx:18:37)
-
 FAIL src/Components/UserRestaurants.test.tsx
   ● Console
 
@@ -221,7 +203,7 @@ FAIL src/Components/UserRestaurants.test.tsx
           at batchedUpdates$1 (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22380:12)
           at act (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
           at render (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/@testing-library/react/dist/pure.js:97:26)
-          at Object.<anonymous> (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:7:37)
+          at Object.<anonymous> (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:8:37)
           at Promise.then.completed (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:391:28)
           at new Promise (<anonymous>)
           at callAsyncCircusFn (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:316:10)
@@ -234,13 +216,13 @@ FAIL src/Components/UserRestaurants.test.tsx
           at jestAdapter (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
           at runTestInternal (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:389:16)
           at runTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:475:34) Error: Function not implemented.
-          at handleChange (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:11:27)
-          at fetchRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:32:9)
-          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:35:9
+          at handleChange (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:13:27)
+          at fetchRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:33:9)
+          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:36:9
           at mountState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:15626:20)
           at Object.useState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:16248:16)
           at useState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react/cjs/react.development.js:1508:21)
-          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:34:13)
+          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:35:13)
           at renderWithHooks (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:14985:18)
           at mountIndeterminateComponent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:17811:13)
           at beginWork (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:19049:16)
@@ -268,7 +250,7 @@ FAIL src/Components/UserRestaurants.test.tsx
           at batchedUpdates$1 (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22380:12)
           at act (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
           at render (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/@testing-library/react/dist/pure.js:97:26)
-          at Object.<anonymous> (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:7:37)
+          at Object.<anonymous> (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:8:37)
           at Promise.then.completed (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:391:28)
           at new Promise (<anonymous>)
           at callAsyncCircusFn (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:316:10)
@@ -282,13 +264,13 @@ FAIL src/Components/UserRestaurants.test.tsx
           at runTestInternal (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:389:16)
           at runTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:475:34)
 
-       5 | describe("UserRestaurants", () => {
-       6 |     test("renders the correct number of full stars", () => {
-    >  7 |         const { container } = render(
+       6 | describe("UserRestaurants", () => {
+       7 |     test("renders the correct number of full stars", () => {
+    >  8 |         const { container } = render(
          |                                     ^
-       8 |             <UserRestaurants
-       9 |                 restaurants={[]}
-      10 |                 handleChange={function (): void {
+       9 |             <UserRestaurants
+      10 |                 restaurants={[]}
+      11 |                 user={userList[0]}
 
       at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
       at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
@@ -314,7 +296,7 @@ FAIL src/Components/UserRestaurants.test.tsx
       at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:22380:12)
       at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
-      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:7:37)
+      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:8:37)
 
     console.error
       The above error occurred in the <UserRestaurants> component:
@@ -324,13 +306,13 @@ FAIL src/Components/UserRestaurants.test.tsx
       Consider adding an error boundary to your tree to customize error handling behavior.
       Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
 
-       5 | describe("UserRestaurants", () => {
-       6 |     test("renders the correct number of full stars", () => {
-    >  7 |         const { container } = render(
+       6 | describe("UserRestaurants", () => {
+       7 |     test("renders the correct number of full stars", () => {
+    >  8 |         const { container } = render(
          |                                     ^
-       8 |             <UserRestaurants
-       9 |                 restaurants={[]}
-      10 |                 handleChange={function (): void {
+       9 |             <UserRestaurants
+      10 |                 restaurants={[]}
+      11 |                 user={userList[0]}
 
       at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
       at update.callback (node_modules/react-dom/cjs/react-dom.development.js:20118:5)
@@ -362,27 +344,27 @@ FAIL src/Components/UserRestaurants.test.tsx
       at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:22380:12)
       at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
-      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:7:37)
+      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:8:37)
 
   ● UserRestaurants › renders the correct number of full stars
 
     Function not implemented.
 
-       9 |                 restaurants={[]}
-      10 |                 handleChange={function (): void {
-    > 11 |                     throw new Error("Function not implemented.");
+      11 |                 user={userList[0]}
+      12 |                 handleChange={function (): void {
+    > 13 |                     throw new Error("Function not implemented.");
          |                           ^
-      12 |                 }}
-      13 |             />
-      14 |         );
+      14 |                 }}
+      15 |             />
+      16 |         );
 
-      at handleChange (src/Components/UserRestaurants.test.tsx:11:27)
-      at fetchRestaurants (src/Components/UserRestaurants.tsx:32:9)
-      at src/Components/UserRestaurants.tsx:35:9
+      at handleChange (src/Components/UserRestaurants.test.tsx:13:27)
+      at fetchRestaurants (src/Components/UserRestaurants.tsx:33:9)
+      at src/Components/UserRestaurants.tsx:36:9
       at mountState (node_modules/react-dom/cjs/react-dom.development.js:15626:20)
       at Object.useState (node_modules/react-dom/cjs/react-dom.development.js:16248:16)
       at useState (node_modules/react/cjs/react.development.js:1508:21)
-      at UserRestaurants (src/Components/UserRestaurants.tsx:34:13)
+      at UserRestaurants (src/Components/UserRestaurants.tsx:35:13)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17811:13)
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19049:16)
@@ -410,7 +392,25 @@ FAIL src/Components/UserRestaurants.test.tsx
       at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:22380:12)
       at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
       at render (node_modules/@testing-library/react/dist/pure.js:97:26)
-      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:7:37)
+      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:8:37)
+
+FAIL src/Components/AddReview.test.tsx
+  ● AddReview › renders the correct number of full stars
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      16 |         const starElements = container.getElementsByClassName("star");
+      17 |
+    > 18 |         expect(starElements.length).toBe(3);
+         |                                     ^
+      19 |     });
+      20 | });
+      21 |
+
+      at Object.<anonymous> (src/Components/AddReview.test.tsx:18:37)
 
 FAIL src/Components/RestaurantDrag.test.tsx
   ● Console
@@ -918,8 +918,8 @@ FAIL src/App.test.tsx
     >  8 | import { HTML5Backend } from "react-dnd-html5-backend";
          | ^
        9 | import FixedHeader from "./Components/FixedHeader";
-      10 | import { Restaurant } from "./Interfaces";
-      11 |
+      10 | import { CurrUser, Restaurant } from "./Interfaces";
+      11 | import userList from "./CurrentUser";
 
       at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
       at Object.<anonymous> (src/App.tsx:8:1)
@@ -932,16 +932,16 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   74.16 |     4.39 |   12.22 |   74.48 |                   
- src                    |      40 |      100 |       0 |      40 |                   
-  App.tsx               |       0 |      100 |       0 |       0 | 13-17             
+All files               |   73.89 |     4.39 |   11.95 |   74.21 |                   
+ src                    |   45.45 |      100 |       0 |   45.45 |                   
+  App.tsx               |       0 |      100 |       0 |       0 | 14-23             
   CurrentSort.tsx       |     100 |      100 |     100 |     100 |                   
   CurrentUser.tsx       |     100 |      100 |     100 |     100 |                   
   Interfaces.ts         |       0 |        0 |       0 |       0 |                   
- src/Components         |   41.63 |     4.39 |    12.5 |   41.66 |                   
+ src/Components         |   41.63 |     4.39 |   12.35 |   41.66 |                   
   AddRestaurant.tsx     |   33.33 |      100 |    9.09 |   33.33 | 19-37,52-153      
   AddReview.tsx         |   46.15 |        0 |      20 |   46.15 | 18,21-22,27-34,45 
-  FixedHeader.tsx       |       0 |      100 |       0 |       0 | 8-9               
+  FixedHeader.tsx       |       0 |      100 |       0 |       0 | 14-15             
   RestaurantBucket.tsx  |      25 |        0 |    12.5 |   27.27 | 13,16-19,25-45    
   RestaurantDrag.tsx    |      50 |        0 |   66.66 |      50 | 17-23             
   RestaurantList.ts     |     100 |      100 |     100 |     100 |                   
@@ -949,8 +949,8 @@ All files               |   74.16 |     4.39 |   12.22 |   74.48 |
   SearchBar.tsx         |       0 |        0 |       0 |       0 | 14-40             
   SortStyleSelector.tsx |   14.28 |      100 |       0 |   14.28 | 5-13              
   UserList.tsx          |   28.57 |      100 |      20 |   28.57 | 20-43             
-  UserRestaurants.tsx   |   11.39 |        0 |    6.66 |   11.68 | 37-783            
-  UserSelector.tsx      |       0 |      100 |       0 |       0 | 4-13              
+  UserRestaurants.tsx   |   11.39 |        0 |    6.66 |   11.68 | 38-782            
+  UserSelector.tsx      |       0 |      100 |       0 |       0 | 11-28             
   displayRating.tsx     |     100 |      100 |     100 |     100 |                   
  src/Menus              |     100 |      100 |     100 |     100 |                   
   Menus.tsx             |     100 |      100 |     100 |     100 |                   
@@ -958,5 +958,5 @@ All files               |   74.16 |     4.39 |   12.22 |   74.48 |
 Test Suites: 8 failed, 1 passed, 9 total
 Tests:       7 failed, 7 passed, 14 total
 Snapshots:   0 total
-Time:        9.369 s
+Time:        9.774 s
 Ran all test suites.

@@ -22,6 +22,7 @@ function App() {
                     <Container>
                         <Row style={{ position: "absolute", top: 60 }}>
                             <Col style={{ width: "300px" }} lg={6}>
+                                <h1>Foodie List</h1>
                                 <RestaurantBucket></RestaurantBucket>
                             </Col>
                             <Col>
@@ -31,6 +32,7 @@ function App() {
                                 ></UserRestaurants>
                             </Col>
                             <Col style={{ width: "300px" }} lg={6}>
+                                <h1>Manager List</h1>
                                 <RestaurantBucket></RestaurantBucket>
                             </Col>
                         </Row>

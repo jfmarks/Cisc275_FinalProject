@@ -12,9 +12,13 @@ const UserSelector = () => {
 
     return (
         <div>
-            <label>
-                Select user type:
-                <select value={userType} onChange={handleUserTypeChange}>
+            <label style={{ fontWeight: "bold", fontSize: 17 }}>
+                Select user type:{" "}
+                <select
+                    value={userType}
+                    onChange={handleUserTypeChange}
+                    style={{ fontWeight: "bold" }}
+                >
                     <option value="Critic">Critic</option>
                     <option value="Manager">Manager</option>
                     <option value="Foodie">Foodie</option>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Restaurant } from "../Interfaces";
 import "../SearchBar.css";
 
@@ -8,21 +8,39 @@ interface SearchBarProps {
 }
 
 function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
+    const [filteredData, setFilteredData] = useState([]);
+    const handleFilter = (event) => {
+        const searchWord = event.target.value;
+        const newFilter = data.filter((value) => {
+            return value.name.toLowerCase().includes(searchWord.toLowerCase());
+        });
+        if (searchWord === "") {
+            setFilteredData([]);
+        } else {
+            setFilteredData(newFilter);
+        }
+    };
     return (
         <div className="search">
             <div className="searchInputs">
-                <input type="text" placeholder={placeholder} />
+                <input
+                    type="text"
+                    placeholder={placeholder}
+                    onChange={handleFilter}
+                />
             </div>
-            <div className="dataResult">
-                {data.map((value, key) => {
-                    return (
-                        // eslint-disable-next-line react/jsx-key
-                        <div className="dataItem">
-                            <p>{value.name}</p>
-                        </div>
-                    );
-                })}
-            </div>
+            {filteredData.length != 0 && (
+                <div className="dataResult">
+                    {filteredData.slice(0, 5).map((value, key) => {
+                        return (
+                            // eslint-disable-next-line react/jsx-key
+                            <div className="dataItem">
+                                <p>{value.name}</p>
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
         </div>
     );
 }

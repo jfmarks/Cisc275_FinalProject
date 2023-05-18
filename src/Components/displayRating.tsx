@@ -24,7 +24,11 @@ export default function StarRating({ rating }: Props): JSX.Element {
     // Render half star if applicable
     if (hasHalfStar) {
         starArray.push(
-            <FontAwesomeIcon key={fullStars} icon={halfStar} className="star" />
+            <FontAwesomeIcon
+                key={fullStars}
+                icon={halfStar}
+                className="half-star"
+            />
         );
     }
 
@@ -35,7 +39,7 @@ export default function StarRating({ rating }: Props): JSX.Element {
             <FontAwesomeIcon
                 key={fullStars + i}
                 icon={regularStar}
-                className="star"
+                className="extra-star"
             />
         );
     }

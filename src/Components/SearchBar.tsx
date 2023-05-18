@@ -8,7 +8,8 @@ interface SearchBarProps {
 }
 
 function SearchBar({ placeholder, data }: SearchBarProps): JSX.Element {
-    const [filteredData, setFilteredData] = useState([]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [filteredData, setFilteredData] = useState<any[]>([]);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleFilter = (event: { target: { value: any } }) => {
         const searchWord = event.target.value;

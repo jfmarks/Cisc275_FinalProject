@@ -2,6 +2,48 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
+FAIL src/Components/UserRestaurants.test.tsx
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd-html5-backend/dist/index.js:1
+    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import { HTML5BackendImpl } from './HTML5BackendImpl.js';
+                                                                                      ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      3 | import { UserRestaurants } from "./UserRestaurants";
+      4 | import { DndProvider } from "react-dnd";
+    > 5 | import { HTML5Backend } from "react-dnd-html5-backend";
+        | ^
+      6 |
+      7 | // Mock the handleChange function
+      8 | const handleChangeMock = jest.fn();
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
+      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:5:1)
+
 PASS src/Components/displayRating.test.tsx
   ● Console
 
@@ -175,225 +217,6 @@ FAIL src/Components/AddReview.test.tsx
       24 |
 
       at Object.<anonymous> (src/Components/AddReview.test.tsx:21:37)
-
-FAIL src/Components/UserRestaurants.test.tsx
-  ● Console
-
-    console.error
-      Error: Uncaught [Error: Function not implemented.]
-          at reportException (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
-          at innerInvokeEventListeners (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
-          at invokeEventListeners (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
-          at HTMLUnknownElementImpl._dispatch (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
-          at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
-          at HTMLUnknownElement.dispatchEvent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
-          at Object.invokeGuardedCallbackDev (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
-          at invokeGuardedCallback (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
-          at beginWork$1 (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:23964:7)
-          at performUnitOfWork (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22779:12)
-          at workLoopSync (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22707:5)
-          at renderRootSync (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22670:7)
-          at performSyncWorkOnRoot (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22293:18)
-          at scheduleUpdateOnFiber (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:21881:7)
-          at updateContainer (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:25482:3)
-          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:26021:7
-          at unbatchedUpdates (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22431:12)
-          at legacyRenderSubtreeIntoContainer (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:26020:5)
-          at Object.render (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:26103:10)
-          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/@testing-library/react/dist/pure.js:101:25
-          at batchedUpdates$1 (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22380:12)
-          at act (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
-          at render (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/@testing-library/react/dist/pure.js:97:26)
-          at Object.<anonymous> (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:8:37)
-          at Promise.then.completed (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:391:28)
-          at new Promise (<anonymous>)
-          at callAsyncCircusFn (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:316:10)
-          at _callCircusTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:218:40)
-          at _runTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:155:3)
-          at _runTestsForDescribeBlock (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:66:9)
-          at _runTestsForDescribeBlock (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:60:9)
-          at run (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:25:3)
-          at runAndTransformResultsToJestFormat (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-          at jestAdapter (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-          at runTestInternal (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:389:16)
-          at runTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:475:34) Error: Function not implemented.
-          at handleChange (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:13:27)
-          at fetchRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:33:9)
-          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:36:9
-          at mountState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:15626:20)
-          at Object.useState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:16248:16)
-          at useState (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react/cjs/react.development.js:1508:21)
-          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:35:13)
-          at renderWithHooks (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:14985:18)
-          at mountIndeterminateComponent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:17811:13)
-          at beginWork (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:19049:16)
-          at HTMLUnknownElement.callCallback (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:3945:14)
-          at HTMLUnknownElement.callTheUserObjectsOperation (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
-          at innerInvokeEventListeners (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
-          at invokeEventListeners (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
-          at HTMLUnknownElementImpl._dispatch (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
-          at HTMLUnknownElementImpl.dispatchEvent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
-          at HTMLUnknownElement.dispatchEvent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
-          at Object.invokeGuardedCallbackDev (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:3994:16)
-          at invokeGuardedCallback (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:4056:31)
-          at beginWork$1 (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:23964:7)
-          at performUnitOfWork (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22779:12)
-          at workLoopSync (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22707:5)
-          at renderRootSync (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22670:7)
-          at performSyncWorkOnRoot (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22293:18)
-          at scheduleUpdateOnFiber (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:21881:7)
-          at updateContainer (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:25482:3)
-          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:26021:7
-          at unbatchedUpdates (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22431:12)
-          at legacyRenderSubtreeIntoContainer (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:26020:5)
-          at Object.render (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:26103:10)
-          at /home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/@testing-library/react/dist/pure.js:101:25
-          at batchedUpdates$1 (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:22380:12)
-          at act (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
-          at render (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/@testing-library/react/dist/pure.js:97:26)
-          at Object.<anonymous> (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.test.tsx:8:37)
-          at Promise.then.completed (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:391:28)
-          at new Promise (<anonymous>)
-          at callAsyncCircusFn (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/utils.js:316:10)
-          at _callCircusTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:218:40)
-          at _runTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:155:3)
-          at _runTestsForDescribeBlock (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:66:9)
-          at _runTestsForDescribeBlock (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:60:9)
-          at run (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/run.js:25:3)
-          at runAndTransformResultsToJestFormat (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
-          at jestAdapter (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
-          at runTestInternal (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:389:16)
-          at runTest (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/jest-runner/build/runTest.js:475:34)
-
-       6 | describe("UserRestaurants", () => {
-       7 |     test("renders the correct number of full stars", () => {
-    >  8 |         const { container } = render(
-         |                                     ^
-       9 |             <UserRestaurants
-      10 |                 restaurants={[]}
-      11 |                 user={userList[0]}
-
-      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
-      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
-      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
-      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
-      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
-      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
-      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
-      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:3994:16)
-      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4056:31)
-      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23964:7)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22779:12)
-      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
-      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:22670:7)
-      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:22293:18)
-      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21881:7)
-      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:25482:3)
-      at node_modules/react-dom/cjs/react-dom.development.js:26021:7
-      at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:22431:12)
-      at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:26020:5)
-      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:26103:10)
-      at node_modules/@testing-library/react/dist/pure.js:101:25
-      at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:22380:12)
-      at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
-      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
-      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:8:37)
-
-    console.error
-      The above error occurred in the <UserRestaurants> component:
-      
-          at UserRestaurants (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/UserRestaurants.tsx:20:5)
-      
-      Consider adding an error boundary to your tree to customize error handling behavior.
-      Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
-
-       6 | describe("UserRestaurants", () => {
-       7 |     test("renders the correct number of full stars", () => {
-    >  8 |         const { container } = render(
-         |                                     ^
-       9 |             <UserRestaurants
-      10 |                 restaurants={[]}
-      11 |                 user={userList[0]}
-
-      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:20085:23)
-      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:20118:5)
-      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:12318:12)
-      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:12339:9)
-      at commitLifeCycles (node_modules/react-dom/cjs/react-dom.development.js:20736:11)
-      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:23426:7)
-      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
-      at HTMLUnknownElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
-      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
-      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
-      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
-      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
-      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
-      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:3994:16)
-      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4056:31)
-      at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:23151:9)
-      at unstable_runWithPriority (node_modules/scheduler/cjs/scheduler.development.js:468:12)
-      at runWithPriority$1 (node_modules/react-dom/cjs/react-dom.development.js:11276:10)
-      at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:22990:3)
-      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:22329:3)
-      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21881:7)
-      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:25482:3)
-      at node_modules/react-dom/cjs/react-dom.development.js:26021:7
-      at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:22431:12)
-      at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:26020:5)
-      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:26103:10)
-      at node_modules/@testing-library/react/dist/pure.js:101:25
-      at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:22380:12)
-      at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
-      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
-      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:8:37)
-
-  ● UserRestaurants › renders the correct number of full stars
-
-    Function not implemented.
-
-      11 |                 user={userList[0]}
-      12 |                 handleChange={function (): void {
-    > 13 |                     throw new Error("Function not implemented.");
-         |                           ^
-      14 |                 }}
-      15 |             />
-      16 |         );
-
-      at handleChange (src/Components/UserRestaurants.test.tsx:13:27)
-      at fetchRestaurants (src/Components/UserRestaurants.tsx:33:9)
-      at src/Components/UserRestaurants.tsx:36:9
-      at mountState (node_modules/react-dom/cjs/react-dom.development.js:15626:20)
-      at Object.useState (node_modules/react-dom/cjs/react-dom.development.js:16248:16)
-      at useState (node_modules/react/cjs/react.development.js:1508:21)
-      at UserRestaurants (src/Components/UserRestaurants.tsx:35:13)
-      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
-      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17811:13)
-      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19049:16)
-      at HTMLUnknownElement.callCallback (node_modules/react-dom/cjs/react-dom.development.js:3945:14)
-      at HTMLUnknownElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
-      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
-      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
-      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
-      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
-      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
-      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:3994:16)
-      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4056:31)
-      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:23964:7)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22779:12)
-      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
-      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:22670:7)
-      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:22293:18)
-      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:21881:7)
-      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:25482:3)
-      at node_modules/react-dom/cjs/react-dom.development.js:26021:7
-      at unbatchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:22431:12)
-      at legacyRenderSubtreeIntoContainer (node_modules/react-dom/cjs/react-dom.development.js:26020:5)
-      at Object.render (node_modules/react-dom/cjs/react-dom.development.js:26103:10)
-      at node_modules/@testing-library/react/dist/pure.js:101:25
-      at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:22380:12)
-      at act (node_modules/react-dom/cjs/react-dom-test-utils.development.js:1042:14)
-      at render (node_modules/@testing-library/react/dist/pure.js:97:26)
-      at Object.<anonymous> (src/Components/UserRestaurants.test.tsx:8:37)
 
 FAIL src/Components/RestaurantDrag.test.tsx
   ● Console
@@ -898,16 +721,16 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-----------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s     
 ------------------------|---------|----------|---------|---------|-----------------------
-All files               |   63.82 |      3.2 |    8.02 |   64.52 |                       
+All files               |   60.86 |     3.14 |    5.67 |    61.5 |                       
  src                    |   29.41 |        0 |       0 |   29.41 |                       
-  App.tsx               |       0 |        0 |       0 |       0 | 17-36                 
+  App.tsx               |       0 |        0 |       0 |       0 | 17-35                 
   CurrentSort.tsx       |     100 |      100 |     100 |     100 |                       
   CurrentUser.tsx       |     100 |      100 |     100 |     100 |                       
   Interfaces.ts         |       0 |        0 |       0 |       0 |                       
- src/Components         |   31.32 |      3.3 |    8.33 |   31.69 |                       
+ src/Components         |    27.1 |     3.25 |    5.88 |   27.32 |                       
   AddRestaurant.tsx     |   33.33 |      100 |    9.09 |   33.33 | 19-37,52-153          
   AddReview.tsx         |   42.85 |        0 |   16.66 |   42.85 | 20,23-24,29-36,47-71  
-  FixedHeader.tsx       |       0 |      100 |       0 |       0 | 10-11                 
+  FixedHeader.tsx       |       0 |        0 |       0 |       0 | 14-61                 
   ManagerBucket.tsx     |       0 |        0 |       0 |       0 | 22-344                
   RestaurantBucket.tsx  |   19.23 |        0 |    7.14 |   21.73 | 25,28-35,38-41,47-102 
   RestaurantDrag.tsx    |      50 |        0 |   66.66 |      50 | 17-23                 
@@ -916,14 +739,14 @@ All files               |   63.82 |      3.2 |    8.02 |   64.52 |
   SearchBar.tsx         |       0 |        0 |       0 |       0 | 14-41                 
   SortStyleSelector.tsx |   14.28 |      100 |       0 |   14.28 | 9-17                  
   UserList.tsx          |   28.57 |      100 |      20 |   28.57 | 20-43                 
-  UserRestaurants.tsx   |   11.39 |        0 |    6.66 |   11.68 | 38-784                
-  UserSelector.tsx      |       0 |      100 |       0 |       0 | 9-26                  
+  UserRestaurants.tsx   |       0 |        0 |       0 |       0 | 24-784                
+  UserSelector.tsx      |       0 |      100 |       0 |       0 | 11-28                 
   displayRating.tsx     |     100 |      100 |     100 |     100 |                       
  src/Menus              |     100 |      100 |     100 |     100 |                       
   Menus.tsx             |     100 |      100 |     100 |     100 |                       
 ------------------------|---------|----------|---------|---------|-----------------------
 Test Suites: 6 failed, 3 passed, 9 total
-Tests:       5 failed, 9 passed, 14 total
+Tests:       4 failed, 9 passed, 13 total
 Snapshots:   0 total
-Time:        8.207 s
+Time:        7.979 s
 Ran all test suites.

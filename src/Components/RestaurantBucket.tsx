@@ -47,7 +47,7 @@ export default function RestaurantBucket({
             handleAddRestaurant(item.newItem);
         },
         canDrop: () => {
-            return user.type === acceptingUserOfType;
+            return user.type === acceptingUserOfType || user.type === "Critic";
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
@@ -71,7 +71,7 @@ export default function RestaurantBucket({
                 role={"RestaurantBucket"}
                 style={{
                     backgroundColor: isOver ? "grey" : "lightblue",
-                    justifyContent: "center",
+                    justifyContent: "Center",
                     minHeight: "500px"
                 }}
             >
@@ -99,24 +99,28 @@ export default function RestaurantBucket({
                           </div>
                       ))
                     : highToLow.map((item) => (
-                          <div key={item.id} style={{ minHeight: "300px" }}>
-                              <Card.Img
-                                  key={item.id}
-                                  src={item.image}
-                                  className="card-image"
-                              />
-                              <Col>
-                                  <AddReview
-                                      key={item.id}
-                                      id={item.id}
-                                      restaurants={items}
-                                      handleChange={handleChange}
-                                      handleRemove={handleRemove}
-                                  ></AddReview>
-                                  <ReviewDisplayElement
-                                      restaurant={item}
-                                  ></ReviewDisplayElement>
-                              </Col>
+                          <div key={item.id}>
+                              <Row>
+                                  <Card.Body>
+                                      <Card.Img
+                                          key={item.id}
+                                          src={item.image}
+                                          className="card-image"
+                                      />
+                                      <Col>
+                                          <AddReview
+                                              key={item.id}
+                                              id={item.id}
+                                              restaurants={items}
+                                              handleChange={handleChange}
+                                              handleRemove={handleRemove}
+                                          ></AddReview>
+                                          <ReviewDisplayElement
+                                              restaurant={item}
+                                          ></ReviewDisplayElement>
+                                      </Col>
+                                  </Card.Body>
+                              </Row>
                           </div>
                       ))}
             </Row>

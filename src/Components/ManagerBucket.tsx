@@ -130,15 +130,18 @@ export default function ManagerBucket({
                 {CurrentSortStyle.type == "alphabetical"
                     ? alphabetical.map((item) => (
                           <div key={item.id}>
-                              <Card.Img
-                                  key={item.id}
-                                  src={item.image}
-                                  className="card-image"
-                              />
                               <Card.Body>
+                                  <Card.Img
+                                      key={item.id}
+                                      src={item.image}
+                                      className="card-image"
+                                  />
                                   <div
                                       className="editmode"
-                                      style={{ minHeight: "300px" }}
+                                      style={{
+                                          minHeight: "300px",
+                                          marginTop: "15px"
+                                      }}
                                   >
                                       <input
                                           className="inputedit"

@@ -96,7 +96,7 @@ export default function ManagerBucket({
             handleAddRestaurant(item.newItem);
         },
         canDrop: () => {
-            return user.type === acceptingUserOfType;
+            return user.type === acceptingUserOfType || user.type === "Critic";
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),

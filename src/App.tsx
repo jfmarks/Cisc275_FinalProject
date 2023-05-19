@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import "./App.css";
 import "./RestaurantStyle.css";
@@ -19,8 +20,12 @@ function App() {
         setRestaurants(listR);
     }
     const [user, setUser] = useState<CurrUser>(userList[0]);
+    const [userL, setUserList] = useState<CurrUser[]>(userList);
     const handleUserChange = (newUser: number) => {
-        setUser(userList[newUser]);
+        setUser(userL[newUser]);
+    };
+    const handleUserAdd = (newUser: CurrUser) => {
+        setUserList([...userL, newUser]);
     };
     const makeChanges = (changedR: Restaurant) => {
         const updatedRestaurants = restaurants.map((restaurant: Restaurant) => {
@@ -38,7 +43,8 @@ function App() {
                 <FixedHeader
                     handleUserChange={handleUserChange}
                     user={user}
-                    users={userList}
+                    users={userL}
+                    handleUserAdd={handleUserAdd}
                 ></FixedHeader>
                 <div className="App">
                     <div
@@ -55,10 +61,15 @@ function App() {
                         <Row style={{ position: "absolute", top: 200 }}>
                             <Col style={{ width: "300px" }} lg={6}>
                                 <h1>Foodie List</h1>
-                                <RestaurantBucket
-                                    user={user}
-                                    acceptingUserOfType="Foodie"
-                                ></RestaurantBucket>
+                                {userL.map((userMap) => (
+                                    <div key={userMap.id}>
+                                        <RestaurantBucket
+                                            disabled={!(user.id === userMap.id)}
+                                            user={user}
+                                            acceptingUserOfType="Foodie"
+                                        ></RestaurantBucket>
+                                    </div>
+                                ))}
                             </Col>
                             <Col>
                                 <UserRestaurants

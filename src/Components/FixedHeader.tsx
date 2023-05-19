@@ -3,40 +3,34 @@ import React, { useState } from "react";
 import "../App.css";
 import { Button } from "react-bootstrap";
 import UserSelector from "./UserSelector";
-import userList from "../CurrentUser";
 import { CurrUser } from "../Interfaces";
 interface userProp {
     handleUserChange: (newUser: number) => void;
+    handleUserAdd: (newUser: CurrUser) => void;
     user: CurrUser;
     users: CurrUser[];
 }
 
-const FixedHeader = ({ handleUserChange, user }: userProp) => {
-    const [users, setUsers] = React.useState(userList);
-    const [showInput, setShowInput] = useState(false);
+const FixedHeader = ({
+    handleUserChange,
+    user,
+    handleUserAdd,
+    users
+}: userProp) => {
     const [newUsername, setNewUsername] = useState("");
 
-    const addUser = () => {
-        const newUser: CurrUser = {
-            id: (userList.length + 1) as unknown as string,
-            username: "",
-            type: "Foodie"
-        };
-
-        setUsers([...users, newUser]);
-        setShowInput(true);
-    };
     const handleUsernameChange = (
         event: React.ChangeEvent<HTMLInputElement>
     ) => {
         setNewUsername(event.target.value);
     };
-    const saveUsername = () => {
-        const updatedUsers = [...users];
-        const newUser = updatedUsers[updatedUsers.length - 1];
-        newUser.username = newUsername;
-        setUsers(updatedUsers);
-        setShowInput(false);
+    const handleAddUser = () => {
+        const newUser: CurrUser = {
+            type: "Foodie",
+            username: newUsername,
+            id: users.length as unknown as string
+        };
+        handleUserAdd(newUser);
     };
     return (
         <header className="App-Fixed-Header">
@@ -50,29 +44,35 @@ const FixedHeader = ({ handleUserChange, user }: userProp) => {
             >
                 Rate-A-Restaurant! 🍽️
             </p>
-            <Button
-                style={{
-                    position: "absolute",
-                    right: 300,
-                    top: 8,
-                    fontWeight: "bold"
-                }}
-                disabled={user.type !== "Critic"}
-                onClick={() => addUser()}
-            >
-                Add User
-            </Button>
-            {showInput && (
-                <div>
+            {user.type === "Critic" && (
+                <Button
+                    style={{
+                        position: "absolute",
+                        right: 300,
+                        top: 8,
+                        fontWeight: "bold"
+                    }}
+                    disabled={user.type !== "Critic"}
+                    onClick={() => handleAddUser()}
+                >
+                    Add User
+                </Button>
+            )}
+            {user.type === "Critic" && (
+                <div
+                    style={{
+                        position: "absolute",
+                        right: 400,
+                        top: 8,
+                        fontWeight: "bold"
+                    }}
+                >
                     <input
                         type="text"
                         value={newUsername}
                         onChange={handleUsernameChange}
                         placeholder="Enter username"
                     />
-                    <Button variant="primary" onClick={saveUsername}>
-                        Save
-                    </Button>
                 </div>
             )}
             <div style={{ left: 10, fontSize: 10 }}></div>

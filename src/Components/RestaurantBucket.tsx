@@ -13,11 +13,13 @@ import CurrentSortStyle from "../CurrentSort";
 interface bucketProp {
     user: CurrUser;
     acceptingUserOfType: string;
+    disabled: boolean;
 }
 
 export default function RestaurantBucket({
     user,
-    acceptingUserOfType
+    acceptingUserOfType,
+    disabled
 }: bucketProp): JSX.Element {
     const [items, setItems] = useState<Restaurant[]>([]);
     const [curID, setID] = useState<number>(0);
@@ -47,7 +49,7 @@ export default function RestaurantBucket({
             handleAddRestaurant(item.newItem);
         },
         canDrop: () => {
-            return user.type === acceptingUserOfType || user.type === "Critic";
+            return user.type === acceptingUserOfType;
         },
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
@@ -60,70 +62,73 @@ export default function RestaurantBucket({
 
     const highToLow = [...items];
     highToLow.sort((a, b) => b.averageRating - a.averageRating);
-
-    return (
-        <>
-            <div>
-                <SortSelector edit={true}></SortSelector>
-            </div>
-            <Row
-                ref={drop}
-                role={"RestaurantBucket"}
-                style={{
-                    backgroundColor: isOver ? "grey" : "lightblue",
-                    justifyContent: "Center",
-                    minHeight: "500px"
-                }}
-            >
-                Insert Restaurants here:
-                {CurrentSortStyle.type == "alphabetical"
-                    ? alphabetical.map((item) => (
-                          <div key={item.id} style={{ minHeight: "300px" }}>
-                              <Card.Img
-                                  key={item.id}
-                                  src={item.image}
-                                  className="card-image"
-                              />
-                              <Col>
-                                  <AddReview
+    if (!disabled) {
+        return (
+            <>
+                <div>
+                    <SortSelector edit={true}></SortSelector>
+                </div>
+                <Row
+                    ref={drop}
+                    role={"RestaurantBucket"}
+                    style={{
+                        backgroundColor: isOver ? "grey" : "lightblue",
+                        justifyContent: "Center",
+                        minHeight: "500px"
+                    }}
+                >
+                    Insert Restaurants here:
+                    {CurrentSortStyle.type == "alphabetical"
+                        ? alphabetical.map((item) => (
+                              <div key={item.id} style={{ minHeight: "300px" }}>
+                                  <Card.Img
                                       key={item.id}
-                                      id={item.id}
-                                      restaurants={items}
-                                      handleChange={handleChange}
-                                      handleRemove={handleRemove}
-                                  ></AddReview>
-                                  <ReviewDisplayElement
-                                      restaurant={item}
-                                  ></ReviewDisplayElement>
-                              </Col>
-                          </div>
-                      ))
-                    : highToLow.map((item) => (
-                          <div key={item.id}>
-                              <Row>
-                                  <Card.Body>
-                                      <Card.Img
+                                      src={item.image}
+                                      className="card-image"
+                                  />
+                                  <Col>
+                                      <AddReview
                                           key={item.id}
-                                          src={item.image}
-                                          className="card-image"
-                                      />
-                                      <Col>
-                                          <AddReview
+                                          id={item.id}
+                                          restaurants={items}
+                                          handleChange={handleChange}
+                                          handleRemove={handleRemove}
+                                      ></AddReview>
+                                      <ReviewDisplayElement
+                                          restaurant={item}
+                                      ></ReviewDisplayElement>
+                                  </Col>
+                              </div>
+                          ))
+                        : highToLow.map((item) => (
+                              <div key={item.id}>
+                                  <Row>
+                                      <Card.Body>
+                                          <Card.Img
                                               key={item.id}
-                                              id={item.id}
-                                              restaurants={items}
-                                              handleChange={handleChange}
-                                              handleRemove={handleRemove}
-                                          ></AddReview>
-                                          <ReviewDisplayElement
-                                              restaurant={item}
-                                          ></ReviewDisplayElement>
-                                      </Col>
-                                  </Card.Body>
-                              </Row>
-                          </div>
-                      ))}
-            </Row>
-        </>
-    );
+                                              src={item.image}
+                                              className="card-image"
+                                          />
+                                          <Col>
+                                              <AddReview
+                                                  key={item.id}
+                                                  id={item.id}
+                                                  restaurants={items}
+                                                  handleChange={handleChange}
+                                                  handleRemove={handleRemove}
+                                              ></AddReview>
+                                              <ReviewDisplayElement
+                                                  restaurant={item}
+                                              ></ReviewDisplayElement>
+                                          </Col>
+                                      </Card.Body>
+                                  </Row>
+                              </div>
+                          ))}
+                </Row>
+            </>
+        );
+    } else {
+        return <div></div>;
+    }
 }

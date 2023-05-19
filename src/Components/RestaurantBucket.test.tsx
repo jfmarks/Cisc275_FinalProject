@@ -9,6 +9,7 @@ describe("RestuarantBucket", () => {
             <RestaurantBucket
                 user={userList[0]}
                 acceptingUserOfType={"Manager"}
+                disabled={false}
             />
         );
         const starElements = container.getElementsByClassName("star");

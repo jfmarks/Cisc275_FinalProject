@@ -1,6 +1,5 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
-import userList from "../CurrentUser";
 import { CurrUser } from "../Interfaces";
 
 interface userProp {
@@ -20,7 +19,7 @@ const UserSelector = ({ handleUserChange, users }: userProp) => {
             <label style={{ fontWeight: "bold", fontSize: 15 }}>
                 Select user:{" "}
                 <select
-                    value={userList[userIndex].id}
+                    value={users[userIndex].id}
                     onChange={handleUserTypeChange}
                     style={{ fontWeight: "bold" }}
                 >

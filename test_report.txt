@@ -480,7 +480,7 @@ FAIL src/Components/RestaurantBucket.test.tsx
           at Object.useDragDropManager (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd/src/hooks/useDragDropManager.ts:11:66)
           at Object.useDropTargetMonitor (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd/src/hooks/useDrop/useDropTargetMonitor.ts:7:38)
           at useDrop (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dnd/src/hooks/useDrop/useDrop.ts:26:64)
-          at RestaurantBucket (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/RestaurantBucket.tsx:44:39)
+          at RestaurantBucket (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/RestaurantBucket.tsx:46:39)
           at renderWithHooks (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:14985:18)
           at mountIndeterminateComponent (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:17811:13)
           at beginWork (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/node_modules/react-dom/cjs/react-dom.development.js:19049:16)
@@ -561,7 +561,7 @@ FAIL src/Components/RestaurantBucket.test.tsx
     console.error
       The above error occurred in the <RestaurantBucket> component:
       
-          at RestaurantBucket (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/RestaurantBucket.tsx:19:5)
+          at RestaurantBucket (/home/runner/work/Cisc275_FinalProject/Cisc275_FinalProject/src/Components/RestaurantBucket.tsx:20:5)
       
       Consider adding an error boundary to your tree to customize error handling behavior.
       Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
@@ -610,19 +610,19 @@ FAIL src/Components/RestaurantBucket.test.tsx
 
     Invariant Violation: Expected drag drop context
 
-      42 |     };
-      43 |
-    > 44 |     const [{ isOver }, drop] = useDrop({
+      44 |     };
+      45 |
+    > 46 |     const [{ isOver }, drop] = useDrop({
          |                                       ^
-      45 |         accept: "RESTAURANT",
-      46 |         drop: (item: DraggedRestaurant) => {
-      47 |             handleAddRestaurant(item.newItem);
+      47 |         accept: "RESTAURANT",
+      48 |         drop: (item: DraggedRestaurant) => {
+      49 |             handleAddRestaurant(item.newItem);
 
       at Object.invariant (node_modules/react-dnd/node_modules/@react-dnd/invariant/src/index.ts:28:12)
       at Object.useDragDropManager (node_modules/react-dnd/src/hooks/useDragDropManager.ts:11:66)
       at Object.useDropTargetMonitor (node_modules/react-dnd/src/hooks/useDrop/useDropTargetMonitor.ts:7:38)
       at useDrop (node_modules/react-dnd/src/hooks/useDrop/useDrop.ts:26:64)
-      at RestaurantBucket (src/Components/RestaurantBucket.tsx:44:39)
+      at RestaurantBucket (src/Components/RestaurantBucket.tsx:46:39)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17811:13)
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:19049:16)
@@ -702,16 +702,16 @@ FAIL src/App.test.tsx
 
     SyntaxError: Cannot use import statement outside a module
 
-       6 | import RestaurantBucket from "./Components/RestaurantBucket";
-       7 | import { DndProvider } from "react-dnd";
-    >  8 | import { HTML5Backend } from "react-dnd-html5-backend";
+       7 | import RestaurantBucket from "./Components/RestaurantBucket";
+       8 | import { DndProvider } from "react-dnd";
+    >  9 | import { HTML5Backend } from "react-dnd-html5-backend";
          | ^
-       9 | import FixedHeader from "./Components/FixedHeader";
-      10 | import { CurrUser, Restaurant } from "./Interfaces";
-      11 | import userList from "./CurrentUser";
+      10 | import FixedHeader from "./Components/FixedHeader";
+      11 | import { CurrUser, Restaurant } from "./Interfaces";
+      12 | import userList from "./CurrentUser";
 
       at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
-      at Object.<anonymous> (src/App.tsx:8:1)
+      at Object.<anonymous> (src/App.tsx:9:1)
       at Object.<anonymous> (src/App.test.tsx:3:1)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
@@ -721,18 +721,18 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-----------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s     
 ------------------------|---------|----------|---------|---------|-----------------------
-All files               |   60.86 |      3.1 |    5.67 |    61.5 |                       
- src                    |   29.41 |        0 |       0 |   29.41 |                       
-  App.tsx               |       0 |        0 |       0 |       0 | 17-35                 
+All files               |   61.14 |        3 |    5.63 |   61.79 |                       
+ src                    |    23.8 |        0 |       0 |    23.8 |                       
+  App.tsx               |       0 |        0 |       0 |       0 | 18-65                 
   CurrentSort.tsx       |     100 |      100 |     100 |     100 |                       
   CurrentUser.tsx       |     100 |      100 |     100 |     100 |                       
   Interfaces.ts         |       0 |        0 |       0 |       0 |                       
- src/Components         |    27.1 |      3.2 |    5.88 |   27.32 |                       
+ src/Components         |   27.69 |      3.1 |    5.92 |   27.93 |                       
   AddRestaurant.tsx     |   33.33 |      100 |    9.09 |   33.33 | 19-37,52-153          
   AddReview.tsx         |   42.85 |        0 |   16.66 |   42.85 | 20,23-24,29-36,47-71  
-  FixedHeader.tsx       |       0 |        0 |       0 |       0 | 14-61                 
+  FixedHeader.tsx       |       0 |        0 |       0 |       0 | 14-56                 
   ManagerBucket.tsx     |       0 |        0 |       0 |       0 | 22-347                
-  RestaurantBucket.tsx  |   19.23 |        0 |    7.14 |   21.73 | 25,28-35,38-41,47-102 
+  RestaurantBucket.tsx  |   17.85 |        0 |    7.14 |      20 | 27,30-37,40-43,49-132 
   RestaurantDrag.tsx    |      50 |        0 |   66.66 |      50 | 17-23                 
   RestaurantList.ts     |     100 |      100 |     100 |     100 |                       
   ReviewDisplay.tsx     |     100 |      100 |     100 |     100 |                       
@@ -740,7 +740,7 @@ All files               |   60.86 |      3.1 |    5.67 |    61.5 |
   SortStyleSelector.tsx |   14.28 |      100 |       0 |   14.28 | 9-17                  
   UserList.tsx          |   28.57 |      100 |      20 |   28.57 | 20-43                 
   UserRestaurants.tsx   |       0 |        0 |       0 |       0 | 24-784                
-  UserSelector.tsx      |       0 |      100 |       0 |       0 | 11-28                 
+  UserSelector.tsx      |       0 |      100 |       0 |       0 | 10-27                 
   displayRating.tsx     |     100 |      100 |     100 |     100 |                       
  src/Menus              |     100 |      100 |     100 |     100 |                       
   Menus.tsx             |     100 |      100 |     100 |     100 |                       
@@ -748,5 +748,5 @@ All files               |   60.86 |      3.1 |    5.67 |    61.5 |
 Test Suites: 6 failed, 3 passed, 9 total
 Tests:       4 failed, 9 passed, 13 total
 Snapshots:   0 total
-Time:        8.488 s
+Time:        9.853 s
 Ran all test suites.

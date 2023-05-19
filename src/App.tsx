@@ -18,14 +18,17 @@ function App() {
         setRestaurants(listR);
     }
     const [user, setUser] = useState<CurrUser>(userList[0]);
-
     const handleUserChange = (newUser: number) => {
         setUser(userList[newUser]);
     };
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="App">
-                <FixedHeader handleUserChange={handleUserChange}></FixedHeader>
+                <FixedHeader
+                    handleUserChange={handleUserChange}
+                    user={user}
+                    users={userList}
+                ></FixedHeader>
                 <div className="App">
                     <div
                         style={{

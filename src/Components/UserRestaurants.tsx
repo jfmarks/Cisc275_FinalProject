@@ -199,7 +199,7 @@ export function UserRestaurants({
                                                   restaurant.id ||
                                               editMode
                                                   ? "fit-content"
-                                                  : "400px",
+                                                  : "300px",
                                           width: "600px",
                                           display: "flex",
                                           justifyContent: "center",

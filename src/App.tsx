@@ -60,6 +60,16 @@ function App() {
                     <Container>
                         <Row style={{ position: "absolute", top: 200 }}>
                             <Col style={{ width: "300px" }} lg={6}>
+                                <h1
+                                    style={{
+                                        visibility:
+                                            user.type !== "Foodie"
+                                                ? "hidden"
+                                                : "visible"
+                                    }}
+                                >
+                                    Foodie List
+                                </h1>
                                 {userL.map((userMap) =>
                                     userMap.type === "Foodie" ? (
                                         <div
@@ -71,7 +81,6 @@ function App() {
                                                         : "visible"
                                             }}
                                         >
-                                            <h1>Foodie List</h1>
                                             <RestaurantBucket
                                                 disabled={
                                                     !(user.id === userMap.id)

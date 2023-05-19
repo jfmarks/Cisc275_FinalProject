@@ -43,16 +43,13 @@ function App() {
                 <div className="App">
                     <div
                         style={{
-                            border: "1px solid #ccc", // Border color
-                            borderRadius: "1px", // Border radius
-                            padding: "10px", // Padding around the container
-                            backgroundColor: "lightblue"
+                            position: "absolute",
+                            zIndex: 100,
+                            border: "2px solid #ccc",
+                            borderRadius: "4px"
                         }}
                     >
-                        <SearchBar
-                            placeholder="Do we have your restaurant?"
-                            data={restaurant}
-                        />
+                        <SearchBar placeholder="Search" data={restaurant} />
                     </div>
                     <Container>
                         <Row style={{ position: "absolute", top: 200 }}>

@@ -60,16 +60,30 @@ function App() {
                     <Container>
                         <Row style={{ position: "absolute", top: 200 }}>
                             <Col style={{ width: "300px" }} lg={6}>
-                                <h1>Foodie List</h1>
-                                {userL.map((userMap) => (
-                                    <div key={userMap.id}>
-                                        <RestaurantBucket
-                                            disabled={!(user.id === userMap.id)}
-                                            user={user}
-                                            acceptingUserOfType="Foodie"
-                                        ></RestaurantBucket>
-                                    </div>
-                                ))}
+                                {userL.map((userMap) =>
+                                    userMap.type === "Foodie" ? (
+                                        <div
+                                            key={userMap.id}
+                                            style={{
+                                                visibility:
+                                                    user.type !== "Foodie"
+                                                        ? "hidden"
+                                                        : "visible"
+                                            }}
+                                        >
+                                            <h1>Foodie List</h1>
+                                            <RestaurantBucket
+                                                disabled={
+                                                    !(user.id === userMap.id)
+                                                }
+                                                user={user}
+                                                acceptingUserOfType="Foodie"
+                                            ></RestaurantBucket>
+                                        </div>
+                                    ) : (
+                                        <div key={userMap.id}></div>
+                                    )
+                                )}
                             </Col>
                             <Col>
                                 <UserRestaurants
@@ -82,7 +96,7 @@ function App() {
                                 <div
                                     style={{
                                         visibility:
-                                            user.type == "Foodie"
+                                            user.type === "Foodie"
                                                 ? "hidden"
                                                 : "visible"
                                     }}
